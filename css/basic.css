@@ -1,0 +1,11 @@
+@media screen and (max-width:679px){
+    body{background-color:darkmagenta}
+}
+
+@media screen and (min-width:680px) and (max-width:959px){
+    body{background-color:darkcyan}
+}
+
+@media screen and (min-width:960px){
+    body{background-color:darksalmon}
+}

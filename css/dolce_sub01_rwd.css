@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* dolce_sub01_rwd.css */
+/* 가상클래스 불러오기 @extend %hidden */
+/*#wrap{width: 100%; height: auto;}*/
+#wrap { width: 100%; height: auto; }
+
+#wrap > * { margin: 0 auto; }
+
+/* PhotoShop 360px 기준 */
+#headBox { width: 89%; height: 11.1vw; /*40px*/ background-color: #ba1822; border-bottom: 1px solid #222222; position: fixed; padding: 1.38vw 5.5%; /*5px 20px*/ }
+
+#banner { display: none; }
+
+/*------------small box--------------------*/
+h1 { width: 11.6%; /*42px*/ height: 11.1vw; /*40px*/ background-image: url("../img/all/header/logo.png"); background-repeat: no-repeat; background-size: contain; background-position: center; position: absolute; z-index: 100; margin-left: 38.8%; /*140px*/ font-size: 0; }
+
+#gnb { width: 89%; /*320px*/ height: 13.8vw; /*50px*/ padding-top: 1.9vw; /*7px*/ position: absolute; z-index: 200; }
+#gnb > h2 { width: 8.3%; /*30px*/ height: 7.2vw; /*26px*/ float: left; }
+#gnb > h2 > i { width: 100%; height: 100%; font-size: 1.7rem; display: block; color: #ffffff; text-align: center; }
+#gnb > h2 > span { width: 0; height: 0; display: block; overflow: hidden; }
+#gnb > #snsBox { width: 44.4%; /*160px*/ height: 8.3vw; /*30px*/ float: left; margin-top: 97.2vw; /*300px*/ margin-left: -5.5%; position: absolute; z-index: 500; padding: 0 13.9%; /*0 50px*/ left: -100%; }
+#gnb > #snsBox.scroll { left: 0; }
+#gnb > #snsBox > li { width: 25%; /*40px*/ height: 100%; margin-right: 12%; /*20px*/ float: left; }
+#gnb > #snsBox > li.round { display: none; }
+#gnb > #snsBox > li.navercafe { margin-right: 0; }
+#gnb > #snsBox > li.facebook > a { background-image: url("../img/all/header/sns_01.png"); }
+#gnb > #snsBox > li.youtube > a { background-image: url("../img/all/header/sns_02.png"); }
+#gnb > #snsBox > li.navercafe > a { background-image: url("../img/all/header/sns_03.png"); }
+#gnb > #snsBox > li > a { width: 75%; /*30px*/ height: 100%; padding: 0 12.5%; /*0 5px*/ background-size: contain; }
+#gnb > #snsBox > li > a > span { width: 0; height: 0; display: block; overflow: hidden; }
+#gnb > #searchBox { width: 8.3%; /*30px*/ height: 7.2vw; /*26px*/ float: right; }
+#gnb > #searchBox > span { width: 0; height: 0; display: none; overflow: hidden; }
+#gnb > #searchBox > i { width: 100%; height: 100%; font-size: 1.7rem; color: #ffffff; text-align: center; }
+#gnb > #sitemebBox { width: 72.2%; /*260px*/ height: 8.3vw; /*30px*/ float: left; margin-top: 111.1vw; /*400px*/ margin-left: -5.5%; position: absolute; z-index: 500; left: -100%; }
+#gnb > #sitemebBox.scroll { left: 0; }
+#gnb > #sitemebBox > li { width: 38.4%; /*100px*/ height: 100%; padding-left: 7.7%; /*20px*/ padding-right: 3.84%; /*10px*/ float: left; }
+#gnb > #sitemebBox > li:nth-child(2) { width: 0; height: 0; display: none; overflow: hidden; font-size: 0; }
+#gnb > #sitemebBox > li:last-child { padding-left: 3.84%; /*10px*/ padding-right: 7.7%; /*20px*/ }
+#gnb > #sitemebBox > li > button { width: 100%; height: 100%; background-color: #bdc4c4; border-radius: 5%; }
+#gnb > #sitemebBox > li > button > span { width: 100%; height: 100%; display: block; font-size: 1.3rem; }
+#gnb > #mainBox { width: 72.2%; /*260px*/ height: 416.4vw; /*1500px*/ background-color: #ffffff; float: left; margin-top: -3.28vw; /*10px*/ margin-left: -6.25%; /*20px*/ position: absolute; z-index: 300; left: -100%; }
+#gnb > #mainBox.scroll { left: 0; }
+#gnb > #mainBox > li { width: 80%; /*208px*/ height: 3.3%; /*50px*/ padding: 0 10%; /* 0 26px */ }
+#gnb > #mainBox > li.endBox { height: 9%; }
+#gnb > #mainBox > li > i { width: 11%; /*22.8px*/ height: 100%; font-size: 1.5rem; text-align: center; color: #111111; display: block; float: right; margin-top: 5%; }
+#gnb > #mainBox > li > a { width: 100%; height: 9.23vw; /*24px*/ font-size: 1.5rem; color: #111111; }
+#gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; }
+
+/* PhotoShop 768px 기준 */
+header { width: 100%; height: 12.3vw; /*108px*/ position: fixed; z-index: 1000; background-color: #ba1822; border-bottom: 1px solid #222222; box-sizing: border-box; }
+header > #headBox { width: 87.5%; /*675px*/ height: 10.5vw; /*94px*/ padding: 1.3vw 6.25% 0.5vw; /*4px*/ }
+
+/*------------small box--------------------*/
+h1 { width: 10.6%; /*82px*/ height: 10.4vw; /*80px*/ margin-left: 39%; /*300px*/ background-image: url("../img/all/header/logo.png"); background-repeat: no-repeat; background-size: contain; background-position: center; font-size: 0; position: absolute; z-index: 300; }
+
+#gnb { width: 87.5%; /*675px*/ height: 3vw; /*23px*/ /*background-color:darkcyan; */ position: absolute; z-index: 200; margin-top: 3.6vw; /*28px*/ }
+#gnb > h2 { width: 6%; /*40.5px*/ height: 100%; /*23px*/ float: left; }
+#gnb > h2 > i { font-size: 1.43rem; /*22px*/ color: #ffffff; float: left; }
+#gnb > h2 > span { width: 19.1%; /*9px*/ height: 34.7%; /*8px*/ display: block; float: left; margin-left: 29.6%; /*12px*/ margin-top: 1.1vw; /*8px*/ background-color: #ffffff; border-radius: 50%; }
+#gnb > #snsBox { width: 44.4%; /*300px*/ height: 6vw; /*40px*/ float: left; margin-top: 66.7%; /*450px*/ position: absolute; z-index: 500; left: -100%; }
+#gnb > #snsBox.scroll { left: 0; }
+#gnb > #snsBox > li { width: 13.3%; /*40px*/ height: 100%; margin-right: 13.3%; /*40px*/ float: left; }
+#gnb > #snsBox > li.round { display: none; }
+#gnb > #snsBox > li:last-child { margin-right: 0; }
+#gnb > #snsBox > li.facebook > a { background-image: url("../img/all/header/sns_01.png"); }
+#gnb > #snsBox > li.youtube > a { background-image: url("../img/all/header/sns_02.png"); }
+#gnb > #snsBox > li.navercafe > a { background-image: url("../img/all/header/sns_03.png"); }
+#gnb > #snsBox > li > a { width: 75%; /*30px*/ height: 100%; padding: 0 12.5%; /*0 5px*/ background-size: contain; }
+#gnb > #snsBox > li > a > span { width: 0; height: 0; display: block; overflow: hidden; }
+#gnb > #searchBox { width: 6.9%; /*47px*/ height: 100%; /*23px*/ float: left; margin-left: 1.7%; /*12px*/ }
+#gnb > #searchBox > span { width: 0; height: 0; display: none; overflow: hidden; }
+#gnb > #searchBox > i { font-size: 1.43rem; /*22px*/ color: #ffffff; }
+#gnb > #sitemebBox { width: 14.8%; /*100px*/ height: 56.5%; /*13px*/ margin-top: 0.3vw; /*2px*/ float: right; }
+#gnb > #sitemebBox > li { height: 100%; margin-right: 10%; /*10px*/ float: left; }
+#gnb > #sitemebBox > li:nth-child(1) { width: 35%; /*35px*/ }
+#gnb > #sitemebBox > li:nth-child(2) { width: 8%; /* 8px*/ }
+#gnb > #sitemebBox > li:nth-child(2) > span { width: 100%; /*9px*/ height: 61.5%; /*8px*/ display: block; float: left; font-size: 0; margin-top: 4px; background-color: #ffffff; border-radius: 50%; }
+#gnb > #sitemebBox > li:nth-child(3) { width: 30%; /*30px*/ margin-right: 0; }
+#gnb > #sitemebBox > li > button { width: 100%; height: 100%; background-color: #ba1822; }
+#gnb > #sitemebBox > li > button > span { width: 100%; height: 100%; display: block; font-size: 0.9rem; /*14.4px*/ color: #ffffff; }
+#gnb > #mainBox { width: 44.4%; /*300px*/ height: 222vw; /*1500px*/ background-color: #ffffff; float: left; margin-top: -4.9vw; /*33px*/ margin-left: -7.1%; /*48px*/ position: absolute; z-index: 300; left: -100%; }
+#gnb > #mainBox.scroll { left: 0; }
+#gnb > #mainBox > li { width: 86.7%; /*260px*/ height: 4%; /*60px*/ padding: 5% 10%; /*25px 20px*/ }
+#gnb > #mainBox > li > i { width: 11%; /*33px*/ height: 100%; /*14px*/ font-size: 1.5rem; text-align: center; color: #111111; display: block; float: right; }
+#gnb > #mainBox > li > a { width: 90%; height: 40%; /*24px*/ font-size: 1.5rem; color: #111111; }
+#gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; }
+
+/* PhotoShop 1400px 기준 */
+header { width: 100%; height: 150px; background-color: #ffffff; border-bottom: 10px solid #ba1822; box-sizing: border-box; position: fixed; z-index: 1000; overflow: hidden; }
+header > #headBox { width: 860px; height: 140px; padding: 10px 50px 0 50px; position: absolute; top: 0; left: 50%; margin-left: -480px; display: block; overflow: hidden; }
+
+/*------------small box--------------------*/
+header > #headBox > h1 { width: 90px; height: 90px; background-image: url("../img/all/header/logo.png"); margin-top: 20px; position: absolute; z-index: 500; left: 50%; margin-left: -45px; font-size: 0; }
+
+header > #headBox > #gnb { width: 860px; height: 106px; }
+header > #headBox > #gnb > h2 { width: 0; height: 0; display: block; overflow: hidden; }
+header > #headBox > #gnb > h2 > * { display: none; }
+header > #headBox > #gnb > #snsBox { width: 92px; height: 20px; float: left; }
+header > #headBox > #gnb > #snsBox > li { width: 18px; height: 100%; float: left; margin-right: 5px; }
+header > #headBox > #gnb > #snsBox > li.round { width: 4px; height: 4px; background-color: #bdc4c4; border-radius: 50%; font-size: 0; margin-top: 8px; }
+header > #headBox > #gnb > #snsBox > li:last-child { margin-right: 0; }
+header > #headBox > #gnb > #snsBox > li:nth-child(1) > a { background-image: url("../img/all/header/sns_01.png"); }
+header > #headBox > #gnb > #snsBox > li:nth-child(3) > a { background-image: url("../img/all/header/sns_02.png"); }
+header > #headBox > #gnb > #snsBox > li:nth-child(5) > a { background-image: url("../img/all/header/sns_03.png"); }
+header > #headBox > #gnb > #snsBox > li > span { width: 0; height: 0; display: block; overflow: hidden; }
+header > #headBox > #gnb > #searchBox { width: 100px; height: 18px; float: left; border-bottom: 2px solid #bdc4c4; margin-left: 5px; padding-top: 2px; }
+header > #headBox > #gnb > #searchBox > span { font-size: 0.75rem; color: #bdc4c4; }
+header > #headBox > #gnb > #searchBox > i { font-size: 0.75rem; /*22px*/ color: #bdc4c4; float: right; }
+header > #headBox > #gnb > #sitemebBox { width: 64px; height: 10px; float: right; padding-top: 5px; }
+header > #headBox > #gnb > #sitemebBox > li { height: 100%; float: left; margin-right: 5px; }
+header > #headBox > #gnb > #sitemebBox > li:nth-child(1) { width: 27px; }
+header > #headBox > #gnb > #sitemebBox > li:nth-child(2) { width: 5px; height: 5px; margin-top: 2px; }
+header > #headBox > #gnb > #sitemebBox > li:nth-child(2) > span { width: 100%; height: 100%; background-color: #bdc4c4; display: block; border-radius: 50%; font-size: 0; }
+header > #headBox > #gnb > #sitemebBox > li:nth-child(3) { width: 21px; margin-right: 0; }
+header > #headBox > #gnb > #sitemebBox > li > button { width: 100%; height: 100%; background-color: #ffffff; }
+header > #headBox > #gnb > #sitemebBox > li > button > span { width: 100%; height: 100%; display: block; font-size: 0.725rem; color: #222222; }
+header > #headBox > #gnb > #mainBox { width: 735px; height: 150px; float: left; margin-top: 74px; margin-left: 65px; background-color: #ffffff; }
+header > #headBox > #gnb > #mainBox > li { height: 30px; float: left; }
+header > #headBox > #gnb > #mainBox > li:nth-child(2) { width: 53px; margin-right: 100px; }
+header > #headBox > #gnb > #mainBox > li:nth-child(3) { width: 72px; margin-right: 260px; }
+header > #headBox > #gnb > #mainBox > li:nth-child(4) { width: 64px; }
+header > #headBox > #gnb > #mainBox > li:nth-child(5) { width: 130px; float: right; }
+header > #headBox > #gnb > #mainBox > li > i { width: 0; height: 0; display: block; overflow: hidden; }
+header > #headBox > #gnb > #mainBox > li > a { font-size: 1.25rem; color: #222222; }
+header > #headBox > #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; padding-top: 15px; }
+
+/* Photoshop 360px */
+#footBox { width: 86%; /*310px*/ height: 39vw; /*140px*/ background-color: #bdc4c4; padding: 8.3vw 7% 8.3vw; /*30px 25px 30px*/ }
+#footBox > #footBox { width: 100%; height: 100%; }
+
+/*------------small box--------------------*/
+#footBox > #persnal { display: none; }
+
+#footBox > #footAll { width: 100%; height: 100%; }
+#footBox > #footAll > #nestleImg { width: 100%; height: 45%; background-image: url("../img/all/footer/nestle_black.png"); background-repeat: no-repeat; background-size: contain; background-position: center; }
+#footBox > #footAll > address { width: 90%; height: 45%; margin-top: 8%; margin-left: 10%; font-size: 0.9rem; }
+#footBox > #footAll > address > p { display: none; }
+
+#footBox > #footImg { display: none; }
+
+/* PhotoShop 768px 기준 */
+#footBox { width: 68.75%; /*528px*/ height: 12.5vw; /*96px*/ background-color: #bdc4c4; padding: 3.6vw 15.625% 4.2vw; /*28px 120px 32px*/ }
+#footBox > #footBox { width: 100%; height: 100%; }
+
+/*------------small box--------------------*/
+#footBox > #persnal { width: 81.4%; /*430px*/ height: 16.7%; /*16px*/ margin-top: 1.3vw; /*10px*/ float: left; }
+#footBox > #persnal > li { height: 100%; float: left; margin-right: 0.9%; /*4px*/ }
+#footBox > #persnal > li:nth-child(1) { width: 31.6%; /*136px*/ }
+#footBox > #persnal > li:nth-child(2) { width: 15.8%; /*68px*/ }
+#footBox > #persnal > li:nth-child(3) { width: 27.4%; /*118px*/ }
+#footBox > #persnal > li:nth-child(4) { width: 15.1%; /*65px*/ margin-right: 0; }
+#footBox > #persnal > li > a { width: calc(100% - 8px); font-size: 0.8rem; float: left; }
+#footBox > #persnal > li > span { width: 4px; height: 4px; border-radius: 50%; margin-top: 4.2%; /*4px*/ background-color: #222222; display: block; font-size: 0; float: left; }
+
+#footBox > #footAll { width: 70.8%; /*374px*/ height: 62.5%; /*60px*/ float: left; margin-top: 1.3vw; /*10px*/ }
+#footBox > #footAll > #nestleImg { width: 28.1%; /*105px*/ height: 80%; /*48px*/ float: left; background-image: url("../img/all/footer/nestle_black.png"); background-repeat: no-repeat; background-size: contain; background-position: center; }
+#footBox > #footAll > address { width: 66.8%; /*250px*/ height: 96.7%; /*58px*/ float: left; margin-left: 5.1%; font-size: 0.8rem; }
+#footBox > #footAll > address > p { display: none; }
+
+#footBox > #footImg { width: 25.3%; /*134px*/ height: 100%; /*96px*/ float: right; margin-top: -26px; }
+#footBox > #footImg > #serviceImg { width: 100%; height: 45.8%; /*44px*/ }
+#footBox > #footImg > #awardsImg { width: 69.4%; /*93px*/ height: 50%; /*48px*/ padding-top: 4%; /*4px*/ padding-left: 15%; /*20px*/ }
+#footBox > #footImg > div > img { width: 100%; height: 100%; }
+
+/* PhotoShop 1400px 기준 */
+#footer { width: 100%; height: 250px; background-color: #bdc4c4; margin-top: 50px; }
+#footer > #footBox { width: 790px; height: 125px; margin: 0 auto; padding-top: 50px; }
+
+/*------------small box--------------------*/
+#footBox > #persnal { width: 590px; height: 16px; float: left; margin-left: 80px; }
+#footBox > #persnal > li { height: 100%; float: left; /*padding-right:20px;*/ }
+#footBox > #persnal > li:nth-child(1) { width: 168px; }
+#footBox > #persnal > li:nth-child(2) { width: 80px; }
+#footBox > #persnal > li:nth-child(3) { width: 145px; }
+#footBox > #persnal > li:nth-child(4) { width: 80px; margin-right: 0; }
+#footBox > #persnal > li > a { width: calc(100% - 8px); font-size: 1rem; float: left; }
+#footBox > #persnal > li > span { width: 4px; height: 4px; border-radius: 50%; margin-top: 8px; background-color: #222222; display: block; font-size: 0; float: left; }
+
+#footBox > #footAll { width: 570px; height: 78px; float: left; margin-top: 25px; margin-left: 40px; }
+#footBox > #footAll > #nestleImg { width: 136px; height: 60px; float: left; background-image: url("../img/all/footer/nestle_black.png"); background-repeat: no-repeat; background-size: contain; background-position: center; }
+#footBox > #footAll > address { width: 400px; height: 70px; float: left; margin-left: 30px; font-size: 0.8rem; }
+#footBox > #footAll > address > p { width: 100%; height: auto; }
+
+#footBox > #footImg { width: 173px; height: 125px; float: right; margin-top: -12px; }
+#footBox > #footImg > #serviceImg { width: 100%; height: 58px; }
+#footBox > #footImg > #awardsImg { width: 121px; height: 63px; padding-top: 10px; padding-left: 26px; }
+#footBox > #footImg > div > img { width: 100%; height: 100%; }
+
+/*# sourceMappingURL=dolce_sub01_rwd.css.map */
