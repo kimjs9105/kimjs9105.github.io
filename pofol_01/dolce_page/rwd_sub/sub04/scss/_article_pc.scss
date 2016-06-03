@@ -1,0 +1,14 @@
+/* dolce_sub01_article.css */
+
+/* dolce_sub04_article.css */
+
+article{width: 815px;height: 755px; padding-top:50px;
+    >ul{width: inherit;height: inherit;
+        >li{width: 240px;height: 388px; margin-right:47px; float:left;
+            &:nth-child(3n){margin-right:0px;}
+        }
+    }
+}
+
+.ev_text{width: 240px; height: 35px; margin-top:14px;font-size:$smallFont;}
+

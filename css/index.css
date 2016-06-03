@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/* index.scss */
+@import url(https://fonts.googleapis.com/css?family=Oswald:300);
+html, body { width: 100%; height: 100%; }
+
+/*24px*/
+/*16px*/
+/*12.8px*/
+@media screen and (max-width: 359px) { /* photoshop 320px */
+  #wrap { width: 100%; height: 100%; background-color: #000; position: relative; overflow: hidden; }
+  #wrap > header { width: 100vw; /*320px*/ height: 15.625vw; /*50px*/ position: absolute; z-index: 300; top: 0; right: 50%; margin-top: 15.625vw; /*50px*/ margin-right: -52vw; /*-167px*/ }
+  #wrap > header > h1 { width: 100%; height: 100%; font-size: 7.5vw; /*1.5rem*/ text-align: center; color: #fff; font-family: 'Oswald', sans-serif; letter-spacing: 4.6875vw; /*15px*/ }
+  #wrap > article { width: 100%; height: 100%; position: absolute; z-index: 200; }
+  #wrap > article > #galaxy { display: none; }
+  #wrap > article > #miniGalaxy { width: 100%; height: 100%; }
+  #wrap > article > #miniGalaxy > ul { width: 100%; height: 100%; }
+  #wrap > article > #miniGalaxy > ul > li { font-size: 0; background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
+  #wrap > article > #miniGalaxy > ul > li.min_planet { width: 3.125vw; /*10px*/ height: 3.125vw; /*10px*/ }
+  #wrap > article > #miniGalaxy > ul > li.max_planet { width: 6.25vw; /*20px*/ height: 6.25vw; /*20px*/ }
+  #wrap > article > button { width: 31.25vw; /*100px*/ height: 31.25vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
+  #wrap > article > button > .title { width: 100%; height: 30%; position: absolute; top: 0; left: 0; }
+  #wrap > article > button > .title > .col { display: none; }
+  #wrap > article > button > .title > .menu { width: 100%; height: 100%; display: block; font-size: 5vw; /*1rem*/ color: #fff; text-align: center; }
+  #wrap > article > button > a { width: 100%; height: 70%; display: block; background-repeat: no-repeat; background-position: center center; }
+  #wrap > article > button#logo { width: 62.5vw; /*200px*/ height: 62.5vw; /*200px*/ margin-top: -30vw; /*95px*/ margin-left: -30vw; /*95px*/ }
+  #wrap > article > button#logo > a { width: 100%; height: 100%; }
+  #wrap > article > button:nth-of-type(1) > a { height: 100%; background-size: 45%; background-position: center center; /* background-color: #278;*/ }
+  #wrap > article > .sub { display: none; }
+  #wrap > footer { width: 100%; height: 100%; }
+  #wrap > footer > #myBox { width: 62.5vw; /*200px*/ height: 62.5vw; /*200px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-right: -31.25vw; /*-100px*/ margin-bottom: -25vw; /*80px*/ }
+  #wrap > footer > #myBox > .tri { width: 80%; height: 80%; background-image: linear-gradient(45deg, #000 49%, #fff 2%, #000 49%); transform: rotate(135deg); position: absolute; z-index: 100; left: 10%; border-bottom: 2px solid rgba(255, 255, 255, 0.2); border-left: 2px solid rgba(255, 255, 255, 0.2); }
+  #wrap > footer > #myBox > .my_t { width: 100%; height: 5vw; /*18px*/ color: #2feec3; font-size: 5.3vw; /*1.2rem*/ top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
+  #wrap > footer > #myBox > .my_p { width: 100%; height: 6.9vw; /*25px*/ color: #2feec3; font-size: 4.4vw; /*1rem*/ top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
+  /* planet design */
+  #logo > a { background-image: url("../img/mark_eme_right.png"); }
+  #info { margin-top: -36.1vw; /*130px*/ margin-left: -36.1vw; /*130px*/ }
+  #info > a { background-image: url("../img/btn_green_re_wr.png"); background-size: 80%; }
+  #pofol01 { margin-top: 8.3vw; /*30px*/ margin-left: -36.1vw; /*130px*/ }
+  #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); background-size: 79%; }
+  #pofol02 { margin-top: 8.3vw; /*30px*/ margin-left: 8.3vw; /*30px*/ }
+  #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); background-size: 75%; }
+  #mine { margin-top: -36.1vw; /*130px*/ margin-left: 8.3vw; /*30px*/ }
+  #mine > a { background-image: url("../img/btn_orange_re_wr.png"); background-size: contain; }
+  /* mini planet ani */
+  #miniGalaxy .ani_01 { animation: ani01 10s infinite; margin-top: 2.24vw; /*8px*/ }
+  #miniGalaxy .ani_02 { animation: ani05 6s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_03 { animation: ani04 15s infinite; margin-top: 1.68vw; /*6px*/ }
+  #miniGalaxy .ani_04 { animation: ani02 18s infinite; margin-top: 5.6vw; /*20px*/ }
+  #miniGalaxy .ani_05 { animation: ani03 10s infinite; margin-top: 3.36vw; /*12px*/ }
+  #miniGalaxy .ani_06 { animation: ani06 20s infinite; margin-top: 2.24vw; /*8px*/ }
+  #miniGalaxy .ani_07 { animation: ani01 28s infinite; margin-top: 5.04vw; /*18px*/ }
+  #miniGalaxy .ani_08 { animation: ani02 4s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_09 { animation: ani05 22s infinite; margin-top: 4.48vw; /*16px*/ }
+  #miniGalaxy .ani_10 { animation: ani06 10s infinite; margin-top: 1.12vw; /*4px*/ }
+  #miniGalaxy .ani_11 { animation: ani03 7s infinite; margin-top: 6.16vw; /*22px*/ }
+  #miniGalaxy .ani_12 { animation: ani04 25s infinite; margin-top: 4.48vw; /*16px*/ }
+  #miniGalaxy .ani_13 { animation: ani02 14s infinite; margin-top: 5.04vw; /*18px*/ }
+  #miniGalaxy .ani_14 { animation: ani01 5s infinite; margin-top: 1.4vw; /*5px*/ }
+  #miniGalaxy .ani_15 { animation: ani03 32s infinite; margin-top: 2.24vw; /*8px*/ }
+  #miniGalaxy .ani_16 { animation: ani05 21s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_17 { animation: ani06 12s infinite; margin-top: 4.48vw; /*16px*/ }
+  #miniGalaxy .ani_18 { animation: ani02 7s infinite; margin-top: 0.56vw; /*2px*/ }
+  #miniGalaxy .ani_19 { animation: ani04 19s infinite; margin-top: 1.4vw; /*5px*/ }
+  #miniGalaxy .ani_20 { animation: ani01 13s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_21 { animation: ani03 6s infinite; margin-top: 4.2vw; /*15px*/ }
+  #miniGalaxy .ani_22 { animation: ani04 28s infinite; margin-top: 6.16vw; /*22px*/ }
+  #miniGalaxy .ani_23 { animation: ani02 20s infinite; margin-top: 6.72vw; /*24px*/ }
+  #miniGalaxy .ani_24 { animation: ani01 13s infinite; margin-top: 1.4vw; /*5px*/ }
+  #miniGalaxy .ani_25 { animation: ani03 11s infinite; margin-top: 2.24vw; /*8px*/ }
+  #miniGalaxy .ani_26 { animation: ani05 5s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_27 { animation: ani06 10s infinite; margin-top: 1.12vw; /*4px*/ }
+  #miniGalaxy .ani_28 { animation: ani02 25s infinite; margin-top: 7.28vw; /*26px*/ }
+  #miniGalaxy .ani_29 { animation: ani04 6s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_30 { animation: ani01 14s infinite; margin-top: 1.4vw; /*5px*/ }
+  /* #miniGalaxy animate*/
+  @keyframes ani01 { 0% { margin-left: -400px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani02 { 0% { margin-left: -500px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani03 { 0% { margin-left: -300px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani04 { 0% { margin-left: -200px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani05 { 0% { margin-left: -600px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani06 { 0% { margin-left: -100px; }
+    100% { margin-left: 980px; } }
+  /* #myBox animate */
+  @keyframes js_space { 20% { color: #ff6f29; }
+    45% { color: #9f2ef7; }
+    70% { color: #a8f02b; }
+    90% { color: #ff29c0; } } }
+@media screen and (min-width: 360px) and (max-width: 479px) { /* photoshop 400px */
+  #wrap { width: 100%; height: 100%; background-color: #000; position: relative; overflow: hidden; }
+  #wrap > header { width: 100vw; /*400px*/ height: 13.75vw; /*55px*/ position: absolute; z-index: 300; top: 0; right: 50%; margin-top: 15vw; /*60px*/ margin-right: -52vw; /*-207px*/ }
+  #wrap > header > h1 { width: 100%; height: 100%; font-size: 6.6vw; /*1.5rem*/ text-align: center; color: #fff; font-family: 'Oswald', sans-serif; letter-spacing: 3.75vw; /*15px*/ }
+  #wrap > article { width: 100%; height: 100%; position: absolute; z-index: 200; }
+  #wrap > article > #galaxy { display: none; }
+  #wrap > article > #miniGalaxy { width: 100%; height: 100%; }
+  #wrap > article > #miniGalaxy > ul { width: 100%; height: 100%; }
+  #wrap > article > #miniGalaxy > ul > li { font-size: 0; background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
+  #wrap > article > #miniGalaxy > ul > li.min_planet { width: 2.5vw; /*10px*/ height: 2.5vw; /*10px*/ }
+  #wrap > article > #miniGalaxy > ul > li.max_planet { width: 5vw; /*20px*/ height: 5vw; /*20px*/ }
+  #wrap > article > button { width: 25vw; /*100px*/ height: 25vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
+  #wrap > article > button > .title { width: 100%; height: 30%; position: absolute; top: 0; left: 0; }
+  #wrap > article > button > .title > .col { display: none; }
+  #wrap > article > button > .title > .menu { width: 100%; height: 100%; display: block; font-size: 4.4vw; /*1rem*/ color: #fff; text-align: center; }
+  #wrap > article > button > a { width: 100%; height: 70%; display: block; background-repeat: no-repeat; background-position: center center; }
+  #wrap > article > button#logo { width: 50vw; /*200px*/ height: 50vw; /*200px*/ margin-top: -25vw; /*-100px*/ margin-left: -25vw; /*-100px*/ }
+  #wrap > article > button#logo > a { width: 100%; height: 100%; }
+  #wrap > article > button:nth-of-type(1) > a { height: 100%; background-size: 65%; background-position: center center; /* background-color: #278;*/ }
+  #wrap > article > .sub { display: none; }
+  #wrap > footer { width: 100%; height: 100%; }
+  #wrap > footer > #myBox { width: 50vw; /*200px*/ height: 50vw; /*200px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-right: -25vw; /*-100px*/ margin-bottom: -20vw; /*80px*/ }
+  #wrap > footer > #myBox > .tri { width: 80%; height: 80%; background-image: linear-gradient(45deg, #000 49%, #fff 2%, #000 49%); transform: rotate(135deg); position: absolute; z-index: 100; left: 10%; border-bottom: 2px solid rgba(255, 255, 255, 0.2); border-left: 2px solid rgba(255, 255, 255, 0.2); }
+  #wrap > footer > #myBox > .my_t { width: 100%; height: 5vw; /*18px*/ color: #2feec3; font-size: 4vw; /*1rem*/ top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
+  #wrap > footer > #myBox > .my_p { width: 100%; height: 6.9vw; /*25px*/ color: #2feec3; font-size: 3.4vw; /*0.9rem*/ top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
+  /* planet design */
+  #logo > a { background-image: url("../img/mark_eme_right.png"); }
+  #info { margin-top: -35vw; /*140px*/ margin-left: -35vw; /*140px*/ }
+  #info > a { background-image: url("../img/btn_green_re_wr.png"); background-size: 80%; }
+  #pofol01 { margin-top: 15vw; /*60px*/ margin-left: -35vw; /*140px*/ }
+  #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); background-size: 79%; }
+  #pofol02 { margin-top: 15vw; /*60px*/ margin-left: 10vw; /*40px*/ }
+  #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); background-size: 75%; }
+  #mine { margin-top: -35vw; /*140px*/ margin-left: 10vw; /*40px*/ }
+  #mine > a { background-image: url("../img/btn_orange_re_wr.png"); background-size: contain; }
+  /* mini planet ani */
+  #miniGalaxy .ani_01 { animation: ani01 10s infinite; margin-top: 2.24vw; /*8px*/ }
+  #miniGalaxy .ani_02 { animation: ani05 6s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_03 { animation: ani04 15s infinite; margin-top: 1.68vw; /*6px*/ }
+  #miniGalaxy .ani_04 { animation: ani02 18s infinite; margin-top: 5.6vw; /*20px*/ }
+  #miniGalaxy .ani_05 { animation: ani03 10s infinite; margin-top: 3.36vw; /*12px*/ }
+  #miniGalaxy .ani_06 { animation: ani06 20s infinite; margin-top: 2.24vw; /*8px*/ }
+  #miniGalaxy .ani_07 { animation: ani01 28s infinite; margin-top: 5.04vw; /*18px*/ }
+  #miniGalaxy .ani_08 { animation: ani02 4s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_09 { animation: ani05 22s infinite; margin-top: 4.48vw; /*16px*/ }
+  #miniGalaxy .ani_10 { animation: ani06 10s infinite; margin-top: 1.12vw; /*4px*/ }
+  #miniGalaxy .ani_11 { animation: ani03 7s infinite; margin-top: 6.16vw; /*22px*/ }
+  #miniGalaxy .ani_12 { animation: ani04 25s infinite; margin-top: 4.48vw; /*16px*/ }
+  #miniGalaxy .ani_13 { animation: ani02 14s infinite; margin-top: 5.04vw; /*18px*/ }
+  #miniGalaxy .ani_14 { animation: ani01 5s infinite; margin-top: 1.4vw; /*5px*/ }
+  #miniGalaxy .ani_15 { animation: ani03 32s infinite; margin-top: 2.24vw; /*8px*/ }
+  #miniGalaxy .ani_16 { animation: ani05 21s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_17 { animation: ani06 12s infinite; margin-top: 4.48vw; /*16px*/ }
+  #miniGalaxy .ani_18 { animation: ani02 7s infinite; margin-top: 0.56vw; /*2px*/ }
+  #miniGalaxy .ani_19 { animation: ani04 19s infinite; margin-top: 1.4vw; /*5px*/ }
+  #miniGalaxy .ani_20 { animation: ani01 13s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_21 { animation: ani03 6s infinite; margin-top: 4.2vw; /*15px*/ }
+  #miniGalaxy .ani_22 { animation: ani04 28s infinite; margin-top: 6.16vw; /*22px*/ }
+  #miniGalaxy .ani_23 { animation: ani02 20s infinite; margin-top: 6.72vw; /*24px*/ }
+  #miniGalaxy .ani_24 { animation: ani01 13s infinite; margin-top: 1.4vw; /*5px*/ }
+  #miniGalaxy .ani_25 { animation: ani03 11s infinite; margin-top: 2.24vw; /*8px*/ }
+  #miniGalaxy .ani_26 { animation: ani05 5s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_27 { animation: ani06 10s infinite; margin-top: 1.12vw; /*4px*/ }
+  #miniGalaxy .ani_28 { animation: ani02 25s infinite; margin-top: 7.28vw; /*26px*/ }
+  #miniGalaxy .ani_29 { animation: ani04 6s infinite; margin-top: 2.8vw; /*10px*/ }
+  #miniGalaxy .ani_30 { animation: ani01 14s infinite; margin-top: 1.4vw; /*5px*/ }
+  /* #miniGalaxy animate*/
+  @keyframes ani01 { 0% { margin-left: -400px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani02 { 0% { margin-left: -500px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani03 { 0% { margin-left: -300px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani04 { 0% { margin-left: -200px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani05 { 0% { margin-left: -600px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani06 { 0% { margin-left: -100px; }
+    100% { margin-left: 980px; } }
+  /* #myBox animate */
+  @keyframes js_space { 20% { color: #ff6f29; }
+    45% { color: #9f2ef7; }
+    70% { color: #a8f02b; }
+    90% { color: #ff29c0; } } }
+@media screen and (min-width: 480px) and (max-width: 679px) { /* photoshop 540px */
+  #wrap { width: 100%; height: 100%; background-color: #000; position: relative; overflow: hidden; }
+  #wrap > header { width: 66.6vw; /*360px*/ height: 9.25vw; /*50px*/ position: absolute; z-index: 300; top: 0; right: 50%; margin-top: 10.4vw; /*80px*/ margin-right: -33.3vw; /*180px*/ }
+  #wrap > header > h1 { width: 100%; height: 100%; font-size: 4.4vw; /*1.5rem*/ text-align: center; color: #fff; font-family: 'Oswald', sans-serif; letter-spacing: 2.7vw; /*15px*/ }
+  #wrap > article { width: 100%; height: 100%; position: absolute; z-index: 200; }
+  #wrap > article > #galaxy { display: none; }
+  #wrap > article > #miniGalaxy { width: 100%; height: 100%; }
+  #wrap > article > #miniGalaxy > ul { width: 100%; height: 100%; }
+  #wrap > article > #miniGalaxy > ul > li { font-size: 0; background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
+  #wrap > article > #miniGalaxy > ul > li.min_planet { width: 1.3vw; /*10px*/ height: 1.3vw; /*10px*/ }
+  #wrap > article > #miniGalaxy > ul > li.max_planet { width: 2.6vw; /*20px*/ height: 2.6vw; /*20px*/ }
+  #wrap > article > button { width: 27.7vw; /*150px*/ height: 18.5vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
+  #wrap > article > button > a { width: 100%; height: 50%; display: block; background-repeat: no-repeat; background-size: contain; background-position: left center; }
+  #wrap > article > button > .title { width: 100%; /*150px*/ height: 50%; /*50px*/ position: absolute; top: 0; left: 0; margin-top: -0.65vw; /*-5px*/ }
+  #wrap > article > button > .title > .col { width: 16.7%; /*25px*/ height: 40%; /*20px*/ display: block; border-right: 2px solid #fff; }
+  #wrap > article > button > .title > .menu { width: 100%; height: 40%; /*20px*/ display: block; font-size: 3vw; /*1rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ }
+  #wrap > article > button:nth-of-type(1) { height: 27.7vw; /*150px*/ }
+  #wrap > article > button:nth-of-type(1) > a { height: 100%; background-size: 80%; background-position: center center; /* background-color: #278;*/ }
+  #wrap > article > .sub { display: none; }
+  #wrap > footer { width: 100%; height: 100%; }
+  #wrap > footer > #myBox { width: 46.2vw; /*250px*/ height: 46.2vw; /*250px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-right: -23.1vw; /*-125px*/ margin-bottom: -18.5vw; /*-100px*/ }
+  #wrap > footer > #myBox > .tri { width: 80%; height: 80%; background-image: linear-gradient(45deg, #000 49%, #fff 2%, #000 49%); transform: rotate(135deg); position: absolute; z-index: 100; left: 10%; border-bottom: 2px solid rgba(255, 255, 255, 0.2); border-left: 2px solid rgba(255, 255, 255, 0.2); }
+  #wrap > footer > #myBox > .my_t { width: 100%; height: 2.3vw; /*18px*/ color: #2feec3; font-size: 3.5vw; /*1.2rem*/ top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
+  #wrap > footer > #myBox > .my_p { width: 100%; height: 3.25vw; /*25px*/ color: #2feec3; font-size: 3vw; /*1rem*/ top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
+  /* planet design */
+  #logo { margin-top: -13.7vw; /*-50px*/ margin-left: -13.7vw; /*-50px*/ }
+  #logo > a { background-image: url("../img/mark_eme_right.png"); }
+  #info { margin-top: -23.4vw; /*180px*/ margin-left: -22.1vw; /*-170px*/ }
+  #info > a { background-image: url("../img/btn_green_re_wr.png"); }
+  #pofol01 { margin-top: 10.4vw; /*80px*/ margin-left: -32.5vw; /*-250px*/ }
+  #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); }
+  #pofol02 { margin-top: 6.5vw; /*50px*/ margin-left: 26vw; /*200px*/ }
+  #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); }
+  #mine { margin-top: -16.9vw; /*-130px*/ margin-left: 19.5vw; /*150px*/ }
+  #mine > a { background-image: url("../img/btn_orange_re_wr.png"); }
+  /* mini planet ani */
+  #miniGalaxy .ani_01 { animation: ani01 10s infinite; margin-top: 1.04vw; /*8px*/ }
+  #miniGalaxy .ani_02 { animation: ani05 6s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_03 { animation: ani04 15s infinite; margin-top: 0.78vw; /*6px*/ }
+  #miniGalaxy .ani_04 { animation: ani02 18s infinite; margin-top: 2.6vw; /*20px*/ }
+  #miniGalaxy .ani_05 { animation: ani03 10s infinite; margin-top: 1.56vw; /*12px*/ }
+  #miniGalaxy .ani_06 { animation: ani06 20s infinite; margin-top: 1.04vw; /*8px*/ }
+  #miniGalaxy .ani_07 { animation: ani01 28s infinite; margin-top: 2.34vw; /*18px*/ }
+  #miniGalaxy .ani_08 { animation: ani02 4s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_09 { animation: ani05 22s infinite; margin-top: 2.08vw; /*16px*/ }
+  #miniGalaxy .ani_10 { animation: ani06 10s infinite; margin-top: 0.52vw; /*4px*/ }
+  #miniGalaxy .ani_11 { animation: ani03 7s infinite; margin-top: 2.68vw; /*22px*/ }
+  #miniGalaxy .ani_12 { animation: ani04 25s infinite; margin-top: 2.08vw; /*16px*/ }
+  #miniGalaxy .ani_13 { animation: ani02 14s infinite; margin-top: 2.34vw; /*18px*/ }
+  #miniGalaxy .ani_14 { animation: ani01 5s infinite; margin-top: 0.56vw; /*5px*/ }
+  #miniGalaxy .ani_15 { animation: ani03 32s infinite; margin-top: 1.04vw; /*8px*/ }
+  #miniGalaxy .ani_16 { animation: ani05 21s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_17 { animation: ani06 12s infinite; margin-top: 2.08vw; /*16px*/ }
+  #miniGalaxy .ani_18 { animation: ani02 7s infinite; margin-top: 0.26vw; /*2px*/ }
+  #miniGalaxy .ani_19 { animation: ani04 19s infinite; margin-top: 0.56vw; /*5px*/ }
+  #miniGalaxy .ani_20 { animation: ani01 13s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_21 { animation: ani03 6s infinite; margin-top: 1.95vw; /*15px*/ }
+  #miniGalaxy .ani_22 { animation: ani04 28s infinite; margin-top: 2.86vw; /*22px*/ }
+  #miniGalaxy .ani_23 { animation: ani02 20s infinite; margin-top: 3.12vw; /*24px*/ }
+  #miniGalaxy .ani_24 { animation: ani01 13s infinite; margin-top: 0.56vw; /*5px*/ }
+  #miniGalaxy .ani_25 { animation: ani03 11s infinite; margin-top: 1.04vw; /*8px*/ }
+  #miniGalaxy .ani_26 { animation: ani05 5s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_27 { animation: ani06 10s infinite; margin-top: 0.52vw; /*4px*/ }
+  #miniGalaxy .ani_28 { animation: ani02 25s infinite; margin-top: 3.38vw; /*26px*/ }
+  #miniGalaxy .ani_29 { animation: ani04 6s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_30 { animation: ani01 14s infinite; margin-top: 0.56vw; /*5px*/ }
+  /* #miniGalaxy animate*/
+  @keyframes ani01 { 0% { margin-left: -400px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani02 { 0% { margin-left: -500px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani03 { 0% { margin-left: -300px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani04 { 0% { margin-left: -200px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani05 { 0% { margin-left: -600px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani06 { 0% { margin-left: -100px; }
+    100% { margin-left: 980px; } }
+  /* #myBox animate */
+  @keyframes js_space { 20% { color: #ff6f29; }
+    45% { color: #9f2ef7; }
+    70% { color: #a8f02b; }
+    90% { color: #ff29c0; } } }
+@media screen and (min-width: 680px) and (max-width: 959px) { /* photoshop 768px */
+  #wrap { width: 100%; height: 100%; background-color: #000; position: relative; overflow: hidden; }
+  #wrap > header { width: 46.875vw; /*360px*/ height: 6.5vw; /*50px*/ position: absolute; z-index: 300; top: 0; right: 50%; margin-top: 10.4vw; /*80px*/ margin-right: -24.7vw; /*190px*/ }
+  #wrap > header > h1 { width: 100%; height: 100%; font-size: 3.125vw; /*1.5rem*/ text-align: center; color: #fff; font-family: 'Oswald', sans-serif; letter-spacing: 1.3vw; /*15px*/ }
+  #wrap > article { width: 100%; height: 100%; position: absolute; z-index: 200; }
+  #wrap > article > #galaxy { display: none; }
+  #wrap > article > #miniGalaxy { width: 100%; height: 100%; }
+  #wrap > article > #miniGalaxy > ul { width: 100%; height: 100%; }
+  #wrap > article > #miniGalaxy > ul > li { font-size: 0; background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
+  #wrap > article > #miniGalaxy > ul > li.min_planet { width: 1.3vw; /*10px*/ height: 1.3vw; /*10px*/ }
+  #wrap > article > #miniGalaxy > ul > li.max_planet { width: 2.6vw; /*20px*/ height: 2.6vw; /*20px*/ }
+  #wrap > article > button { width: 19.5vw; /*150px*/ height: 13vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; /* >span{width: 0; height: 0; display:block; font-size:0;}*/ }
+  #wrap > article > button > a { width: 100%; height: 50%; display: block; background-repeat: no-repeat; background-size: contain; background-position: left center; }
+  #wrap > article > button > .title { width: 100%; /*150px*/ height: 50%; /*50px*/ position: absolute; top: 0; left: 0; margin-top: -0.65vw; /*-5px*/ }
+  #wrap > article > button > .title > .col { width: 16.7%; /*25px*/ height: 50%; /*30px*/ display: block; border-right: 2px solid #fff; margin-top: -0.65vw; /*-5px*/ }
+  #wrap > article > button > .title > .menu { width: 100%; height: 50%; /*20px*/ display: block; font-size: 2.08vw; /*1rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ margin-top: 0.78vw; /*6px*/ }
+  #wrap > article > button:nth-of-type(1) { height: 19.5vw; /*150px*/ }
+  #wrap > article > button:nth-of-type(1) > a { height: 100%; background-size: 80%; background-position: center center; /* background-color: #278;*/ }
+  #wrap > article > .sub { display: none; }
+  #wrap > footer { width: 100%; height: 100%; }
+  #wrap > footer > #myBox { width: 29.9vw; /*230px*/ height: 29.9vw; /*230px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-right: -15vw; /*-115px*/ margin-bottom: -10.4vw; /*-80px*/ }
+  #wrap > footer > #myBox > .tri { width: 80%; height: 80%; background-image: linear-gradient(45deg, #000 49%, #fff 2%, #000 49%); transform: rotate(135deg); position: absolute; z-index: 100; left: 10%; border-bottom: 2px solid rgba(255, 255, 255, 0.2); border-left: 2px solid rgba(255, 255, 255, 0.2); }
+  #wrap > footer > #myBox > .my_t { width: 100%; height: 2.3vw; /*18px*/ color: #2feec3; font-size: 1.2rem; top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
+  #wrap > footer > #myBox > .my_p { width: 100%; height: 3.25vw; /*25px*/ color: #2feec3; font-size: 1rem; top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
+  /* planet design */
+  #logo { margin-top: -9.7vw; /*-50px*/ margin-left: -9.7vw; /*-50px*/ }
+  #logo > a { background-image: url("../img/mark_eme_right.png"); }
+  #info { margin-top: -23.4vw; /*180px*/ margin-left: -22.1vw; /*-170px*/ }
+  #info > a { background-image: url("../img/btn_green_re_wr.png"); }
+  #pofol01 { margin-top: 10.4vw; /*80px*/ margin-left: -32.5vw; /*-250px*/ }
+  #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); }
+  #pofol02 { margin-top: 6.5vw; /*50px*/ margin-left: 26vw; /*200px*/ }
+  #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); }
+  #mine { margin-top: -16.9vw; /*-130px*/ margin-left: 19.5vw; /*150px*/ }
+  #mine > a { background-image: url("../img/btn_orange_re_wr.png"); }
+  /* mini planet ani */
+  #miniGalaxy .ani_01 { animation: ani01 10s infinite; margin-top: 1.04vw; /*8px*/ }
+  #miniGalaxy .ani_02 { animation: ani05 6s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_03 { animation: ani04 15s infinite; margin-top: 0.78vw; /*6px*/ }
+  #miniGalaxy .ani_04 { animation: ani02 18s infinite; margin-top: 2.6vw; /*20px*/ }
+  #miniGalaxy .ani_05 { animation: ani03 10s infinite; margin-top: 1.56vw; /*12px*/ }
+  #miniGalaxy .ani_06 { animation: ani06 20s infinite; margin-top: 1.04vw; /*8px*/ }
+  #miniGalaxy .ani_07 { animation: ani01 28s infinite; margin-top: 2.34vw; /*18px*/ }
+  #miniGalaxy .ani_08 { animation: ani02 4s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_09 { animation: ani05 22s infinite; margin-top: 2.08vw; /*16px*/ }
+  #miniGalaxy .ani_10 { animation: ani06 10s infinite; margin-top: 0.52vw; /*4px*/ }
+  #miniGalaxy .ani_11 { animation: ani03 7s infinite; margin-top: 2.68vw; /*22px*/ }
+  #miniGalaxy .ani_12 { animation: ani04 25s infinite; margin-top: 2.08vw; /*16px*/ }
+  #miniGalaxy .ani_13 { animation: ani02 14s infinite; margin-top: 2.34vw; /*18px*/ }
+  #miniGalaxy .ani_14 { animation: ani01 5s infinite; margin-top: 0.56vw; /*5px*/ }
+  #miniGalaxy .ani_15 { animation: ani03 32s infinite; margin-top: 1.04vw; /*8px*/ }
+  #miniGalaxy .ani_16 { animation: ani05 21s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_17 { animation: ani06 12s infinite; margin-top: 2.08vw; /*16px*/ }
+  #miniGalaxy .ani_18 { animation: ani02 7s infinite; margin-top: 0.26vw; /*2px*/ }
+  #miniGalaxy .ani_19 { animation: ani04 19s infinite; margin-top: 0.56vw; /*5px*/ }
+  #miniGalaxy .ani_20 { animation: ani01 13s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_21 { animation: ani03 6s infinite; margin-top: 1.95vw; /*15px*/ }
+  #miniGalaxy .ani_22 { animation: ani04 28s infinite; margin-top: 2.86vw; /*22px*/ }
+  #miniGalaxy .ani_23 { animation: ani02 20s infinite; margin-top: 3.12vw; /*24px*/ }
+  #miniGalaxy .ani_24 { animation: ani01 13s infinite; margin-top: 0.56vw; /*5px*/ }
+  #miniGalaxy .ani_25 { animation: ani03 11s infinite; margin-top: 1.04vw; /*8px*/ }
+  #miniGalaxy .ani_26 { animation: ani05 5s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_27 { animation: ani06 10s infinite; margin-top: 0.52vw; /*4px*/ }
+  #miniGalaxy .ani_28 { animation: ani02 25s infinite; margin-top: 3.38vw; /*26px*/ }
+  #miniGalaxy .ani_29 { animation: ani04 6s infinite; margin-top: 1.3vw; /*10px*/ }
+  #miniGalaxy .ani_30 { animation: ani01 14s infinite; margin-top: 0.56vw; /*5px*/ }
+  /* #miniGalaxy animate*/
+  @keyframes ani01 { 0% { margin-left: -400px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani02 { 0% { margin-left: -500px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani03 { 0% { margin-left: -300px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani04 { 0% { margin-left: -200px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani05 { 0% { margin-left: -600px; }
+    100% { margin-left: 980px; } }
+  @keyframes ani06 { 0% { margin-left: -100px; }
+    100% { margin-left: 980px; } }
+  /* #myBox animate */
+  @keyframes js_space { 20% { color: #ff6f29; }
+    45% { color: #9f2ef7; }
+    70% { color: #a8f02b; }
+    90% { color: #ff29c0; } } }
+@media screen and (min-width: 960px) { /* 기준 1900px */
+  #wrap { width: 100%; height: 100%; background-color: #000; background-image: url("../img/galaxy_bg.png"); position: relative; background-size: 90%; background-repeat: no-repeat; background-position: center; overflow: hidden; }
+  #wrap > header { width: 42.1vw; /*800px*/ height: 2.63vw; /*50px*/ position: absolute; z-index: 300; top: 0; right: 50%; margin-top: 7.8vw; /*150px*/ margin-right: -21vw; /*-400px*/ }
+  #wrap > header > h1 { width: 100%; height: 100%; font-size: 3.36vw; /*4rem*/ text-align: center; color: #fff; font-family: 'Oswald', sans-serif; letter-spacing: 1.6vw; /*30px*/ }
+  #wrap > article { width: 100%; height: 100%; position: absolute; z-index: 200; /* display:none; */ }
+  #wrap > article > #galaxy { width: 100%; height: 100%; }
+  #wrap > article > #galaxy > ul { width: 100%; height: 100%; }
+  #wrap > article > #galaxy > ul > li { background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
+  #wrap > article > #galaxy > ul > li.sml_fly { width: 0.8%; /*10px*/ height: 0.8vw; /*10px*/ }
+  #wrap > article > #galaxy > ul > li.mid_fly { width: 1%; /*10px*/ height: 1vw; /*10px*/ }
+  #wrap > article > #galaxy > ul > li.big_fly { width: 1.2%; /*10px*/ height: 1.2vw; /*10px*/ }
+  #wrap > article > #miniGalaxy { display: none; }
+  #wrap > article > button { width: 10.4%; /*200px*/ height: 10.4vw; /*200px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
+  #wrap > article > button > a { width: 25%; height: 25%; display: block; background-repeat: no-repeat; background-size: 100%; }
+  #wrap > article > button > .title { width: 75%; /*150px*/ height: 25%; /*50px*/ position: absolute; bottom: 6.2vw; /*120px*/ left: 0; }
+  #wrap > article > button > .title > .col { width: 16.7%; /*25px*/ height: 60%; /*30px*/ display: block; border-right: 2px solid #fff; }
+  #wrap > article > button > .title > .menu { width: 100%; height: 40%; /*20px*/ display: block; font-size: 1vw; /*1.2rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ margin-bottom: 2.5%; /*5px*/ }
+  #wrap > article > button#logo { width: 10.4%; /*200px*/ height: 10.4vw; /*200px*/ }
+  #wrap > article > button#logo > a { width: 100%; height: 100%; }
+  #wrap > article > #logo { margin-top: -7.2%; margin-left: -5.2%; }
+  #wrap > article > #logo > a { background-image: url("../img/mark_eme_right.png"); background-size: contain; }
+  #wrap > article > #info { margin-top: -13.2%; margin-left: -30%; }
+  #wrap > article > #info > a { background-image: url("../img/btn_green_re_wr.png"); }
+  #wrap > article > #pofol01 { margin-top: -0.7%; margin-left: -20%; }
+  #wrap > article > #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); }
+  #wrap > article > #pofol02 { margin-top: -0.7%; margin-left: 20%; }
+  #wrap > article > #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); }
+  #wrap > article > #mine { margin-top: -17%; margin-left: 28%; }
+  #wrap > article > #mine > a { background-image: url("../img/btn_orange_re_wr.png"); }
+  #wrap > article > .sub { width: 2.6%; /*50px*/ height: 2.6vw; /*50px*/ position: absolute; z-index: 300; background-repeat: no-repeat; background-position: center; background-size: 45%; top: 50%; left: 50%; }
+  #wrap > article > .sub > span { width: 0; height: 0; display: none; font-size: 0; }
+  #wrap > article > .planet_1 { background-image: url("../img/btn_sub_blue.png"); margin-top: -1%; margin-left: -18%; }
+  #wrap > article > .planet_2 { background-image: url("../img/btn_sub_darkpink.png"); margin-top: -2%; margin-left: 29.8%; }
+  #wrap > article > .planet_3 { background-image: url("../img/btn_sub_hotpink.png"); margin-top: -2.5%; margin-left: 6%; }
+  #wrap > article > .planet_4 { background-image: url("../img/btn_sub_lightblue.png"); margin-top: -8.3%; margin-left: -20%; }
+  #wrap > article > .planet_5 { background-image: url("../img/btn_sub_lightgreen.png"); margin-top: 9.7%; margin-left: -15%; }
+  #wrap > article > .planet_6 { background-image: url("../img/btn_sub_peach.png"); margin-top: 1.7%; margin-left: 10%; }
+  #wrap > article > .planet_7 { background-image: url("../img/btn_sub_purple.png"); margin-top: 6.7%; margin-left: -35%; }
+  #wrap > footer { width: 100%; height: 100%; }
+  #wrap > footer > #myBox { width: 15.7vw; /*300px*/ height: 15.7vw; /*300px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-bottom: -5vw; /*-95px*/ margin-right: -7.8vw; /*-150px*/ }
+  #wrap > footer > #myBox > .tri { width: 80%; height: 80%; background-image: linear-gradient(45deg, #000 49%, #fff 2%, #000 49%); transform: rotate(135deg); position: absolute; z-index: 100; left: 10%; border-bottom: 2px solid rgba(255, 255, 255, 0.2); border-left: 2px solid rgba(255, 255, 255, 0.2); }
+  #wrap > footer > #myBox > .my_t { width: 100%; height: 0.95vw; /*18px*/ color: #2feec3; font-size: 1.3vw; /*1.5rem*/ top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
+  #wrap > footer > #myBox > .my_p { width: 100%; height: 1.3vw; /*25px*/ color: #2feec3; font-size: 1vw; /*1.2rem*/ top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
+  @keyframes js_space { 20% { color: #ff6f29; }
+    45% { color: #9f2ef7; }
+    70% { color: #a8f02b; }
+    90% { color: #ff29c0; } } }
+
+/*# sourceMappingURL=index.css.map */

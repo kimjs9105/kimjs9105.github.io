@@ -1,0 +1,26 @@
+/* dolce_sub04_rwd.css */
+
+@import "./lib/basic";
+@import "./all/all";
+
+@media screen and (max-width:679px){
+@import "./all/header_mos";
+@import "./nav_mos";
+@import "./article_mos";
+@import "./all/footer_mos";
+}
+
+@media screen and (min-width:680px) and (max-width:959px){
+@import "./all/header_tab";
+@import "./nav_tab";
+@import "./article_tab";
+@import "./all/footer_tab";
+}
+
+@media screen and (min-width:960px){
+@import "./all/header_pc";
+@import "./nav_pc";
+@import "./article_pc";
+@import "./all/footer_pc";
+}
+

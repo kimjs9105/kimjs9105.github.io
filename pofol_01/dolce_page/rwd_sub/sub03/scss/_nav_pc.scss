@@ -1,0 +1,14 @@
+/* dolce_sub01_nav.css */
+
+#nav{width:815px; height: 90px; padding-left:45px; padding-top:204px;
+    border-bottom:$bottomStyle;
+    >h2{width: 80px; height: 25px; padding-top:40px;  float:left; @include normal_text;}
+    >ul{width: 500px; height: 20px; float:left;
+        >li{height: 20px; margin-top:6px;  padding-top:40px; font-size:$smallFont;
+            float:left; margin-left:18px;
+            &.map_box{width: 50px;}
+            &.map_sear{width: 50px;}
+        }//li
+    }//ul
+}//nav
+

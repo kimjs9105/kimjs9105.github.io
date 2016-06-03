@@ -3,257 +3,511 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="apple-touch-icon" size="60x60" href="./img/all/dolce_fa.png" />
-    <link rel="apple-touch-icon" size="76x76" href="./img/all/dolce_fa.png" />
-    <link rel="apple-touch-icon" size="120x120" href="./img/all/dolce_fa.png" />
-    <link rel="apple-touch-icon" size="152x152" href="./img/all/dolce_fa.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="./img/all/dolce_fa.png" />
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
     
-    <link rel="stylesheet" href="./css/lib/reset.css">
-    <link rel="stylesheet" href="./css/dolce_main_rwd.css">
+    <!-- favicon style -->
+    <link rel="apple-touch-icon" href="./img/mark_gray.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/mark_gray.png" />
     
-    <script src="./js/jQuery/jquery-1.12.2.min.js"></script>
-    <script src="./js/jQuery/jquery-migrate-1.2.1.min.js"></script>
-    <script src="./js/jQuery/jquery-ui.min.js"></script>
-    <script src="./js/dolce_main_rwd.js"></script>
+    <!-- web font -->
+    <!--<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' />-->
     
-    <!--[if lte IE 6]>
+    
+    <!-- css style -->
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" /><!--design style-->
+    
+    <!--[if lte IE 9]>
     <script src="./js/dist/html5shiv.min.js"></script>
     <script src="./js/dist/ie9.min.js"></script>
     <script src="./js/dist/PIE.js"></script>
     <script src="./js/dist/respond.min.js"></script>
     <![endif]-->
     
-    <title>Dolce Gusto</title>
+    <script src="./js/jQuery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jQuery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jQuery/jquery-ui.min.js"></script>
+        
+    <!-- javascript 영역 -->
+    <script src="./js/galaxy_plugin.js"></script>
+    <script src="./js/index_jQuery.js"></script>
+    
+    <title>JSun&#39;s space</title>
     <style></style>
     <script>
-        $(function(){
-            
-        });
+        
     </script>
+    
 </head>
 <body>
     <div id="wrap">
-       
         <header>
-            <div id="headBox">
-                <h1>DolceGusto</h1>
-                <nav id="gnb">
-                    <h2><i class="fa fa-bars" aria-hidden="true"></i><span>메인메뉴</span></h2>
-                    <ul id="snsBox">
-                        <li class="facebook">
-                            <a href="https://www.facebook.com/NescafeDolcegustoKorea" alt="돌체구스토 페이스북 페이지입니다" target="_blank">
-                                <span>facebook</span>
-                            </a>
-                        </li>
-                        <li class="round"><span>round</span></li>
-                        <li class="youtube">
-                            <a href="https://www.youtube.com/user/dolcegustokorea/videos" alt="돌체구스토 유투브 페이지 입니다"  target="_blank">
-                                <span>youtube</span>
-                            </a>
-                        </li>
-                        <li class="round"><span>round</span></li>
-                        <li class="navercafe">
-                            <a href="http://cafe.naver.com/dolcegusto" alt="돌체구스토 네이버카페 페이지 입니다" target="_blank">
-                                <span>navercafe</span>
-                            </a>
-                        </li>
-                        <li class="round"><span>round</span></li>
-                    </ul><!--//#snsBox--> 
-                    <div id="searchBox">
-                        <span>Search</span>
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </div><!--//#searchBox-->
-                    <ul id="sitemebBox">
-                        <li><button><span>Login</span></button></li>
-                        <li><span>round</span></li>
-                        <li><button><span>Join</span></button></li>
-                    </ul><!--//#sitemebBox-->
-                    <ul id="mainBox">
-                        <li class="endBox"><i class="fa fa-times" aria-hidden="true"></i></li>
-                        <li class="brandBox">
-                            <a href="#">Brand</a>
-                        </li>
-                        <li class="productBox">
-                            <a href="#">Product</a>
-                            <ul class="sub_menu">
-                                <li><a href="#">All</a></li>
-                                <li><a href="#">Capsule</a></li>
-                                <li><a href="#">Machine</a></li>
-                                <li><a href="#">Accessory</a></li>
-                            </ul>
-                        </li>
-                        <li class="serviceBox">
-                            <a href="#">Service</a>
-                            <ul class="sub_menu">
-                                <li><a href="#">고객센터</a></li>
-                                <li><a href="#">매장찾기</a></li>
-                                <li><a href="#">Q &amp; A</a></li>
-                            </ul>
-                        </li>
-                        <li class="newsBox">
-                            <a href="#">News &amp; Event</a>
-                            <ul class="sub_menu">
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Event</a></li>
-                            </ul>
-                        </li>
-                    </ul><!--//#mainBox-->
-                </nav>
-            </div>
-        </header><!--//#headBox-->
+            <h1> JSUN&#39;S SPACE </h1>
+        </header>
         
-        <section id="bannerBox">
-            <div id="banner">
-                <button type="button" class="left_btn"><span>왼쪽으로 이동합니다</span></button>
-                <button type="button" class="right_btn"><span>오른쪽으로 이동합니다</span></button>
-                <input type="radio" name="btn_dott" id="btn_dott_01" checked="checked"/>
-                <input type="radio" name="btn_dott" id="btn_dott_02" />
-                <input type="radio" name="btn_dott" id="btn_dott_03" />
-                <input type="radio" name="btn_dott" id="btn_dott_04" />
-                <ul id="ban_dott">
-                    <li><label for="btn_dott_01"><span>광고1</span></label></li>
-                    <li><label for="btn_dott_02"><span>광고2</span></label></li>
-                    <li><label for="btn_dott_03"><span>광고3</span></label></li>
-                    <li><label for="btn_dott_04"><span>광고4</span></label></li>
-                </ul><!--//#ban_dott-->
-                <ul class="ban_real">
-                    <li class="bb_01"><a href="#"><span>광고</span></a></li>
-                    <li class="bb_02"><a href="#"><span>광고</span></a></li>
-                    <li class="bb_03"><a href="#"><span>광고</span></a></li>
-                    <li class="bb_04"><a href="#"><span>광고</span></a></li>
-                </ul><!--//#ban_real-->
-            </div><!--//#banner-->
-        </section><!--//#banner-->
-        
-        <article id="artBox">
-            <div id="tabs">
+        <article>
+            <div id="galaxy">
                 <ul>
-                    <li><a class="best_box" href="#bestBox">Best</a></li>
-                    <li><a class="new_box" href="#newBox">New</a></li>
-                    <li class="none"><span>빈 공란 입니다.</span></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="sml_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="mid_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <li class="big_fly"></li>
+                    <!--+(li.sml_fly)*50+(li.mid_fly)*50+(li.big_fly)*50+(li.sml_fly)*30+(li.mid_fly)*30+(li.big_fly)*30-->
                 </ul>
-            
-                <div id="bestBox">
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;에스프레소</p>
-                        <p class="b_text">에스프레소 인텐소</p>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;카페메뉴</p>
-                        <p class="b_text">카푸티노 스키니</p>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;롱블랙커피</p>
-                        <p class="b_text">모닝 블랜드</p>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;스페셜커피</p>
-                        <p class="b_text">그린티 라떼</p>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;카페메뉴</p>
-                        <p class="b_text">아이스 카푸치노</p>
-                        </dt>
-                    </dl>
-                </div><!--//#bestBox-->
-                <div id="newBox">
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;에스프레소</p>
-                        <p class="b_text">윈난 에스프레소</p>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;롱블랙 커피</p>
-                        <p class="b_text">니움바 룽고</p>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;롱블랙커피</p>
-                        <p class="b_text">아이스 아메리카노</p>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;스페셜커피</p>
-                        <p class="b_text">네스티 피치</p>
-                        </dt>
-                    </dl>
-                    <dl>
-                        <dd><span>사진</span></dd>
-                        <dt>
-                        <p class="s_text">&#45;에스프레소</p>
-                        <p class="b_text">리스트레토 아덴자</p>
-                        </dt>
-                    </dl>
-                </div><!--//#newBox-->
-            </div><!--//#tabs-->
-            <div id="serBox">
-                <dl id="news">
-                    <dt>News</dt><dt class="none"><span>빈 공란 입니다.</span></dt>
-                    <dd class="none_box">
-                        <span></span>
-                    </dd>
-                    <dd class="news_ban">광고배너</dd>
-                </dl>
-                <dl id="event">
-                    <dt>Event</dt><dt class="none"><span>빈 공란 입니다.</span></dt>
-                    <dd class="none_box">
-                        <span></span>
-                    </dd>
-                    <dd class="event_ban">광고배너</dd>
-                </dl>
-            </div><!--//#serBox-->
-        </article><!--//#artBox-->
-        
-        <footer id="footer">
-            <div id="footBox">
-                <ul id="persnal">
-                    <li><a href="#">자주묻는 질문과 답변</a><span>dott</span></li>
-                    <li><a href="#">매장찾기</a><span>dott</span></li>
-                    <li><a href="#">개인정보취급방침</a><span>dott</span></li>
-                    <li><a href="#">이용약관</a></li>
+            </div><!--//#galaxy-->
+            <div id="miniGalaxy">
+                <ul>
+                    <li class="min_planet ani_01">bg_animation_planet</li>
+                    <li class="min_planet ani_02">bg_animation_planet</li>
+                    <li class="max_planet ani_03">bg_animation_planet</li>
+                    <li class="min_planet ani_04">bg_animation_planet</li>
+                    <li class="min_planet ani_05">bg_animation_planet</li>
+                    <li class="max_planet ani_06">bg_animation_planet</li>
+                    <li class="max_planet ani_07">bg_animation_planet</li>
+                    <li class="min_planet ani_08">bg_animation_planet</li>
+                    <li class="min_planet ani_09">bg_animation_planet</li>
+                    <li class="max_planet ani_10">bg_animation_planet</li>
+                    <li class="min_planet ani_11">bg_animation_planet</li>
+                    <li class="min_planet ani_12">bg_animation_planet</li>
+                    <li class="min_planet ani_13">bg_animation_planet</li>
+                    <li class="min_planet ani_14">bg_animation_planet</li>
+                    <li class="min_planet ani_15">bg_animation_planet</li>
+                    <li class="max_planet ani_16">bg_animation_planet</li>
+                    <li class="min_planet ani_17">bg_animation_planet</li>
+                    <li class="min_planet ani_18">bg_animation_planet</li>
+                    <li class="max_planet ani_19">bg_animation_planet</li>
+                    <li class="min_planet ani_20">bg_animation_planet</li>
+                    <li class="min_planet ani_21">bg_animation_planet</li>
+                    <li class="max_planet ani_22">bg_animation_planet</li>
+                    <li class="max_planet ani_23">bg_animation_planet</li>
+                    <li class="min_planet ani_24">bg_animation_planet</li>
+                    <li class="min_planet ani_25">bg_animation_planet</li>
+                    <li class="max_planet ani_26">bg_animation_planet</li>
+                    <li class="min_planet ani_27">bg_animation_planet</li>
+                    <li class="min_planet ani_28">bg_animation_planet</li>
+                    <li class="max_planet ani_29">bg_animation_planet</li>
+                    <li class="min_planet ani_30">bg_animation_planet</li>
                 </ul>
-                <div id="footAll">
-                    <div id="nestleImg"></div>
-                    <address>
-                    상호명 &#58; 네슬레 코리아 유한책입회사 /<br/> 주소 &#58; 서울특별시 서대문구 충정로 70 /<br/>
-                    대표자 &#58; 어완뷀프 / 사업자등록번호 &#58; 110-86-10110 /<br/>
-                    <p>통신판매업신고 &#58; 2014-서울서대문-0247호 / 사업자 정보 공개 /<br/>
-                    TEL &#58; 080-234-0070 / FAX &#58; 02-6296-3327 /<br/>
-                    개인정보책임자 &#58; 김현주 / Mail To Master &#58; admin@dolce-gusto.co.kr
-                    </p>
-                    </address>
-                </div>
-                <div id="footImg">
-                    <div id="serviceImg"><img src="./img/all/footer/mark_01.png" alt="서비스"></div>
-                    <div id="awardsImg"><img src="./img/all/footer/mark_02.png" alt="어워드"></div>
-                </div>
             </div>
-        </footer><!--//#footBox-->
+            <!-- real planet-->
+            <nav id="mainNav">
+                
+            </nav>
+            <button type="button" id="logo">
+                <div class="title">
+                    <span class="menu"><!--Logo Story--></span>
+                    <!--<span class="col"></span>-->
+                </div>
+                <a href="#"></a>
+            </button>
+            <button type="button" id="info">
+                <div class="title">
+                    <span class="menu">Resume</span>
+                    <span class="col"></span>
+                </div>
+                <a href="./info/info.html"></a>
+            </button>
+            <button type="button" id="pofol01">
+                <div class="title">
+                    <span class="menu">Portfolio 01</span>
+                    <span class="col"></span>
+                </div>
+                <a href="./pofol_01/pofol_dolce.html"></a>
+            </button>
+            <button type="button" id="pofol02">
+                <div class="title">
+                    <span class="menu">Portfolio 02</span>
+                    <span class="col"></span>
+                </div>
+                <a href="./pofol_02/pofol_kerasys.html"></a>
+            </button>
+            <button type="button" id="mine">
+                <div class="title">
+                    <span class="menu">Mypage</span>
+                    <span class="col"></span>
+                </div>
+                <a href="./mypage/myPage.html"></a>
+            </button>
+            
+            <!-- design planet -->
+            <div class="sub planet_1"><span>가짜행성</span></div>
+            <div class="sub planet_2"><span>가짜행성</span></div>
+            <div class="sub planet_3"><span>가짜행성</span></div>
+            <div class="sub planet_4"><span>가짜행성</span></div>
+            <div class="sub planet_5"><span>가짜행성</span></div>
+            <div class="sub planet_6"><span>가짜행성</span></div>
+            <div class="sub planet_7"><span>가짜행성</span></div>
+
+        </article>
+        
+        <footer>
+            <div id="myBox">
+                <div class="tri"></div>
+                <div class="my_t">
+                    CONTACT<br/>
+                </div>
+                <div class="my_p">
+                   ls2022@naver.com<br/>
+                    경기도 용인시 처인구 마평동
+                </div>
+            </div><!--//#myBox-->
+        </footer>
         
     </div><!--//#wrap-->
 </body>
