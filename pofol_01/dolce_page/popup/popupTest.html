@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/lib/reset.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    
+    <script src="./js/jQuery/jquery-1.12.2.min.js"></script>
+    <script src="./js/jQuery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jQuery/jquery-ui.min.js"></script>
+    
+    <script src="./js/popup.js"></script>
+    
+    <!--[if lte IE 6]>
+    <script src="./js/dist/html5shiv.min.js"></script>
+    <script src="./js/dist/ie9.min.js"></script>
+    <script src="./js/dist/PIE.js"></script>
+    <script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+    
+    <title>Dolce Gusto</title>
+    <style></style>
+    <script>
+        $(function(){
+            $("#popUpStage").hide();
+            
+            $(".log_box").on("click",function(){
+                window.open("./popup.html","Login","width=500, height=500, left=250, top= 250, scrollbars=no, toolbars=no, location=no")
+            })
+        });
+    </script>
+</head>
+<body>
+    <button type="button" class="log_box"> 로그인 버튼 </button>
+</body>
+</html>

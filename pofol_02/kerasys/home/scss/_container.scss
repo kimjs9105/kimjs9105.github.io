@@ -1,0 +1,65 @@
+/* kerasys_container.css */
+
+/* big box */
+#container_01{width: 76%; height: 96%; padding : 2% 12%;/* margin-top:100%;*/
+    >#con_box{width: 100%; height: 100%;
+        >.box_1{ width: 100%; height: 10%; background-image: url("../jpg/text_1.png"); background-size:30%;
+            background-repeat: no-repeat; background-position: left; font-size:0; }
+        >.box_2{ width: 100%; height: 88%; margin-top:2%;}
+    }
+}
+#container_02{width: 90%; height: 90%; padding : 2% 5% 0; 
+    >ul{width: 100%; height: 100%;
+        >.box_3{ width: 100%; height:100%;}
+    }
+}
+
+/* top box */
+.box_2{
+    >.l_box_2{width: calc(50% - 5px); height: 100%; float:left; /*margin-right:1.5%;*/
+        >li{width: calc(50% - 5px); height: 35%; float:right;
+            >a{background-position: center center; background-size:cover;}
+        }//li
+        >.lb_01{float: left;
+            >a{margin-right:1.5%;background-image: url("../jpg/n_1.png");}
+        }//.lb_01
+        >.lb_02>a{background-image: url("../jpg/n_2.png");}
+        >.lb_03{width: 100%; height:62.5%;  margin-top: 2.5%;
+            >a{background-image: url("../jpg/n_3.png");}
+        }//.lb_03
+    }//.l_box_2
+    
+    >.r_box_2{width: calc(50% - 5px); height: 100%; margin-right: 0px; float:right;
+        >li{width: calc(50% - 5px); height: 35%; float: left; 
+            >a{background-position: center center; background-size:cover;}
+        }//li
+        >.rb_01{width: 100%; height:62.5%; margin-bottom: 2.5%;
+            >a{background-image: url("../jpg/p_1.png"); background-position: 90% 0; }
+        }//.rb_01
+        >.rb_02>a{background-image: url("../jpg/p_2.png");}
+        >.rb_03{float: right;
+            >a{background-image: url("../jpg/p_3.png");}
+        }//.rb_03
+    }//.r_box_2
+}//.box_2
+
+/* bottom box */
+
+ul>.box_3{
+    >ul{width: calc(50% - 5px); height: 100%;}
+    >.le_box{float: left; margin-right: 10px;
+        >.h_01{width: 100%; height: 100%;float: left;
+            >a{background-image: url("../jpg/ban_1.png"); background-size:cover; background-position:center;}
+        }//.h_01
+    }//.le_box
+
+    >.ri_box{float: left;
+        >li{width: 100%; height: calc(50% - 5px);float: left;
+            >a{background-position: center top;background-size:cover;}
+            }//li
+        >.h_02{width: 100%; height:calc(50% - 5px); margin-bottom: 10px;
+            >a{background-image: url("../jpg/ban_2.png"); background-position:left top;}
+        }
+        >.h_03>a{background-image: url("../jpg/ban_3.png"); background-position:left top; }
+    }//.ri_box
+}//.box_3

@@ -1,0 +1,72 @@
+/* kerasys_sub01_article.css */
+
+#article_box{width: 80%; height: auto; padding:2.7vw 10% 0 10% ;
+/*    >h2{width:100px; height:40px; margin-left:80px; margin-top:100px; 
+            border-bottom: 3px solid #f8c6dc; font-size:2rem; color:#222; box-sizing: border-box; }
+    >p{width: auto; height: 20px; font-size:1rem; padding-top:10px;}
+}//#sitemap*/
+
+.siteMap{width:22vw; height: 2.08vw; float:right; /*margin-right:0.52vw;*/
+    >i{width: 1.28vw; height: 100%; float:left; font-size:1.3vw; color:#f8c6dc; display: block; line-height: 1.1vw;}
+    >p{width: auto; height: 100%;float:left; padding:0 0.208vw 0 0.53vw; font-size:1vw; text-align: center;}
+    >span{width: 0.53vw; height: 0.53vw; float:left; margin-top:0.15vw; 
+        transform:rotate(45deg); border-top:1px solid #222; border-right:1px solid #222;}
+}//#sitemap
+
+/* title design */
+#titleBox{width: 36.45vw; height: 7.291vw; padding-top:7.41vw; 
+    >h2{width: 15.625vw; height: 40px; font-size:2rem; font-weight:bold;
+        border-bottom:3px solid #f8c6dc; box-sizing: border-box;  /*margin-left: 60px;*/ }
+    >p{width: auto; height: 2.08vw/*20px*/; font-size:1rem; padding-top:10px/*10px*/; /*margin-left: 60px;*/}
+}//#title_box
+
+    
+    #tableBox{width: 100%; height: 31.66vw; margin-left:3.125vw; margin-top:2.2vw;
+        >table{width: 50vw; height: 100%; text-align: center center;
+            >tbody{
+                >tr{width: 100%; height: calc(31.66vw / 6); 
+                    border-top: 1px solid #888; border-bottom: 1px solid #ccc; border-spacing: 0; border-collapse: collapse;
+                       transition: all 0.5s;
+                        &:first-of-type{height:4.1vw;}
+                        &:first-of-type:hover{background-color: #fff;}
+                        &:hover{background-color: #eee; }
+                    >th{height: 1.03vw;  padding-top: 1.2vw; font-weight: bold;
+                        &:nth-child(1){width:4.6875vw;}
+                        &:nth-child(2){width:39.58vw;}
+                        &:nth-child(3){width:9.375vw;}
+                        &:nth-child(4){width:9.375vw;}
+                    }// th
+                >td{text-align: center;/* padding: 2vw 0;*/ line-height: 5vw}
+                }// tr
+            }// tbody
+        }// table
+        >ul{width: 15.625vw; height: 2.08vw; margin-top:4.16vw;  margin-left: 20.83vw;
+            >li{width: 2.08vw; height: 2.08vw; margin-right:1.04vw; float:left;
+                &:last-child{width: 1.56vw; height: 1.56vw; background-image: url("../jpg/zz.png");margin-right:0; background-repeat: no-repeat; background-position:top center; /*margin-top: 0.1vw;*/}
+            }
+        }// ul
+    }// #tableBox
+}// #article_box
+
+
+/* h2 & p 태그 */
+/*#article_box>h2 {width:150px; height:40px; font-size:2.4rem; color:#222; margin-top:100px; border-bottom: 5px solid #f9c7dd; margin-left:80px;}
+#article_box>p {border-top: 10px solid #fff; font-weight: bold; margin-left:80px;}*/
+
+/* 테이블 구조 */
+/*#article_box>#tableBox{width: 614px; height: 550px; margin-left:80px; margin-top:50px;}
+
+table{width: 100%; height: 400px;text-align: center center;}
+table>tbody>tr{border-top: 1px solid #888; border-bottom: 1px solid #ccc; border-spacing: 0; border-collapse: collapse;}
+tr{width: 100%; height: calc(360px / 6);}*/
+/*th{height: 10px;  padding-top: 13px; font-weight: bold;}
+th:nth-child(1){width:45px;}
+th:nth-child(2){width:380px;}
+th:nth-child(3){width:90px;}
+th:nth-child(4){width:90px;}
+td{text-align: center;padding-top: 25px;}*/
+
+/*
+#tableBox>ul{width: 150px; height: 20px; margin-top:20px;  margin-left: 210px; }
+#tableBox>ul>li{width: 20px; height: 20px; margin-right:10px;float:left;}
+#tableBox>ul>li:last-child{background-image: url("../jpg/zz.png");margin-right:0; background-repeat: no-repeat; background-position:center center;}*/

@@ -1,0 +1,147 @@
+/* kerasys_sub01_article.css */
+
+/* photoshop 725px */
+
+#article_box{width: 80%; height: auto; padding:2.7vw 10% 0 10% ;}
+
+/* sitemap design */ /* w 100% 650px */
+
+#sitemap{width:14vw; height: 2.08vw; float:right; /*margin-right:0.52vw;*/
+    >i{width: 1.28vw; height: 100%; float:left; font-size:1.3vw; color:#f8c6dc; display: block; line-height: 1.1vw;}
+    >p{width: auto; height: 100%;float:left; padding:0 0.208vw 0 0.53vw; font-size:1vw; text-align: center;}
+    >span{width: 0.53vw; height: 0.53vw; float:left; margin-top:0.15vw; 
+        transform:rotate(45deg); border-top:1px solid #222; border-right:1px solid #222;}
+}//#sitemap
+
+/* title design */
+#title_box{width: 36.45vw; height: 7.291vw; padding-top:7.41vw; 
+    >h2{width: 15.625vw; height: 40px; font-size:2rem; font-weight:bold;
+        border-bottom:3px solid #f8c6dc; box-sizing: border-box;  /*margin-left: 60px;*/ }
+    >p{width: auto; height: 2.08vw/*20px*/; font-size:1rem; padding-top:10px/*10px*/; /*margin-left: 60px;*/}
+}//#title_box
+
+/* tabs design */  /* %화 완료 */
+#tabs{width: 100%; height: auto; margin-top:5.3vw;/*55px*/
+    >ul{width: 50%;/*130px*/ height: 2.3vw;/*25px*/ margin-left:25.6%;/*222px*/
+        >li{width: 40%; height: 100%; float:left; background-color: #f8c6dc; 
+            border-top-left-radius:2% 10%; border-top-right-radius:2% 10%; 
+            border-bottom-left-radius:2% 10%; border-bottom-right-radius:2% 10%;
+            &:last-child{float:right;}
+            >a{font-size:1.2vw; font-weight: 600; text-align: center; line-height: 215%; color:#222;}
+        }//li
+    }//ul
+    >div{width: 100%; height: auto; padding-top:1.2vw;
+        >ul{width: 100%; min-height: 14vw; height: auto; margin-top:10px; 
+            &::after{content:""; display: block;clear: both;}
+            >li{width: 31%; height: auto; float:left; margin-right:3.5%;
+                &:last-child{margin-right:0;}
+                >a{width: 100%; height: 14vw; 
+                    >span{width: 100%; height: 100%; display: block; font-size: 0; background-repeat: no-repeat; background-position: center center; }
+                }
+//                &:nth-child(1)>.in_box{display: none;}
+                &:nth-child(2)>.in_box{margin-left:-111.3%; display: none;}
+                &:nth-child(3)>.in_box{margin-left:-222.7%; display: none;}
+                
+            }//li
+        }//ul
+    }//div
+}//#tabs
+//#photo *{display: block!important;}
+/* inbox design */
+.in_box{width: 322.5%; height: 15.6vw; background-color:#f8c6dc;
+    >.photo{width: 34%; height: 92.5%;float:left; padding:1% 3%;
+        >span{width: 100%; height: 95%; margin-top:1.8%; font-size:0; background-repeat: no-repeat; background-position: center center;}
+    }
+    >.info{width: 54%; height: 92.5%; float:left; padding:1% 3%;
+        >.title{width: 100%; height: 20%; margin-top:6%; font-size:1.5vw;/*1.8rem*/ line-height: 150%;}
+        >.text{width: 100%; height: 40%; margin-top:1.8%; font-size:0.8vw;/*1rem*/ }
+        >a{width: 25%; height: 15%; background-color: #fff; margin-top:1.8%; margin-left:70%; border-radius:5px;
+            >span{width: 100%; height: 100%; font-size:1vw;/*1.2rem*/ display:block; text-align: center; line-height: 220%;}
+        }
+        
+    }
+}//.in_box01
+
+#video{
+    .photo{
+        >span{width: 100%; height: 80%; margin-top:8%;}
+    }
+}//#video
+
+
+/* photo img bgi */
+.photo_box01{
+    >li:nth-child(1)>a>span{background-image: url("../jpg/photo_01.jpg"); background-size: 100%;}
+    >li:nth-child(2)>a>span{background-image: url("../jpg/photo_02.jpg"); background-size: 100%;}
+    >li:nth-child(3)>a>span{background-image: url("../jpg/photo_03.jpg"); background-size: 100%;}
+}
+
+.photo_box02{
+    >li:nth-child(1)>a>span{background-image: url("../jpg/photo_04.jpg"); background-size: 100%;}
+    >li:nth-child(2)>a>span{background-image: url("../jpg/photo_05.jpg"); background-size: 100%;}
+    >li:nth-child(3)>a>span{background-image: url("../jpg/photo_06.jpg"); background-size: 100%;}
+}
+
+.photo_box03{
+    >li:nth-child(1)>a>span{background-image: url("../jpg/photo_07.jpg"); background-size: 100%;}
+    >li:nth-child(2)>a>span{background-image: url("../jpg/photo_08.jpg"); background-size: 100%;}
+    >li:nth-child(3)>a>span{background-image: url("../jpg/photo_09.jpg"); background-size: 100%;}
+}
+
+/* photo box in subBox*/
+.photo_box01{
+    >li:nth-child(1)>.in_box>.photo>span{background-image: url("../jpg/photo_01.jpg"); background-size: 100%;}
+    >li:nth-child(2)>.in_box>.photo>span{background-image: url("../jpg/photo_02.jpg"); background-size: 100%;}
+    >li:nth-child(3)>.in_box>.photo>span{background-image: url("../jpg/photo_03.jpg"); background-size: 100%;}
+}
+
+.photo_box02{
+    >li:nth-child(1)>.in_box>.photo>span{background-image: url("../jpg/photo_04.jpg"); background-size: 100%;}
+    >li:nth-child(2)>.in_box>.photo>span{background-image: url("../jpg/photo_05.jpg"); background-size: 100%;}
+    >li:nth-child(3)>.in_box>.photo>span{background-image: url("../jpg/photo_06.jpg"); background-size: 100%;}
+}
+
+.photo_box03{
+    >li:nth-child(1)>.in_box>.photo>span{background-image: url("../jpg/photo_07.jpg"); background-size: 100%;}
+    >li:nth-child(2)>.in_box>.photo>span{background-image: url("../jpg/photo_08.jpg"); background-size: 100%;}
+    >li:nth-child(3)>.in_box>.photo>span{background-image: url("../jpg/photo_09.jpg"); background-size: 100%;}
+}
+
+
+
+/* video img bgi */
+.video_box01{
+    >li:nth-child(1)>a>span{background-image: url("../jpg/video_01.jpg"); background-size: 100%;}
+    >li:nth-child(2)>a>span{background-image: url("../jpg/video_02.jpg"); background-size: 100%;}
+    >li:nth-child(3)>a>span{background-image: url("../jpg/video_03.jpg"); background-size: 100%;}
+}
+
+.video_box02{
+    >li:nth-child(1)>a>span{background-image: url("../jpg/video_04.jpg"); background-size: 100%;}
+    >li:nth-child(2)>a>span{background-image: url("../jpg/video_05.jpg"); background-size: 100%;}
+    >li:nth-child(3)>a>span{background-image: url("../jpg/video_06.jpg"); background-size: 100%;}
+}
+
+.video_box03{
+    >li:nth-child(1)>a>span{background-image: url("../jpg/video_07.jpg"); background-size: 100%;}
+    >li:nth-child(2)>a>span{background-image: url("../jpg/video_08.jpg"); background-size: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
