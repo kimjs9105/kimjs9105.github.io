@@ -90,6 +90,7 @@ $(document).ready(function(){
             
             gnbH2.on('click',function(){
                 
+                $('h1').css({"z-index":"100"});
                 $(this).siblings('ul').animate({left:0},1000);
                 
             });//gnbH2.on'click'
@@ -98,6 +99,7 @@ $(document).ready(function(){
                 var gnb = $(".mos_gnb"),
                     gnbUl = gnb.children('ul');
                 
+                $('h1').css({"z-index":"300"});
                 gnbUl.animate({left:"-100%"},1000);
             });//.endBox>i.on'click'
             
@@ -162,7 +164,7 @@ $(document).ready(function(){
                 $(this).stop().animate({'margin-top': 0 }, 500).children('li').children('a').addClass("red");
             }).on('mouseleave', function(){
 //                $('h1').stop().fadeIn(300);
-                $(this).stop().animate({'margin-top': 80}, 500).children('li').children('a').removeClass("red");
+                $(this).stop().animate({'margin-top': 84}, 500).children('li').children('a').removeClass("red");
             });//#mainBox.hover
             
             

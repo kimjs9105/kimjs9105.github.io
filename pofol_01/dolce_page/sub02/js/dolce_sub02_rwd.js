@@ -18,7 +18,8 @@ $(document).ready(function(){
             
             gnbH2.on('click',function(){
                 
-                $(this).siblings('ul').addClass("scroll");
+                $('h1').css({"z-index":"100"});
+                $(this).siblings('ul').animate({left:0},1000);
                 
             });//gnbH2.on'click'
             
@@ -26,7 +27,8 @@ $(document).ready(function(){
                 var gnb = $(".mos_gnb"),
                     gnbUl = gnb.children('ul');
                 
-                gnbUl.removeClass("scroll");
+                $('h1').css({"z-index":"300"});
+                gnbUl.animate({left:"-100%"},1000);
             });//.endBox>i.on'click'
             
             /* main menu slide down*/
@@ -54,8 +56,8 @@ $(document).ready(function(){
                 var snsB = $(".tab_sns"),
                     mainB = $(".tab_main");
                 
-                snsB.addClass("scroll")
-                mainB.addClass("scroll");
+                snsB.animate({left:0},1000);
+                mainB.animate({left:0},1000);
                 
             });//gnbH2.on'click'
             
@@ -64,8 +66,8 @@ $(document).ready(function(){
                     gnbsnsB = gnb.children(".tab_sns"),
                     gnbmainB = gnb.children(".tab_main");
                 
-                gnbsnsB.removeClass("scroll")
-                gnbmainB.removeClass("scroll");
+                gnbsnsB.animate({left:"-100%"},1000);
+                gnbmainB.animate({left:"-100%"},1000);
              });//.endBox>i.on'click'
             
             /* main menu slide down*/
@@ -90,7 +92,7 @@ $(document).ready(function(){
                 $(this).stop().animate({'margin-top': 0 }, 500).children('li').children('a').addClass("red");
             }).on('mouseleave', function(){
 //                $('h1').stop().fadeIn(300);
-                $(this).stop().animate({'margin-top': 81}, 500).children('li').children('a').removeClass("red");
+                $(this).stop().animate({'margin-top': 84}, 500).children('li').children('a').removeClass("red");
             });//#mainBox.hover
             
 
