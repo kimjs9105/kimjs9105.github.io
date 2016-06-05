@@ -31,22 +31,23 @@ html, body { width: 100%; height: 100%; }
   .menu_05 > a > .img_box { background-image: url("../img/bg_circle.png"); background-size: 150%; }
   /* 기준 360px */
   /* article style */
-  #content { width: 80%; height: 150vw; padding-left: 10%; padding-right: 10%; /*background-color: #478;*/ }
+  #content { width: 80%; height: 119.4vw; /*430px*/ padding-left: 10%; padding-right: 10%; /*background-color: #478;*/ }
   #content > h2 { width: 83.3vw; /*300px*/ height: 13.8vw; /*50px*/ display: block; font-size: 5.3vw; /*1.2rem*/ padding-top: 11.1vw; /*40px*/ padding-bottom: 5.5vw; /*20px*/ }
   #content > h2 > span { width: 16.6vw; /*60px*/ height: 100%; display: block; float: left; color: #fff; line-height: 250%; }
   #content > h2 > .h2_img { font-size: 0; background-image: url("../img/btn_orange_re_wr.png"); background-repeat: no-repeat; background-position: center center; background-size: 100%; }
-  #content > div { width: 100%; height: 63.8vw; /*230px*/ float: left; margin-top: 5%; }
-  #content > div > ul { width: 100%; height: 100%; background-color: #000; }
-  #content > div > ul > li { width: 100%; height: calc((75% -2px) / 4); text-align: center; font-size: 4.4vw; /*1rem*/ color: #bbb; line-height: 200%; }
-  #content > div > ul > li:nth-child(1) { height: 25%; font-weight: bold; font-size: 6.6vw; /*1.5rem*/ line-height: 350%; }
-  #content > div > ul > li:nth-child(2) { width: 40%; height: 2px; background-color: #bbb; margin-left: 30%; margin-top: 5%; }
-  #content > div > ul > li:nth-child(3) { margin-top: 2%; }
+  #content > div { width: 100%; height: 80.5vw; /*290px*/ float: left; margin-top: 1.3vw; /*5px*/ background-image: url("../img/mypage_bgi.png"); background-size: contain; background-position: center center; background-repeat: no-repeat; }
+  #content > div > ul { width: 100%; height: 100%; }
+  #content > div > ul > li { width: 100%; height: 5.5vw; /*20px*/ text-align: center; font-size: 4.4vw; /*1rem*/ color: #bbb; line-height: 200%; }
+  #content > div > ul > li:nth-child(1) { height: 27.8vw; /*100px*/ font-weight: bold; font-size: 8vw; /*1.5rem*/ line-height: 600%; }
+  #content > div > ul > li:nth-child(2) { width: 60%; height: 2px; background-color: #bbb; margin-left: 20%; margin-top: 5%; }
+  #content > div > ul > li:nth-child(3) { margin-top: 0.5vw; /*2px4*/ }
   #content > div > ul > li > span { width: 0; height: 0; display: block; font-size: 0; }
   /* 기준 360px */
   /*footer*/
   #footBar { width: 80%; height: 1px; margin-top: 5.2vw; /*10px*/ margin-left: 10%; background-color: #aaa; }
-  footer { width: 40%; height: 13.8vw; /*50px*/ float: right; margin-top: 2.6vw; /*5px*/ margin-right: 8%; }
-  footer > p { width: 100%; height: 100%; font-size: 5.3vw; /*1.2rem*/ color: #fff; text-align: center; } }
+  footer { width: 100%; height: 13.8vw; /*50px*/ float: right; margin-top: 2.6vw; /*5px*/ margin-right: 25%; }
+  footer > #mark { width: 60%; height: 100%; float: left; font-size: 0; background-image: url("../img/mark_gray.png"); background-repeat: no-repeat; background-size: 15%; background-position: 95% 15%; }
+  footer > p { width: 40%; height: 100%; float: left; font-size: 5.3vw; /*1.2rem*/ line-height: 200%; color: #fff; text-align: center; } }
 @media screen and (min-width: 680px) and (max-width: 959px) { /* info.css */
   html, body { background-color: #000; background-image: url("../img/tab_main.png"); background-repeat: repeat-y; background-position: center; }
   #wrap { width: 100%; height: 100%; }
@@ -72,22 +73,23 @@ html, body { width: 100%; height: 100%; }
   .menu_05 { display: none; }
   /* 기준 768px */
   /* article style */
-  #content { width: 80%; height: 82vw; padding-left: 10%; padding-right: 10%; }
+  #content { width: 80%; height: 62.5vw; /*480px*/ padding-left: 10%; padding-right: 10%; }
   #content > h2 { width: 39vw; /*300px*/ height: 6.5vw; /*50px*/ display: block; font-size: 2.5vw; /*1.2rem*/ padding-top: 5.2vw; /*40px*/ padding-bottom: 2.6vw; /*20px*/ }
   #content > h2 > span { width: 7.8vw; /*60px*/ height: 100%; display: block; float: left; color: #fff; line-height: 250%; }
   #content > h2 > .h2_img { font-size: 0; background-image: url("../img/btn_orange_re_wr.png"); background-repeat: no-repeat; background-position: center center; background-size: 100%; }
-  #content > div { width: 100%; height: 45.5vw; /*350px*/ float: left; margin-top: 5%; }
-  #content > div > ul { width: 100%; height: 100%; background-color: #000; }
-  #content > div > ul > li { width: 100%; height: calc((70% -2px) / 4); text-align: center; font-size: 3.125vw; /*1.5rem*/ color: #bbb; line-height: 200%; }
-  #content > div > ul > li:nth-child(1) { height: 30%; font-weight: bold; font-size: 4.5vw; /*2.2rem*/ line-height: 350%; }
-  #content > div > ul > li:nth-child(2) { width: 40%; height: 2px; background-color: #bbb; margin-left: 30%; margin-top: 2%; }
-  #content > div > ul > li:nth-child(3) { margin-top: 2%; }
+  #content > div { width: 100%; height: 45.5vw; /*350px*/ float: left; margin-top: 1.3vw; /*10px*/ background-image: url("../img/mypage_bgi.png"); background-size: contain; background-position: center center; background-repeat: no-repeat; }
+  #content > div > ul { width: 100%; height: 100%; }
+  #content > div > ul > li { width: 100%; height: 3.9vw; /*30px*/ text-align: center; font-size: 2vw; /*1rem*/ color: #bbb; line-height: 200%; }
+  #content > div > ul > li:nth-child(1) { height: 15.625vw; /*120px*/ font-weight: bold; font-size: 4vw; /*2rem*/ line-height: 600%; }
+  #content > div > ul > li:nth-child(2) { width: 30%; height: 2px; background-color: #bbb; margin-left: 35%; margin-top: 2%; }
+  #content > div > ul > li:nth-child(3) { margin-top: 1.3vw; /*10px*/ }
   #content > div > ul > li > span { width: 0; height: 0; display: block; font-size: 0; }
   /* 기준 768px */
   /*footer*/
   #footBar { width: 80%; height: 1px; margin-top: 2.6vw; /*20px*/ margin-left: 10%; background-color: #aaa; }
-  footer { width: 20%; height: 6.5vw; /*50px*/ float: right; margin-top: 1.3vw; /*10px*/ margin-right: 8%; }
-  footer > p { width: 100%; height: 100%; font-size: 2.5vw; /*1.2rem*/ color: #fff; text-align: center; } }
+  footer { width: 50%; height: 6.5vw; /*50px*/ float: right; margin-top: 1.3vw; /*10px*/ margin-right: 10%; }
+  footer > #mark { width: 60%; height: 100%; float: left; font-size: 0; background-image: url("../img/mark_gray.png"); background-repeat: no-repeat; background-size: 15%; background-position: 95% 15%; }
+  footer > p { width: 40%; height: 100%; float: left; font-size: 2.5vw; /*1.2rem*/ line-height: 200%; color: #fff; text-align: center; } }
 @media screen and (min-width: 960px) { /* info.css */
   html, body { background-color: #000; background-image: url("../img/galaxy_bg_1900.png"); background-repeat: repeat-y; background-position: center; }
   #wrap { width: 100%; height: 100%; }
@@ -114,21 +116,22 @@ html, body { width: 100%; height: 100%; }
   .menu_05 { display: none; }
   /* 기준 1900px */
   /* article style */
-  #content { width: 80%; height: 40vw; padding-left: 10%; padding-right: 10%; }
-  #content > h2 { width: 300px; height: 50px; display: block; font-size: 1.2rem; padding-top: 40px; padding-bottom: 20px; }
+  #content { width: 80%; height: 45vw; /*760px*/ padding-left: 10%; padding-right: 10%; }
+  #content > h2 { width: 300px; height: 50px; display: block; font-size: 1.2rem; padding-top: 2.1vw; /*40px*/ padding-bottom: 1.05vw; /*20px*/ }
   #content > h2 > span { width: 60px; height: 100%; display: block; float: left; color: #fff; line-height: 250%; }
   #content > h2 > .h2_img { font-size: 0; background-image: url("../img/btn_orange_re_wr.png"); background-repeat: no-repeat; background-position: center center; background-size: 100%; }
-  #content > div { width: 100%; height: 350px; float: left; margin-top: 5%; }
-  #content > div > ul { width: 100%; height: 100%; background-color: #000; }
-  #content > div > ul > li { width: 100%; height: calc((70% -2px) / 4); text-align: center; font-size: 1.5rem; color: #bbb; line-height: 200%; }
-  #content > div > ul > li:nth-child(1) { height: 30%; font-weight: bold; font-size: 2.2rem; line-height: 350%; }
-  #content > div > ul > li:nth-child(2) { width: 40%; height: 2px; background-color: #bbb; margin-left: 30%; margin-top: 2%; }
-  #content > div > ul > li:nth-child(3) { margin-top: 2%; }
+  #content > div { width: 100%; height: 31.6vw; /*600px*/ float: left; margin-top: 5%; background-image: url("../img/mypage_bgi.png"); background-size: contain; background-position: center center; background-repeat: no-repeat; }
+  #content > div > ul { width: 100%; height: 26.3vw; /*500px*/ padding: 2.6vw 0; }
+  #content > div > ul > li { width: 100%; height: 2.3vw; /*45px*/ text-align: center; font-size: 1.3vw; /*1.5rem*/ color: #bbb; line-height: 200%; }
+  #content > div > ul > li:nth-child(1) { height: 8.9vw; /*170px*/ font-weight: bold; font-size: 2.9vw; /*3.5rem*/ line-height: 500%; }
+  #content > div > ul > li:nth-child(2) { width: 25%; height: 2px; background-color: #bbb; margin-left: 37.5%; margin-top: 2%; }
+  #content > div > ul > li:nth-child(3) { margin-top: 1.05vw; /*20px*/ }
   #content > div > ul > li > span { width: 0; height: 0; display: block; font-size: 0; }
   /* 기준 1900px */
   /*footer*/
   #footBar { width: 80%; height: 1px; margin-top: 2.6vw; /*50px*/ margin-left: 10%; background-color: #aaa; }
-  footer { width: 20%; height: 2.1vw; /*40px*/ float: right; margin-top: 1.3vw; /*25px*/ margin-right: 5%; }
-  footer > p { width: 100%; height: 100%; font-size: 1vw; /*1.2rem*/ color: #fff; text-align: center; } }
+  footer { width: 20%; height: 3.4vw; /*65px*/ float: right; margin-top: 1.3vw; /*25px*/ margin-right: 10%; }
+  footer > #mark { width: 60%; height: 100%; float: left; font-size: 0; background-image: url("../img/mark_gray.png"); background-repeat: no-repeat; background-size: 15%; background-position: 95% 15%; }
+  footer > p { width: 40%; height: 100%; float: left; font-size: 1vw; /*1.2rem*/ line-height: 200%; color: #fff; text-align: center; } }
 
 /*# sourceMappingURL=myPage.css.map */

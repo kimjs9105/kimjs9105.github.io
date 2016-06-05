@@ -10,7 +10,7 @@ html, body { width: 100%; height: 100%; }
 
 /* kerasys_main_menu.css */
 /* photoshop 1024px*/
-#left > #main_menu { width: 19.5%; /*200px*/ height: 100%; border-right: 2px #777 solid; float: left; position: fixed; overflow: hidden; padding-left: 4.8%; /*50px*/ }
+#left > #main_menu { width: 19.5%; /*200px*/ height: 100%; border-right: 2px #777 solid; float: left; position: fixed; overflow: hidden; padding-left: 4.8vw; /*50px*/ }
 #left > #main_menu > #signin { width: 100%; /*130px*/ height: 1.5vw; /*16px*/ padding-top: 10%; /*100px*/ margin-left: 5%; }
 #left > #main_menu > #signin > .sign { width: 70%; height: 100%; }
 #left > #main_menu > #signin > .sign > li { width: 35%; height: 100%; }
@@ -20,22 +20,21 @@ html, body { width: 100%; height: 100%; }
 #left > #main_menu > h1 { width: 76.9%; /*100px*/ height: 9.7vw; /*100px*/ margin-top: 4.85vw; /*50px*/ }
 #left > #main_menu > h1 > a { width: 100%; height: 100%; background-image: url("../jpg/logo.png"); background-size: 90%; background-position: center center; }
 #left > #main_menu > #gnb { width: 76.9%; /*100px*/ height: auto; margin-top: 4.85vw; /*50px*/ margin-left: 5%; }
-#left > #main_menu > #gnb > .main { width: 100%; height: 120px; margin: 0 auto; }
-#left > #main_menu > #gnb > .main > dt { width: 100%; height: 20px; font-size: 150%; color: #222; background-position: center center; margin-top: 20%; cursor: pointer; }
-#left > #main_menu > #gnb > .main > dd { width: 100%; height: 50px; }
-#left > #main_menu > #gnb > .main > dd > ul { width: 100%; height: 80%; padding: 10% 0; }
-#left > #main_menu > #gnb > .main > dd > ul > li { width: 100px; height: 40%; font-size: 0.8vw; /*1rem*/ color: #222; cursor: pointer; }
-#left > #main_menu > #gnb > .main > dd > ul > li:last-child { margin-top: 5%; }
+#left > #main_menu > #gnb > .main { width: 100%; height: 300px; margin: 0 auto; }
+#left > #main_menu > #gnb > .main > li { width: 100%; height: 20px; font-size: 1.5rem; color: #222; background-position: center center; margin-top: 50px; cursor: pointer; }
+#left > #main_menu > #gnb > .main > li > .small_box { width: 100%; height: 80px; padding: 10px 0; }
+#left > #main_menu > #gnb > .main > li > .small_box > li { width: 100px; height: 20px; font-size: 1rem; /*1rem*/ color: #222; cursor: pointer; }
+#left > #main_menu > #gnb > .main > li > .small_box > li:last-child { margin-top: 12px; }
 #left > #main_menu > #fm_s { width: 14.6%; /*100px*/ height: 2.4vw; /*25px*/ /*margin-top: 14.6vw;*/ /*150px*/ position: fixed; bottom: 3.5vw; /*25px*/ }
 #left > #main_menu > #fm_s > form { width: 100%; height: 100%; }
 #left > #main_menu > #fm_s > form > felidset { width: 100%; height: 100%; }
 #left > #main_menu > #fm_s > form > felidset > select { width: 100%; height: 100%; font-size: 100%; border: 1px solid #111; padding: 0 4%; }
 #left > #main_menu > #fm_s > form > felidset > select > optgroup { width: 80%; height: 100%; font-size: 100%; }
-#left > #main_menu > .snsBox { width: 200px; /*130px*/ height: 4.88vw; /*50px*/ float: left; position: fixed; bottom: 4.5vw; /*25px*/ left: 7.5%; }
+#left > #main_menu > .snsBox { width: 19.5vw; /*130px*/ height: 4.88vw; /*50px*/ float: left; position: fixed; bottom: 4.5vw; /*25px*/ left: 0; margin-left: 7vw; }
 #left > #main_menu > .snsBox > ul { width: 100%; height: 100%; }
-#left > #main_menu > .snsBox > ul > li { width: calc(100% / 3); height: 100%; float: left; }
+#left > #main_menu > .snsBox > ul > li { width: calc(60% / 3); height: 100%; float: left; }
 #left > #main_menu > .snsBox > ul > li > a { width: 100%; height: 100%; }
-#left > #main_menu > .snsBox > ul > li > a > i { font-size: 2.2vw; color: #000; }
+#left > #main_menu > .snsBox > ul > li > a > i { width: 100%; height: 100%; font-size: 2vw; color: #000; }
 
 /* kerasys_sub01_article.css */
 /* photoshop 725px */

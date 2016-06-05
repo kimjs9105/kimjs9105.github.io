@@ -1,5 +1,6 @@
 $(document).ready(function(){
     
+    
     /* top button */
     
     $("#topButton").hide();
@@ -31,7 +32,8 @@ $(document).ready(function(){
         if(winW <= 678 ){
             
             
-           /* menu slide */ $("#gnb").css({display:"none"})/*.find('li').css({height:0})*/;
+           /* menu slide */ 
+            $("#gnb").css({display:"none"})/*.find('li').css({height:0})*/;
             
             $("#menu").on("click",function(){
                 $(this).stop().animate({height:0},1000);
@@ -63,6 +65,7 @@ $(document).ready(function(){
         else if(winW >= 680 && winW <= 959){
             
             $(".slide_tab").hide();
+            $(".slide_img").hide();
             
             $(".plus_tab").on("click",function(){
                 $(this).hide();

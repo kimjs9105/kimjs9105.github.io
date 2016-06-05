@@ -35,7 +35,11 @@ $(document).ready(function(){
     
     $(".close_box").on("click",function(){
         $("#searchPopup").hide();
-    })
+    });
+        
+    $(".close_info").on("click",function(){
+        $("#popIn").hide();
+    });
     
     /* banner slide */
     function banner(){

@@ -17,14 +17,11 @@ html, body { width: 100%; height: 100%; }
   #wrap > article > #miniGalaxy > ul > li { font-size: 0; background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
   #wrap > article > #miniGalaxy > ul > li.min_planet { width: 3.125vw; /*10px*/ height: 3.125vw; /*10px*/ }
   #wrap > article > #miniGalaxy > ul > li.max_planet { width: 6.25vw; /*20px*/ height: 6.25vw; /*20px*/ }
-  #wrap > article > button { width: 31.25vw; /*100px*/ height: 31.25vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
-  #wrap > article > button > .title { width: 100%; height: 30%; position: absolute; top: 0; left: 0; }
-  #wrap > article > button > .title > .col { display: none; }
-  #wrap > article > button > .title > .menu { width: 100%; height: 100%; display: block; font-size: 5vw; /*1rem*/ color: #fff; text-align: center; }
-  #wrap > article > button > a { width: 100%; height: 70%; display: block; background-repeat: no-repeat; background-position: center center; }
-  #wrap > article > button#logo { width: 62.5vw; /*200px*/ height: 62.5vw; /*200px*/ margin-top: -30vw; /*95px*/ margin-left: -30vw; /*95px*/ }
-  #wrap > article > button#logo > a { width: 100%; height: 100%; }
-  #wrap > article > button:nth-of-type(1) > a { height: 100%; background-size: 45%; background-position: center center; /* background-color: #278;*/ }
+  #wrap > article > a { width: 31.25vw; /*100px*/ height: 31.25vw; /*100px*/ display: block; position: absolute; z-index: 500; overflow: hidden; text-align: center; top: 50%; left: 50%; }
+  #wrap > article > a > .title { width: 100%; height: 30%; position: absolute; top: 0; left: 0; }
+  #wrap > article > a > .title > .col { display: none; }
+  #wrap > article > a > .title > .menu { width: 100%; height: 100%; display: block; font-size: 5vw; /*1rem*/ color: #fff; text-align: center; }
+  #wrap > article > a#logo { width: 62.5vw; /*200px*/ height: 62.5vw; /*200px*/ margin-top: -30vw; /*95px*/ margin-left: -30vw; /*95px*/ }
   #wrap > article > .sub { display: none; }
   #wrap > footer { width: 100%; height: 100%; }
   #wrap > footer > #myBox { width: 62.5vw; /*200px*/ height: 62.5vw; /*200px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-right: -31.25vw; /*-100px*/ margin-bottom: -25vw; /*80px*/ }
@@ -32,15 +29,11 @@ html, body { width: 100%; height: 100%; }
   #wrap > footer > #myBox > .my_t { width: 100%; height: 5vw; /*18px*/ color: #2feec3; font-size: 5.3vw; /*1.2rem*/ top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
   #wrap > footer > #myBox > .my_p { width: 100%; height: 6.9vw; /*25px*/ color: #2feec3; font-size: 4.4vw; /*1rem*/ top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
   /* planet design */
-  #logo > a { background-image: url("../img/mark_eme_right.png"); }
-  #info { margin-top: -36.1vw; /*130px*/ margin-left: -36.1vw; /*130px*/ }
-  #info > a { background-image: url("../img/btn_green_re_wr.png"); background-size: 80%; }
-  #pofol01 { margin-top: 8.3vw; /*30px*/ margin-left: -36.1vw; /*130px*/ }
-  #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); background-size: 79%; }
-  #pofol02 { margin-top: 8.3vw; /*30px*/ margin-left: 8.3vw; /*30px*/ }
-  #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); background-size: 75%; }
-  #mine { margin-top: -36.1vw; /*130px*/ margin-left: 8.3vw; /*30px*/ }
-  #mine > a { background-image: url("../img/btn_orange_re_wr.png"); background-size: contain; }
+  #logo { background-image: url("../img/mark_eme_right.png"); background-size: 50%; }
+  #info { margin-top: -36.1vw; /*130px*/ margin-left: -36.1vw; /*130px*/ background-image: url("../img/btn_green_re_wr.png"); background-size: 80%; }
+  #pofol01 { margin-top: 8.3vw; /*30px*/ margin-left: -36.1vw; /*130px*/ background-image: url("../img/btn_red_re_wr.png"); background-size: 79%; }
+  #pofol02 { margin-top: 8.3vw; /*30px*/ margin-left: 8.3vw; /*30px*/ background-image: url("../img/btn_pink_re_wr.png"); background-size: 75%; }
+  #mine { margin-top: -36.1vw; /*130px*/ margin-left: 8.3vw; /*30px*/ background-image: url("../img/btn_orange_re_wr.png"); background-size: 75%; }
   /* mini planet ani */
   #miniGalaxy .ani_01 { animation: ani01 10s infinite; margin-top: 2.24vw; /*8px*/ }
   #miniGalaxy .ani_02 { animation: ani05 6s infinite; margin-top: 2.8vw; /*10px*/ }
@@ -101,14 +94,11 @@ html, body { width: 100%; height: 100%; }
   #wrap > article > #miniGalaxy > ul > li { font-size: 0; background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
   #wrap > article > #miniGalaxy > ul > li.min_planet { width: 2.5vw; /*10px*/ height: 2.5vw; /*10px*/ }
   #wrap > article > #miniGalaxy > ul > li.max_planet { width: 5vw; /*20px*/ height: 5vw; /*20px*/ }
-  #wrap > article > button { width: 25vw; /*100px*/ height: 25vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
-  #wrap > article > button > .title { width: 100%; height: 30%; position: absolute; top: 0; left: 0; }
-  #wrap > article > button > .title > .col { display: none; }
-  #wrap > article > button > .title > .menu { width: 100%; height: 100%; display: block; font-size: 4.4vw; /*1rem*/ color: #fff; text-align: center; }
-  #wrap > article > button > a { width: 100%; height: 70%; display: block; background-repeat: no-repeat; background-position: center center; }
-  #wrap > article > button#logo { width: 50vw; /*200px*/ height: 50vw; /*200px*/ margin-top: -25vw; /*-100px*/ margin-left: -25vw; /*-100px*/ }
-  #wrap > article > button#logo > a { width: 100%; height: 100%; }
-  #wrap > article > button:nth-of-type(1) > a { height: 100%; background-size: 65%; background-position: center center; /* background-color: #278;*/ }
+  #wrap > article > a { width: 25vw; /*100px*/ height: 25vw; /*100px*/ display: block; position: absolute; z-index: 500; overflow: hidden; text-align: center; top: 50%; left: 50%; }
+  #wrap > article > a > .title { width: 100%; height: 30%; position: absolute; top: 0; left: 0; }
+  #wrap > article > a > .title > .col { display: none; }
+  #wrap > article > a > .title > .menu { width: 100%; height: 100%; display: block; font-size: 4.4vw; /*1rem*/ color: #fff; text-align: center; }
+  #wrap > article > a#logo { width: 50vw; /*200px*/ height: 50vw; /*200px*/ margin-top: -25vw; /*-100px*/ margin-left: -25vw; /*-100px*/ }
   #wrap > article > .sub { display: none; }
   #wrap > footer { width: 100%; height: 100%; }
   #wrap > footer > #myBox { width: 50vw; /*200px*/ height: 50vw; /*200px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-right: -25vw; /*-100px*/ margin-bottom: -20vw; /*80px*/ }
@@ -116,15 +106,11 @@ html, body { width: 100%; height: 100%; }
   #wrap > footer > #myBox > .my_t { width: 100%; height: 5vw; /*18px*/ color: #2feec3; font-size: 4vw; /*1rem*/ top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
   #wrap > footer > #myBox > .my_p { width: 100%; height: 6.9vw; /*25px*/ color: #2feec3; font-size: 3.4vw; /*0.9rem*/ top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
   /* planet design */
-  #logo > a { background-image: url("../img/mark_eme_right.png"); }
-  #info { margin-top: -35vw; /*140px*/ margin-left: -35vw; /*140px*/ }
-  #info > a { background-image: url("../img/btn_green_re_wr.png"); background-size: 80%; }
-  #pofol01 { margin-top: 15vw; /*60px*/ margin-left: -35vw; /*140px*/ }
-  #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); background-size: 79%; }
-  #pofol02 { margin-top: 15vw; /*60px*/ margin-left: 10vw; /*40px*/ }
-  #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); background-size: 75%; }
-  #mine { margin-top: -35vw; /*140px*/ margin-left: 10vw; /*40px*/ }
-  #mine > a { background-image: url("../img/btn_orange_re_wr.png"); background-size: contain; }
+  #logo { background-image: url("../img/mark_eme_right.png"); background-size: 75%; }
+  #info { margin-top: -35vw; /*140px*/ margin-left: -35vw; /*140px*/ background-image: url("../img/btn_green_re_wr.png"); background-size: 80%; }
+  #pofol01 { margin-top: 15vw; /*60px*/ margin-left: -35vw; /*140px*/ background-image: url("../img/btn_red_re_wr.png"); background-size: 79%; }
+  #pofol02 { margin-top: 15vw; /*60px*/ margin-left: 10vw; /*40px*/ background-image: url("../img/btn_pink_re_wr.png"); background-size: 75%; }
+  #mine { margin-top: -35vw; /*140px*/ margin-left: 10vw; /*40px*/ background-image: url("../img/btn_orange_re_wr.png"); background-size: 75%; }
   /* mini planet ani */
   #miniGalaxy .ani_01 { animation: ani01 10s infinite; margin-top: 2.24vw; /*8px*/ }
   #miniGalaxy .ani_02 { animation: ani05 6s infinite; margin-top: 2.8vw; /*10px*/ }
@@ -185,13 +171,11 @@ html, body { width: 100%; height: 100%; }
   #wrap > article > #miniGalaxy > ul > li { font-size: 0; background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
   #wrap > article > #miniGalaxy > ul > li.min_planet { width: 1.3vw; /*10px*/ height: 1.3vw; /*10px*/ }
   #wrap > article > #miniGalaxy > ul > li.max_planet { width: 2.6vw; /*20px*/ height: 2.6vw; /*20px*/ }
-  #wrap > article > button { width: 27.7vw; /*150px*/ height: 18.5vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
-  #wrap > article > button > a { width: 100%; height: 50%; display: block; background-repeat: no-repeat; background-size: contain; background-position: left center; }
-  #wrap > article > button > .title { width: 100%; /*150px*/ height: 50%; /*50px*/ position: absolute; top: 0; left: 0; margin-top: -0.65vw; /*-5px*/ }
-  #wrap > article > button > .title > .col { width: 16.7%; /*25px*/ height: 40%; /*20px*/ display: block; border-right: 2px solid #fff; }
-  #wrap > article > button > .title > .menu { width: 100%; height: 40%; /*20px*/ display: block; font-size: 3vw; /*1rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ }
-  #wrap > article > button:nth-of-type(1) { height: 27.7vw; /*150px*/ }
-  #wrap > article > button:nth-of-type(1) > a { height: 100%; background-size: 80%; background-position: center center; /* background-color: #278;*/ }
+  #wrap > article > a { width: 27.7vw; /*150px*/ height: 18.5vw; /*100px*/ display: block; position: absolute; z-index: 500; overflow: hidden; text-align: center; top: 50%; left: 50%; }
+  #wrap > article > a > .title { width: 100%; /*150px*/ height: 50%; /*50px*/ position: absolute; top: 0; left: 0; margin-top: -0.65vw; /*-5px*/ }
+  #wrap > article > a > .title > .col { width: 16.7%; /*25px*/ height: 40%; /*20px*/ display: block; border-right: 2px solid #fff; }
+  #wrap > article > a > .title > .menu { width: 100%; height: 40%; /*20px*/ display: block; font-size: 3vw; /*1rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ }
+  #wrap > article > a:nth-of-type(1) { height: 27.7vw; /*150px*/ }
   #wrap > article > .sub { display: none; }
   #wrap > footer { width: 100%; height: 100%; }
   #wrap > footer > #myBox { width: 46.2vw; /*250px*/ height: 46.2vw; /*250px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-right: -23.1vw; /*-125px*/ margin-bottom: -18.5vw; /*-100px*/ }
@@ -199,16 +183,11 @@ html, body { width: 100%; height: 100%; }
   #wrap > footer > #myBox > .my_t { width: 100%; height: 2.3vw; /*18px*/ color: #2feec3; font-size: 3.5vw; /*1.2rem*/ top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
   #wrap > footer > #myBox > .my_p { width: 100%; height: 3.25vw; /*25px*/ color: #2feec3; font-size: 3vw; /*1rem*/ top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
   /* planet design */
-  #logo { margin-top: -13.7vw; /*-50px*/ margin-left: -13.7vw; /*-50px*/ }
-  #logo > a { background-image: url("../img/mark_eme_right.png"); }
-  #info { margin-top: -23.4vw; /*180px*/ margin-left: -22.1vw; /*-170px*/ }
-  #info > a { background-image: url("../img/btn_green_re_wr.png"); }
-  #pofol01 { margin-top: 10.4vw; /*80px*/ margin-left: -32.5vw; /*-250px*/ }
-  #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); }
-  #pofol02 { margin-top: 6.5vw; /*50px*/ margin-left: 26vw; /*200px*/ }
-  #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); }
-  #mine { margin-top: -16.9vw; /*-130px*/ margin-left: 19.5vw; /*150px*/ }
-  #mine > a { background-image: url("../img/btn_orange_re_wr.png"); }
+  #logo { margin-top: -13.7vw; /*-50px*/ margin-left: -13.7vw; /*-50px*/ background-image: url("../img/mark_eme_right.png"); background-size: contain; background-position: center center; }
+  #info { margin-top: -23.4vw; /*180px*/ margin-left: -22.1vw; /*-170px*/ background-image: url("../img/btn_green_re_wr.png"); background-size: 35%; background-position: left center; }
+  #pofol01 { margin-top: 10.4vw; /*80px*/ margin-left: -32.5vw; /*-250px*/ background-image: url("../img/btn_red_re_wr.png"); background-size: 35%; background-position: left center; }
+  #pofol02 { margin-top: 6.5vw; /*50px*/ margin-left: 22vw; /*200px*/ background-image: url("../img/btn_pink_re_wr.png"); background-size: 35%; background-position: left center; }
+  #mine { margin-top: -16.9vw; /*-130px*/ margin-left: 15vw; /*150px*/ background-image: url("../img/btn_orange_re_wr.png"); background-size: 35%; background-position: left center; }
   /* mini planet ani */
   #miniGalaxy .ani_01 { animation: ani01 10s infinite; margin-top: 1.04vw; /*8px*/ }
   #miniGalaxy .ani_02 { animation: ani05 6s infinite; margin-top: 1.3vw; /*10px*/ }
@@ -269,13 +248,11 @@ html, body { width: 100%; height: 100%; }
   #wrap > article > #miniGalaxy > ul > li { font-size: 0; background-image: url("../img/bg_circle.png"); background-repeat: no-repeat; background-size: contain; }
   #wrap > article > #miniGalaxy > ul > li.min_planet { width: 1.3vw; /*10px*/ height: 1.3vw; /*10px*/ }
   #wrap > article > #miniGalaxy > ul > li.max_planet { width: 2.6vw; /*20px*/ height: 2.6vw; /*20px*/ }
-  #wrap > article > button { width: 19.5vw; /*150px*/ height: 13vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; /* >span{width: 0; height: 0; display:block; font-size:0;}*/ }
-  #wrap > article > button > a { width: 100%; height: 50%; display: block; background-repeat: no-repeat; background-size: contain; background-position: left center; }
-  #wrap > article > button > .title { width: 100%; /*150px*/ height: 50%; /*50px*/ position: absolute; top: 0; left: 0; margin-top: -0.65vw; /*-5px*/ }
-  #wrap > article > button > .title > .col { width: 16.7%; /*25px*/ height: 50%; /*30px*/ display: block; border-right: 2px solid #fff; margin-top: -0.65vw; /*-5px*/ }
-  #wrap > article > button > .title > .menu { width: 100%; height: 50%; /*20px*/ display: block; font-size: 2.08vw; /*1rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ margin-top: 0.78vw; /*6px*/ }
-  #wrap > article > button:nth-of-type(1) { height: 19.5vw; /*150px*/ }
-  #wrap > article > button:nth-of-type(1) > a { height: 100%; background-size: 80%; background-position: center center; /* background-color: #278;*/ }
+  #wrap > article > a { width: 19.5vw; /*150px*/ height: 13vw; /*100px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
+  #wrap > article > a > .title { width: 100%; /*150px*/ height: 50%; /*50px*/ position: absolute; top: 0; left: 0; margin-top: -0.65vw; /*-5px*/ }
+  #wrap > article > a > .title > .col { width: 16.7%; /*25px*/ height: 50%; /*30px*/ display: block; border-right: 2px solid #fff; margin-top: -0.65vw; /*-5px*/ }
+  #wrap > article > a > .title > .menu { width: 100%; height: 50%; /*20px*/ display: block; font-size: 2.08vw; /*1rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ margin-top: 0.78vw; /*6px*/ }
+  #wrap > article > a:nth-of-type(1) { height: 19.5vw; /*150px*/ }
   #wrap > article > .sub { display: none; }
   #wrap > footer { width: 100%; height: 100%; }
   #wrap > footer > #myBox { width: 29.9vw; /*230px*/ height: 29.9vw; /*230px*/ position: absolute; z-index: 400; bottom: 0; right: 50%; margin-right: -15vw; /*-115px*/ margin-bottom: -10.4vw; /*-80px*/ }
@@ -283,16 +260,11 @@ html, body { width: 100%; height: 100%; }
   #wrap > footer > #myBox > .my_t { width: 100%; height: 2.3vw; /*18px*/ color: #2feec3; font-size: 1.2rem; top: 8%; font-weight: bold; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 300; }
   #wrap > footer > #myBox > .my_p { width: 100%; height: 3.25vw; /*25px*/ color: #2feec3; font-size: 1rem; top: 22%; text-align: center; animation: js_space 6s infinite; position: absolute; z-index: 200; }
   /* planet design */
-  #logo { margin-top: -9.7vw; /*-50px*/ margin-left: -9.7vw; /*-50px*/ }
-  #logo > a { background-image: url("../img/mark_eme_right.png"); }
-  #info { margin-top: -23.4vw; /*180px*/ margin-left: -22.1vw; /*-170px*/ }
-  #info > a { background-image: url("../img/btn_green_re_wr.png"); }
-  #pofol01 { margin-top: 10.4vw; /*80px*/ margin-left: -32.5vw; /*-250px*/ }
-  #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); }
-  #pofol02 { margin-top: 6.5vw; /*50px*/ margin-left: 26vw; /*200px*/ }
-  #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); }
-  #mine { margin-top: -16.9vw; /*-130px*/ margin-left: 19.5vw; /*150px*/ }
-  #mine > a { background-image: url("../img/btn_orange_re_wr.png"); }
+  #logo { margin-top: -9.7vw; /*-50px*/ margin-left: -9.7vw; /*-50px*/ background-image: url("../img/mark_eme_right.png"); background-size: contain; }
+  #info { margin-top: -23.4vw; /*180px*/ margin-left: -22.1vw; /*-170px*/ background-image: url("../img/btn_green_re_wr.png"); background-size: 35%; background-position: left 70%; }
+  #pofol01 { margin-top: 10.4vw; /*80px*/ margin-left: -32.5vw; /*-250px*/ background-image: url("../img/btn_red_re_wr.png"); background-size: 35%; background-position: left 70%; }
+  #pofol02 { margin-top: 6.5vw; /*50px*/ margin-left: 26vw; /*200px*/ background-image: url("../img/btn_pink_re_wr.png"); background-size: 35%; background-position: left 70%; }
+  #mine { margin-top: -16.9vw; /*-130px*/ margin-left: 19.5vw; /*150px*/ background-image: url("../img/btn_orange_re_wr.png"); background-size: 35%; background-position: left 70%; }
   /* mini planet ani */
   #miniGalaxy .ani_01 { animation: ani01 10s infinite; margin-top: 1.04vw; /*8px*/ }
   #miniGalaxy .ani_02 { animation: ani05 6s infinite; margin-top: 1.3vw; /*10px*/ }
@@ -354,23 +326,16 @@ html, body { width: 100%; height: 100%; }
   #wrap > article > #galaxy > ul > li.mid_fly { width: 1%; /*10px*/ height: 1vw; /*10px*/ }
   #wrap > article > #galaxy > ul > li.big_fly { width: 1.2%; /*10px*/ height: 1.2vw; /*10px*/ }
   #wrap > article > #miniGalaxy { display: none; }
-  #wrap > article > button { width: 10.4%; /*200px*/ height: 10.4vw; /*200px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
-  #wrap > article > button > a { width: 25%; height: 25%; display: block; background-repeat: no-repeat; background-size: 100%; }
-  #wrap > article > button > .title { width: 75%; /*150px*/ height: 25%; /*50px*/ position: absolute; bottom: 6.2vw; /*120px*/ left: 0; }
-  #wrap > article > button > .title > .col { width: 16.7%; /*25px*/ height: 60%; /*30px*/ display: block; border-right: 2px solid #fff; }
-  #wrap > article > button > .title > .menu { width: 100%; height: 40%; /*20px*/ display: block; font-size: 1vw; /*1.2rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ margin-bottom: 2.5%; /*5px*/ }
-  #wrap > article > button#logo { width: 10.4%; /*200px*/ height: 10.4vw; /*200px*/ }
-  #wrap > article > button#logo > a { width: 100%; height: 100%; }
-  #wrap > article > #logo { margin-top: -7.2%; margin-left: -5.2%; }
-  #wrap > article > #logo > a { background-image: url("../img/mark_eme_right.png"); background-size: contain; }
-  #wrap > article > #info { margin-top: -13.2%; margin-left: -30%; }
-  #wrap > article > #info > a { background-image: url("../img/btn_green_re_wr.png"); }
-  #wrap > article > #pofol01 { margin-top: -0.7%; margin-left: -20%; }
-  #wrap > article > #pofol01 > a { background-image: url("../img/btn_red_re_wr.png"); }
-  #wrap > article > #pofol02 { margin-top: -0.7%; margin-left: 20%; }
-  #wrap > article > #pofol02 > a { background-image: url("../img/btn_pink_re_wr.png"); }
-  #wrap > article > #mine { margin-top: -17%; margin-left: 28%; }
-  #wrap > article > #mine > a { background-image: url("../img/btn_orange_re_wr.png"); }
+  #wrap > article > a { width: 10.4%; /*200px*/ height: 10.4vw; /*200px*/ position: absolute; z-index: 500; overflow: hidden; text-align: center; background-color: transparent; top: 50%; left: 50%; }
+  #wrap > article > a > .title { width: 75%; /*150px*/ height: 25%; /*50px*/ position: absolute; bottom: 6.2vw; /*120px*/ left: 0; }
+  #wrap > article > a > .title > .col { width: 16.7%; /*25px*/ height: 60%; /*30px*/ display: block; border-right: 2px solid #fff; }
+  #wrap > article > a > .title > .menu { width: 100%; height: 40%; /*20px*/ display: block; font-size: 1vw; /*1.2rem*/ color: #fff; text-align: left; margin-left: 16.7%; /*25px*/ margin-bottom: 2.5%; /*5px*/ }
+  #wrap > article > a#logo { width: 10.4%; /*200px*/ height: 10.4vw; /*200px*/ }
+  #wrap > article > #logo { margin-top: -7.2%; margin-left: -5.2%; background-image: url("../img/mark_eme_right.png"); background-size: contain; }
+  #wrap > article > #info { margin-top: -13.2%; margin-left: -30%; background-image: url("../img/btn_green_re_wr.png"); background-size: 25%; background-position: left center; }
+  #wrap > article > #pofol01 { margin-top: -0.7%; margin-left: -20%; background-image: url("../img/btn_red_re_wr.png"); background-size: 25%; background-position: left center; }
+  #wrap > article > #pofol02 { margin-top: -0.7%; margin-left: 20%; background-image: url("../img/btn_pink_re_wr.png"); background-size: 25%; background-position: left center; }
+  #wrap > article > #mine { margin-top: -17%; margin-left: 28%; background-image: url("../img/btn_orange_re_wr.png"); background-size: 25%; background-position: left center; }
   #wrap > article > .sub { width: 2.6%; /*50px*/ height: 2.6vw; /*50px*/ position: absolute; z-index: 300; background-repeat: no-repeat; background-position: center; background-size: 45%; top: 50%; left: 50%; }
   #wrap > article > .sub > span { width: 0; height: 0; display: none; font-size: 0; }
   #wrap > article > .planet_1 { background-image: url("../img/btn_sub_blue.png"); margin-top: -1%; margin-left: -18%; }

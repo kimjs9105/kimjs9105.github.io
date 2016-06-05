@@ -10,33 +10,31 @@ html, body { width: 100%; height: 100%; }
 
 /* kerasys_main_menu.css */
 /* photoshop 1024px*/
-#left > #main_menu { width: 19.5%; /*200px*/ height: 100%; border-right: 2px #777 solid; float: left; position: fixed; overflow: hidden; padding-left: 4.8%; /*50px*/ }
+#left > #main_menu { width: 19.5%; /*200px*/ height: 100%; border-right: 2px #777 solid; float: left; position: fixed; overflow: hidden; padding-left: 4.8vw; /*50px*/ }
 #left > #main_menu > #signin { width: 100%; /*130px*/ height: 1.5vw; /*16px*/ padding-top: 10%; /*100px*/ margin-left: 5%; }
 #left > #main_menu > #signin > .sign { width: 70%; height: 100%; }
 #left > #main_menu > #signin > .sign > li { width: 35%; height: 100%; }
 #left > #main_menu > #signin > .sign > li:nth-child(1) { float: left; }
 #left > #main_menu > #signin > .sign > li:nth-child(2) { width: 45%; float: right; }
-#left > #main_menu > #signin > .sign > li > a { font-size: 75%; font-weight: bold; text-align: center; }
+#left > #main_menu > #signin > .sign > li > a { font-size: 0.7vw; /*0.85rem*/ font-weight: bold; text-align: center; }
 #left > #main_menu > h1 { width: 76.9%; /*100px*/ height: 9.7vw; /*100px*/ margin-top: 4.85vw; /*50px*/ }
 #left > #main_menu > h1 > a { width: 100%; height: 100%; background-image: url("../jpg/logo.png"); background-size: 90%; background-position: center center; }
 #left > #main_menu > #gnb { width: 76.9%; /*100px*/ height: auto; margin-top: 4.85vw; /*50px*/ margin-left: 5%; }
-#left > #main_menu > #gnb > .main { width: 100%; height: 120px; margin: 0 auto; }
-#left > #main_menu > #gnb > .main > dt { width: 100%; height: 20px; font-size: 150%; color: #222; background-position: center center; margin-top: 20%; cursor: pointer; }
-#left > #main_menu > #gnb > .main > dd { width: 100%; height: 50px; }
-#left > #main_menu > #gnb > .main > dd > ul { width: 100%; height: 80%; padding: 10% 0; }
-#left > #main_menu > #gnb > .main > dd > ul > li { width: 100px; height: 40%; font-size: 100; color: #222; cursor: pointer; }
-#left > #main_menu > #gnb > .main > dd > ul > li > a { color: #222; }
-#left > #main_menu > #gnb > .main > dd > ul > li:last-child { margin-top: 5%; }
+#left > #main_menu > #gnb > .main { width: 100%; height: 300px; margin: 0 auto; }
+#left > #main_menu > #gnb > .main > li { width: 100%; height: 20px; font-size: 1.5rem; color: #222; background-position: center center; margin-top: 50px; cursor: pointer; }
+#left > #main_menu > #gnb > .main > li > .small_box { width: 100%; height: 80px; padding: 10px 0; }
+#left > #main_menu > #gnb > .main > li > .small_box > li { width: 100px; height: 20px; font-size: 1rem; /*1rem*/ color: #222; cursor: pointer; }
+#left > #main_menu > #gnb > .main > li > .small_box > li:last-child { margin-top: 12px; }
 #left > #main_menu > #fm_s { width: 14.6%; /*100px*/ height: 2.4vw; /*25px*/ /*margin-top: 14.6vw;*/ /*150px*/ position: fixed; bottom: 3.5vw; /*25px*/ }
 #left > #main_menu > #fm_s > form { width: 100%; height: 100%; }
 #left > #main_menu > #fm_s > form > felidset { width: 100%; height: 100%; }
 #left > #main_menu > #fm_s > form > felidset > select { width: 100%; height: 100%; font-size: 100%; border: 1px solid #111; padding: 0 4%; }
 #left > #main_menu > #fm_s > form > felidset > select > optgroup { width: 80%; height: 100%; font-size: 100%; }
-#left > #main_menu > .snsBox { width: 200px; /*130px*/ height: 4.88vw; /*50px*/ float: left; position: fixed; bottom: 4.5vw; /*25px*/ left: 7.5%; }
+#left > #main_menu > .snsBox { width: 19.5vw; /*130px*/ height: 4.88vw; /*50px*/ float: left; position: fixed; bottom: 4.5vw; /*25px*/ left: 0; margin-left: 7vw; }
 #left > #main_menu > .snsBox > ul { width: 100%; height: 100%; }
-#left > #main_menu > .snsBox > ul > li { width: calc(100% / 3); height: 100%; float: left; }
+#left > #main_menu > .snsBox > ul > li { width: calc(60% / 3); height: 100%; float: left; }
 #left > #main_menu > .snsBox > ul > li > a { width: 100%; height: 100%; }
-#left > #main_menu > .snsBox > ul > li > a > i { font-size: 2.2vw; color: #000; }
+#left > #main_menu > .snsBox > ul > li > a > i { width: 100%; height: 100%; font-size: 2vw; color: #000; }
 
 /* kerasys_sub01_article.css */
 #article_box { width: 80%; height: auto; padding: 2.7vw 10% 0 10%; /*    >h2{width:100px; height:40px; margin-left:80px; margin-top:100px;  border-bottom: 3px solid #f8c6dc; font-size:2rem; color:#222; box-sizing: border-box; } >p{width: auto; height: 20px; font-size:1rem; padding-top:10px;}
@@ -85,7 +83,7 @@ td{text-align: center;padding-top: 25px;}*/
 #tableBox>ul>li:last-child{background-image: url("../jpg/zz.png");margin-right:0; background-repeat: no-repeat; background-position:center center;}*/
 /* kerasys_footer.css */
 #footer { width: 100%; height: 0.95vw; /*100px = 9.765vw를 수정*/ background-color: #fff; float: left; }
-#footer > .addBox { width: 48.82%; /* 500px */ height: 1.85vw; /* 60px */ float: left; margin-top: 3vw; margin-bottom: 0.97vw; /*10px*/ margin-left: 22vw; /*40px*/ letter-spacing: 1px; }
+#footer > .addBox { width: 48.82%; /* 500px */ height: 1.85vw; /* 60px */ float: left; margin-top: 0.97vw; margin-bottom: 0.97vw; /*10px*/ margin-left: 22vw; /*40px*/ letter-spacing: 1px; }
 #footer > .addBox > p { color: #000; font-size: 1.1vw; }
 
 /*# sourceMappingURL=kerasys_design_sub2.css.map */

@@ -2,6 +2,9 @@ $(document).ready(function(){
     
     
     /* top button */
+    
+    $("#topButton").hide();
+    
     $(window).scroll(function(){
         if ($(this).scrollTop() > 30) {
             $("#topButton").fadeIn();
@@ -42,9 +45,53 @@ $(document).ready(function(){
                 $("#headBox").stop().animate({height:"33.3vw"/*120*/},1000);
                 $("#menu").stop().animate({height:"15.3vw"/*55*/},1000);
             });
+            
+            /* article show */
+            $(".slide_mos").hide();
+            
+            $(".plus_mos").on("click",function(){
+                $(this).hide();
+                $(this).next(".slide_mos").stop().fadeIn(1500);
+            });
+            
+            $(".close_mos").on("click",function(){
+                $(".plus_mos").show();
+                $(".slide_mos").stop().fadeOut(1500);
+            });
+            
         }//winW <= 679
         
-        else if(winW >= 680 && winW <= 959){ }//680<= winW <=959
+        else if(winW >= 680 && winW <= 959){ 
+            
+            $(".slide_tab").hide();
+            $(".slide_img").hide();
+            
+            $(".plus_tab").on("click",function(){
+                $(this).hide();
+                $(this).next(".slide_tab").stop().fadeIn(1500);
+            });
+            
+            $(".close_tab").on("click",function(){
+                $(".plus_tab").show();
+                $(".slide_tab").stop().fadeOut(1500);
+            });
+            
+             $(".plus_add").on("click",function(){
+                 
+                 var imgH = $(this).next(".slide_img").height();
+                 
+                $(this).hide();
+                $(this).next(".slide_img").stop().fadeIn(1500);
+                $(this).parent().css({height : imgH + 60});
+            });
+            
+            $(".close_add").on("click",function(){
+                $(".plus_box").show();
+                $(".slide_img").stop().fadeOut(1500);
+                $(".sec_box").css({height:460})
+            });
+            
+        }//680<= winW <=959
         
         else{ };// 960<= winW
     

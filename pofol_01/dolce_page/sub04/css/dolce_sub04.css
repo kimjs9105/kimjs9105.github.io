@@ -34,8 +34,7 @@
   #headBox > #gnb > #sitemebBox > li { width: 38.4%; /*100px*/ height: 100%; padding-left: 7.7%; /*20px*/ padding-right: 3.84%; /*10px*/ float: left; }
   #headBox > #gnb > #sitemebBox > li:nth-child(2) { width: 0; height: 0; display: none; overflow: hidden; font-size: 0; }
   #headBox > #gnb > #sitemebBox > li:last-child { padding-left: 3.84%; /*10px*/ padding-right: 7.7%; /*20px*/ }
-  #headBox > #gnb > #sitemebBox > li > button { width: 100%; height: 100%; background-color: #bdc4c4; border-radius: 5%; }
-  #headBox > #gnb > #sitemebBox > li > button > a { width: 100%; height: 100%; display: block; font-size: 5.8vw; /*1.3rem*/ }
+  #headBox > #gnb > #sitemebBox > li > a { width: 100%; height: 100%; display: block; font-size: 5.8vw; /*1.3rem*/ text-align: center; border-radius: 5%; background-color: #bdc4c4; }
   #headBox > #gnb > #mainBox { width: 72.2%; /*260px*/ height: 416.4vw; /*1500px*/ background-color: #ffffff; float: left; margin-top: -3.28vw; /*10px*/ margin-left: -6.25%; /*20px*/ position: absolute; z-index: 300; left: -100%; }
   #headBox > #gnb > #mainBox > li { width: 80%; /*208px*/ height: auto; /*50px*/ padding: 10% 10% 0; /* 0 26px */ }
   #headBox > #gnb > #mainBox > li.endBox { height: 2%; }
@@ -85,7 +84,7 @@
   #gnb > #snsBox > li.navercafe > a { background-image: url("../img/all/header/sns_03.png"); }
   #gnb > #snsBox > li > a { width: 75%; /*30px*/ height: 100%; padding: 0 12.5%; /*0 5px*/ background-size: contain; }
   #gnb > #snsBox > li > a > span { width: 0; height: 0; display: block; overflow: hidden; }
-  #gnb > #searchBox { width: 6.9%; /*47px*/ height: 100%; /*23px*/ float: left; margin-left: 1.7%; /*12px*/ }
+  #gnb > #searchBox { width: 6.1vw; /*47px*/ height: 100%; /*23px*/ float: left; }
   #gnb > #searchBox > button { width: 100%; height: 100%; background-color: transparent; }
   #gnb > #searchBox > button > span { width: 0; height: 0; display: none; overflow: hidden; }
   #gnb > #searchBox > button > i { font-size: 3vw; /*1.43rem*/ color: #ffffff; }
@@ -93,10 +92,9 @@
   #gnb > #sitemebBox > li { height: 100%; margin-right: 10%; /*10px*/ float: left; }
   #gnb > #sitemebBox > li:nth-child(1) { width: 35%; /*35px*/ }
   #gnb > #sitemebBox > li:nth-child(2) { width: 8%; /* 8px*/ }
-  #gnb > #sitemebBox > li:nth-child(2) > span { width: 100%; /*9px*/ height: 61.5%; /*8px*/ display: block; float: left; font-size: 0; margin-top: 4px; background-color: #ffffff; border-radius: 50%; }
+  #gnb > #sitemebBox > li:nth-child(2) > span { width: 100%; /*9px*/ height: 61.5%; /*8px*/ display: block; float: left; font-size: 0; margin-top: 0.8vw; /*4px*/ background-color: #ffffff; border-radius: 50%; }
   #gnb > #sitemebBox > li:nth-child(3) { width: 30%; /*30px*/ margin-right: 0; }
-  #gnb > #sitemebBox > li > button { width: 100%; height: 100%; background-color: #ba1822; }
-  #gnb > #sitemebBox > li > button > a { width: 100%; height: 100%; display: block; font-size: 1.875vw; /*0.9rem*/ color: #ffffff; }
+  #gnb > #sitemebBox > li > a { width: 100%; height: 100%; display: block; font-size: 1.875vw; /*0.9rem*/ color: #ffffff; text-align: center; }
   #gnb > #mainBox { width: 44.4%; /*300px*/ height: 195vw; /*1500px*/ background-color: #ffffff; float: left; overflow: scroll; margin-top: -4.9vw; /*33px*/ margin-left: -7.1%; /*48px*/ position: absolute; z-index: 300; left: -100%; }
   #gnb > #mainBox > li { width: 86.7%; /*260px*/ height: auto; /*60px*/ padding: 5% 10%; /*25px 20px*/ }
   #gnb > #mainBox > li > i { width: 11%; /*33px*/ height: 100%; /*14px*/ font-size: 3.125vw; /*1.5rem*/ text-align: center; color: #111111; display: block; float: right; }
@@ -153,19 +151,19 @@
   header > #headBox > #gnb > #snsBox > li:nth-child(1) > a { background-image: url("../img/all/header/sns_01.png"); }
   header > #headBox > #gnb > #snsBox > li:nth-child(3) > a { background-image: url("../img/all/header/sns_02.png"); }
   header > #headBox > #gnb > #snsBox > li:nth-child(5) > a { background-image: url("../img/all/header/sns_03.png"); }
+  header > #headBox > #gnb > #snsBox > li > a { background-size: contain; }
   header > #headBox > #gnb > #snsBox > li > span { width: 0; height: 0; display: block; overflow: hidden; }
   header > #headBox > #gnb > #searchBox { width: 100px; height: 18px; float: left; border-bottom: 2px solid #bdc4c4; margin-left: 5px; padding-top: 2px; }
   header > #headBox > #gnb > #searchBox > button { width: 100%; height: 100%; background-color: transparent; }
   header > #headBox > #gnb > #searchBox > button > span { font-size: 0.75rem; color: #bdc4c4; float: left; }
   header > #headBox > #gnb > #searchBox > button > i { font-size: 0.75rem; /*22px*/ color: #bdc4c4; float: right; }
-  header > #headBox > #gnb > #sitemebBox { width: 64px; height: 10px; float: right; padding-top: 5px; }
+  header > #headBox > #gnb > #sitemebBox { width: 100px; height: 10px; float: right; padding-top: 5px; }
   header > #headBox > #gnb > #sitemebBox > li { height: 100%; float: left; margin-right: 5px; }
-  header > #headBox > #gnb > #sitemebBox > li:nth-child(1) { width: 27px; }
-  header > #headBox > #gnb > #sitemebBox > li:nth-child(2) { width: 5px; height: 5px; margin-top: 2px; }
+  header > #headBox > #gnb > #sitemebBox > li:nth-child(1) { width: 40px; }
+  header > #headBox > #gnb > #sitemebBox > li:nth-child(2) { width: 5px; height: 5px; margin-top: 8px; }
   header > #headBox > #gnb > #sitemebBox > li:nth-child(2) > span { width: 100%; height: 100%; background-color: #bdc4c4; display: block; border-radius: 50%; font-size: 0; }
-  header > #headBox > #gnb > #sitemebBox > li:nth-child(3) { width: 21px; margin-right: 0; }
-  header > #headBox > #gnb > #sitemebBox > li > button { width: 100%; height: 100%; background-color: #ffffff; }
-  header > #headBox > #gnb > #sitemebBox > li > button > a { width: 100%; height: 100%; display: block; font-size: 0.725rem; color: #222222; }
+  header > #headBox > #gnb > #sitemebBox > li:nth-child(3) { width: 45px; margin-right: 0; }
+  header > #headBox > #gnb > #sitemebBox > li > a { width: 100%; height: 100%; display: block; font-size: 1rem; color: #222222; }
   header > #headBox > #gnb > #mainBox { width: 735px; height: 150px; float: left; margin-top: 84px; /*margin-left:-1px;*/ padding: 5px 82px 0; }
   header > #headBox > #gnb > #mainBox > li { height: 30px; float: left; }
   header > #headBox > #gnb > #mainBox > li:nth-child(2) { width: 53px; margin-right: 100px; }

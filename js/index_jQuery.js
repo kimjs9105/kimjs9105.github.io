@@ -12,34 +12,25 @@ $(document).ready(function(){
         if(winW <= 678 ){
             
             
-            $("#info").hide();
-            $("#pofol01").hide();
-            $("#pofol02").hide();
-            $("#mine").hide();
-            $("#info").show(1500);
-            $("#pofol01").show(1800);
-            $("#pofol02").show(2000);
-            $("#mine").show(2200);
+            $(".mos_info").hide();
+            $(".mos_pofol01").hide();
+            $(".mos_pofol02").hide();
+            $(".mos_mine").hide();
+            $(".mos_info").show(1500);
+            $(".mos_pofol01").show(1800);
+            $(".mos_pofol02").show(2000);
+            $(".mos_mine").show(2200);
             
             
         }//winW <= 679
         
         else if(winW >= 680 && winW <= 959){
             
-            var button = $('button'),
-                bA = button.children('a'),
-                bT = button.children(".title");
+            var aLink = $('.tab_a'),
+                bT = aLink.children(".tab_title");
     
             bT.hide();
             bT.show(2000);
-/*            bT.hide(2000);*/
-
-            bA.on('mouseenter',function(){
-                $(this).prev(bT).stop().slideDown();
-            });
-            bA.on('mouseleave',function(){
-                $(this).prev(bT).stop().slideUp();
-            });
             
         }//680<= winW <=959
         
@@ -81,22 +72,21 @@ $(document).ready(function(){
         
 
             
-            var button = $('button'),
-                bA = button.children('a'),
-                bT = button.children(".title");
+            var aLink = $('.pc_a'),
+                bT = aLink.children(".pc_title");
     
             bT.hide();
             bT.show(2000);
             bT.hide(2000);
 
-            bA.on('mouseenter',function(){
-                $(this).prev(bT).stop().slideDown();
+            aLink.on('mouseenter',function(){
+                $(this).children(".pc_title").stop().slideDown();
             });
-            bA.on('mouseleave',function(){
-                $(this).prev(bT).stop().slideUp();
+            aLink.on('mouseleave',function(){
+                $(this).children(".pc_title").stop().slideUp();
             });
             
-            
+            $("#logo").show();
         };// 960<= winW
     
     };
@@ -111,8 +101,5 @@ $(document).ready(function(){
             winResize();
         });
         
-    
-        
-    
-    
+
 });
