@@ -1,0 +1,31 @@
+/* PhotoShop 768px 기준 */
+
+#footBox{width: 68.75%;/*528px*/ height: 12.5vw;/*96px*/ background-color:$mainGray; 
+    padding:3.6vw 15.625% 4.2vw;/*28px 120px 32px*/
+    >#footBox{width: 100%; height: 100%;}
+}
+
+/*------------small box--------------------*/
+#footBox>#persnal{width:81.4%;/*430px*/ height: 16.7%;/*16px*/ margin-top:1.3vw;/*10px*/ float:left;
+    >li{ height: 100%; float:left; margin-right:0.9%;/*4px*/
+        &:nth-child(1){width:31.6%;/*136px*/}
+        &:nth-child(2){width:15.8%;/*68px*/}
+        &:nth-child(3){width:27.4%;/*118px*/}
+        &:nth-child(4){width:15.1%;/*65px*/ margin-right:0;}
+        >a{width:calc(100% - 8px); font-size: 1.6vw;/*0.8rem*/ float:left;}
+        >span{width: 4px; height: 4px; border-radius:50%; margin-top:0.8vw;/*6px*/
+            background-color:$mainBlack; display: block; font-size:0; float:left;}
+    }//li
+}//#persnal
+#footBox>#footAll{width: 70.8%;/*374px*/ height: 62.5%;/*60px*/ float:left; margin-top:1.3vw;/*10px*/
+    >#nestleImg{width: 28.1%;/*105px*/ height: 80%;/*48px*/ float:left; background-image:url("../img/all/footer/nestle_black.png"); 
+        background-repeat: no-repeat; background-size:contain; background-position:center;}
+    >address{width: 66.8%;/*250px*/ height: 96.7%;/*58px*/ float:left; margin-left:5.1%;font-size: 1.6vw;/*0.8rem*/ 
+        >p{display: none;}
+    }
+}//#footAll
+#footBox>#footImg{width: 25.3%;/*134px*/ height: 100%;/*96px*/ float:right; margin-top:-26px; 
+    >#serviceImg{width: 100%; height: 45.8%;/*44px*/}
+    >#awardsImg{width: 69.4%;/*93px*/ height: 50%;/*48px*/ padding-top: 4%;/*4px*/ padding-left: 15%;/*20px*/ }
+    >div>img{width: 100%; height: 100%;}
+}//#footImg

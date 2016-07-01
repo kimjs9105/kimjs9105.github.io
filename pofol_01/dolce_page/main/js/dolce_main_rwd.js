@@ -1,5 +1,38 @@
 $(document).ready(function(){
     
+     /* banner slide */
+    function banner(){
+        $(".left_btn").on('click',function(){
+            
+        var bannerLi = $(".ban_real").children('li'),
+            bannerLiWidth = bannerLi.width();
+    
+            bannerLi.first().stop().animate({marginLeft:bannerLiWidth},500,function(){
+                bannerLi.css({marginLeft:0}).last().prependTo(".ban_real");
+            });//bannerLi.last.animate.function
+        });//.left_btn.function
+        
+        $(".right_btn").on('click',function(){
+            
+            var bannerLi = $(".ban_real").children('li'),
+                bannerLiWidth = bannerLi.width();
+            
+            bannerLi.first().stop().animate({marginLeft:-bannerLiWidth},500,function(){
+                bannerLi.css({marginLeft:0}).first().appendTo(".ban_real");
+            });//bannerLi.first.animate.function
+        });//.right_btn.function
+    
+        var timer;
+        function startBtn(){ timer = setInterval('$(".right_btn").click()',3000)};
+        startBtn();
+        
+        function stopBtn(){clearInterval(timer)};
+        
+        $("#banner").on({ 'mouseover' : stopBtn, 'mouseout': startBtn });
+        
+    };//function banner()
+    
+    banner();
 
     /* article tabs fn */
     $("#tabs").tabs();
@@ -41,41 +74,69 @@ $(document).ready(function(){
         $("#popIn").hide();
     });
     
-    /* banner slide */
-    function banner(){
-        $(".left_btn").on('click',function(){
+   
+    /* article machine fn */
+    $("#machineBox").tabs();
+    
+    var macCoBtn = $(".mac_color").find("dd");
             
-        var bannerLi = $(".ban_real").children('li'),
-            bannerLiWidth = bannerLi.width();
+    macCoBtn.on("click",function(){
+        macCoBtn.children("button").addClass("remove_style").removeClass("add_style");
+        $(this).children("button").addClass("add_style");
+    });
     
-            bannerLi.first().stop().animate({marginLeft:bannerLiWidth},500,function(){
-                bannerLi.css({marginLeft:0}).last().prependTo(".ban_real");
-            });//bannerLi.last.animate.function
-        });//.left_btn.function
-        
-        $(".right_btn").on('click',function(){
-            
-            var bannerLi = $(".ban_real").children('li'),
-                bannerLiWidth = bannerLi.width();
-            
-            bannerLi.first().stop().animate({marginLeft:-bannerLiWidth},500,function(){
-                bannerLi.css({marginLeft:0}).first().appendTo(".ban_real");
-            });//bannerLi.first.animate.function
-        });//.right_btn.function
+    /* #picol img change */
+    $(".mac_list_c01").on("click",function(){
+        $("#picol").removeClass("picol_b");
+        macCoBtn.children("button").removeClass("remove_style").removeClass("add_style");
+    });
+    $(".pi_rc").on("click",function(){$("#picol").removeClass("picol_b")});
+    $(".pi_b").on("click",function(){$("#picol").addClass("picol_b")});
     
-        var timer;
-        function startBtn(){ timer = setInterval('$(".right_btn").click()',3000)};
-        startBtn();
-        
-        function stopBtn(){clearInterval(timer)};
-        
-        $("#banner").on({ 'mouseover' : stopBtn, 'mouseout': startBtn });
-        
-    };//function banner()
+    /* #mini img change */
+    $(".mac_list_c02").on("click",function(){
+        $("#mini").removeClass("mini_r").removeClass("mini_b");
+        macCoBtn.children("button").removeClass("remove_style").removeClass("add_style");
+    });
+    $(".mi_r").on("click",function(){$("#mini").removeClass("mini_b").addClass("mini_r")});
+    $(".mi_b").on("click",function(){$("#mini").removeClass("mini_r").addClass("mini_b")});
+    $(".mi_wb").on("click",function(){$("#mini").removeClass("mini_r").removeClass("mini_b")});
     
-    banner();
+    /* #stell img change */
+    $(".mac_list_c03").on("click",function(){
+        $("#stell").removeClass("stell_gw").removeClass("stell_ds");
+        macCoBtn.children("button").removeClass("remove_style").removeClass("add_style");
+    });
+    $(".st_gw").on("click",function(){$("#stell").removeClass("stell_ds").addClass("stell_gw")});
+    $(".st_ds").on("click",function(){$("#stell").removeClass("stell_gw").addClass("stell_ds")});
+    $(".st_pb").on("click",function(){$("#stell").removeClass("stell_gw").removeClass("stell_ds")});
     
+    /* #jobia img change */
+    $(".mac_list_c04").on("click",function(){
+        $("#jobia").removeClass("jobia_b");
+        macCoBtn.children("button").removeClass("remove_style").removeClass("add_style");
+    });
+    $(".jo_r").on("click",function(){$("#jobia").removeClass("jobia_b")});
+    $(".jo_b").on("click",function(){$("#jobia").addClass("jobia_b")});
     
+    /* #drop img change */
+    $(".mac_list_c05").on("click",function(){
+        $("#drop").removeClass("drop_rm");
+        macCoBtn.children("button").removeClass("remove_style").removeClass("add_style");
+    });
+    $(".dr_ds").on("click",function(){$("#drop").removeClass("drop_rm")});
+    $(".dr_rm").on("click",function(){$("#drop").addClass("drop_rm")});
+    
+    /* #jinio img change */
+    $(".mac_list_c06").on("click",function(){
+        $("#jinio").removeClass("jinio_b").removeClass("jinio_s");
+        macCoBtn.children("button").removeClass("remove_style").removeClass("add_style");
+    });
+    $(".ji_r").on("click",function(){$("#jinio").removeClass("jinio_b").removeClass("jinio_s")});
+    $(".ji_b").on("click",function(){$("#jinio").removeClass("jinio_s").addClass("jinio_b")});
+    $(".ji_s").on("click",function(){$("#jinio").removeClass("jinio_b").addClass("jinio_s")});
+    
+      
     /* 반응형 부분 */
     var win = $(window),
         winW = win.width();
@@ -117,6 +178,15 @@ $(document).ready(function(){
             $(".mos_sitemap").children("li").eq(0).on("click",function(){
                 window.open("../popup/popup.html","Login","width=340, height=100%, left=250, top= 250, scrollbars=no, toolbars=no, location=no")
             });
+            
+            /* article machine fn */
+            var macLi = $(".machine_box_mos").find(".mac_list").children("li");
+            
+            macLi.on("click",function(){
+                macLi.children("a").css({ backgroundColor : "transparent" , fontSize : 0 });
+                $(this).children("a").css({ backgroundColor : "#ba1822" , fontSize : "0.6rem",  color : "#ffffff" , 
+                    textAlign : "center" , lineHeight : "750%" });
+            });
 
         }//winW <= 679
         
@@ -157,6 +227,15 @@ $(document).ready(function(){
                 window.open("../popup/popup.html","Login","width=540, height=350, left=250, top= 250, scrollbars=no, toolbars=no, location=no")
             });
             
+            /* article machine fn */
+            var macLi = $(".machine_box_tab").find(".mac_list").children("li");
+            
+            macLi.on("click",function(){
+                macLi.children("a").css({ backgroundColor : "transparent" , fontSize : 0 });
+                $(this).children("a").css({ backgroundColor : "#ba1822" , fontSize : "1rem",  color : "#ffffff" , 
+                    textAlign : "center" , lineHeight : "600%" });
+            });
+            
             
         }//680 <= winW <= 959
     
@@ -176,6 +255,16 @@ $(document).ready(function(){
             $(".pc_sitemap").children("li").eq(0).on("click",function(){
                 window.open("../popup/popup.html","Login","width=540, height=350, left=250, top= 250, scrollbars=no, toolbars=no, location=no")
             });
+            
+            /* article machine fn */
+            var macLi = $(".machine_box_pc").find(".mac_list").children("li");
+            
+            macLi.on("click",function(){
+                macLi.children("a").css({ backgroundColor : "transparent" , fontSize : 0 });
+                $(this).children("a").css({ backgroundColor : "#ba1822" , fontSize : "1.5rem",  color : "#ffffff" , 
+                    textAlign : "center" , lineHeight : "500%" });
+            });
+            
         }// 960 <= winW
         
     };

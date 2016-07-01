@@ -43,8 +43,8 @@
   #headBox > #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; }
   #headBox > #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; }
   /* PhotoShop 360px 기준 */
-  #artBox { width: 89%; /*320px*/ height: 250vw; /*874px*/ background-color: #fff; padding: 17.48vw 5.5% 5vw; /*68px 20px 18px*/ }
-  /*------------small box--------------------*/
+  #artBox { width: 89%; /*320px*/ height: 485vw; /*874px*/ background-color: #fff; padding: 17.48vw 5.5% 5vw; /*68px 20px 18px*/ }
+  /*------------tabs box--------------------*/
   #artBox > #tabs { width: 100%; height: 113.8vw; /*410px*/ }
   #artBox > #tabs ul { width: 100%; height: 8.3%; /*34px*/ /*border-bottom: 2px solid #522; */ }
   #artBox > #tabs ul > li { width: 32.5%; /*104px*/ height: 100%; float: left; border: 2px solid #ba1822; box-sizing: border-box; }
@@ -83,6 +83,76 @@
   #artBox > #tabs #newBox > dl:nth-of-type(2) > dd > span { background-image: url("../img/main/article/mos_coffee_07.png"); }
   #artBox > #tabs #newBox > dl:nth-of-type(3) > dd > span { background-image: url("../img/main/article/mos_coffee_08.png"); }
   #artBox > #tabs #newBox > dl:nth-of-type(4) > dd > span { background-image: url("../img/main/article/mos_coffee_09.png"); }
+  /*------------monthBox box--------------------*/
+  #artBox > #monthBox { width: 100%; /*320px*/ height: 123vw; /*440px*/ margin-top: 5.2vw; /*19px*/ }
+  #artBox > #monthBox > dl { width: 100%; height: 100%; }
+  #artBox > #monthBox > dl > dt { width: 32.5%; /*104px*/ height: 9.4vw; /*34px*/ float: left; color: #ba1822; border: 2px solid #ba1822; border-bottom: 0; border-top-left-radius: 15% 50%; box-sizing: border-box; font-size: 4vw; /*0.9rem*/ font-weight: 600; text-align: center; line-height: 220%; color: #222222; }
+  #artBox > #monthBox > dl > dt.mini_btn { width: 67.5%; /*520px*/ border: 0; border-bottom: 2px solid #ba1822; }
+  #artBox > #monthBox > dl > dt.mini_btn > a { width: 27.7vw; /*100px*/ height: 7.2vw; /*26px*/ display: block; background-color: #ba1822; float: right; font-size: 3.5vw; /*0.8rem*/ line-height: 200%; color: #ffffff; }
+  #artBox > #monthBox > dl > dt.mini_btn > a > i { margin-left: 1.3vw; /*5px*/ font-size: 2.6vw; /*0.6rem*/ line-height: 300%; color: #ffffff; }
+  #artBox > #monthBox > dl > dd { width: 100%; height: 69.4vw; /*250px*/ float: left; margin-top: 5vw; /*18px*/ }
+  #artBox > #monthBox > dl > dd.img_box { background-image: url("../img/main/article/month_img.png"); background-size: cover; background-position: center center; }
+  #artBox > #monthBox > dl > dd.centens_box { margin-top: 0; height: 41.6vw; /*150px*/ }
+  #artBox > #monthBox > dl > dd.centens_box > dl { width: calc(100% - 11.1vw); height: calc(100% - 11.1vw); padding: 5.5vw; background-image: url("../img/main/article/month_text.png"); background-size: cover; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > dt { font-size: 3.5vw; /*0.8rem*/ color: #ba1822; font-weight: bold; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_text_box { margin-top: 2.7vw; /*10px*/ font-size: 3.1vw; /*0.7rem*/ font-weight: bold; color: #222222; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_more_box { margin-top: 2.7vw; /*10px*/ float: right; font-size: 3.5vw; /*0.8rem*/ font-weight: bold; color: #ba1822; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_more_box > i { margin-left: 1.3vw; /*5px*/ font-size: 1.8vw; /*0.9rem*/ line-height: 200%; color: #ba1822; }
+  /*------------machineBox box--------------------*/
+  #artBox > #machineBox { width: 100%; height: 91.6vw; /*300px*/ margin-top: 6vw; /*19px*/ }
+  #artBox > #machineBox > .mac_list { width: 100%; /*320px*/ height: 22.2vw; /*80px*/ }
+  #artBox > #machineBox > .mac_list > li { width: calc(100% / 6); height: 22.2vw; /*80px*/ float: left; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+  #artBox > #machineBox > .mac_list > li > a { width: 100%; height: 100%; display: block; font-size: 0; border: 1px solid #bdc4c4; box-sizing: border-box; }
+  #artBox > #machineBox > div { width: 100%; /*320px*/ height: 69.4vw; /*250px*/ border: 1px solid #ba1822; box-sizing: border-box; background-repeat: no-repeat; background-position: center center; background-size: contain; }
+  #artBox > #machineBox > div > .mac_text_box { width: calc(100% - 5.4vw); height: 21.5vw; /*80px*/ background-color: rgba(34, 34, 34, 0.8); margin-top: 41.8vw; /*150px*/ padding: 2.7vw 2.7vw; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title { width: 55vw; /*300px*/ height: 22.2vw; /*80px*/ float: left; margin-right: 3vw; /*30px*/ }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title > dt { width: auto; height: 4.4vw; /*16px*/ font-size: 4.4vw; /*1rem*/ color: #ffffff; font-weight: bold; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title > dd { width: 100%; height: 4.5vw; /*35px*/ margin-top: 2vw; /*8px*/ font-size: 3.5vw; /*0.8rem*/ color: #ffffff; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color { width: 20vw; /*100px*/ height: 22.2vw; /*80px*/ float: left; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dt { width: auto; height: 4.4vw; /*16px*/ font-size: 4.4vw; /*1rem*/ color: #ffffff; font-weight: bold; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd { width: 5vw; /*18px*/ height: 5vw; /*18px*/ float: left; margin-top: 2vw; /*8px*/ margin-right: 2vw; /*8px*/ }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd:last-child { margin-right: 0; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button { width: 100%; height: 100%; font-size: 0; cursor: pointer; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button.remove_style { border: 0; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button.add_style { border: 1px solid #ffffff; }
+  /* machineBox design */
+  .mac_list_c01 { background-image: url("../img/main/article/picol_rc_listver.jpg"); }
+  .mac_list_c02 { background-image: url("../img/main/article/mini_wb_listver.jpg"); }
+  .mac_list_c03 { background-image: url("../img/main/article/stell_pb_listver.jpg"); }
+  .mac_list_c04 { background-image: url("../img/main/article/jobia_r_listver.jpg"); }
+  .mac_list_c05 { background-image: url("../img/main/article/drop_ds_listver.jpg"); }
+  .mac_list_c06 { background-image: url("../img/main/article/jinio_r_listver.jpg"); }
+  #picol { background-image: url("../img/main/article/picol_rc_pcver.jpg"); }
+  #picol.picol_b { background-image: url("../img/main/article/picol_b_pcver.jpg"); }
+  .pi_rc { background-color: #791517; border: 1px solid #ffffff; }
+  .pi_b { background-color: #212121; }
+  #mini { background-image: url("../img/main/article/mini_wb_pcver.jpg"); }
+  #mini.mini_r { background-image: url("../img/main/article/mini_r_pcver.jpg"); }
+  #mini.mini_b { background-image: url("../img/main/article/mini_b_pcver.jpg"); }
+  .mi_r { background-color: #eb2522; }
+  .mi_b { background-color: #212121; }
+  .mi_wb { background-image: linear-gradient(135deg, #212121 54%, #e6e6e6 46%); border: 1px solid #ffffff; }
+  #stell { background-image: url("../img/main/article/stell_pb_pcver.jpg"); }
+  #stell.stell_gw { background-image: url("../img/main/article/stell_gw_pcver.jpg"); }
+  #stell.stell_ds { background-image: url("../img/main/article/stell_ds_pcver.jpg"); }
+  .st_gw { background-color: #e9e9e9; }
+  .st_ds { background-color: #3e4346; }
+  .st_pb { background-color: #1a1e21; border: 1px solid #ffffff; }
+  #jobia { background-image: url("../img/main/article/jobia_r_pcver.jpg"); }
+  #jobia.jobia_b { background-image: url("../img/main/article/jobia_b_pcver.jpg"); }
+  .jo_r { background-color: #7c0308; border: 1px solid #ffffff; }
+  .jo_b { background-color: #212121; }
+  #drop { background-image: url("../img/main/article/drop_ds_pcver.jpg"); }
+  #drop.drop_rm { background-image: url("../img/main/article/drop_rm_pcver.jpg"); }
+  .dr_ds { background-color: #63686b; border: 1px solid #ffffff; }
+  .dr_rm { background-color: #c12236; }
+  #jinio { background-image: url("../img/main/article/jinio_r_pcver.jpg"); }
+  #jinio.jinio_b { background-image: url("../img/main/article/jinio_b_pcver.jpg"); }
+  #jinio.jinio_s { background-image: url("../img/main/article/jinio_s_pcver.jpg"); }
+  .ji_r { background-color: #b42632; border: 1px solid #ffffff; }
+  .ji_b { background-color: #222629; }
+  .ji_s { background-color: #b8b7b3; }
+  /*------------service box--------------------*/
   #artBox > #serBox { width: 100%; /*320px*/ height: 160vw; /*444px*/ padding-top: 5.2vw; /*19px*/ }
   #artBox > #serBox > dl { width: 100%; height: 63.5vw; /*230px*/ }
   #artBox > #serBox > dl > dt { width: 32.5%; /*104px*/ height: 9.4vw; /*34px*/ float: left; border: 2px solid #ba1822; border-bottom: 0; border-top-left-radius: 20% 50%; font-size: 5.3vw; /*1.2rem*/ text-align: center; line-height: 150%; }
@@ -179,10 +249,10 @@
   #bannerBox > #banner > .ban_real > li.bb_04 > a { background-image: url("../img/main/banner/banner_04.png"); }
   #bannerBox > #banner > .ban_real > li > a { background-size: contain; }
   /* PhotoShop 768px 기준 */
-  #artBox { width: 87%; /*670px*/ height: 59.6vw; /*458px*/ background-color: #fff; padding: 3.6vw 6.5% 4.9vw; /*28px 50px 38px*/ }
-  /*------------small box--------------------*/
+  #artBox { width: 87%; /*670px*/ height: 147vw; /*1128px*/ background-color: #fff; padding: 3.6vw 6.5% 4.9vw; /*28px 50px 38px*/ }
+  /*------------tabs box--------------------*/
   #artBox > #tabs { width: 100%; /*670px*/ height: 30vw; /*230px*/ }
-  #artBox > #tabs ul { width: 100%; height: 14.7%; /*34px*/ /*border-bottom: 2px solid #522; */ }
+  #artBox > #tabs ul { width: 100%; height: 4.4vw; /*34px*/ /*border-bottom: 2px solid #522; */ }
   #artBox > #tabs ul > li { width: 13.5%; /*104px*/ height: 100%; float: left; border: 2px solid #ba1822; box-sizing: border-box; }
   #artBox > #tabs ul > li:nth-child(1) { border-top-left-radius: 20% 50%; border-bottom: 0px; color: #ba1822; }
   #artBox > #tabs ul > li:nth-child(2) { border-left: 0px; }
@@ -219,6 +289,76 @@
   #artBox > #tabs #newBox > dl:nth-of-type(2) > dd > span { background-image: url("../img/main/article/mos_coffee_07.png"); }
   #artBox > #tabs #newBox > dl:nth-of-type(3) > dd > span { background-image: url("../img/main/article/mos_coffee_08.png"); }
   #artBox > #tabs #newBox > dl:nth-of-type(4) > dd > span { background-image: url("../img/main/article/mos_coffee_09.png"); }
+  /*------------monthBox box--------------------*/
+  #artBox > #monthBox { width: 100%; /*670px*/ height: 40.6vw; /*312.5px*/ margin-top: 3.7vw; /*30px*/ }
+  #artBox > #monthBox > dl { width: 100%; height: 100%; }
+  #artBox > #monthBox > dl > dt { width: 19.5%; /*150px*/ height: 4.4vw; /*34px*/ float: left; color: #ba1822; border: 2px solid #ba1822; border-bottom: 0; border-top-left-radius: 15% 50%; box-sizing: border-box; font-size: 2vw; /*1rem*/ font-weight: 600; text-align: center; line-height: 220%; color: #222222; }
+  #artBox > #monthBox > dl > dt.mini_btn { width: 80.5%; /*520px*/ border: 0; border-bottom: 2px solid #ba1822; }
+  #artBox > #monthBox > dl > dt.mini_btn > a { width: 13vw; /*100px*/ height: 3.4vw; /*26px*/ display: block; background-color: #ba1822; float: right; font-size: 1.6vw; /*0.8rem*/ line-height: 200%; color: #ffffff; }
+  #artBox > #monthBox > dl > dt.mini_btn > a > i { margin-left: 0.5vw; /*4px*/ font-size: 1.5vw; /*0.9rem*/ line-height: 240%; color: #ffffff; }
+  #artBox > #monthBox > dl > dd { width: 50%; height: 33.8vw; /*260px*/ float: left; margin-top: 2.4vw; /*18.5px*/ }
+  #artBox > #monthBox > dl > dd.img_box { background-image: url("../img/main/article/month_img.png"); background-size: cover; background-position: center center; }
+  #artBox > #monthBox > dl > dd.centens_box { /*border: $artBStyle; box-sizing: border-box;*/ }
+  #artBox > #monthBox > dl > dd.centens_box > dl { width: calc(100% - 7.8vw); height: 26vw; /*200px*/ padding: 3.9vw; background-image: url("../img/main/article/month_text.png"); background-size: cover; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > dt { font-size: 2vw; /*1rem*/ color: #ba1822; font-weight: bold; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_text_box { margin-top: 3.9vw; /*30px*/ font-size: 1.6vw; /*0.8rem*/ font-weight: bold; color: #222222; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_more_box { margin-top: 7.8vw; /*60px*/ float: right; font-size: 2vw; /*1rem*/ font-weight: bold; color: #ba1822; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_more_box > i { margin-left: 0.5vw; /*4px*/ font-size: 1.8vw; /*0.9rem*/ line-height: 160%; color: #ba1822; }
+  /*------------machineBox box--------------------*/
+  #artBox > #machineBox { width: 100%; height: 39vw; /*300px*/ margin-top: 4vw; /*30px*/ }
+  #artBox > #machineBox > .mac_list { width: 22vw; /*170px*/ height: 100%; /*300px*/ float: left; }
+  #artBox > #machineBox > .mac_list > li { width: 11vw; /*85px*/ height: 13vw; /*100px*/ float: left; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+  #artBox > #machineBox > .mac_list > li > a { width: 100%; height: 100%; display: block; font-size: 0; border: 1px solid #bdc4c4; box-sizing: border-box; }
+  #artBox > #machineBox > div { width: 65vw; /*500px*/ height: 100%; /*300px*/ float: left; border: 1px solid #ba1822; box-sizing: border-box; background-repeat: no-repeat; background-position: center center; background-size: contain; }
+  #artBox > #machineBox > div > .mac_text_box { width: calc(100% - 6.5vw); height: 7.8vw; /*60px*/ background-color: rgba(34, 34, 34, 0.8); margin-top: 26vw; /*200px*/ padding: 2.6vw 3.2vw; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title { width: 39vw; /*300px*/ height: 8.4vw; /*65px*/ float: left; margin-right: 3.9vw; /*30px*/ }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title > dt { width: auto; height: 2.3vw; /*18px*/ font-size: 2.3vw; /*1.125rem*/ color: #ffffff; font-weight: bold; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title > dd { width: 100%; height: 4.5vw; /*35px*/ margin-top: 1.3vw; /*10px*/ font-size: 1.8vw; /*0.9rem*/ color: #ffffff; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color { width: 13vw; /*100px*/ height: 8.4vw; /*65px*/ float: left; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dt { width: auto; height: 2.3vw; /*18px*/ font-size: 2.3vw; /*1.125rem*/ color: #ffffff; font-weight: bold; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd { width: 3.2vw; /*25px*/ height: 3.2vw; /*25px*/ float: left; margin-top: 1.3vw; /*10px*/ margin-right: 1.3vw; /*10px*/ }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd:last-child { margin-right: 0; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button { width: 100%; height: 100%; font-size: 0; cursor: pointer; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button.remove_style { border: 0; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button.add_style { border: 1px solid #ffffff; }
+  /* machineBox design */
+  .mac_list_c01 { background-image: url("../img/main/article/picol_rc_listver.jpg"); }
+  .mac_list_c02 { background-image: url("../img/main/article/mini_wb_listver.jpg"); }
+  .mac_list_c03 { background-image: url("../img/main/article/stell_pb_listver.jpg"); }
+  .mac_list_c04 { background-image: url("../img/main/article/jobia_r_listver.jpg"); }
+  .mac_list_c05 { background-image: url("../img/main/article/drop_ds_listver.jpg"); }
+  .mac_list_c06 { background-image: url("../img/main/article/jinio_r_listver.jpg"); }
+  #picol { background-image: url("../img/main/article/picol_rc_pcver.jpg"); }
+  #picol.picol_b { background-image: url("../img/main/article/picol_b_pcver.jpg"); }
+  .pi_rc { background-color: #791517; border: 1px solid #ffffff; }
+  .pi_b { background-color: #212121; }
+  #mini { background-image: url("../img/main/article/mini_wb_pcver.jpg"); }
+  #mini.mini_r { background-image: url("../img/main/article/mini_r_pcver.jpg"); }
+  #mini.mini_b { background-image: url("../img/main/article/mini_b_pcver.jpg"); }
+  .mi_r { background-color: #eb2522; }
+  .mi_b { background-color: #212121; }
+  .mi_wb { background-image: linear-gradient(135deg, #212121 54%, #e6e6e6 46%); border: 1px solid #ffffff; }
+  #stell { background-image: url("../img/main/article/stell_pb_pcver.jpg"); }
+  #stell.stell_gw { background-image: url("../img/main/article/stell_gw_pcver.jpg"); }
+  #stell.stell_ds { background-image: url("../img/main/article/stell_ds_pcver.jpg"); }
+  .st_gw { background-color: #e9e9e9; }
+  .st_ds { background-color: #3e4346; }
+  .st_pb { background-color: #1a1e21; border: 1px solid #ffffff; }
+  #jobia { background-image: url("../img/main/article/jobia_r_pcver.jpg"); }
+  #jobia.jobia_b { background-image: url("../img/main/article/jobia_b_pcver.jpg"); }
+  .jo_r { background-color: #7c0308; border: 1px solid #ffffff; }
+  .jo_b { background-color: #212121; }
+  #drop { background-image: url("../img/main/article/drop_ds_pcver.jpg"); }
+  #drop.drop_rm { background-image: url("../img/main/article/drop_rm_pcver.jpg"); }
+  .dr_ds { background-color: #63686b; border: 1px solid #ffffff; }
+  .dr_rm { background-color: #c12236; }
+  #jinio { background-image: url("../img/main/article/jinio_r_pcver.jpg"); }
+  #jinio.jinio_b { background-image: url("../img/main/article/jinio_b_pcver.jpg"); }
+  #jinio.jinio_s { background-image: url("../img/main/article/jinio_s_pcver.jpg"); }
+  .ji_r { background-color: #b42632; border: 1px solid #ffffff; }
+  .ji_b { background-color: #222629; }
+  .ji_s { background-color: #b8b7b3; }
+  /*------------service box--------------------*/
   #artBox > #serBox { width: 100%; /*320px*/ height: 26.6vw; /*200px*/ margin-top: 3.7vw; /*30px*/ }
   #artBox > #serBox > dl { width: 47.7%; /*320px*/ height: 100%; /*200px*/ float: left; margin-right: 4.6%; /*30px*/ }
   #artBox > #serBox > dl > dt { width: 32.5%; /*104px*/ height: 4.4vw; /*34px*/ float: left; border: 2px solid #ba1822; border-bottom: 0; border-top-left-radius: 20% 50%; font-size: 2.5vw; /*1.2rem*/ text-align: center; line-height: 150%; }
@@ -326,9 +466,9 @@
   #bannerBox > #banner > .ban_real > li.bb_04 > a { background-image: url("../img/main/banner/banner_04.png"); }
   #bannerBox > #banner > .ban_real > li > a { background-size: contain; }
   /* PhotoShop 1400px 기준 */
-  #artBox { width: 860px; height: 542px; background-color: #fff; }
-  /*------------small box--------------------*/
-  #artBox > #tabs { width: 100%; /*860px*/ height: 250px; }
+  #artBox { width: 860px; height: 1430px; background-color: #fff; }
+  /*------------tabs box--------------------*/
+  #artBox > #tabs { width: 100%; /*860px*/ height: 270px; }
   #artBox > #tabs > ul { width: 100%; height: 42px; }
   #artBox > #tabs > ul > li { width: 132px; height: 100%; float: left; border: 2px solid #ba1822; box-sizing: border-box; }
   #artBox > #tabs > ul > li:nth-child(1) { border-top-left-radius: 20% 50%; border-bottom: 0; }
@@ -368,6 +508,77 @@
   #artBox > #tabs > #newBox > dl:nth-of-type(3) > dd > span { background-position: -365px -5px; background-size: 580%; }
   #artBox > #tabs > #newBox > dl:nth-of-type(4) > dd > span { background-position: -560px -5px; }
   #artBox > #tabs > #newBox > dl:nth-of-type(5) > dd > span { background-position: -750px -5px; }
+  /*------------monthBox box--------------------*/
+  #artBox > #monthBox { width: 100%; /*860px*/ height: 410px; margin-top: 40px; }
+  #artBox > #monthBox > dl { width: 100%; height: 100%; margin-right: 40px; }
+  #artBox > #monthBox > dl > dt { width: 132px; height: 42px; float: left; color: #ba1822; border: 2px solid #ba1822; border-bottom: 0; border-top-left-radius: 20% 50%; box-sizing: border-box; font-size: 1.1rem; font-weight: 600; text-align: center; line-height: 200%; color: #222222; }
+  #artBox > #monthBox > dl > dt.mini_btn { width: 726px; border: 0; border-bottom: 2px solid #ba1822; }
+  #artBox > #monthBox > dl > dt.mini_btn > a { width: 120px; height: 34px; display: block; background-color: #ba1822; float: right; font-size: 1rem; line-height: 200%; color: #ffffff; }
+  #artBox > #monthBox > dl > dt.mini_btn > a > i { margin-left: 4px; font-size: 0.9rem; line-height: 240%; color: #ffffff; }
+  #artBox > #monthBox > dl > dd { width: 50%; height: 330px; float: left; margin-top: 20px; }
+  #artBox > #monthBox > dl > dd.img_box { background-image: url("../img/main/article/month_img.png"); background-size: cover; background-position: center center; }
+  #artBox > #monthBox > dl > dd.centens_box { /*border: $artBStyle; box-sizing: border-box;*/ }
+  #artBox > #monthBox > dl > dd.centens_box > dl { width: 360px; height: 230px; padding: 50px 35px; /*background-color: rgba($mainBlack, 0.05);*/ background-image: url("../img/main/article/month_text.png"); background-size: cover; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > dt { font-size: 1.2rem; color: #ba1822; font-weight: bold; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_text_box { margin-top: 30px; font-size: 1rem; color: #222222; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_more_box { margin-top: 76px; float: right; font-size: 1rem; font-weight: bold; color: #ba1822; }
+  #artBox > #monthBox > dl > dd.centens_box > dl > .mon_more_box > i { margin-left: 5px; font-size: 1rem; line-height: 160%; color: #ba1822; }
+  /*------------machineBox box--------------------*/
+  #artBox > #machineBox { width: 100%; height: 390px; margin-top: 40px; }
+  #artBox > #machineBox > .mac_list { width: 280px; height: 390px; float: left; }
+  #artBox > #machineBox > .mac_list > li { width: 140px; height: 130px; float: left; background-size: contain; background-repeat: no-repeat; background-position: center center; }
+  #artBox > #machineBox > .mac_list > li > a { width: 100%; height: 100%; display: block; font-size: 0; border: 1px solid #bdc4c4; box-sizing: border-box; }
+  #artBox > #machineBox > .mac_list > li > a:hover { background-color: rgba(186, 24, 34, 0.9); font-size: 1.5rem; color: #ffffff; text-align: center; line-height: 500%; }
+  #artBox > #machineBox > div { width: 580px; height: 390px; float: left; border: 1px solid #ba1822; box-sizing: border-box; background-repeat: no-repeat; background-position: center center; background-size: contain; }
+  #artBox > #machineBox > div > .mac_text_box { width: calc(100% - 50px); height: 60px; background-color: rgba(34, 34, 34, 0.8); margin-top: 290px; padding: 20px 25px; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title { width: 360px; height: 65px; float: left; margin-right: 30px; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title > dt { width: auto; height: 18px; font-size: 1.125rem; color: #ffffff; font-weight: bold; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_title > dd { width: 100%; height: 35px; margin-top: 10px; font-size: 0.9rem; color: #ffffff; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color { width: 130px; height: 65px; float: left; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dt { width: auto; height: 18px; font-size: 1.125rem; color: #ffffff; font-weight: bold; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd { width: 35px; height: 35px; float: left; margin-top: 10px; margin-right: 10px; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd:last-child { margin-right: 0; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button { width: 100%; height: 100%; font-size: 0; cursor: pointer; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button.remove_style { border: 0; }
+  #artBox > #machineBox > div > .mac_text_box > .mac_color > dd > button.add_style { border: 1px solid #ffffff; }
+  /* machineBox design */
+  .mac_list_c01 { background-image: url("../img/main/article/picol_rc_listver.jpg"); }
+  .mac_list_c02 { background-image: url("../img/main/article/mini_wb_listver.jpg"); }
+  .mac_list_c03 { background-image: url("../img/main/article/stell_pb_listver.jpg"); }
+  .mac_list_c04 { background-image: url("../img/main/article/jobia_r_listver.jpg"); }
+  .mac_list_c05 { background-image: url("../img/main/article/drop_ds_listver.jpg"); }
+  .mac_list_c06 { background-image: url("../img/main/article/jinio_r_listver.jpg"); }
+  #picol { background-image: url("../img/main/article/picol_rc_pcver.jpg"); }
+  #picol.picol_b { background-image: url("../img/main/article/picol_b_pcver.jpg"); }
+  .pi_rc { background-color: #791517; border: 1px solid #ffffff; }
+  .pi_b { background-color: #212121; }
+  #mini { background-image: url("../img/main/article/mini_wb_pcver.jpg"); }
+  #mini.mini_r { background-image: url("../img/main/article/mini_r_pcver.jpg"); }
+  #mini.mini_b { background-image: url("../img/main/article/mini_b_pcver.jpg"); }
+  .mi_r { background-color: #eb2522; }
+  .mi_b { background-color: #212121; }
+  .mi_wb { background-image: linear-gradient(135deg, #212121 54%, #e6e6e6 46%); border: 1px solid #ffffff; }
+  #stell { background-image: url("../img/main/article/stell_pb_pcver.jpg"); }
+  #stell.stell_gw { background-image: url("../img/main/article/stell_gw_pcver.jpg"); }
+  #stell.stell_ds { background-image: url("../img/main/article/stell_ds_pcver.jpg"); }
+  .st_gw { background-color: #e9e9e9; }
+  .st_ds { background-color: #3e4346; }
+  .st_pb { background-color: #1a1e21; border: 1px solid #ffffff; }
+  #jobia { background-image: url("../img/main/article/jobia_r_pcver.jpg"); }
+  #jobia.jobia_b { background-image: url("../img/main/article/jobia_b_pcver.jpg"); }
+  .jo_r { background-color: #7c0308; border: 1px solid #ffffff; }
+  .jo_b { background-color: #212121; }
+  #drop { background-image: url("../img/main/article/drop_ds_pcver.jpg"); }
+  #drop.drop_rm { background-image: url("../img/main/article/drop_rm_pcver.jpg"); }
+  .dr_ds { background-color: #63686b; border: 1px solid #ffffff; }
+  .dr_rm { background-color: #c12236; }
+  #jinio { background-image: url("../img/main/article/jinio_r_pcver.jpg"); }
+  #jinio.jinio_b { background-image: url("../img/main/article/jinio_b_pcver.jpg"); }
+  #jinio.jinio_s { background-image: url("../img/main/article/jinio_s_pcver.jpg"); }
+  .ji_r { background-color: #b42632; border: 1px solid #ffffff; }
+  .ji_b { background-color: #222629; }
+  .ji_s { background-color: #b8b7b3; }
+  /*------------service box--------------------*/
   #artBox > #serBox { width: 100%; /*860px*/ height: 252px; margin-top: 40px; }
   #artBox > #serBox > dl { width: 410px; height: 100%; /*252px*/ float: left; margin-right: 40px; }
   #artBox > #serBox > dl > dt { width: 132px; height: 42px; float: left; color: #ba1822; border: 2px solid #ba1822; border-bottom: 0; border-top-left-radius: 20% 50%; font-size: 1.5rem; text-align: center; line-height: 160%; color: #222222; }

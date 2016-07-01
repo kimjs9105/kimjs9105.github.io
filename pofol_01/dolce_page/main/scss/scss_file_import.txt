@@ -1,0 +1,21 @@
+
+scss용 import 자료 
+ -> 자동으로 css에 생성
+
+@import "./lib/basic";
+@import "./all/all";
+
+@import "./all/header_mos";
+@import "./all/header_tab";
+@import "./all/header_pc";
+
+@import "./~/article_mos";
+@import "./~/article_tab";
+@import "./~/article_pc";
+
+@import "./all/footer_mos";
+@import "./all/footer_tab";
+@import "./all/footer_pc";
+
+
+@import "./main/banner";

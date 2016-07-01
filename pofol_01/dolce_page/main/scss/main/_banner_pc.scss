@@ -1,0 +1,37 @@
+
+    /* PhotoShop 1400px 기준 */
+    #bannerBox{width: 100%;height: 460px; padding-top:150px; 
+        >*{margin: 0 auto;}
+    }
+    
+     /*------------small box--------------------*/
+    #bannerBox>#banner{width: 1010px; height: 460px; position:relative; overflow:hidden;
+        >button{width: 7.5%;/*76px*/ height: 31.5%;/*145px*/ display: block; 
+            position:absolute; z-index:500; top:30%; opacity:0.5; background-color:transparent; background-position:center center; background-repeat:no-repeat; background-size:60%;
+            &.left_btn{left:2%; background-image:url("../img/main/banner/left.png");}
+            &.right_btn{right:2%; background-image:url("../img/main/banner/right.png");}
+            >span{width: 0; height: 0; display: block; font-size: 0;}
+        }//button
+        /*>input[name="btn_dott"]{display:none;}
+        >#ban_dott{ width: 222px; height: 18px; 
+            position:absolute; z-index:500; bottom:10%; left:50%; margin-left:-109px;
+            >li{ width: 18px; height: 18px; margin-right:50px; background-color:$mainGray; border-radius:50%; float:left; background-repeat:no-repeat; box-shadow: 1px 1px 1px $shadow;
+                &:nth-child(4){margin-right:0;}
+                &:hover{background-color:$mainRed;}
+                >label{ width: 100%; height: 100%; display: block;
+                    >span{width: 0; height: 0; display: block; font-size:0;}
+                }//label
+            }//li
+        }//#ban_dott
+        */
+        >.ban_real{width: 400%; height: 100%; margin-left:-100%;
+            >li{width:25%; height: 100%; float:left; 
+                background-repeat:no-repeat; background-position:center center; font-size:0;
+                &.bb_01>a{background-image:url("../img/main/banner/banner_01.png");}
+                &.bb_02>a{background-image:url("../img/main/banner/banner_02.png");}
+                &.bb_03>a{background-image:url("../img/main/banner/banner_03.png");}
+                &.bb_04>a{background-image:url("../img/main/banner/banner_04.png");}
+                >a{background-size:contain;}
+            }//li
+        }//.ban_real
+    }//#banner
