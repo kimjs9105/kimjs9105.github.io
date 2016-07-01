@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     
     
     var win = $(window),
@@ -19,6 +20,7 @@ $(document).ready(function(){
             gnbH2.on('click',function(){
                 
                 $('h1').css({"z-index":"100"});
+                $('#nav_box').css({"z-index":"-10"}); 
                 $(this).siblings('ul').animate({left:0},1000);
                 
             });//gnbH2.on'click'
@@ -27,7 +29,8 @@ $(document).ready(function(){
                 var gnb = $(".mos_gnb"),
                     gnbUl = gnb.children('ul');
                 
-                $('h1').css({"z-index":"300"});
+                $('h1').animate({"z-index":"300"},400);
+                $('#nav_box').animate({"z-index":"100"},400);
                 gnbUl.animate({left:"-100%"},1000);
             });//.endBox>i.on'click'
             
