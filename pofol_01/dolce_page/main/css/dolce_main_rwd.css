@@ -172,7 +172,7 @@
   #footBox > #persnal { display: none; }
   #footBox > #footAll { width: 100%; height: 100%; }
   #footBox > #footAll > #nestleImg { width: 100%; height: 45%; background-image: url("../img/all/footer/nestle_black.png"); background-repeat: no-repeat; background-size: contain; background-position: center; }
-  #footBox > #footAll > address { width: 90%; height: 45%; margin-top: 8%; margin-left: 5%; font-size: 3.2vw; /*0.9rem*/ }
+  #footBox > #footAll > address { width: 90%; height: 45%; margin-top: 8%; margin-left: 5%; font-size: 4vw; /*0.9rem*/ }
   #footBox > #footAll > address > p { display: none; }
   #footBox > #footImg { display: none; }
   /* photoshop 360px */
