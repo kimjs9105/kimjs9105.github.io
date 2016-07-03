@@ -43,52 +43,38 @@
   #headBox > #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; }
   #headBox > #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; }
   /* PhotoShop 360px 기준 */
-  #sub_menu { width: 815px; height: 160px; padding-top: 204px; padding-left: 45px; border-bottom: 2px solid #bdc4c4; }
-  #sub_menu > h2 { width: 100px; height: 25px; margin-right: 40px; font-size: 1.2rem; font-weight: bold; color: #ba1822; float: left; }
-  #sub_menu > ul { height: 25px; margin-top: 25px; font-size: 1.2rem; font-weight: bold; }
-  /* nav_box 02 커피 카테고리 */
-  #sub_menu > .nav_box01 { width: 100%; padding-top: 40px; }
-  #sub_menu > .nav_box01 > * { width: 75px; height: 100%; margin-right: 40px; float: left; }
-  #sub_menu > .nav_box01 > p { font-size: 1rem; font-weight: bold; color: #222222; float: left; color: #222222; }
-  #sub_menu > .nav_box01 > li > a { font-size: 0.9rem; font-weight: bold; color: #222222; }
-  #sub_menu > .nav_box01 > li:nth-child(4) { width: 60px; }
-  /* nav_box 03 가격 */
-  #sub_menu > .nav_box02 { width: 100%; }
-  #sub_menu > .nav_box02 > * { width: 80px; height: 100%; margin-right: 40px; float: left; }
-  #sub_menu > .nav_box02 > p { font-size: 1rem; font-weight: bold; color: #222222; float: left; color: #222222; }
-  #sub_menu > .nav_box02 > li > a { font-size: 0.8rem; font-weight: blod; color: #222222; color: #222222; }
+  #sub_menu { width: 94.4vw; /*340px*/ height: 73.6vw; /*265px*/ padding-top: 19.4vw; /*70px*/ border-bottom: 2px solid #bdc4c4; }
+  #sub_menu > h2 { width: 27.7vw; /*100px*/ height: 6.9vw; /*25px*/ margin-top: 2.7vw; /*10px*/ padding-left: 6.9vw; /*25px*/ font-size: 5.3vw; /*1.2rem*/ font-weight: bold; color: #ba1822; }
+  #sub_menu > ul { height: 26.4vw; /*95px*/ margin-top: 11.1vw; /*40px*/ }
+  #sub_menu > ul > li { width: calc(100% / 3); height: 8.3vw; /*30px*/ float: left; }
+  #sub_menu > ul > li:nth-child(2) > a { color: #ba1822; }
+  #sub_menu > ul > li > a { font-size: 3.5vw; /*0.8rem*/ text-align: center; font-weight: bold; color: #222222; }
+  #sub_menu > ul > .nav_title { width: calc(100% - 6.9vw); height: 9.7vw; /*35px*/ padding-left: 6.9vw; /* 25px*/ font-size: 4.4vw; /*1rem*/ font-weight: bold; color: #222222; }
+  #sub_menu > .nav_box02 { height: 18vw; /*65px*/ margin-top: 5.5vw; /*20px*/ }
   /* PhotoShop 360px 기준 */
   /* 정렬 bar */
-  article { width: 815px; height: 650px; padding-top: 12px; }
-  article > .article_box01 { width: 288px; height: 14px; float: right; }
-  article > .article_box01 > li { width: 78px; height: 100%; font-size: 0.8rem; float: left; }
-  article > .article_box01 > li:first-child { width: 52px; height: 100%; font-size: 0.8rem; float: left; }
-  article > ul > li > .sns_bar { width: 10px; height: 100%; background-image: url("../img/header/dot.png"); float: left; display: block; background-repeat: no-repeat; background-position: center center; margin-right: 3px; }
+  article { width: 94.4vw; /*340px*/ height: 188.8vw; /*680px*/ padding-top: 1.3vw; /*5px*/ }
+  article > .article_box01 { width: calc(100% - 11.1vw); height: 5.5vw; /*20px*/ float: right; padding: 1.3vw 5.5vw; }
+  article > .article_box01 > li { width: 25%; height: 100%; font-size: 3vw; /*0.7rem*/ float: left; text-align: center; line-height: 200%; }
+  article > .article_box01 > li:first-child { color: #ba1822; font-weight: bold; /*border-bottom: 1px solid $mainRed;*/ }
   /* product */
-  article > .article_box02 { width: 815px; height: 558px; margin-top: 25px; }
-  article > .article_box02 > li { float: left; }
-  /* .article_box02>li size */
-  article > .article_box02 > li:nth-child(1) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(2) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(3) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(4) { height: 282px; }
-  article > .article_box02 > li:nth-child(5) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(6) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(7) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(8) { height: 275px; }
-  article > .article_box02 > li:nth-child(4n+1) { width: 185px; }
-  article > .article_box02 > li:nth-child(4n+2) { width: 200px; }
-  article > .article_box02 > li:nth-child(4n+3) { width: 197px; }
-  article > .article_box02 > li:nth-child(4n) { width: 178px; }
+  article > .article_box02 { width: 100%; /*670px*/ height: 177.7vw; /*640px*/ margin-top: 8.3vw; /*30px*/ }
+  article > .article_box02 > li { width: 50%; height: 41.6vw; /*150px*/ float: left; padding-top: 2.6vw; /*10px*/ }
+  article > .article_box02 > li > dl { width: 100%; height: 100%; }
+  article > .article_box02 > li > dl > .img_box { width: 100%; height: 26vw; /*100px*/ background-repeat: no-repeat; background-position: center center; background-size: contain; }
+  article > .article_box02 > li > dl > .img_box > span { width: 0; height: 0; display: none; font-size: 0; }
+  article > .article_box02 > li > dl > .title_box { width: 100%; height: 5.5vw; /*20px*/ margin-top: 2.6vw; /*10px*/ font-size: 3.5vw; /*0.8rem*/ line-height: 150%; text-align: center; font-weight: bold; }
+  article > .article_box02 > li > dl > .money_box { width: 100%; height: 4.1vw; /*15px*/ font-size: 3.5vw; /*0.8rem*/ text-align: center; }
+  article > .article_box02 > li > dl > .money_box > i { width: auto; height: 100%; font-size: 3vw; /*0.7rem*/ line-height: 150%; margin-right: 1.3vw; /*5px*/ }
   /* .article_box02>li design */
-  article > .article_box02 > li:nth-child(1) > a { background-image: url("../img/article/product_01.png"); }
-  article > .article_box02 > li:nth-child(2) > a { background-image: url("../img/article/product_02.png"); }
-  article > .article_box02 > li:nth-child(3) > a { background-image: url("../img/article/product_03.png"); }
-  article > .article_box02 > li:nth-child(4) > a { background-image: url("../img/article/product_04.png"); }
-  article > .article_box02 > li:nth-child(5) > a { background-image: url("../img/article/product_05.png"); }
-  article > .article_box02 > li:nth-child(6) > a { background-image: url("../img/article/product_06.png"); }
-  article > .article_box02 > li:nth-child(7) > a { background-image: url("../img/article/product_07.png"); }
-  article > .article_box02 > li:nth-child(8) > a { background-image: url("../img/article/product_08.png"); }
+  article > .article_box02 .pro_1 > dl > .img_box { background-image: url("../img/article/product_01.png"); }
+  article > .article_box02 .pro_2 > dl > .img_box { background-image: url("../img/article/product_02.png"); }
+  article > .article_box02 .pro_3 > dl > .img_box { background-image: url("../img/article/product_03.png"); }
+  article > .article_box02 .pro_4 > dl > .img_box { background-image: url("../img/article/product_04.png"); }
+  article > .article_box02 .pro_5 > dl > .img_box { background-image: url("../img/article/product_05.png"); }
+  article > .article_box02 .pro_6 > dl > .img_box { background-image: url("../img/article/product_06.png"); }
+  article > .article_box02 .pro_7 > dl > .img_box { background-image: url("../img/article/product_07.png"); }
+  article > .article_box02 .pro_8 > dl > .img_box { background-image: url("../img/article/product_08.png"); }
   /* Photoshop 360px */
   #footer { width: 86%; /*310px*/ height: 39vw; /*140px*/ background-color: #bdc4c4; padding: 8.3vw 7% 8.3vw; /*30px 25px 30px*/ }
   #footer > #footBox { width: 100%; height: 39vw; /*140px*/ }
@@ -135,52 +121,41 @@
   #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; box-sizing: border-box; }
   #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; padding-top: 5%; }
   /* PhotoShop 768px 기준 */
-  #sub_menu { width: 815px; height: 160px; padding-top: 204px; padding-left: 45px; border-bottom: 2px solid #bdc4c4; }
-  #sub_menu > h2 { width: 100px; height: 25px; margin-right: 40px; font-size: 1.2rem; font-weight: bold; color: #ba1822; float: left; }
-  #sub_menu > ul { height: 25px; margin-top: 25px; font-size: 1.2rem; font-weight: bold; }
-  /* nav_box 02 커피 카테고리 */
-  #sub_menu > .nav_box01 { width: 100%; padding-top: 40px; }
-  #sub_menu > .nav_box01 > * { width: 75px; height: 100%; margin-right: 40px; float: left; }
-  #sub_menu > .nav_box01 > p { font-size: 1rem; font-weight: bold; color: #222222; float: left; color: #222222; }
-  #sub_menu > .nav_box01 > li > a { font-size: 0.9rem; font-weight: bold; color: #222222; }
-  #sub_menu > .nav_box01 > li:nth-child(4) { width: 60px; }
-  /* nav_box 03 가격 */
-  #sub_menu > .nav_box02 { width: 100%; }
-  #sub_menu > .nav_box02 > * { width: 80px; height: 100%; margin-right: 40px; float: left; }
-  #sub_menu > .nav_box02 > p { font-size: 1rem; font-weight: bold; color: #222222; float: left; color: #222222; }
-  #sub_menu > .nav_box02 > li > a { font-size: 0.8rem; font-weight: blod; color: #222222; color: #222222; }
+  #sub_menu { width: 87.2vw; /*670px*/ height: 20.8vw; /*160px*/ padding-top: 18.2vw; /*140px*/ border-bottom: 2px solid #bdc4c4; }
+  #sub_menu > h2 { width: 13vw; /*100px*/ height: 3.25vw; /*25px*/ font-size: 2.5vw; /*1.2rem*/ font-weight: bold; color: #ba1822; }
+  #sub_menu > ul { height: 3.25vw; /*25px*/ margin-top: 6.5vw; /*50px*/ }
+  #sub_menu > ul > li { width: 10.4vw; /*80px*/ height: 100%; margin-right: 2.6vw; /*20px*/ float: left; }
+  #sub_menu > ul > li:nth-child(2) > a { color: #ba1822; }
+  #sub_menu > ul > li > a { font-size: 1.875vw; /*0.9rem*/ font-weight: bold; color: #222222; }
+  #sub_menu > ul > .nav_title { font-size: 2vw; /*1rem*/ font-weight: bold; color: #222222; }
+  #sub_menu > .nav_box02 { margin-top: 3.25vw; /*25px*/ }
   /* PhotoShop 768px 기준 */
   /* 정렬 bar */
-  article { width: 815px; height: 650px; padding-top: 12px; }
-  article > .article_box01 { width: 288px; height: 14px; float: right; }
-  article > .article_box01 > li { width: 78px; height: 100%; font-size: 0.8rem; float: left; }
-  article > .article_box01 > li:first-child { width: 52px; height: 100%; font-size: 0.8rem; float: left; }
-  article > ul > li > .sns_bar { width: 10px; height: 100%; background-image: url("../img/header/dot.png"); float: left; display: block; background-repeat: no-repeat; background-position: center center; margin-right: 3px; }
+  article { width: 87.2vw; /*670px*/ height: 84.6vw; /*650px*/ padding-top: 1.5625vw; /*12px*/ }
+  article > .article_box01 { width: 37.5vw; /*288px*/ height: 1.8vw; /*14px*/ float: right; }
+  article > .article_box01 > li { width: 8.85vw; /*68px*/ height: 100%; font-size: 1.6vw; /*0.8rem*/ float: left; margin-right: 1.3vw; /*10px*/ }
+  article > .article_box01 > li:first-child { width: 6.8vw; /*52px*/ height: 100%; font-size: 1.6vw; /*0.8rem*/ float: left; color: #ba1822; font-weight: bold; }
+  article > .article_box01 > li:last-child { margin-right: 0; }
   /* product */
-  article > .article_box02 { width: 815px; height: 558px; margin-top: 25px; }
-  article > .article_box02 > li { float: left; }
-  /* .article_box02>li size */
-  article > .article_box02 > li:nth-child(1) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(2) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(3) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(4) { height: 282px; }
-  article > .article_box02 > li:nth-child(5) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(6) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(7) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(8) { height: 275px; }
-  article > .article_box02 > li:nth-child(4n+1) { width: 185px; }
-  article > .article_box02 > li:nth-child(4n+2) { width: 200px; }
-  article > .article_box02 > li:nth-child(4n+3) { width: 197px; }
-  article > .article_box02 > li:nth-child(4n) { width: 178px; }
+  article > .article_box02 { width: 87.2vw; /*670px*/ height: 75.2vw; /*578px*/ margin-top: 3.2vw; /*25px*/ }
+  article > .article_box02 > li { width: calc(100% / 3); height: 34.5vw; /*265px*/ float: left; padding-top: 3.125vw; /*24px*/ }
+  article > .article_box02 > li > dl { width: 100%; height: 100%; }
+  article > .article_box02 > li > dl > .img_box { width: 100%; height: 26vw; /*200px*/ background-repeat: no-repeat; background-position: center center; }
+  article > .article_box02 > li > dl > .img_box > span { width: 0; height: 0; display: none; font-size: 0; }
+  article > .article_box02 > li > dl > .title_box { width: 100%; height: 3.2vw; /*25px*/ margin-top: 2.6vw; /*20px*/ font-size: 2vw; /*1rem*/ text-align: center; font-weight: bold; }
+  article > .article_box02 > li > dl > .money_box { width: 100%; height: 2.6vw; /*20px*/ font-size: 2vw; /*1rem*/ text-align: center; }
+  article > .article_box02 > li > dl > .money_box > i { width: auto; height: 100%; font-size: 1.875vw; /*0.9rem*/ line-height: 150%; margin-right: 1.3vw; /*10px*/ }
+  article > .article_box02 > .pro_7 { display: none; }
+  article > .article_box02 > .pro_8 { display: none; }
   /* .article_box02>li design */
-  article > .article_box02 > li:nth-child(1) > a { background-image: url("../img/article/product_01.png"); }
-  article > .article_box02 > li:nth-child(2) > a { background-image: url("../img/article/product_02.png"); }
-  article > .article_box02 > li:nth-child(3) > a { background-image: url("../img/article/product_03.png"); }
-  article > .article_box02 > li:nth-child(4) > a { background-image: url("../img/article/product_04.png"); }
-  article > .article_box02 > li:nth-child(5) > a { background-image: url("../img/article/product_05.png"); }
-  article > .article_box02 > li:nth-child(6) > a { background-image: url("../img/article/product_06.png"); }
-  article > .article_box02 > li:nth-child(7) > a { background-image: url("../img/article/product_07.png"); }
-  article > .article_box02 > li:nth-child(8) > a { background-image: url("../img/article/product_08.png"); }
+  article > .article_box02 .pro_1 > dl > .img_box { background-image: url("../img/article/product_01.png"); }
+  article > .article_box02 .pro_2 > dl > .img_box { background-image: url("../img/article/product_02.png"); }
+  article > .article_box02 .pro_3 > dl > .img_box { background-image: url("../img/article/product_03.png"); }
+  article > .article_box02 .pro_4 > dl > .img_box { background-image: url("../img/article/product_04.png"); }
+  article > .article_box02 .pro_5 > dl > .img_box { background-image: url("../img/article/product_05.png"); }
+  article > .article_box02 .pro_6 > dl > .img_box { background-image: url("../img/article/product_06.png"); }
+  article > .article_box02 .pro_7 > dl > .img_box { background-image: url("../img/article/product_07.png"); }
+  article > .article_box02 .pro_8 > dl > .img_box { background-image: url("../img/article/product_08.png"); }
   /* PhotoShop 768px 기준 */
   #footBox { width: 68.75%; /*528px*/ height: 12.5vw; /*96px*/ background-color: #bdc4c4; padding: 3.6vw 15.625% 4.2vw; /*28px 120px 32px*/ }
   #footBox > #footBox { width: 100%; height: 100%; }
@@ -243,51 +218,38 @@
   header > #headBox > #gnb > #mainBox > li > .sub_menu > li { width: 100%; height: auto; }
   /* dolce_sub01_nav.css */
   #sub_menu { width: 815px; height: 160px; padding-top: 204px; padding-left: 45px; border-bottom: 2px solid #bdc4c4; }
-  #sub_menu > h2 { width: 100px; height: 25px; margin-right: 40px; font-size: 1.2rem; font-weight: bold; color: #ba1822; float: left; }
-  #sub_menu > ul { height: 25px; margin-top: 25px; font-size: 1.2rem; font-weight: bold; }
-  /* nav_box 02 커피 카테고리 */
-  #sub_menu > .nav_box01 { width: 100%; padding-top: 40px; }
-  #sub_menu > .nav_box01 > * { width: 75px; height: 100%; margin-right: 40px; float: left; }
-  #sub_menu > .nav_box01 > p { font-size: 1rem; font-weight: bold; color: #222222; float: left; color: #222222; }
-  #sub_menu > .nav_box01 > li > a { font-size: 0.9rem; font-weight: bold; color: #222222; }
-  #sub_menu > .nav_box01 > li:nth-child(4) { width: 60px; }
-  /* nav_box 03 가격 */
-  #sub_menu > .nav_box02 { width: 100%; }
-  #sub_menu > .nav_box02 > * { width: 80px; height: 100%; margin-right: 40px; float: left; }
-  #sub_menu > .nav_box02 > p { font-size: 1rem; font-weight: bold; color: #222222; float: left; color: #222222; }
-  #sub_menu > .nav_box02 > li > a { font-size: 0.8rem; font-weight: blod; color: #222222; color: #222222; }
+  #sub_menu > h2 { width: 100px; height: 25px; display: block; font-size: 1.2rem; font-weight: bold; color: #ba1822; }
+  #sub_menu > ul { width: 100%; height: 25px; margin-top: 50px; }
+  #sub_menu > ul > li { width: 80px; height: 100%; margin-right: 40px; float: left; }
+  #sub_menu > ul > li:nth-child(2) > a { color: #ba1822; }
+  #sub_menu > ul > li > a { font-size: 0.9rem; font-weight: bold; color: #222222; }
+  #sub_menu > ul > .nav_title { font-size: 1rem; font-weight: bold; color: #222222; }
+  #sub_menu > .nav_box02 { margin-top: 25px; }
   /* dolce_sub01_article.css */
   /* 정렬 bar */
   article { width: 815px; height: 650px; padding-top: 12px; }
   article > .article_box01 { width: 288px; height: 14px; float: right; }
-  article > .article_box01 > li { width: 78px; height: 100%; font-size: 0.8rem; float: left; }
-  article > .article_box01 > li:first-child { width: 52px; height: 100%; font-size: 0.8rem; float: left; }
-  article > ul > li > .sns_bar { width: 10px; height: 100%; background-image: url("../img/header/dot.png"); float: left; display: block; background-repeat: no-repeat; background-position: center center; margin-right: 3px; }
+  article > .article_box01 > li { width: 64px; height: 100%; font-size: 0.8rem; float: left; margin-right: 13px; }
+  article > .article_box01 > li:first-child { width: 52px; height: 100%; font-size: 0.8rem; float: left; color: #ba1822; font-weight: bold; }
+  article > .article_box01 > li:last-child { margin-right: 0; }
   /* product */
   article > .article_box02 { width: 815px; height: 558px; margin-top: 25px; }
-  article > .article_box02 > li { float: left; }
-  /* .article_box02>li size */
-  article > .article_box02 > li:nth-child(1) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(2) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(3) { height: 282px; margin-right: 13px; }
-  article > .article_box02 > li:nth-child(4) { height: 282px; }
-  article > .article_box02 > li:nth-child(5) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(6) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(7) { height: 275px; margin-left: 13px; }
-  article > .article_box02 > li:nth-child(8) { height: 275px; }
-  article > .article_box02 > li:nth-child(4n+1) { width: 185px; }
-  article > .article_box02 > li:nth-child(4n+2) { width: 200px; }
-  article > .article_box02 > li:nth-child(4n+3) { width: 197px; }
-  article > .article_box02 > li:nth-child(4n) { width: 178px; }
+  article > .article_box02 > li { width: 25%; height: 255px; float: left; padding-top: 24px; }
+  article > .article_box02 > li > dl { width: 100%; height: 100%; }
+  article > .article_box02 > li > dl > .img_box { width: 100%; height: 200px; background-repeat: no-repeat; background-position: center center; }
+  article > .article_box02 > li > dl > .img_box > span { width: 0; height: 0; display: none; font-size: 0; }
+  article > .article_box02 > li > dl > .title_box { width: 100%; height: 25px; margin-top: 20px; font-size: 1rem; text-align: center; font-weight: bold; }
+  article > .article_box02 > li > dl > .money_box { width: 100%; height: 20px; font-size: 1rem; text-align: center; }
+  article > .article_box02 > li > dl > .money_box > i { width: auto; height: 100%; font-size: 0.9rem; line-height: 150%; margin-right: 10px; }
   /* .article_box02>li design */
-  article > .article_box02 > li:nth-child(1) > a { background-image: url("../img/article/product_01.png"); }
-  article > .article_box02 > li:nth-child(2) > a { background-image: url("../img/article/product_02.png"); }
-  article > .article_box02 > li:nth-child(3) > a { background-image: url("../img/article/product_03.png"); }
-  article > .article_box02 > li:nth-child(4) > a { background-image: url("../img/article/product_04.png"); }
-  article > .article_box02 > li:nth-child(5) > a { background-image: url("../img/article/product_05.png"); }
-  article > .article_box02 > li:nth-child(6) > a { background-image: url("../img/article/product_06.png"); }
-  article > .article_box02 > li:nth-child(7) > a { background-image: url("../img/article/product_07.png"); }
-  article > .article_box02 > li:nth-child(8) > a { background-image: url("../img/article/product_08.png"); }
+  article > .article_box02 .pro_1 > dl > .img_box { background-image: url("../img/article/product_01.png"); }
+  article > .article_box02 .pro_2 > dl > .img_box { background-image: url("../img/article/product_02.png"); }
+  article > .article_box02 .pro_3 > dl > .img_box { background-image: url("../img/article/product_03.png"); }
+  article > .article_box02 .pro_4 > dl > .img_box { background-image: url("../img/article/product_04.png"); }
+  article > .article_box02 .pro_5 > dl > .img_box { background-image: url("../img/article/product_05.png"); }
+  article > .article_box02 .pro_6 > dl > .img_box { background-image: url("../img/article/product_06.png"); }
+  article > .article_box02 .pro_7 > dl > .img_box { background-image: url("../img/article/product_07.png"); }
+  article > .article_box02 .pro_8 > dl > .img_box { background-image: url("../img/article/product_08.png"); }
   /* PhotoShop 1400px 기준 */
   #footer { width: 100%; height: 250px; background-color: #bdc4c4; margin-top: 50px; }
   #footer > #footBox { width: 790px; height: 125px; margin: 0 auto; padding-top: 50px; }

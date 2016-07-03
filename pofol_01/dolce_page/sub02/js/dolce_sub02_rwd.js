@@ -27,7 +27,7 @@ $(document).ready(function(){
                 var gnb = $(".mos_gnb"),
                     gnbUl = gnb.children('ul');
                 
-                $('h1').css({"z-index":"300"});
+                $('h1').animate({"z-index":"300"},400);
                 gnbUl.animate({left:"-100%"},1000);
             });//.endBox>i.on'click'
             
