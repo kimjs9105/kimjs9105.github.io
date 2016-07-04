@@ -43,54 +43,31 @@
   #headBox > #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; }
   #headBox > #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; }
   /* PhotoShop 360px 기준 */
-  #nav { width: 815px; height: 90px; padding-left: 45px; padding-top: 204px; border-bottom: 2px solid #bdc4c4; }
-  #nav > h2 { width: 80px; height: 25px; padding-top: 40px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  #nav > ul { width: 500px; height: 20px; float: left; }
-  #nav > ul > li { height: 20px; margin-top: 6px; padding-top: 40px; font-size: 0.8rem; float: left; margin-left: 18px; }
-  #nav > ul > li.map_box { width: 50px; }
-  #nav > ul > li.map_sear { width: 50px; }
+  #nav { display: none; }
+  #nav_mobile { width: 88.8vw; /*320px*/ height: 13.8vw; /*50px*/ padding-top: 16.6vw; /*60px*/ padding-left: 5.5vw; /*20px*/ border-bottom: 2px solid #bdc4c4; }
+  #nav_mobile > h2 { width: 27.7vw; /*100px*/ height: 5.5vw; /*20px*/ margin-top: 4.1vw; /*15px*/ float: left; font-size: 4.4vw; /*1rem*/ font-weight: bold; color: #ba1822; }
+  #nav_mobile > ul { width: calc(100% - 27.7vw); height: 5.5vw; /*20px*/ margin-top: 4.1vw; /*15px*/ float: left; }
+  #nav_mobile > ul > li { width: 16.6vw; /*60px*/ height: 5.5vw; /*20px*/ margin-left: 2.7vw; /*10px*/ float: left; font-size: 3.5vw; /*0.8rem*/ line-height: 170%; }
+  #nav_mobile > ul > li.map_box { margin-left: 0; font-weight: bold; color: #ba1822; }
   /* dolce_sub01_article.css */
-  article { width: 815px; height: 755px; padding-top: 40px; }
-  article > #maps { width: 100%; height: 322px; }
-  article > #map_text { width: 100%; height: 328px; margin-top: 45px; }
-  /* big maps */
-  #maps > div { height: 100%; background-repeat: no-repeat; background-position: center center; }
-  #maps > #map_all { width: 270px; float: left; background-image: url("../img/article/map_all.png"); background-size: 110%; background-color: #bdc4c4; border-top-left-radius: 10px; border-bottom-left-radius: 10px; font-size: 0; }
-  #maps > #map_mini { width: 545px; float: right; background-image: url("../img/article/map_mini.png"); background-size: 65%; border: 2px solid #ba1822; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-sizing: border-box; background-position: 70% center; }
-  #maps > #map_mini > h3 { width: 205px; height: 44px; font-size: 1.2rem; font-weight: bold; position: absolute; top: 50%; left: 50%; margin-top: -100px; margin-left: -70px; }
-  #maps > #map_mini > ul { width: 100%; height: 100%; position: relative; }
-  #maps > #map_mini > ul > li { width: 15px; height: 20px; position: absolute; top: 0; left: 0; background-image: url("../img/article/map_point.png"); background-size: contain; background-position: center center; background-repeat: no-repeat; }
-  #maps > #map_mini > ul > li > button { width: 100%; height: 100%; font-size: 0; background-color: transparent; cursor: pointer; }
-  /* map pointer space */
-  .point_01 { margin-top: 75px; margin-left: 260px; }
-  .point_02 { margin-top: 55px; margin-left: 365px; }
-  .point_03 { margin-top: 65px; margin-left: 375px; }
-  .point_04 { margin-top: 140px; margin-left: 274px; }
-  .point_05 { margin-top: 150px; margin-left: 258px; }
-  .point_06 { margin-top: 125px; margin-left: 340px; }
-  .point_07 { margin-top: 132px; margin-left: 330px; }
-  .point_08 { margin-top: 140px; margin-left: 320px; }
-  .point_09 { margin-top: 165px; margin-left: 295px; }
-  .point_10 { margin-top: 180px; margin-left: 310px; }
-  .point_11 { margin-top: 170px; margin-left: 320px; }
-  .point_12 { margin-top: 130px; margin-left: 385px; }
-  .point_13 { margin-top: 170px; margin-left: 390px; }
-  .point_14 { margin-top: 173px; margin-left: 375px; }
-  .point_15 { margin-top: 195px; margin-left: 355px; }
-  .point_16 { margin-top: 200px; margin-left: 370px; }
-  /* table & real maps */
-  #map_text > #shoptable { width: 520px; height: 100%; /*328px*/ float: left; }
-  #map_text > #shoptable > #shopinfo_01 { width: 100%; height: 100%; }
-  #map_text > #shoptable > #shopinfo_01 > table { width: 100%; height: 100%; border-spacing: 0; border-collapse: collapse; }
-  #map_text > #shoptable > #shopinfo_01 > table > tbody { width: 100%; height: 100%; }
-  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr { width: 100%; height: 20%; border-bottom: 2px solid #bdc4c4; border-top: 2px solid #bdc4c4; }
-  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > th { width: 30%; text-align: center; padding: 20px 0; }
-  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > td { width: 70%; text-align: center; padding: 20px 0; border-left: 2px dotted #bdc4c4; }
-  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr:nth-child(2) > td { padding: 10px 0; }
-  #map_text > #map_wrap { width: 260px; height: 100%; float: right; position: relative; }
-  #map_text > #map_wrap > h3 { width: calc(100% - 20px); height: 48px; background-color: #ba1822; padding-left: 20px; font-size: 1.2rem; line-height: 250%; font-weight: bold; color: #ffffff; }
-  #map_text > #map_wrap > div { width: 100%; height: 280px; font-size: 0; background-image: url("../img/article/real_map.png"); background-repeat: no-repeat; background-size: cover; background-position: center center; }
-  #map_text > #map_wrap > button { width: 80px; height: 25px; background-color: #bdc4c4; position: absolute; z-index: 200; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 20px; border-radius: 5px; font-size: 0.8rem; font-weight: bold; box-shadow: 1px 1px 5px #222222; }
+  #section { display: none; }
+  #section_mobile { width: 94.4vw; /*340px*/ height: 166.6vw; /*600px*/ }
+  #section_mobile > #selectBox { width: 100%; height: 100%; padding-top: 5.5vw; /*20px*/ }
+  #section_mobile > #selectBox > p { width: 22.2vw; /*80px*/ height: 8.3vw; /*30px*/ float: left; font-size: 5.3vw; /*1.2rem*/ font-weight: bold; text-align: center; line-height: 200%; }
+  #section_mobile > #selectBox > .select_list { width: 55.5vw; /*200px*/ height: 8.3vw; /*30px*/ float: left; }
+  #section_mobile > #selectBox > .select_list > li { width: 100%; height: 100%; background-color: #ffffff; }
+  #section_mobile > #selectBox > .select_list > li > a { font-size: 5.3vw; /*1.2rem*/ color: #222222; font-weight: bold; text-align: center; line-height: 200%; text-decoration: none; }
+  #section_mobile > #selectBox > span { width: 11.1vw; /*40px*/ height: 8.3vw; /*30px*/ display: block; float: left; }
+  #section_mobile > #selectBox > span > i { font-size: 6.6vw; /*1.5rem*/ transform: rotate(90deg); margin-top: 1.3vw; /*5px*/ }
+  #section_mobile > #selectBox > .table_box { width: 100%; height: 166.6vw; /*600px*/ padding-top: 13.8vw; /*50px*/ }
+  #section_mobile > #selectBox > .table_box::before { content: " "; display: block; clear: both; }
+  #section_mobile > #selectBox > .table_box::after { content: " "; display: block; clear: both; }
+  #section_mobile > #selectBox > .table_box > ul { width: calc(100% - 11.1vw); height: 27.7vw; /*100px*/ margin-top: 5.5vw; /*20px*/ padding: 0 5.5vw; /*20px*/ border-bottom: 2px solid #aaa; }
+  #section_mobile > #selectBox > .table_box > ul > li { width: 100%; height: 5.5vw; /*20px*/ font-size: 4.4vw; /*1rem*/ }
+  #section_mobile > #selectBox > .table_box > ul > li:first-child { font-size: 4.8vw; /*1.1rem*/ font-weight: bold; }
+  #section_mobile > #selectBox > .table_box > ul > li:nth-child(2) { height: 11.1vw; /*40px*/ }
+  #section_mobile > #selectBox > .table_box > ul > li:nth-child(3) { width: 41.6vw; /*150px*/ float: left; }
+  #section_mobile > #selectBox > .table_box > ul > li.more_box { width: 22.2vw; /*80px*/ height: 8.3vw; /*30px*/ float: right; background-color: #ba1822; border-radius: 5px; font-size: 4.4vw; /*1rem*/ line-height: 200%; text-align: center; color: #ffffff; }
   /* Photoshop 360px */
   #footer { width: 86%; /*310px*/ height: 39vw; /*140px*/ background-color: #bdc4c4; padding: 8.3vw 7% 8.3vw; /*30px 25px 30px*/ }
   #footer > #footBox { width: 100%; height: 39vw; /*140px*/ }
@@ -137,54 +114,55 @@
   #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; box-sizing: border-box; }
   #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; padding-top: 5%; }
   /* PhotoShop 768px 기준 */
-  #nav { width: 815px; height: 90px; padding-left: 45px; padding-top: 204px; border-bottom: 2px solid #bdc4c4; }
-  #nav > h2 { width: 80px; height: 25px; padding-top: 40px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  #nav > ul { width: 500px; height: 20px; float: left; }
-  #nav > ul > li { height: 20px; margin-top: 6px; padding-top: 40px; font-size: 0.8rem; float: left; margin-left: 18px; }
-  #nav > ul > li.map_box { width: 50px; }
-  #nav > ul > li.map_sear { width: 50px; }
+  #nav { width: 87.2vw; /*670px*/ height: 11.7vw; /*90px*/ padding-top: 15.625vw; /*120px*/ border-bottom: 2px solid #bdc4c4; }
+  #nav > h2 { width: 13vw; /*100px*/ height: 3.2vw; /*25px*/ margin-top: 4.5vw; /*35px*/ float: left; font-size: 2.5vw; /*1.2rem*/ font-weight: bold; color: #ba1822; }
+  #nav > ul { width: calc(100% - 13vw); height: 3.2vw; /*25px*/ margin-top: 4.5vw; /*35px*/ float: left; }
+  #nav > ul > li { width: 6.5vw; /*50px*/ height: 3.2vw; /*25px*/ margin-left: 2.3vw; /*18px*/ float: left; font-size: 1.6vw; /*0.8rem*/ line-height: 200%; }
+  #nav > ul > li.map_box { font-weight: bold; color: #ba1822; }
+  #nav_mobile { display: none; }
   /* dolce_sub01_article.css */
-  article { width: 815px; height: 755px; padding-top: 40px; }
-  article > #maps { width: 100%; height: 322px; }
-  article > #map_text { width: 100%; height: 328px; margin-top: 45px; }
+  #section { width: 87.2vw; /*670px*/ height: 98.3vw; /*755px*/ padding-top: 5.2vw; /*40px*/ }
+  #section > #maps { width: 100%; height: 41.9vw; /*322px*/ }
+  #section > #map_text { width: 100%; height: 42.7vw; /*328px*/ margin-top: 5.8vw; /*45px*/ }
+  #section_mobile { display: none; }
   /* big maps */
   #maps > div { height: 100%; background-repeat: no-repeat; background-position: center center; }
-  #maps > #map_all { width: 270px; float: left; background-image: url("../img/article/map_all.png"); background-size: 110%; background-color: #bdc4c4; border-top-left-radius: 10px; border-bottom-left-radius: 10px; font-size: 0; }
-  #maps > #map_mini { width: 545px; float: right; background-image: url("../img/article/map_mini.png"); background-size: 65%; border: 2px solid #ba1822; border-top-right-radius: 10px; border-bottom-right-radius: 10px; box-sizing: border-box; background-position: 70% center; }
-  #maps > #map_mini > h3 { width: 205px; height: 44px; font-size: 1.2rem; font-weight: bold; position: absolute; top: 50%; left: 50%; margin-top: -100px; margin-left: -70px; }
+  #maps > #map_all { width: 28.7vw; /*220px*/ float: left; background-image: url("../img/article/map_all.png"); background-size: 110%; background-color: #bdc4c4; border-top-left-radius: 1.3vw; /*10px*/ border-bottom-left-radius: 1.3vw; /*10px*/ font-size: 0; }
+  #maps > #map_mini { width: 58.5vw; /*450px*/ float: right; background-image: url("../img/article/map_mini.png"); background-size: 65%; border: 2px solid #ba1822; border-top-right-radius: 1.3vw; /*10px*/ border-bottom-right-radius: 1.3vw; /*10px*/ box-sizing: border-box; background-position: 70% center; }
+  #maps > #map_mini > h3 { width: 26.7vw; /*205px*/ height: 5.7vw; /*44px*/ font-size: 2.5vw; /*1.2rem*/ font-weight: bold; position: absolute; top: 0; left: 0; margin-top: 40.3vw; /*310px*/ margin-left: 41.6vw; /*320px*/ }
   #maps > #map_mini > ul { width: 100%; height: 100%; position: relative; }
-  #maps > #map_mini > ul > li { width: 15px; height: 20px; position: absolute; top: 0; left: 0; background-image: url("../img/article/map_point.png"); background-size: contain; background-position: center center; background-repeat: no-repeat; }
+  #maps > #map_mini > ul > li { width: 1.95vw; /*15px*/ height: 2.6vw; /*20px*/ position: absolute; top: 0; left: 0; background-image: url("../img/article/map_point.png"); background-size: contain; background-position: center center; background-repeat: no-repeat; }
   #maps > #map_mini > ul > li > button { width: 100%; height: 100%; font-size: 0; background-color: transparent; cursor: pointer; }
   /* map pointer space */
-  .point_01 { margin-top: 75px; margin-left: 260px; }
-  .point_02 { margin-top: 55px; margin-left: 365px; }
-  .point_03 { margin-top: 65px; margin-left: 375px; }
-  .point_04 { margin-top: 140px; margin-left: 274px; }
-  .point_05 { margin-top: 150px; margin-left: 258px; }
-  .point_06 { margin-top: 125px; margin-left: 340px; }
-  .point_07 { margin-top: 132px; margin-left: 330px; }
-  .point_08 { margin-top: 140px; margin-left: 320px; }
-  .point_09 { margin-top: 165px; margin-left: 295px; }
-  .point_10 { margin-top: 180px; margin-left: 310px; }
-  .point_11 { margin-top: 170px; margin-left: 320px; }
-  .point_12 { margin-top: 130px; margin-left: 385px; }
-  .point_13 { margin-top: 170px; margin-left: 390px; }
-  .point_14 { margin-top: 173px; margin-left: 375px; }
-  .point_15 { margin-top: 195px; margin-left: 355px; }
-  .point_16 { margin-top: 200px; margin-left: 370px; }
+  .point_01 { margin-top: 11vw; /*85px*/ margin-left: 28.6vw; /*220px*/ }
+  .point_02 { margin-top: 8.5vw; /*65px*/ margin-left: 39vw; /*300px*/ }
+  .point_03 { margin-top: 9.7vw; /*75px*/ margin-left: 40.3vw; /*310px*/ }
+  .point_04 { margin-top: 18.2vw; /*140px*/ margin-left: 29.2vw; /*224px*/ }
+  .point_05 { margin-top: 19.5vw; /*150px*/ margin-left: 27vw; /*208px*/ }
+  .point_06 { margin-top: 15.625vw; /*120px*/ margin-left: 36.4vw; /*280px*/ }
+  .point_07 { margin-top: 16.5vw; /*127px*/ margin-left: 35.1vw; /*270px*/ }
+  .point_08 { margin-top: 17.5vw; /*135px*/ margin-left: 33.8vw; /*260px*/ }
+  .point_09 { margin-top: 20.1vw; /*155px*/ margin-left: 31.25vw; /*240px*/ }
+  .point_10 { margin-top: 22.1vw; /*170px*/ margin-left: 33.2vw; /*255px*/ }
+  .point_11 { margin-top: 20.8vw; /*160px*/ margin-left: 34.5vw; /*265px*/ }
+  .point_12 { margin-top: 15.625vw; /*120px*/ margin-left: 41vw; /*315px*/ }
+  .point_13 { margin-top: 20.8vw; /*160px*/ margin-left: 41.6vw; /*320px*/ }
+  .point_14 { margin-top: 20.83vw; /*160px*/ margin-left: 39.7vw; /*305px*/ }
+  .point_15 { margin-top: 24vw; /*185px*/ margin-left: 37.1vw; /*285px*/ }
+  .point_16 { margin-top: 24.7vw; /*190px*/ margin-left: 39vw; /*300px*/ }
   /* table & real maps */
-  #map_text > #shoptable { width: 520px; height: 100%; /*328px*/ float: left; }
+  #map_text > #shoptable { width: 52vw; /*400px*/ height: 100%; /*328px*/ float: left; }
   #map_text > #shoptable > #shopinfo_01 { width: 100%; height: 100%; }
   #map_text > #shoptable > #shopinfo_01 > table { width: 100%; height: 100%; border-spacing: 0; border-collapse: collapse; }
   #map_text > #shoptable > #shopinfo_01 > table > tbody { width: 100%; height: 100%; }
   #map_text > #shoptable > #shopinfo_01 > table > tbody > tr { width: 100%; height: 20%; border-bottom: 2px solid #bdc4c4; border-top: 2px solid #bdc4c4; }
-  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > th { width: 30%; text-align: center; padding: 20px 0; }
-  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > td { width: 70%; text-align: center; padding: 20px 0; border-left: 2px dotted #bdc4c4; }
-  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr:nth-child(2) > td { padding: 10px 0; }
-  #map_text > #map_wrap { width: 260px; height: 100%; float: right; position: relative; }
-  #map_text > #map_wrap > h3 { width: calc(100% - 20px); height: 48px; background-color: #ba1822; padding-left: 20px; font-size: 1.2rem; line-height: 250%; font-weight: bold; color: #ffffff; }
-  #map_text > #map_wrap > div { width: 100%; height: 280px; font-size: 0; background-image: url("../img/article/real_map.png"); background-repeat: no-repeat; background-size: cover; background-position: center center; }
-  #map_text > #map_wrap > button { width: 80px; height: 25px; background-color: #bdc4c4; position: absolute; z-index: 200; bottom: 0; right: 0; margin-bottom: 20px; margin-right: 20px; border-radius: 5px; font-size: 0.8rem; font-weight: bold; box-shadow: 1px 1px 5px #222222; }
+  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > th { width: 30%; text-align: center; font-size: 2vw; /*1rem*/ padding: 2.6vw 0; }
+  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > td { width: 70%; text-align: center; font-size: 2vw; /*1rem*/ padding: 2.6vw 0; border-left: 2px dotted #bdc4c4; }
+  #map_text > #shoptable > #shopinfo_01 > table > tbody > tr:nth-child(2) > td { padding: 1.3vw 0; }
+  #map_text > #map_wrap { width: 32.5vw; /*250px*/ height: 100%; float: right; position: relative; }
+  #map_text > #map_wrap > h3 { width: calc(100% - 2.6vw); height: 6.25vw; /*48px*/ background-color: #ba1822; padding-left: 2.6vw; /*20px*/ font-size: 2.5vw; /*1.2rem*/ line-height: 250%; font-weight: bold; color: #ffffff; }
+  #map_text > #map_wrap > div { width: 100%; height: 36.4vw; /*280px*/ font-size: 0; background-image: url("../img/article/real_map.png"); background-repeat: no-repeat; background-size: cover; background-position: center center; }
+  #map_text > #map_wrap > button { width: 10.4vw; /*80px*/ height: 3.2vw; /*25px*/ background-color: #bdc4c4; position: absolute; z-index: 200; bottom: 0; right: 0; margin-bottom: 2.6vw; /*20px*/ margin-right: 2.6vw; /*20px*/ border-radius: 0.6vw; /*5px*/ font-size: 1.6vw; /*0.8rem*/ font-weight: bold; box-shadow: 1px 1px 5px #222222; }
   /* PhotoShop 768px 기준 */
   #footBox { width: 68.75%; /*528px*/ height: 12.5vw; /*96px*/ background-color: #bdc4c4; padding: 3.6vw 15.625% 4.2vw; /*28px 120px 32px*/ }
   #footBox > #footBox { width: 100%; height: 100%; }
@@ -247,15 +225,16 @@
   header > #headBox > #gnb > #mainBox > li > .sub_menu > li { width: 100%; height: auto; }
   /* dolce_sub01_nav.css */
   #nav { width: 815px; height: 90px; padding-left: 45px; padding-top: 204px; border-bottom: 2px solid #bdc4c4; }
-  #nav > h2 { width: 80px; height: 25px; padding-top: 40px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  #nav > ul { width: 500px; height: 20px; float: left; }
-  #nav > ul > li { height: 20px; margin-top: 6px; padding-top: 40px; font-size: 0.8rem; float: left; margin-left: 18px; }
-  #nav > ul > li.map_box { width: 50px; }
-  #nav > ul > li.map_sear { width: 50px; }
+  #nav > h2 { width: 100px; height: 25px; margin-top: 35px; float: left; font-size: 1.2rem; font-weight: bold; color: #ba1822; }
+  #nav > ul { width: calc(100% - 100px); height: 25px; margin-top: 35px; float: left; }
+  #nav > ul > li { width: 50px; height: 25px; margin-left: 18px; float: left; font-size: 0.8rem; line-height: 200%; }
+  #nav > ul > li.map_box { font-weight: bold; color: #ba1822; }
+  #nav_mobile { display: none; }
   /* dolce_sub01_article.css */
-  article { width: 815px; height: 755px; padding-top: 40px; }
-  article > #maps { width: 100%; height: 322px; }
-  article > #map_text { width: 100%; height: 328px; margin-top: 45px; }
+  #section { width: 815px; height: 755px; padding-top: 40px; }
+  #section > #maps { width: 100%; height: 322px; }
+  #section > #map_text { width: 100%; height: 328px; margin-top: 45px; }
+  #section_mobile { display: none; }
   /* big maps */
   #maps > div { height: 100%; background-repeat: no-repeat; background-position: center center; }
   #maps > #map_all { width: 270px; float: left; background-image: url("../img/article/map_all.png"); background-size: 110%; background-color: #bdc4c4; border-top-left-radius: 10px; border-bottom-left-radius: 10px; font-size: 0; }

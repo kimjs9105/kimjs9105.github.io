@@ -27,7 +27,7 @@ $(document).ready(function(){
                 var gnb = $(".mos_gnb"),
                     gnbUl = gnb.children('ul');
                 
-                $('h1').css({"z-index":"300"});
+                $('h1').animate({"z-index":"300"},400);
                 gnbUl.animate({left:"-100%"},1000);
             });//.endBox>i.on'click'
             
@@ -41,6 +41,20 @@ $(document).ready(function(){
             /* login popup page */
             $(".mos_sitemap").children("li").eq(0).on("click",function(){
                 window.open("../popup/popup.html","Login","width=340, height=100%, left=250, top= 250, scrollbars=no, toolbars=no, location=no")
+            });
+            
+            /* map list */
+            $("#selectBox").tabs();
+            $(".select_list").children("li").stop().hide();
+            $(".select_list").children("li").eq(0).stop().show();
+            $(".point_btn").on("click",function(){
+                $(".select_list").css({height: "auto" , position : "absolute" , "z-index" : "500", left: 25 + "vw"});
+                $(this).css({position : "absolute" , "z-index" : "500", left: 80.5 + "vw"})
+                $(".select_list").children("li").stop().show();
+                $(".select_list").children("li").on("click",function(){
+                    $(".select_list").children("li").stop().hide();
+                    $(this).stop().show();
+                })
             });
 
         }//winW <= 679
