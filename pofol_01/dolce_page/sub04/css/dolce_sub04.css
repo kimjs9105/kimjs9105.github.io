@@ -43,19 +43,22 @@
   #headBox > #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; }
   #headBox > #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; }
   /* PhotoShop 360px 기준 */
-  section { width: 815px; height: 90px; padding-left: 45px; padding-top: 204px; border-bottom: 2px solid #bdc4c4; }
-  section > h2 { width: 60px; height: 25px; padding-top: 40px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  section > ul { width: 500px; height: 20px; float: left; }
-  section > ul > li { height: 20px; margin-top: 6px; padding-top: 40px; font-size: 0.8rem; float: left; margin-left: 18px; }
-  section > ul > li.ev_ing { width: 120px; }
-  section > ul > li.ev_fin { width: 110px; }
+  #nav { width: 88.8vw; /*320px*/ height: 13.8vw; /*50px*/ padding-top: 16.6vw; /*60px*/ padding-left: 5.5vw; /*20px*/ border-bottom: 2px solid #bdc4c4; }
+  #nav > h2 { width: 16.6vw; /*60px*/ height: 5.5vw; /*20px*/ margin-top: 4.1vw; /*15px*/ float: left; font-size: 4.4vw; /*1rem*/ font-weight: bold; color: #ba1822; }
+  #nav > ul { width: calc(100% - 27.7vw); height: 5.5vw; /*20px*/ margin-top: 4.1vw; /*15px*/ float: left; }
+  #nav > ul > li { width: 27.7vw; /*100px*/ height: 5.5vw; /*20px*/ margin-left: 2.7vw; /*10px*/ float: left; font-size: 3.5vw; /*0.8rem*/ line-height: 170%; }
+  #nav > ul > li.ev_ing { margin-left: 0; font-weight: bold; color: #ba1822; }
   /* PhotoShop 360px 기준 */
   /* dolce_sub04_article.css */
-  article { width: 815px; height: 755px; padding-top: 50px; }
-  article > ul { width: inherit; height: inherit; }
-  article > ul > li { width: 240px; height: 388px; margin-right: 47px; float: left; }
-  article > ul > li:nth-child(3n) { margin-right: 0px; }
-  .ev_text { width: 240px; height: 35px; margin-top: 14px; font-size: 0.8rem; }
+  article { width: 88.8vw; /*320px*/ height: 375vw; /*1350px*/ padding-top: 2.7vw; /*10px*/ }
+  article > ul { width: 100%; height: inherit; }
+  article > ul > li { width: 100%; height: 108.3vw; /*390px*/ margin-top: 8.3vw; /*30px*/ }
+  article > ul > li > a { width: 100%; }
+  article > ul > li > a > img { width: 80%; margin: 0 10%; }
+  article > ul > li:last-child > a > span { border-bottom: 0; }
+  article > ul > .mos_more { width: 55.5vw; /*200px*/ height: 11.1vw; /*40px*/ margin: 5.5vw 16.6vw 0; background-color: #ba1822; border-radius: 5px; font-size: 4.4vw; /*1rem*/ font-weight: bold; color: #ffffff; text-align: center; line-height: 250%; }
+  article > ul > .mos_hide { display: none; }
+  .ev_text { width: 80%; height: 13.8vw; /*50px*/ margin: 4.1vw 10% 0; font-size: 4vw; /*0.9rem*/ font-weight: bold; border-bottom: 1px solid #222222; }
   /* Photoshop 360px */
   #footer { width: 86%; /*310px*/ height: 39vw; /*140px*/ background-color: #bdc4c4; padding: 8.3vw 7% 8.3vw; /*30px 25px 30px*/ }
   #footer > #footBox { width: 100%; height: 39vw; /*140px*/ }
@@ -102,19 +105,21 @@
   #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; box-sizing: border-box; }
   #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; padding-top: 5%; }
   /* PhotoShop 768px 기준 */
-  section { width: 815px; height: 90px; padding-left: 45px; padding-top: 204px; border-bottom: 2px solid #bdc4c4; }
-  section > h2 { width: 60px; height: 25px; padding-top: 40px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  section > ul { width: 500px; height: 20px; float: left; }
-  section > ul > li { height: 20px; margin-top: 6px; padding-top: 40px; font-size: 0.8rem; float: left; margin-left: 18px; }
-  section > ul > li.ev_ing { width: 120px; }
-  section > ul > li.ev_fin { width: 110px; }
+  #nav { width: 87.2vw; /*670px*/ height: 11.7vw; /*90px*/ padding-top: 15.625vw; /*120px*/ border-bottom: 2px solid #bdc4c4; }
+  #nav > h2 { width: 6.5vw; /*50px*/ height: 3.2vw; /*25px*/ margin-top: 4.5vw; /*35px*/ float: left; font-size: 2.5vw; /*1.2rem*/ font-weight: bold; color: #ba1822; }
+  #nav > ul { width: calc(100% - 13vw); height: 3.2vw; /*25px*/ margin-top: 4.5vw; /*35px*/ float: left; }
+  #nav > ul > li { width: 11.7vw; /*90px*/ height: 3.2vw; /*25px*/ margin-left: 2.3vw; /*18px*/ float: left; font-size: 1.6vw; /*0.8rem*/ line-height: 200%; }
+  #nav > ul > li.ev_ing { font-weight: bold; color: #ba1822; }
   /* PhotoShop 768px 기준 */
   /* dolce_sub04_article.css */
-  article { width: 815px; height: 755px; padding-top: 50px; }
-  article > ul { width: inherit; height: inherit; }
-  article > ul > li { width: 240px; height: 388px; margin-right: 47px; float: left; }
-  article > ul > li:nth-child(3n) { margin-right: 0px; }
-  .ev_text { width: 240px; height: 35px; margin-top: 14px; font-size: 0.8rem; }
+  article { width: 87.2vw; /*670px*/ height: 91.1vw; /*700px*/ padding-top: 2.6vw; /*20px*/ }
+  article > ul { width: 100%; height: inherit; }
+  article > ul > li { width: calc((100% - 5.2vw)/*40px*/ / 3); height: 40.3vw; /*310px*/ margin-top: 2.6vw; /*20px*/ margin-right: 2.6vw; /*20px*/ float: left; }
+  article > ul > li:nth-child(3n) { margin-right: 0; }
+  article > ul > li > a { width: 100%; height: 100%; }
+  article > ul > li > a > img { width: 100%; }
+  article > ul > .mos_more { display: none; }
+  .ev_text { width: 100%; height: 4.5vw; /*35px*/ margin-top: 1.9vw; /*15px*/ font-size: 1.5625vw; /*0.75rem*/ }
   /* PhotoShop 768px 기준 */
   #footBox { width: 68.75%; /*528px*/ height: 12.5vw; /*96px*/ background-color: #bdc4c4; padding: 3.6vw 15.625% 4.2vw; /*28px 120px 32px*/ }
   #footBox > #footBox { width: 100%; height: 100%; }
@@ -188,6 +193,7 @@
   article > ul { width: inherit; height: inherit; }
   article > ul > li { width: 240px; height: 388px; margin-right: 47px; float: left; }
   article > ul > li:nth-child(3n) { margin-right: 0px; }
+  article > ul > .mos_more { display: none; }
   .ev_text { width: 240px; height: 35px; margin-top: 14px; font-size: 0.8rem; }
   /* PhotoShop 1400px 기준 */
   #footer { width: 100%; height: 250px; background-color: #bdc4c4; margin-top: 50px; }

@@ -27,7 +27,7 @@ $(document).ready(function(){
                 var gnb = $(".mos_gnb"),
                     gnbUl = gnb.children('ul');
                 
-                $('h1').css({"z-index":"300"});
+                $('h1').animate({"z-index":"300"},400);
                 gnbUl.animate({left:"-100%"},1000);
             });//.endBox>i.on'click'
             
@@ -42,6 +42,15 @@ $(document).ready(function(){
             $(".mos_sitemap").children("li").eq(0).on("click",function(){
                 window.open("../popup/popup.html","Login","width=340, height=100%, left=250, top= 250, scrollbars=no, toolbars=no, location=no")
             });
+            
+            /* article more */
+             $(".mos_hide").hide();
+            $(".mos_more").on("click",function(){
+                $(this).hide();
+                $(".mos_hide").show();
+                $("article").height(2550);
+                
+            })
 
         }//winW <= 679
         
