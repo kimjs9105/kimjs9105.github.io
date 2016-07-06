@@ -48,7 +48,7 @@ $(document).ready(function(){
             $(".mos_more").on("click",function(){
                 $(this).hide();
                 $(".mos_hide").show();
-                $("article").height(2550);
+                $("article").height("708.3vw");
                 
             })
 
