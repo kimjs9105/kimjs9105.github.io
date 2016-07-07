@@ -20,7 +20,8 @@ $(document).ready(function(){
                 
                 $('h1').css({"z-index":"100"});
                 $(this).siblings('ul').animate({left:0},1000);
-                
+                $(".mos_sns").css({"margin-top":"97.2vw"});
+                $(".mos_sitemap").css({"margin-top":"111.1vw"});
             });//gnbH2.on'click'
             
             gnbMainEndI.on('click',function(){
@@ -34,9 +35,11 @@ $(document).ready(function(){
             /* main menu slide down*/
             $(".mos_subM").hide();
             $(".mos_main").children('li').on('click',function(){
-                $(this).children(".mos_subM").stop().slideToggle(300);
+                $(".sub_menu").stop().slideUp(300);
+                $(this).children(".mos_subM").stop().slideDown(300);
+                $(".mos_sns").animate({"margin-top":"111.1vw"},500);
+                $(".mos_sitemap").animate({"margin-top":"125vw"},500);
             });
-            
             
             /* login popup page */
             $(".mos_sitemap").children("li").eq(0).on("click",function(){

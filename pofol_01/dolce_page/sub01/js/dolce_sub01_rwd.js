@@ -20,9 +20,9 @@ $(document).ready(function(){
             gnbH2.on('click',function(){
                 
                 $('h1').css({"z-index":"100"});
-                $('#nav_box').css({"z-index":"-10"}); 
                 $(this).siblings('ul').animate({left:0},1000);
-                
+                $(".mos_sns").css({"margin-top":"97.2vw"});
+                $(".mos_sitemap").css({"margin-top":"111.1vw"});
             });//gnbH2.on'click'
             
             gnbMainEndI.on('click',function(){
@@ -30,14 +30,16 @@ $(document).ready(function(){
                     gnbUl = gnb.children('ul');
                 
                 $('h1').animate({"z-index":"300"},400);
-                $('#nav_box').animate({"z-index":"100"},400);
                 gnbUl.animate({left:"-100%"},1000);
             });//.endBox>i.on'click'
             
             /* main menu slide down*/
             $(".mos_subM").hide();
             $(".mos_main").children('li').on('click',function(){
-                $(this).children(".mos_subM").stop().slideToggle(300);
+                $(".sub_menu").stop().slideUp(300);
+                $(this).children(".mos_subM").stop().slideDown(300);
+                $(".mos_sns").animate({"margin-top":"111.1vw"},500);
+                $(".mos_sitemap").animate({"margin-top":"125vw"},500);
             });
             
             /* login popup page */

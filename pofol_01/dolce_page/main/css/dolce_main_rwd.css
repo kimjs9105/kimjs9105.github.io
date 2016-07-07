@@ -42,6 +42,7 @@
   #headBox > #gnb > #mainBox > li > a { width: 100%; height: 9.23vw; /*24px*/ font-size: 6.6vw; /*1.5rem*/ color: #111111; }
   #headBox > #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; }
   #headBox > #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; }
+  #headBox > #gnb > #mainBox > li > .sub_menu > li { width: 100%; height: 6.9vw; /*25px*/ font-size: 4.4vw; /*1rem*/ }
   /* PhotoShop 360px 기준 */
   #artBox { width: 89%; /*320px*/ height: 485vw; /*874px*/ background-color: #fff; padding: 17.48vw 5.5% 5vw; /*68px 20px 18px*/ }
   /*------------tabs box--------------------*/
@@ -66,10 +67,10 @@
   #artBox > #tabs #bestBox > dl > dt { width: 90%; height: 18.2%; /*30px*/ padding-left: 10%; }
   #artBox > #tabs #bestBox > dl > dt > .s_text { font-size: 2.6vw; /*0.6rem*/ color: #bdc4c4; }
   #artBox > #tabs #bestBox > dl > dt > .b_text { font-size: 3.5vw; /*0.8rem*/ color: #222222; }
-  #artBox > #tabs #bestBox > dl:nth-of-type(1) > dd > span { background-image: url("../img/main/article/mos_coffee_01.png"); }
-  #artBox > #tabs #bestBox > dl:nth-of-type(2) > dd > span { background-image: url("../img/main/article/mos_coffee_02.png"); }
-  #artBox > #tabs #bestBox > dl:nth-of-type(3) > dd > span { background-image: url("../img/main/article/mos_coffee_03.png"); }
-  #artBox > #tabs #bestBox > dl:nth-of-type(4) > dd > span { background-image: url("../img/main/article/mos_coffee_04.png"); }
+  #artBox > #tabs #bestBox > dl:nth-of-type(1) > dd > span { background-image: url("../img/main/article/mos_coffee_01.jpg"); }
+  #artBox > #tabs #bestBox > dl:nth-of-type(2) > dd > span { background-image: url("../img/main/article/mos_coffee_02.jpg"); }
+  #artBox > #tabs #bestBox > dl:nth-of-type(3) > dd > span { background-image: url("../img/main/article/mos_coffee_03.jpg"); }
+  #artBox > #tabs #bestBox > dl:nth-of-type(4) > dd > span { background-image: url("../img/main/article/mos_coffee_04.jpg"); }
   #artBox > #tabs #newBox { width: 100%; /*320px*/ height: 91.7%; /*376px*/ }
   #artBox > #tabs #newBox > dl { width: 43.75%; /*140px*/ height: 44%; /*165px*/ margin-top: 7%; /*25px*/ margin-right: 12.5%; /*40px*/ float: left; }
   #artBox > #tabs #newBox > dl:nth-of-type(even) { margin-right: 0; }
