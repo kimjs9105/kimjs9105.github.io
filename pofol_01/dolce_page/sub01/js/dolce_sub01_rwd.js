@@ -23,12 +23,14 @@ $(document).ready(function(){
                 $(this).siblings('ul').animate({left:0},1000);
                 $(".mos_sns").css({"margin-top":"97.2vw"});
                 $(".mos_sitemap").css({"margin-top":"111.1vw"});
+                $('#nav_box').css({"z-index":"-10"}); 
             });//gnbH2.on'click'
             
             gnbMainEndI.on('click',function(){
                 var gnb = $(".mos_gnb"),
                     gnbUl = gnb.children('ul');
                 
+                $('#nav_box').animate({"z-index":"100"},400);
                 $('h1').animate({"z-index":"300"},400);
                 gnbUl.animate({left:"-100%"},1000);
             });//.endBox>i.on'click'
