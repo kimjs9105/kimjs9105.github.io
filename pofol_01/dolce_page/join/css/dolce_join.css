@@ -43,63 +43,64 @@
   #headBox > #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; }
   #headBox > #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; }
   /* PhotoShop 360px 기준 */
-  #join { width: 815px; height: 90px; padding-left: 45px; padding-top: 204px; border-bottom: 2px solid #bdc4c4; }
-  #join > h2 { width: 150px; height: 25px; padding-top: 40px; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
+  #join { width: 88.8vw; /*320px*/ height: 13.8vw; /*50px*/ padding-top: 16.6vw; /*60px*/ padding-left: 5.5vw; /*20px*/ border-bottom: 2px solid #bdc4c4; }
+  #join > h2 { width: 27.7vw; /*100px*/ height: 5.5vw; /*20px*/ margin-top: 4.1vw; /*15px*/ float: left; font-size: 4.4vw; /*1rem*/ font-weight: bold; color: #ba1822; }
   /* PhotoShop 360px 기준 */
   /* form basic */
-  article { width: 815px; height: 670px; padding-top: 45px; padding-left: 35px; }
-  article > form { width: calc(100% - 35px); height: 100%; background-image: url("../img/article/bgi.png"); background-repeat: no-repeat; background-position: 99% 33%; }
+  article { width: 88.8vw; /*320px*/ height: 194.4vw; /*700px*/ }
+  article > form { width: 100%; height: 100%; }
   article > form > fieldset > legend { width: 0; height: 0; overflow: hidden; display: none; }
-  article > form > .join_basic { width: 100%; height: 205px; }
-  article > form > .join_add { width: 100%; height: 138px; }
-  article > form > .join_etc { width: 100%; height: 145px; }
-  article > form > .join_but { width: 100%; height: 105px; }
+  article > form > .join_basic { width: 100%; height: 75vw; /*270px*/ }
+  article > form > .join_add { width: 100%; height: 41.6vw; /*150px*/ }
+  article > form > .join_etc { width: 100%; height: 40.2vw; /*145px*/ }
+  article > form > .join_but { width: 100%; height: 13.8vw; /*50px*/ }
   /* .join_basic size */
   .join_basic > ul { width: 100%; height: 100%; }
-  .join_basic > ul > li { width: 100%; height: 34px; padding-top: 34px; }
+  .join_basic > ul > li { width: 100%; height: 16.6vw; /*60px*/ margin-top: 2.7vw; /*10px*/ }
   .join_basic > ul > li > dl { width: 100%; height: 100%; }
-  .join_basic > ul > li > dl > dt { width: 150px; height: 25px; padding-top: 9px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  .join_basic > ul > li > dl > dd { width: 320px; height: 100%; margin-left: 20px; float: left; }
-  .join_basic > ul > li > dl > dd > input { width: 100%; height: 100%; text-indent: 0.7rem; background-color: #e2e2e2; border-radius: 5px; }
-  .join_basic > ul > .jb_01 > dl > dd:last-of-type { width: 100px; }
-  .join_basic > ul > .jb_01 > dl > dd:last-of-type > button { width: 100px; height: 100%; margin-left: 20px; float: left; border-radius: 5px; background-color: #ba1822; color: #ffffff; }
+  .join_basic > ul > li > dl > dt { width: 41.6vw; /*150px*/ height: 6.9vw; /*25px*/ padding-top: 2.7vw; /*10px*/ font-size: 4.4vw; /*1rem*/ font-weight: bold; color: #222222; }
+  .join_basic > ul > li > dl > dd { width: 83.3vw; /*300px*/ height: 9.7vw; /*35px*/ }
+  .join_basic > ul > li > dl > dd > input { width: 100%; height: 100%; text-indent: 3.1vw; /*0.7rem*/ background-color: #e2e2e2; border-radius: 1.3vw; /*5px*/ }
+  .join_basic > ul > .jb_01 { height: 30.5vw; /*110px*/ }
+  .join_basic > ul > .jb_01 > dl > dd:last-of-type { width: 27.7vw; /*100px*/ }
+  .join_basic > ul > .jb_01 > dl > dd:last-of-type > button { width: 27.7vw; /*100px*/ height: 9.7vw; /*35px*/ border-radius: 1.3vw; /*5px*/ margin-top: 1.3vw; /*5px*/ background-color: #ba1822; color: #ffffff; }
   /* .join_basic size */
   .join_add > ul { width: 100%; height: 100%; }
-  .join_add > ul > .ja_01 { width: 100%; height: 34px; padding-top: 34px; }
+  .join_add > ul > .ja_01 { width: 100%; height: 16.6vw; /*60px*/ padding-top: 1.3vw; /*5px*/ }
   .join_add > ul > .ja_01 > dl { width: 100%; height: 100%; }
-  .join_add > ul > .ja_01 > dl > dt { width: 150px; height: 25px; padding-top: 9px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  .join_add > ul > .ja_01 > dl > dd { width: 200px; height: 100%; margin-left: 20px; float: left; }
-  .join_add > ul > .ja_01 > dl > dd > input { width: 100%; height: 100%; text-indent: 0.7rem; background-color: #e2e2e2; border-radius: 5px; }
-  .join_add > ul .ja_02 { width: 100%; height: 34px; padding-top: 34px; }
+  .join_add > ul > .ja_01 > dl > dt { width: 41.6vw; /*150px*/ height: 6.9vw; /*25px*/ padding-top: 2.7vw; /*10px*/ font-size: 4.4vw; /*1rem*/ font-weight: bold; color: #222222; }
+  .join_add > ul > .ja_01 > dl > dd { width: 83.3vw; /*300px*/ height: 9.7vw; /*35px*/ }
+  .join_add > ul > .ja_01 > dl > dd > input { width: 100%; height: 100%; text-indent: 3.1vw; /*0.7rem*/ background-color: #e2e2e2; border-radius: 1.3vw; /*5px*/ }
+  .join_add > ul .ja_02 { width: 100%; height: 16.6vw; /*60px*/ margin-top: 2.7vw; /*10px*/ }
   .join_add > ul .ja_02 > dl { width: 100%; height: 100%; }
-  .join_add > ul .ja_02 > dl > dt { width: 150px; height: 25px; padding-top: 9px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  .join_add > ul .ja_02 > dl > dd { width: 100px; height: 100%; margin-left: 20px; float: left; }
-  .join_add > ul .ja_02 > dl > dd > input { width: 20px; height: 100%; float: left; }
-  .join_add > ul .ja_02 > dl > dd > label { width: 50px; height: 25px; margin-left: 30px; padding-top: 9px; float: left; }
+  .join_add > ul .ja_02 > dl > dt { width: 41.6vw; /*150px*/ height: 6.9vw; /*25px*/ padding-top: 2.7vw; /*10px*/ font-size: 4.4vw; /*1rem*/ font-weight: bold; color: #222222; }
+  .join_add > ul .ja_02 > dl > dd { width: 41.6vw; /*150px*/ height: 9.7vw; /*35px*/ float: left; }
+  .join_add > ul .ja_02 > dl > dd > input { width: 5.5vw; /*20px*/ height: 9.7vw; /*35px*/ float: left; }
+  .join_add > ul .ja_02 > dl > dd > label { width: 13.8vw; /*50px*/ height: 6.9vw; /*25px*/ margin-left: 4.1vw; /*15px*/ padding-top: 1.9vw; /*7px*/ float: left; }
   /* .join_etc size */
   .join_etc > ul { width: 100%; height: 100%; }
-  .join_etc > ul > .je_01 { width: 100%; height: 34px; padding-top: 50px; }
-  .join_etc > ul > .je_01 > input { width: 15px; height: 15px; float: left; }
-  .join_etc > ul > .je_01 > label { width: 750px; height: 34px; float: left; display: block; }
-  .join_etc > ul > .je_01 > label > p { height: 34px; float: left; }
-  .join_etc > ul > .je_01 > label > p:nth-of-type(1) { width: 238px; padding-left: 10px; }
-  .join_etc > ul > .je_01 > label > p:nth-of-type(2) { width: 16px; padding-left: 5px; }
-  .join_etc > ul > .je_01 > label > p:nth-of-type(3) { width: 130px; padding-left: 5px; }
-  .join_etc > ul > .je_01 > label > a { height: 34px; float: left; }
-  .join_etc > ul > .je_01 > label > a:nth-of-type(1) { width: 64px; padding-left: 5px; }
-  .join_etc > ul > .je_01 > label > a:nth-of-type(2) { width: 132px; padding-left: 5px; }
-  .join_etc > ul > .je_02 { width: 100%; height: 34px; padding-top: 10px; }
-  .join_etc > ul > .je_02 > input { width: 15px; height: 15px; float: left; }
-  .join_etc > ul > .je_02 > label { width: 750px; height: 34px; float: left; display: block; }
-  .join_etc > ul > .je_02 > label > a { width: 65px; height: 34px; padding-left: 10px; float: left; }
-  .join_etc > ul > .je_02 > label > p { width: 150px; height: 34px; padding-left: 5px; float: left; }
+  .join_etc > ul > .je_01 { width: 100%; height: 16.6vw; /*60px*/ padding-top: 13.8vw; /*50px*/ }
+  .join_etc > ul > .je_01 > input { width: 4.1vw; /*15px*/ height: 4.1vw; /*15px*/ float: left; }
+  .join_etc > ul > .je_01 > label { width: 83.3vw; /*300px*/ height: 16.6vw; /*60px*/ float: left; display: block; }
+  .join_etc > ul > .je_01 > label > p { height: 5.5vw; /*20px*/ float: left; padding-left: 1.3vw; /*5px*/ font-size: 4.4vw; /*1rem*/ }
+  .join_etc > ul > .je_01 > label > p:nth-of-type(1) { width: 66.1vw; /*238px*/ padding-left: 2.7vw; /*10px*/ }
+  .join_etc > ul > .je_01 > label > p:nth-of-type(2) { width: 4.1vw; /*15px*/ }
+  .join_etc > ul > .je_01 > label > p:nth-of-type(3) { width: 36.1vw; /*130px*/ }
+  .join_etc > ul > .je_01 > label > a { height: 5.5vw; /*20px*/ float: left; padding-left: 1.3vw; /*5px*/ font-size: 4.4vw; /*1rem*/ }
+  .join_etc > ul > .je_01 > label > a:nth-of-type(1) { width: 17.7vw; /*64px*/ }
+  .join_etc > ul > .je_01 > label > a:nth-of-type(2) { width: 36.6vw; /*132px*/ }
+  .join_etc > ul > .je_02 { width: 100%; height: 9.7vw; /*35px*/ padding-top: 2.7vw; /*10px*/ }
+  .join_etc > ul > .je_02 > input { width: 4.1vw; /*15px*/ height: 4.1vw; /*15px*/ float: left; }
+  .join_etc > ul > .je_02 > label { width: 83.3vw; /*300px*/ height: 5.5vw; /*20px*/ float: left; display: block; }
+  .join_etc > ul > .je_02 > label > a { width: 18vw; /*65px*/ height: 5.5vw; /*20px*/ padding-left: 2.7vw; /*10px*/ font-size: 4.4vw; /*1rem*/ float: left; }
+  .join_etc > ul > .je_02 > label > p { width: 41.6vw; /*150px*/ height: 5.5vw; /*20px*/ padding-left: 1.3vw; /*5px*/ font-size: 4.4vw; /*1rem*/ float: left; }
   /* .join_but size */
-  .join_but { margin-top: 40px; margin-left: 250px; }
-  .join_but > button { width: 108px; height: 44px; border-radius: 5px; float: left; }
+  .join_but { margin-top: 11.1vw; /*40px*/ margin-left: 9.7vw; /*35px*/ }
+  .join_but > button { width: 27.7vw; /*100px*/ height: 12.2vw; /*44px*/ border-radius: 1.3vw; /*5px*/ float: left; }
   .join_but > button.btn_ok { background-color: #ba1822; color: #ffffff; }
-  .join_but > button.btn_no { background-color: #bdc4c4; margin-left: 50px; }
+  .join_but > button.btn_no { background-color: #bdc4c4; margin-left: 13.8vw; /*50px*/ }
   /* Photoshop 360px */
-  #footer { width: 86%; /*310px*/ height: 39vw; /*140px*/ background-color: #bdc4c4; padding: 8.3vw 7% 8.3vw; /*30px 25px 30px*/ }
+  #footer { width: 86%; /*310px*/ height: 39vw; /*140px*/ background-color: #bdc4c4; padding: 8.3vw 7% 8.3vw; /*30px 25px 30px*/ overflow: hidden; }
   #footer > #footBox { width: 100%; height: 39vw; /*140px*/ }
   /*------------small box--------------------*/
   #footBox > #persnal { display: none; }
@@ -144,61 +145,61 @@
   #gnb > #mainBox > li > a:hover { border-bottom: 2px solid #ba1822; box-sizing: border-box; }
   #gnb > #mainBox > li > .sub_menu { width: 100%; height: auto; padding-top: 5%; }
   /* PhotoShop 768px 기준 */
-  #join { width: 815px; height: 90px; padding-left: 45px; padding-top: 204px; border-bottom: 2px solid #bdc4c4; }
-  #join > h2 { width: 150px; height: 25px; padding-top: 40px; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
+  #join { width: 87.2vw; /*670px*/ height: 11.7vw; /*90px*/ padding-top: 15.625vw; /*120px*/ border-bottom: 2px solid #bdc4c4; }
+  #join > h2 { width: 11.7vw; /*90px*/ height: 3.2vw; /*25px*/ margin-top: 4.5vw; /*35px*/ float: left; font-size: 2.5vw; /*1.2rem*/ font-weight: bold; color: #ba1822; }
   /* PhotoShop 768px 기준 */
   /* form basic */
-  article { width: 815px; height: 670px; padding-top: 45px; padding-left: 35px; }
-  article > form { width: calc(100% - 35px); height: 100%; background-image: url("../img/article/bgi.png"); background-repeat: no-repeat; background-position: 99% 33%; }
+  article { width: 87.2vw; /*670px*/ height: 87.2vw; /*670px*/ padding-top: 4.5vw; /*35px*/ padding-left: 4.5vw; /*35px*/ }
+  article > form { width: calc(100% - 4.5vw/*35px*/); height: 100%; background-size: 40%; background-image: url("../img/article/bgi.png"); background-repeat: no-repeat; background-position: 99% 40%; }
   article > form > fieldset > legend { width: 0; height: 0; overflow: hidden; display: none; }
-  article > form > .join_basic { width: 100%; height: 205px; }
-  article > form > .join_add { width: 100%; height: 138px; }
-  article > form > .join_etc { width: 100%; height: 145px; }
-  article > form > .join_but { width: 100%; height: 105px; }
+  article > form > .join_basic { width: 100%; height: 26.6vw; /*205px*/ }
+  article > form > .join_add { width: 100%; height: 17.9vw; /*138px*/ }
+  article > form > .join_etc { width: 100%; height: 18.8vw; /*145px*/ }
+  article > form > .join_but { width: 100%; height: 13.6vw; /*105px*/ }
   /* .join_basic size */
   .join_basic > ul { width: 100%; height: 100%; }
-  .join_basic > ul > li { width: 100%; height: 34px; padding-top: 34px; }
+  .join_basic > ul > li { width: 100%; height: 4.4vw; /*34px*/ padding-top: 4.4vw; /*34px*/ }
   .join_basic > ul > li > dl { width: 100%; height: 100%; }
-  .join_basic > ul > li > dl > dt { width: 150px; height: 25px; padding-top: 9px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  .join_basic > ul > li > dl > dd { width: 320px; height: 100%; margin-left: 20px; float: left; }
-  .join_basic > ul > li > dl > dd > input { width: 100%; height: 100%; text-indent: 0.7rem; background-color: #e2e2e2; border-radius: 5px; }
-  .join_basic > ul > .jb_01 > dl > dd:last-of-type { width: 100px; }
-  .join_basic > ul > .jb_01 > dl > dd:last-of-type > button { width: 100px; height: 100%; margin-left: 20px; float: left; border-radius: 5px; background-color: #ba1822; color: #ffffff; }
+  .join_basic > ul > li > dl > dt { width: 19.5vw; /*150px*/ height: 3.2vw; /*25px*/ padding-top: 1.3vw; /*10px*/ float: left; font-size: 2vw; /*1rem*/ font-weight: bold; color: #222222; }
+  .join_basic > ul > li > dl > dd { width: 41.6vw; /*320px*/ height: 100%; margin-left: 2.6vw; /*20px*/ float: left; }
+  .join_basic > ul > li > dl > dd > input { width: 100%; height: 100%; text-indent: 1.4vw; /*0.7rem*/ background-color: #e2e2e2; border-radius: 5px; }
+  .join_basic > ul > .jb_01 > dl > dd:last-of-type { width: 13vw; /*100px*/ }
+  .join_basic > ul > .jb_01 > dl > dd:last-of-type > button { width: 13vw; /*100px*/ height: 100%; margin-left: 2.6vw; /*20px*/ float: left; border-radius: 5px; background-color: #ba1822; color: #ffffff; }
   /* .join_basic size */
   .join_add > ul { width: 100%; height: 100%; }
-  .join_add > ul > .ja_01 { width: 100%; height: 34px; padding-top: 34px; }
+  .join_add > ul > .ja_01 { width: 100%; height: 4.4vw; /*34px*/ padding-top: 4.4vw; /*34px*/ }
   .join_add > ul > .ja_01 > dl { width: 100%; height: 100%; }
-  .join_add > ul > .ja_01 > dl > dt { width: 150px; height: 25px; padding-top: 9px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  .join_add > ul > .ja_01 > dl > dd { width: 200px; height: 100%; margin-left: 20px; float: left; }
-  .join_add > ul > .ja_01 > dl > dd > input { width: 100%; height: 100%; text-indent: 0.7rem; background-color: #e2e2e2; border-radius: 5px; }
-  .join_add > ul .ja_02 { width: 100%; height: 34px; padding-top: 34px; }
+  .join_add > ul > .ja_01 > dl > dt { width: 19.5vw; /*150px*/ height: 3.2vw; /*25px*/ padding-top: 1.3vw; /*10px*/ float: left; font-size: 2vw; /*1rem*/ font-weight: bold; color: #222222; }
+  .join_add > ul > .ja_01 > dl > dd { width: 26vw; /*200px*/ height: 100%; margin-left: 2.6vw; /*20px*/ float: left; }
+  .join_add > ul > .ja_01 > dl > dd > input { width: 100%; height: 100%; text-indent: 1.4vw; /*0.7rem*/ background-color: #e2e2e2; border-radius: 5px; }
+  .join_add > ul .ja_02 { width: 100%; height: 4.4vw; /*34px*/ padding-top: 4.4vw; /*34px*/ }
   .join_add > ul .ja_02 > dl { width: 100%; height: 100%; }
-  .join_add > ul .ja_02 > dl > dt { width: 150px; height: 25px; padding-top: 9px; float: left; font-size: 1rem; font-weight: bold; color: #222222; float: left; }
-  .join_add > ul .ja_02 > dl > dd { width: 100px; height: 100%; margin-left: 20px; float: left; }
-  .join_add > ul .ja_02 > dl > dd > input { width: 20px; height: 100%; float: left; }
-  .join_add > ul .ja_02 > dl > dd > label { width: 50px; height: 25px; margin-left: 30px; padding-top: 9px; float: left; }
+  .join_add > ul .ja_02 > dl > dt { width: 19.5vw; /*150px*/ height: 3.2vw; /*25px*/ padding-top: 1.3vw; /*10px*/ float: left; font-size: 2vw; /*1rem*/ font-weight: bold; color: #222222; }
+  .join_add > ul .ja_02 > dl > dd { width: 100px; height: 100%; margin-left: 2.6vw; /*20px*/ float: left; }
+  .join_add > ul .ja_02 > dl > dd > input { width: 2.6vw; /*20px*/ height: 100%; float: left; }
+  .join_add > ul .ja_02 > dl > dd > label { width: 6.5vw; /*50px*/ height: 3.2vw; /*25px*/ margin-left: 3.9vw; /*30px*/ padding-top: 1.3vw; /*10px*/ float: left; }
   /* .join_etc size */
   .join_etc > ul { width: 100%; height: 100%; }
-  .join_etc > ul > .je_01 { width: 100%; height: 34px; padding-top: 50px; }
-  .join_etc > ul > .je_01 > input { width: 15px; height: 15px; float: left; }
-  .join_etc > ul > .je_01 > label { width: 750px; height: 34px; float: left; display: block; }
-  .join_etc > ul > .je_01 > label > p { height: 34px; float: left; }
-  .join_etc > ul > .je_01 > label > p:nth-of-type(1) { width: 238px; padding-left: 10px; }
-  .join_etc > ul > .je_01 > label > p:nth-of-type(2) { width: 16px; padding-left: 5px; }
-  .join_etc > ul > .je_01 > label > p:nth-of-type(3) { width: 130px; padding-left: 5px; }
-  .join_etc > ul > .je_01 > label > a { height: 34px; float: left; }
-  .join_etc > ul > .je_01 > label > a:nth-of-type(1) { width: 64px; padding-left: 5px; }
-  .join_etc > ul > .je_01 > label > a:nth-of-type(2) { width: 132px; padding-left: 5px; }
-  .join_etc > ul > .je_02 { width: 100%; height: 34px; padding-top: 10px; }
-  .join_etc > ul > .je_02 > input { width: 15px; height: 15px; float: left; }
-  .join_etc > ul > .je_02 > label { width: 750px; height: 34px; float: left; display: block; }
-  .join_etc > ul > .je_02 > label > a { width: 65px; height: 34px; padding-left: 10px; float: left; }
-  .join_etc > ul > .je_02 > label > p { width: 150px; height: 34px; padding-left: 5px; float: left; }
+  .join_etc > ul > .je_01 { width: 100%; height: 4.4vw; /*34px*/ padding-top: 6.5vw; /*50px*/ }
+  .join_etc > ul > .je_01 > input { width: 1.9vw; /*15px*/ height: 1.9vw; /*15px*/ float: left; }
+  .join_etc > ul > .je_01 > label { width: calc(100% - 1.9vw/*15px*/); height: 4.4vw; /*34px*/ float: left; display: block; }
+  .join_etc > ul > .je_01 > label > p { height: 4.4vw; /*34px*/ float: left; font-size: 1.875vw; /*0.9rem*/ }
+  .join_etc > ul > .je_01 > label > p:nth-of-type(1) { width: 28.6vw; /*220px*/ padding-left: 1.3vw; /*10px*/ }
+  .join_etc > ul > .je_01 > label > p:nth-of-type(2) { width: 2vw; /*16px*/ padding-left: 0.6vw; /*5px*/ }
+  .join_etc > ul > .je_01 > label > p:nth-of-type(3) { width: 16.9vw; /*130px*/ }
+  .join_etc > ul > .je_01 > label > a { height: 4.4vw; /*34px*/ float: left; font-size: 1.875vw; /*0.9rem*/ }
+  .join_etc > ul > .je_01 > label > a:nth-of-type(1) { width: 8vw; /*64px*/ padding-left: 0.6vw; /*5px*/ }
+  .join_etc > ul > .je_01 > label > a:nth-of-type(2) { width: 15.4vw; /*132px*/ padding-left: 0.6vw; /*5px*/ }
+  .join_etc > ul > .je_02 { width: 100%; height: 4.4vw; /*34px*/ padding-top: 1.3vw; /*10px*/ }
+  .join_etc > ul > .je_02 > input { width: 1.9vw; /*15px*/ height: 1.9vw; /*15px*/ float: left; }
+  .join_etc > ul > .je_02 > label { width: calc(100% - 1.9vw/*15px*/); height: 4.4vw; /*34px*/ float: left; display: block; }
+  .join_etc > ul > .je_02 > label > a { width: 8vw; /*65px*/ height: 4.4vw; /*34px*/ padding-left: 1.3vw; /*10px*/ font-size: 1.875vw; /*0.9rem*/ float: left; }
+  .join_etc > ul > .je_02 > label > p { width: 19.5vw; /*150px*/ height: 4.4vw; /*34px*/ padding-left: 0.6vw; /*5px*/ font-size: 1.875vw; /*0.9rem*/ float: left; }
   /* .join_but size */
-  .join_but { margin-top: 40px; margin-left: 250px; }
-  .join_but > button { width: 108px; height: 44px; border-radius: 5px; float: left; }
+  .join_but { margin-top: 5.2vw; /*40px*/ margin-left: 26vw; /*200px*/ }
+  .join_but > button { width: 13vw; /*100px*/ height: 5.7vw; /*44px*/ border-radius: 0.6vw; /*5px*/ float: left; }
   .join_but > button.btn_ok { background-color: #ba1822; color: #ffffff; }
-  .join_but > button.btn_no { background-color: #bdc4c4; margin-left: 50px; }
+  .join_but > button.btn_no { background-color: #bdc4c4; margin-left: 6.5vw; /*50px*/ }
   /* PhotoShop 768px 기준 */
   #footBox { width: 68.75%; /*528px*/ height: 12.5vw; /*96px*/ background-color: #bdc4c4; padding: 3.6vw 15.625% 4.2vw; /*28px 120px 32px*/ }
   #footBox > #footBox { width: 100%; height: 100%; }
@@ -301,7 +302,7 @@
   .join_etc > ul > .je_01 > label > p { height: 34px; float: left; }
   .join_etc > ul > .je_01 > label > p:nth-of-type(1) { width: 238px; padding-left: 10px; }
   .join_etc > ul > .je_01 > label > p:nth-of-type(2) { width: 16px; padding-left: 5px; }
-  .join_etc > ul > .je_01 > label > p:nth-of-type(3) { width: 130px; padding-left: 5px; }
+  .join_etc > ul > .je_01 > label > p:nth-of-type(3) { width: 130px; }
   .join_etc > ul > .je_01 > label > a { height: 34px; float: left; }
   .join_etc > ul > .je_01 > label > a:nth-of-type(1) { width: 64px; padding-left: 5px; }
   .join_etc > ul > .je_01 > label > a:nth-of-type(2) { width: 132px; padding-left: 5px; }
