@@ -869,7 +869,7 @@
       margin-left: 2.5%;
       margin-top: 3.9vw;
       /*30px*/
-      background-image: url("../img/sub01_tab01/article_01.jpg");
+      background-image: url("../img/sub01_tab01/article_01.png");
       background-size: 70%;
       background-position: center center; }
   /* #container_02*/
@@ -992,7 +992,7 @@
     #wrap > #container_03 > .pic_01 {
       height: 40vw;
       /*307px*/
-      background-image: url("../img/sub01_tab01/article_03_01.jpg");
+      background-image: url("../img/sub01_tab01/article_03_01.png");
       float: right;
       margin-top: 2.6vw;
       /*20px*/
@@ -1002,21 +1002,21 @@
     #wrap > #container_03 > .pic_02 {
       height: 54.7vw;
       /*420px*/
-      background-image: url("../img/sub01_tab01/article_03_02.jpg");
+      background-image: url("../img/sub01_tab01/article_03_02.png");
       float: left;
       background-size: 90%;
       margin-left: 2.5%; }
     #wrap > #container_03 > .pic_03 {
       height: 40.3vw;
       /*310px*/
-      background-image: url("../img/sub01_tab01/article_03_03.jpg");
+      background-image: url("../img/sub01_tab01/article_03_03.png");
       float: right;
       background-size: 80%;
       margin-right: 3%; }
     #wrap > #container_03 > .pic_04 {
       height: 32.5vw;
       /*250px*/
-      background-image: url("../img/sub01_tab01/article_03_04.jpg");
+      background-image: url("../img/sub01_tab01/article_03_04.png");
       float: left;
       background-size: 70%;
       margin-left: 2.5%;
@@ -1024,7 +1024,7 @@
     #wrap > #container_03 > .pic_05 {
       height: 35.1vw;
       /*270px*/
-      background-image: url("../img/sub01_tab01/article_03_05.jpg");
+      background-image: url("../img/sub01_tab01/article_03_05.png");
       float: right;
       background-size: 70%;
       margin-right: 3%;
@@ -1081,7 +1081,7 @@
       /*200px*/
       margin-top: 2.6vw;
       /*20px*/
-      background-image: url("../img/sub01_tab01/article_05.jpg");
+      background-image: url("../img/sub01_tab01/article_05.png");
       float: right;
       background-size: 80%; }
   /* PhotoShop 768px 기준 */
