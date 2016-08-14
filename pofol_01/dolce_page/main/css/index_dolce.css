@@ -235,7 +235,7 @@
   #artBox {
     width: 89%;
     /*320px*/
-    height: 485vw;
+    height: 493.5vw;
     /*874px*/
     background-color: #fff;
     padding: 17.48vw 5.5% 5vw;
@@ -675,7 +675,7 @@
   #artBox > #serBox {
     width: 100%;
     /*320px*/
-    height: 160vw;
+    height: 168.5vw;
     /*444px*/
     padding-top: 5.2vw;
     /*19px*/ }
@@ -705,26 +705,21 @@
             height: 0;
             display: block;
             font-size: 0; }
-        #artBox > #serBox > dl > dt.news_title {
+        #artBox > #serBox > dl > dt.mini_title {
           width: 100%;
           border: 0;
-          text-align: center;
-          font-size: 4.5vw;
-          font-weight: bold;
-          line-height: 150%; }
-        #artBox > #serBox > dl > dt.event_title {
-          width: 100%;
-          border: 0;
+          margin-top: 1.3vw;
+          /*5px*/
           text-align: center;
           font-size: 4.5vw;
           font-weight: bold;
           line-height: 150%; }
       #artBox > #serBox > dl > dd {
         width: 100%;
-        height: 39.8vw;
+        height: 48.3vw;
         font-size: 0;
         float: left;
-        background-size: 110%;
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: center; }
       #artBox > #serBox > dl > .none_box {
@@ -737,9 +732,7 @@
       padding-top: 5.2vw;
       /*19px*/ }
       #artBox > #serBox > #event > .event_ban {
-        background-image: url("../img/index_dolce/article/event_banner.png");
-        background-size: 125%;
-        background-position: right; }
+        background-image: url("../img/index_dolce/article/event_banner.png"); }
   /* Photoshop 360px */
   #footer {
     width: 86%;
@@ -1213,7 +1206,7 @@
   #artBox {
     width: 87%;
     /*670px*/
-    height: 147vw;
+    height: 152.8vw;
     /*1128px*/
     background-color: #fff;
     padding: 3.6vw 6.5% 4.9vw;
@@ -1656,7 +1649,7 @@
   #artBox > #serBox {
     width: 100%;
     /*320px*/
-    height: 26.6vw;
+    height: 32.4vw;
     /*200px*/
     margin-top: 3.7vw;
     /*30px*/ }
@@ -1690,30 +1683,25 @@
             height: 0;
             display: block;
             font-size: 0; }
-        #artBox > #serBox > dl > dt.news_title {
+        #artBox > #serBox > dl > dt.mini_title {
           width: 100%;
           border: 0;
-          text-align: center;
-          font-size: 2vw;
-          font-weight: bold;
-          line-height: 150%; }
-        #artBox > #serBox > dl > dt.event_title {
-          width: 100%;
-          border: 0;
+          margin-top: 1.3vw;
+          /*10px*/
           text-align: center;
           font-size: 2vw;
           font-weight: bold;
           line-height: 150%; }
       #artBox > #serBox > dl > dd {
         width: 100%;
-        height: 16.8vw;
+        height: 22.6vw;
         margin-top: 2.4vw;
         /*18.5px*/
         font-size: 0;
         float: left;
-        background-size: 105%;
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-position: center 58%; }
+        background-position: center center; }
       #artBox > #serBox > dl > .none_box {
         display: none; }
     #artBox > #serBox > #news > dd {
@@ -1721,9 +1709,7 @@
     #artBox > #serBox > #event {
       margin-right: 0; }
       #artBox > #serBox > #event > dd {
-        background-image: url("../img/index_dolce/article/event_banner.png");
-        background-size: 120%;
-        background-position: right 58%; }
+        background-image: url("../img/index_dolce/article/event_banner.png"); }
   /* PhotoShop 768px 기준 */
   #footer {
     width: 85.9375vw;
@@ -2163,7 +2149,7 @@
   /* PhotoShop 1400px 기준 */
   #artBox {
     width: 860px;
-    height: 1430px;
+    height: 1510px;
     background-color: #fff; }
   /*------------tabs box--------------------*/
   #artBox > #tabs {
@@ -2551,7 +2537,7 @@
   #artBox > #serBox {
     width: 100%;
     /*860px*/
-    height: 252px;
+    height: 332px;
     margin-top: 40px; }
     #artBox > #serBox > dl {
       width: 410px;
@@ -2580,14 +2566,7 @@
             height: 0;
             display: block;
             font-size: 0; }
-        #artBox > #serBox > dl > dt.news_title {
-          width: 100%;
-          border: 0;
-          text-align: center;
-          font-size: 1rem;
-          font-weight: bold;
-          line-height: 150%; }
-        #artBox > #serBox > dl > dt.event_title {
+        #artBox > #serBox > dl > dt.mini_title {
           width: 100%;
           border: 0;
           text-align: center;
@@ -2596,7 +2575,7 @@
           line-height: 150%; }
       #artBox > #serBox > dl > dd {
         width: 100%;
-        height: 174px;
+        height: 254px;
         margin-top: 20px;
         font-size: 0;
         float: left;

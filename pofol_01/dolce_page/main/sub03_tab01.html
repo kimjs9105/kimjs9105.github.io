@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/ready.css">
+    <link rel="stylesheet" href="./css/sub03_tab01.css">
     
     <script src="./js/jQuery/jquery-1.12.2.min.js"></script>
     <script src="./js/jQuery/jquery-migrate-1.2.1.min.js"></script>
@@ -105,10 +105,117 @@
         
         <div id="under_bar"></div><!--//#under_bar-->
         
-        <section>
-            <div id="ready">
+        <div id="nav">
+            <h2>고객센터</h2>
+            <ul>
+                <li class="ask_box"><a href="#askBox">문의하기</a></li>
+                <li class="answer_box"><a href="#answerBox">문의내역 확인</a></li>
+            </ul>
+        </div><!--//#nav-->
+        
+        <article id="askBox">
+            <div id="leftBox">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>돌체구스토 클럽 전화하기</dt>
+                            <dd>080-234-0070</dd>
+                        </dl>
+                    </li>
+                    <li><span>img</span></li>
+                </ul>
             </div>
-        </section>
+            <div id="rightBox">
+                <form action="" method="post">
+                    <fieldset class="email_box">
+                        <legend>이메일 문의하기</legend>
+                        <dl>
+                            <dt>이메일 문의</dt>
+                            <dd>
+                                <ul>
+                                    <li class="email_box_01">
+                                        <dl>
+                                            <dt>
+                                                <label for="email_add">이메일 주소</label>
+                                            </dt>
+                                            <dd>
+                                                <input type="email" name="emailBox" id="email_add" value="" required="required" placeholder="이메일을 입력하세요." maxlang="30" />
+                                            </dd>
+                                            <dd>
+                                                &#42;입력하신 이메일 주소로 문의내용에 대한 답변이 발송됩니다.
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="email_box_02">
+                                        <dl>
+                                            <dt>
+                                                <label for="selcet_box">카테고리</label>
+                                            </dt>
+                                            <dd>
+                                                <select name="multi_sel" id="selcet_box">
+                                                    <optgroup>
+                                                        <option>&#45; &#45; &#45; &#45; &#45;</option>               
+                                                        <option value="머신 등록 관련사항">머신 등록 관련</option>
+                                                        <option value="주문 관련사항">주문 관련</option>
+                                                        <option value="배송 관련사항">배송 관련</option>
+                                                        <option value="캡슐 관련사항">캡슐 관련</option>
+                                                        <option value="머신 관련사항">머신 관련</option>                                 
+                                                        <option value="기타 문의사항">기타 문의사항</option>
+                                                    </optgroup>                                 
+                                                </select>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="email_box_03">
+                                        <dl>
+                                            <dt>
+                                                <label for="typing_box">문의 내용</label>
+                                            </dt>
+                                            <dd>
+                                                <textarea name="textBox" id="typing_box" cols="50" rows="30" placeholder="내용을 입력하세요.">
+                                                </textarea>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </fieldset>
+                    <fieldset class="messege_box">
+                        <legend>문자 문의하기</legend>
+                        <dl>
+                            <dt>문자 문의</dt>
+                            <dd>
+                                <ul>
+                                    <li class="messege_box_01">
+                                        <dl>
+                                            <dt></dt>
+                                            <dd></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="messege_box_02">
+                                        <dl>
+                                            <dt></dt>
+                                            <dd></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="messege_box_03">
+                                        <dl>
+                                            <dt></dt>
+                                            <dd></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </fieldset>
+                </form>
+            </div>
+        </article>
+        
+        <article id="answerBox">
+            
+        </article>
         
         <footer id="footer">
             <div id="footBox">
