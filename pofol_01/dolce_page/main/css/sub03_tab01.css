@@ -233,8 +233,6 @@
             /*1rem*/ }
   /* PhotoShop 360px 기준 */
   #nav {
-    display: none; }
-  #nav_mobile {
     width: 88.8vw;
     /*320px*/
     height: 13.8vw;
@@ -244,9 +242,9 @@
     padding-left: 5.5vw;
     /*20px*/
     border-bottom: 2px solid #bdc4c4; }
-    #nav_mobile > h2 {
-      width: 27.7vw;
-      /*100px*/
+    #nav > h2 {
+      width: 25vw;
+      /*90px*/
       height: 5.5vw;
       /*20px*/
       margin-top: 4.1vw;
@@ -256,136 +254,435 @@
       /*1rem*/
       font-weight: bold;
       color: #ba1822; }
-    #nav_mobile > ul {
-      width: calc(100% - 27.7vw);
+    #nav > ul {
+      width: calc(100% - 25vw);
       height: 5.5vw;
       /*20px*/
       margin-top: 4.1vw;
       /*15px*/
       float: left; }
-      #nav_mobile > ul > li {
-        width: 16.6vw;
-        /*60px*/
-        height: 5.5vw;
-        /*20px*/
-        margin-left: 2.7vw;
-        /*10px*/
-        float: left;
-        font-size: 3.5vw;
-        /*0.8rem*/
-        line-height: 170%; }
-        #nav_mobile > ul > li.map_box {
-          margin-left: 0;
-          font-weight: bold;
-          color: #ba1822; }
-  /* dolce_sub01_article.css */
-  #section {
-    display: none; }
-  #section_mobile {
+      #nav > ul > li {
+        height: 6.9vw;
+        /*25px*/
+        margin-left: 1.3vw;
+        /*5px*/
+        float: left; }
+        #nav > ul > li > a {
+          font-size: 3.5vw;
+          /*0.8rem*/
+          line-height: 200%; }
+        #nav > ul > li.ask_box {
+          width: 16.6vw;
+          /*60px*/ }
+          #nav > ul > li.ask_box > a {
+            font-weight: bold;
+            color: #ba1822; }
+        #nav > ul > li.answer_box {
+          width: 27.7vw;
+          /*100px*/ }
+  article {
     width: 94.4vw;
     /*340px*/
-    height: 166.6vw;
-    /*600px*/ }
-    #section_mobile > #selectBox {
+    height: 180.5vw;
+    /*650px*/
+    padding-top: 5.5vw;
+    /*20px*/ }
+    article.arti_mos {
+      height: 358.3vw;
+      /*1290px*/ }
+    article > div {
+      width: 100%; }
+      article > div#leftBox {
+        height: 125vw;
+        /*450px*/ }
+      article > div#rightBox {
+        height: 44.4vw;
+        /*160px*/ }
+        article > div#rightBox.div_mos {
+          height: 233.3vw;
+          /*840px*/ }
+  #answerBox {
+    display: none; }
+  /* left box */
+  #leftBox > ul {
+    width: 100%;
+    height: 100%; }
+    #leftBox > ul > li {
       width: 100%;
-      height: 100%;
-      padding-top: 5.5vw;
-      /*20px*/ }
-      #section_mobile > #selectBox > p {
-        width: 22.2vw;
-        /*80px*/
-        height: 8.3vw;
-        /*30px*/
-        float: left;
-        font-size: 5.3vw;
-        /*1.2rem*/
-        font-weight: bold;
-        text-align: center;
-        line-height: 200%; }
-      #section_mobile > #selectBox > .select_list {
-        width: 55.5vw;
-        /*200px*/
-        height: 8.3vw;
-        /*30px*/
-        float: left; }
-        #section_mobile > #selectBox > .select_list > li {
+      height: 27.7vw;
+      /*100px*/ }
+      #leftBox > ul > li > dl {
+        width: 100%;
+        height: 100%; }
+        #leftBox > ul > li > dl > * {
           width: 100%;
-          height: 100%;
-          background-color: #ffffff; }
-          #section_mobile > #selectBox > .select_list > li > a {
-            font-size: 5.3vw;
-            /*1.2rem*/
-            color: #222222;
-            font-weight: bold;
-            text-align: center;
-            line-height: 200%;
-            text-decoration: none; }
-      #section_mobile > #selectBox > span {
-        width: 11.1vw;
-        /*40px*/
-        height: 8.3vw;
-        /*30px*/
-        display: block;
-        float: left; }
-        #section_mobile > #selectBox > span > i {
+          height: 13.8vw;
+          /*50px*/
           font-size: 6.6vw;
           /*1.5rem*/
-          transform: rotate(90deg);
-          margin-top: 1.3vw;
-          /*5px*/ }
-      #section_mobile > #selectBox > .table_box {
+          text-align: center;
+          line-height: 300%; }
+        #leftBox > ul > li > dl > dt {
+          font-weight: bold;
+          color: #ba1822; }
+        #leftBox > ul > li > dl > dd {
+          color: #2f2b2a; }
+    #leftBox > ul > .info_img {
+      height: 97.2vw;
+      /*350px*/
+      background-image: url("../img/sub03_tab01/info_main.jpg");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      #leftBox > ul > .info_img > span {
+        width: 0;
+        height: 0;
+        display: block;
+        font-size: 0; }
+  /* right box */
+  #rightBox > form {
+    width: 100%;
+    height: 100%; }
+    #rightBox > form > fieldset {
+      width: 100%;
+      height: 22.2vw;
+      /*80px*/ }
+      #rightBox > form > fieldset.field_mos {
+        height: 205.5vw;
+        /*740px*/ }
+      #rightBox > form > fieldset > legend {
+        width: 0;
+        height: 0;
+        display: block;
+        font-size: 0; }
+      #rightBox > form > fieldset > dl {
         width: 100%;
-        height: 166.6vw;
-        /*600px*/
-        padding-top: 13.8vw;
-        /*50px*/ }
-        #section_mobile > #selectBox > .table_box::before {
-          content: " ";
+        height: 100%; }
+        #rightBox > form > fieldset > dl > dt {
+          width: 100%;
+          height: 22.2vw;
+          /*80px*/
+          border-radius: 2.2vw;
+          /*8px*/
+          border: #bdc4c4 2px solid;
+          box-sizing: border-box; }
+          #rightBox > form > fieldset > dl > dt > span {
+            width: calc(100% - 12.5vw);
+            height: 100%;
+            display: block;
+            float: left;
+            font-size: 6.2vw;
+            /*1.4rem*/
+            color: #222222;
+            text-indent: 8.3vw;
+            /*30px*/
+            line-height: 350%; }
+          #rightBox > form > fieldset > dl > dt > i {
+            width: 8.3vw;
+            /*30px*/
+            height: 11.1vw;
+            /*40px*/
+            margin-top: 8.3vw;
+            /*30px*/
+            margin-right: 15px;
+            float: right;
+            font-size: 5.7vw;
+            /*1.3rem*/
+            color: #2f2b2a; }
+        #rightBox > form > fieldset > dl > dd {
+          width: 100%;
+          height: 183.3vw;
+          /*660px*/
+          background-color: #bdc4c4;
+          border-bottom-left-radius: 2.2vw;
+          /*8px*/
+          border-bottom-right-radius: 2.2vw;
+          /*8px*/ }
+          #rightBox > form > fieldset > dl > dd > ul {
+            width: 88.8vw;
+            /*320px*/
+            height: 222.2vw;
+            /*800px*/
+            padding: 2.7vw;
+            /*10px*/ }
+            #rightBox > form > fieldset > dl > dd > ul > li {
+              width: 100%; }
+  /* small box style */
+  .email_box .small_box_01 {
+    height: 25vw;
+    /*90px*/ }
+    .email_box .small_box_01 > dl {
+      width: 100%;
+      height: 25vw;
+      /*90px*/ }
+      .email_box .small_box_01 > dl > dt {
+        width: 30%;
+        height: 9.7vw;
+        /*35px*/
+        float: left; }
+        .email_box .small_box_01 > dl > dt > label {
+          width: 100%;
+          height: 100%;
           display: block;
-          clear: both; }
-        #section_mobile > #selectBox > .table_box::after {
-          content: " ";
+          font-size: 4.4vw;
+          /*1rem*/
+          line-height: 200%; }
+      .email_box .small_box_01 > dl > dd:nth-child(2) {
+        width: 70%;
+        height: 9.7vw;
+        /*35px*/
+        float: left; }
+        .email_box .small_box_01 > dl > dd:nth-child(2) > input {
+          width: 100%;
+          height: 100%;
           display: block;
-          clear: both; }
-        #section_mobile > #selectBox > .table_box > ul {
-          width: calc(100% - 11.1vw);
-          height: 27.7vw;
-          /*100px*/
-          margin-top: 5.5vw;
-          /*20px*/
-          padding: 0 5.5vw;
-          /*20px*/
-          border-bottom: 2px solid #aaa; }
-          #section_mobile > #selectBox > .table_box > ul > li {
+          border-radius: 1.3vw;
+          /*5px*/
+          text-indent: 2.2vw;
+          /*8px*/ }
+      .email_box .small_box_01 > dl > dd:nth-child(3) {
+        width: 70%;
+        height: 13.8vw;
+        /*50px*/
+        float: right;
+        margin-top: 1.3vw;
+        /*5px*/
+        font-size: 3.5vw;
+        /*0.8rem*/
+        line-height: 200%; }
+  .message_box .small_box_01 {
+    height: 25vw;
+    /*90px*/ }
+    .message_box .small_box_01 > dl {
+      width: 100%;
+      height: 25vw;
+      /*90px*/ }
+      .message_box .small_box_01 > dl > dt {
+        width: 26.6vw;
+        /*96px*/
+        height: 9.7vw;
+        /*35px*/
+        float: left; }
+        .message_box .small_box_01 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 4.4vw;
+          /*1rem*/
+          line-height: 200%; }
+      .message_box .small_box_01 > dl > dd {
+        width: 16.6vw;
+        /*60px*/
+        height: 9.7vw;
+        /*35px*/
+        float: left; }
+        .message_box .small_box_01 > dl > dd > input {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 4.4vw;
+          /*1rem*/
+          text-indent: 2.2vw;
+          /*8px*/
+          line-height: 250%; }
+      .message_box .small_box_01 > dl > dd:nth-child(2) {
+        width: 17.2vw;
+        /*62px*/
+        height: 9.7vw;
+        /*35px*/
+        float: left; }
+        .message_box .small_box_01 > dl > dd:nth-child(2) > select {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          .message_box .small_box_01 > dl > dd:nth-child(2) > select > optgroup {
             width: 100%;
-            height: 5.5vw;
-            /*20px*/
-            font-size: 4.4vw;
-            /*1rem*/ }
-            #section_mobile > #selectBox > .table_box > ul > li:first-child {
-              font-size: 4.8vw;
-              /*1.1rem*/
-              font-weight: bold; }
-            #section_mobile > #selectBox > .table_box > ul > li:nth-child(2) {
-              height: 11.1vw;
-              /*40px*/ }
-            #section_mobile > #selectBox > .table_box > ul > li:nth-child(3) {
-              width: 41.6vw;
-              /*150px*/
-              float: left; }
-            #section_mobile > #selectBox > .table_box > ul > li.more_box {
-              width: 22.2vw;
-              /*80px*/
-              height: 8.3vw;
-              /*30px*/
-              float: right;
-              background-color: #ba1822;
-              border-radius: 5px;
+            height: 100%;
+            display: block; }
+            .message_box .small_box_01 > dl > dd:nth-child(2) > select > optgroup > option {
+              width: 100%;
+              height: 100%;
+              display: block;
               font-size: 4.4vw;
               /*1rem*/
-              line-height: 200%;
+              line-height: 200%; }
+      .message_box .small_box_01 > dl > dd:last-child {
+        width: 70%;
+        height: 13.8vw;
+        /*50px*/
+        float: right;
+        margin-top: 1.3vw;
+        /*5px*/
+        font-size: 3.5vw;
+        /*0.8rem*/
+        line-height: 200%; }
+      .message_box .small_box_01 > dl > .ph_bar {
+        width: 2.2vw;
+        /*8px*/
+        height: 4.7vw;
+        /*17px*/
+        float: left;
+        margin: 0 1.3vw;
+        /*0 5px*/
+        border-bottom: #2f2b2a 1px solid; }
+        .message_box .small_box_01 > dl > .ph_bar > span {
+          width: 0;
+          height: 0;
+          display: block;
+          font-size: 0; }
+  .small_box_02 {
+    height: 13.8vw;
+    /*50px*/ }
+    .small_box_02 > dl {
+      width: 100%;
+      height: 13.8vw;
+      /*50px*/ }
+      .small_box_02 > dl > dt {
+        width: 30%;
+        height: 9.7vw;
+        /*35px*/
+        float: left;
+        margin-top: 1.9vw;
+        /*7px*/ }
+        .small_box_02 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 4.4vw;
+          /*1rem*/
+          text-align: center;
+          line-height: 200%; }
+      .small_box_02 > dl > dd {
+        width: 45%;
+        height: 9.7vw;
+        /*35px*/
+        float: left;
+        margin-top: 1.9vw;
+        /*7px*/ }
+        .small_box_02 > dl > dd > select {
+          width: 95%;
+          height: 100%;
+          display: block; }
+          .small_box_02 > dl > dd > select > optgroup {
+            width: 100%;
+            height: 100%;
+            display: block; }
+            .small_box_02 > dl > dd > select > optgroup > option {
+              width: 100%;
+              height: 100%;
+              display: block;
+              font-size: 4.4vw;
+              /*1rem*/
               text-align: center;
-              color: #ffffff; }
+              line-height: 200%; }
+  .small_box_03 {
+    height: 100vw;
+    /*360px*/ }
+    .small_box_03 > dl {
+      width: 100%;
+      height: 100vw;
+      /*360px*/ }
+      .small_box_03 > dl > dt {
+        width: 30%;
+        height: 11.1vw;
+        /*40px*/ }
+        .small_box_03 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 4.4vw;
+          /*1rem*/
+          text-align: center;
+          line-height: 200%; }
+      .small_box_03 > dl > dd {
+        width: calc(100% - 2.7vw);
+        height: 83.3vw;
+        /*300px*/
+        padding: 0 1.3vw;
+        /*0 5px*/ }
+        .small_box_03 > dl > dd > textarea {
+          width: 80.5vw;
+          /*290px*/
+          height: 77.7vw;
+          /*280px*/
+          display: block;
+          padding: 2.7vw;
+          /*10px*/
+          overflow: scroll;
+          font-size: 5.7vw;
+          /*1.3rem*/ }
+  .small_box_04 {
+    height: 8.3vw;
+    /*30px*/ }
+    .small_box_04 > dl {
+      width: calc(100% - 5.5vw);
+      height: 8.3vw;
+      /*30px*/
+      padding-left: 5.5vw;
+      /*20px*/ }
+      .small_box_04 > dl > dd {
+        width: 25px;
+        height: 100%;
+        float: left; }
+        .small_box_04 > dl > dd > input {
+          width: 5.5vw;
+          /*20px*/
+          height: 100%;
+          display: block; }
+      .small_box_04 > dl > dt {
+        width: calc(100% - 12.5vw);
+        height: 100%;
+        float: left;
+        margin-left: 1.3vw;
+        /*5px*/ }
+        .small_box_04 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          font-size: 4.4vw;
+          /*1rem*/
+          line-height: 200%; }
+  .small_box_05 {
+    height: 16.6vw;
+    /*60px*/ }
+    .small_box_05 > dl {
+      width: 100%;
+      height: 11.1vw;
+      /*40px*/
+      margin-top: 5.5vw;
+      /*20px*/ }
+      .small_box_05 > dl > dt {
+        width: 0;
+        height: 0; }
+        .small_box_05 > dl > dt > span {
+          width: 0;
+          height: 0;
+          display: block;
+          font-size: 0; }
+      .small_box_05 > dl > dd {
+        width: 55.5vw;
+        /*200px*/
+        height: 11.1vw;
+        /*40px*/
+        margin-left: 16.6vw;
+        /*60px*/ }
+        .small_box_05 > dl > dd > button {
+          width: 22.2vw;
+          /*80px*/
+          height: 100%;
+          float: left;
+          display: block;
+          margin-right: 11.1vw;
+          /*40px*/
+          border-radius: 1.1vw;
+          /*4px*/
+          font-size: 4.8vw;
+          /*1.1rem*/
+          color: #ffffff; }
+        .small_box_05 > dl > dd > .btn_ok {
+          background-color: #ba1822; }
+        .small_box_05 > dl > dd > .btn_no {
+          background-color: #2f2b2a;
+          margin-right: 0; }
   /* Photoshop 360px */
   #footer {
     width: 86%;
@@ -665,274 +962,437 @@
       /*35px*/
       float: left; }
       #nav > ul > li {
-        width: 6.5vw;
-        /*50px*/
         height: 3.2vw;
         /*25px*/
         margin-left: 2.3vw;
         /*18px*/
+        float: left; }
+        #nav > ul > li > a {
+          font-size: 1.8vw;
+          /*0.9rem*/
+          line-height: 200%; }
+        #nav > ul > li.ask_box {
+          width: 10.4vw;
+          /*80px*/ }
+          #nav > ul > li.ask_box > a {
+            font-weight: bold;
+            color: #ba1822; }
+        #nav > ul > li.answer_box {
+          width: 13vw;
+          /*100px*/ }
+  article {
+    width: 87.2vw;
+    /*670px*/
+    height: 71.6vw;
+    /*550px*/
+    padding-top: 6.5vw;
+    /*50px*/ }
+    article.arti_tab {
+      height: 145.8vw;
+      /*1220px*/ }
+    article > div {
+      width: 100%; }
+      article > div#leftBox {
+        height: 45.57vw;
+        /*350px*/ }
+      article > div#rightBox {
+        height: 20.8vw;
+        /*160px*/ }
+        article > div#rightBox.div_tab {
+          height: 106.7vw;
+          /*820px*/ }
+  #answerBox {
+    display: none; }
+  /* left box */
+  #leftBox > ul {
+    width: 100%;
+    height: 100%; }
+    #leftBox > ul > li {
+      width: 48%;
+      height: 26vw;
+      /*200px*/
+      float: left; }
+      #leftBox > ul > li > dl {
+        width: 100%;
+        height: 100%;
+        margin-top: 13vw;
+        /*100px*/ }
+        #leftBox > ul > li > dl > * {
+          width: 100%;
+          height: 9.7vw;
+          /*75px*/
+          font-size: 3.1vw;
+          /*1.5rem*/
+          text-align: center;
+          line-height: 300%; }
+        #leftBox > ul > li > dl > dt {
+          font-weight: bold;
+          color: #ba1822; }
+        #leftBox > ul > li > dl > dd {
+          color: #2f2b2a; }
+    #leftBox > ul > .info_img {
+      height: 45.5vw;
+      /*350px*/
+      background-image: url("../img/sub03_tab01/info_main.jpg");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      #leftBox > ul > .info_img > span {
+        width: 0;
+        height: 0;
+        display: block;
+        font-size: 0; }
+  /* right box */
+  #rightBox > form {
+    width: 100%;
+    height: 100%; }
+    #rightBox > form > fieldset {
+      width: 100%;
+      height: 10.4vw;
+      /*80px*/ }
+      #rightBox > form > fieldset.field_tab {
+        height: 93.75vw;
+        /*720px*/ }
+      #rightBox > form > fieldset > legend {
+        width: 0;
+        height: 0;
+        display: block;
+        font-size: 0; }
+      #rightBox > form > fieldset > dl {
+        width: 100%;
+        height: 100%; }
+        #rightBox > form > fieldset > dl > dt {
+          width: 100%;
+          height: 10.4vw;
+          /*80px*/
+          border-radius: 1vw;
+          /*8px*/
+          border: #bdc4c4 2px solid;
+          box-sizing: border-box; }
+          #rightBox > form > fieldset > dl > dt > span {
+            width: calc(100% - 5.85vw);
+            height: 100%;
+            display: block;
+            float: left;
+            font-size: 2.9vw;
+            /*1.4rem*/
+            color: #222222;
+            text-indent: 3.9vw;
+            /*30px*/
+            line-height: 350%; }
+          #rightBox > form > fieldset > dl > dt > i {
+            width: 3.9vw;
+            /*30px*/
+            height: 5.2vw;
+            /*40px*/
+            margin-top: 3.9vw;
+            /*30px*/
+            margin-right: 1.9vw;
+            /*15px*/
+            float: right;
+            font-size: 2.7vw;
+            /*1.3rem*/
+            color: #2f2b2a; }
+        #rightBox > form > fieldset > dl > dd {
+          width: 100%;
+          height: 83.3vw;
+          /*640px*/
+          background-color: #bdc4c4;
+          border-bottom-left-radius: 1vw;
+          /*8px*/
+          border-bottom-right-radius: 1vw;
+          /*8px*/ }
+          #rightBox > form > fieldset > dl > dd > ul {
+            width: 84.6vw;
+            /*650px*/
+            height: 104.1vw;
+            /*800px*/
+            padding: 1.3vw;
+            /*10px*/ }
+            #rightBox > form > fieldset > dl > dd > ul > li {
+              width: 100%; }
+            #rightBox > form > fieldset > dl > dd > ul > .small_box_04 {
+              width: 50%;
+              float: left; }
+            #rightBox > form > fieldset > dl > dd > ul > .small_box_05 {
+              width: 100%;
+              float: left; }
+  /* small box style */
+  .email_box .small_box_01 {
+    height: 9.1vw;
+    /*70px*/ }
+    .email_box .small_box_01 > dl {
+      width: 100%;
+      height: 9.1vw;
+      /*70px*/ }
+      .email_box .small_box_01 > dl > dt {
+        width: 30%;
+        height: 4.5vw;
+        /*35px*/
+        float: left; }
+        .email_box .small_box_01 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 2vw;
+          /*1rem*/
+          text-align: center;
+          line-height: 200%; }
+      .email_box .small_box_01 > dl > dd:nth-child(2) {
+        width: 60%;
+        height: 4.5vw;
+        /*35px*/
+        float: left; }
+        .email_box .small_box_01 > dl > dd:nth-child(2) > input {
+          width: 100%;
+          height: 100%;
+          display: block;
+          border-radius: 0.6vw;
+          /*5px*/
+          text-indent: 1vw;
+          /*8px*/ }
+      .email_box .small_box_01 > dl > dd:nth-child(3) {
+        width: 100%;
+        height: 4.5vw;
+        /*35px*/
         float: left;
         font-size: 1.6vw;
         /*0.8rem*/
-        line-height: 200%; }
-        #nav > ul > li.map_box {
-          font-weight: bold;
-          color: #ba1822; }
-  #nav_mobile {
-    display: none; }
-  /* dolce_sub01_article.css */
-  #section {
-    width: 87.2vw;
-    /*670px*/
-    height: 98.3vw;
-    /*755px*/
-    padding-top: 5.2vw;
-    /*40px*/ }
-    #section > #maps {
+        text-align: center;
+        line-height: 250%;
+        text-indent: 13vw;
+        /*100px*/ }
+  .message_box .small_box_01 {
+    height: 9.1vw;
+    /*70px*/ }
+    .message_box .small_box_01 > dl {
       width: 100%;
-      height: 41.9vw;
-      /*322px*/ }
-    #section > #map_text {
-      width: 100%;
-      height: 42.7vw;
-      /*328px*/
-      margin-top: 5.8vw;
-      /*45px*/ }
-  #section_mobile {
-    display: none; }
-  /* big maps */
-  #maps > div {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center; }
-  #maps > #map_all {
-    width: 28.7vw;
-    /*220px*/
-    float: left;
-    background-image: url("../img/sub03_tab02/map_all.png");
-    background-size: 110%;
-    background-color: #bdc4c4;
-    border-top-left-radius: 1.3vw;
-    /*10px*/
-    border-bottom-left-radius: 1.3vw;
-    /*10px*/
-    font-size: 0; }
-  #maps > #map_mini {
-    width: 58.5vw;
-    /*450px*/
-    float: right;
-    background-image: url("../img/sub03_tab02/map_mini.png");
-    background-size: 65%;
-    border: 2px solid #ba1822;
-    border-top-right-radius: 1.3vw;
-    /*10px*/
-    border-bottom-right-radius: 1.3vw;
-    /*10px*/
-    box-sizing: border-box;
-    background-position: 70% center; }
-    #maps > #map_mini > h3 {
-      width: 26.7vw;
-      /*205px*/
-      height: 5.7vw;
-      /*44px*/
-      font-size: 2.5vw;
-      /*1.2rem*/
-      font-weight: bold;
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: 40.3vw;
-      /*310px*/
-      margin-left: 41.6vw;
-      /*320px*/ }
-    #maps > #map_mini > ul {
-      width: 100%;
-      height: 100%;
-      position: relative; }
-      #maps > #map_mini > ul > li {
-        width: 1.95vw;
-        /*15px*/
-        height: 2.6vw;
-        /*20px*/
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/sub03_tab02/map_point.png");
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat; }
-        #maps > #map_mini > ul > li > button {
+      height: 9.1vw;
+      /*70px*/ }
+      .message_box .small_box_01 > dl > dt {
+        width: 25.3vw;
+        /*195px*/
+        height: 4.5vw;
+        /*35px*/
+        float: left; }
+        .message_box .small_box_01 > dl > dt > label {
           width: 100%;
           height: 100%;
-          font-size: 0;
-          background-color: transparent;
-          cursor: pointer; }
-  /* map pointer space */
-  .point_01 {
-    margin-top: 11vw;
-    /*85px*/
-    margin-left: 28.6vw;
-    /*220px*/ }
-  .point_02 {
-    margin-top: 8.5vw;
-    /*65px*/
-    margin-left: 39vw;
-    /*300px*/ }
-  .point_03 {
-    margin-top: 9.7vw;
-    /*75px*/
-    margin-left: 40.3vw;
-    /*310px*/ }
-  .point_04 {
-    margin-top: 18.2vw;
-    /*140px*/
-    margin-left: 29.2vw;
-    /*224px*/ }
-  .point_05 {
-    margin-top: 19.5vw;
-    /*150px*/
-    margin-left: 27vw;
-    /*208px*/ }
-  .point_06 {
-    margin-top: 15.625vw;
-    /*120px*/
-    margin-left: 36.4vw;
-    /*280px*/ }
-  .point_07 {
-    margin-top: 16.5vw;
-    /*127px*/
-    margin-left: 35.1vw;
-    /*270px*/ }
-  .point_08 {
-    margin-top: 17.5vw;
-    /*135px*/
-    margin-left: 33.8vw;
-    /*260px*/ }
-  .point_09 {
-    margin-top: 20.1vw;
-    /*155px*/
-    margin-left: 31.25vw;
-    /*240px*/ }
-  .point_10 {
-    margin-top: 22.1vw;
-    /*170px*/
-    margin-left: 33.2vw;
-    /*255px*/ }
-  .point_11 {
-    margin-top: 20.8vw;
-    /*160px*/
-    margin-left: 34.5vw;
-    /*265px*/ }
-  .point_12 {
-    margin-top: 15.625vw;
-    /*120px*/
-    margin-left: 41vw;
-    /*315px*/ }
-  .point_13 {
-    margin-top: 20.8vw;
-    /*160px*/
-    margin-left: 41.6vw;
-    /*320px*/ }
-  .point_14 {
-    margin-top: 20.83vw;
-    /*160px*/
-    margin-left: 39.7vw;
-    /*305px*/ }
-  .point_15 {
-    margin-top: 24vw;
-    /*185px*/
-    margin-left: 37.1vw;
-    /*285px*/ }
-  .point_16 {
-    margin-top: 24.7vw;
-    /*190px*/
-    margin-left: 39vw;
-    /*300px*/ }
-  /* table & real maps */
-  #map_text > #shoptable {
-    width: 52vw;
-    /*400px*/
-    height: 100%;
-    /*328px*/
-    float: left; }
-    #map_text > #shoptable > #shopinfo_01 {
-      width: 100%;
-      height: 100%; }
-      #map_text > #shoptable > #shopinfo_01 > table {
-        width: 100%;
-        height: 100%;
-        border-spacing: 0;
-        border-collapse: collapse; }
-        #map_text > #shoptable > #shopinfo_01 > table > tbody {
+          display: block;
+          font-size: 2vw;
+          /*1rem*/
+          text-align: center;
+          line-height: 200%; }
+      .message_box .small_box_01 > dl > dd {
+        width: 15.625vw;
+        /*120px*/
+        height: 4.5vw;
+        /*35px*/
+        float: left; }
+        .message_box .small_box_01 > dl > dd > input {
           width: 100%;
-          height: 100%; }
-          #map_text > #shoptable > #shopinfo_01 > table > tbody > tr {
+          height: 100%;
+          display: block;
+          font-size: 2vw;
+          /*1rem*/
+          text-indent: 1.95vw;
+          /*15px*/
+          line-height: 250%; }
+        .message_box .small_box_01 > dl > dd > select {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          .message_box .small_box_01 > dl > dd > select > optgroup {
             width: 100%;
-            height: 20%;
-            border-bottom: 2px solid #bdc4c4;
-            border-top: 2px solid #bdc4c4; }
-            #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > th {
-              width: 30%;
-              text-align: center;
+            height: 100%;
+            display: block; }
+            .message_box .small_box_01 > dl > dd > select > optgroup > option {
+              width: 100%;
+              height: 100%;
+              display: block;
               font-size: 2vw;
               /*1rem*/
-              padding: 2.6vw 0; }
-            #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > td {
-              width: 70%;
-              text-align: center;
-              font-size: 2vw;
-              /*1rem*/
-              padding: 2.6vw 0;
-              border-left: 2px dotted #bdc4c4; }
-            #map_text > #shoptable > #shopinfo_01 > table > tbody > tr:nth-child(2) > td {
-              padding: 1.3vw 0; }
-  #map_text > #map_wrap {
-    width: 32.5vw;
-    /*250px*/
-    height: 100%;
-    float: right;
-    position: relative; }
-    #map_text > #map_wrap > h3 {
-      width: calc(100% - 2.6vw);
-      height: 6.25vw;
-      /*48px*/
-      background-color: #ba1822;
-      padding-left: 2.6vw;
-      /*20px*/
-      font-size: 2.5vw;
-      /*1.2rem*/
-      line-height: 250%;
-      font-weight: bold;
-      color: #ffffff; }
-    #map_text > #map_wrap > div {
+              line-height: 200%; }
+      .message_box .small_box_01 > dl > dd:last-child {
+        width: 100%;
+        height: 4.5vw;
+        /*35px*/
+        float: left;
+        font-size: 1.5625vw;
+        /*0.75rem*/
+        text-align: center;
+        line-height: 300%;
+        text-indent: 13vw;
+        /*100px*/ }
+      .message_box .small_box_01 > dl > .ph_bar {
+        width: 1.3vw;
+        /*10px*/
+        height: 2.2vw;
+        /*17px*/
+        float: left;
+        margin: 0 1.3vw;
+        /*0 10px*/
+        border-bottom: #2f2b2a 1px solid; }
+        .message_box .small_box_01 > dl > .ph_bar > span {
+          width: 0;
+          height: 0;
+          display: block;
+          font-size: 0; }
+  .small_box_02 {
+    height: 6.5vw;
+    /*50px*/ }
+    .small_box_02 > dl {
       width: 100%;
-      height: 36.4vw;
-      /*280px*/
-      font-size: 0;
-      background-image: url("../img/sub03_tab02/real_map.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    #map_text > #map_wrap > button {
-      width: 10.4vw;
-      /*80px*/
-      height: 3.2vw;
-      /*25px*/
-      background-color: #bdc4c4;
-      position: absolute;
-      z-index: 200;
-      bottom: 0;
-      right: 0;
-      margin-bottom: 2.6vw;
-      /*20px*/
-      margin-right: 2.6vw;
-      /*20px*/
-      border-radius: 0.6vw;
-      /*5px*/
-      font-size: 1.6vw;
-      /*0.8rem*/
-      font-weight: bold;
-      box-shadow: 1px 1px 5px #222222; }
+      height: 6.5vw;
+      /*50px*/ }
+      .small_box_02 > dl > dt {
+        width: 30%;
+        height: 4.5vw;
+        /*35px*/
+        float: left;
+        margin-top: 0.91vw;
+        /*7px*/ }
+        .small_box_02 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 2vw;
+          /*1rem*/
+          text-align: center;
+          line-height: 200%; }
+      .small_box_02 > dl > dd {
+        width: 45%;
+        height: 4.5vw;
+        /*35px*/
+        float: left;
+        margin-top: 0.91vw;
+        /*7px*/ }
+        .small_box_02 > dl > dd > select {
+          width: 95%;
+          height: 100%;
+          display: block; }
+          .small_box_02 > dl > dd > select > optgroup {
+            width: 100%;
+            height: 100%;
+            display: block; }
+            .small_box_02 > dl > dd > select > optgroup > option {
+              width: 100%;
+              height: 100%;
+              display: block;
+              font-size: 2vw;
+              /*1rem*/
+              text-align: center;
+              line-height: 200%; }
+  .small_box_03 {
+    height: 46.875vw;
+    /*360px*/ }
+    .small_box_03 > dl {
+      width: 100%;
+      height: 46.875vw;
+      /*360px*/ }
+      .small_box_03 > dl > dt {
+        width: 30%;
+        height: 5.2vw;
+        /*40px*/ }
+        .small_box_03 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 2vw;
+          /*1rem*/
+          text-align: center;
+          line-height: 200%; }
+      .small_box_03 > dl > dd {
+        width: calc(100% - 3.9vw);
+        height: 39vw;
+        /*300px*/
+        padding: 0 1.9vw;
+        /*0 15px*/ }
+        .small_box_03 > dl > dd > textarea {
+          width: 78.125vw;
+          /*600px*/
+          height: 36.4vw;
+          /*280px*/
+          display: block;
+          padding: 1.3vw;
+          /*10px*/
+          overflow: scroll;
+          font-size: 2.7vw;
+          /*1.3rem*/ }
+  .small_box_04 {
+    height: 6.5vw;
+    /*50px*/ }
+    .small_box_04 > dl {
+      width: calc(100% - 6.5vw);
+      /*50px*/
+      height: 6.5vw;
+      /*50px*/
+      padding-left: 6.5vw;
+      /*50px*/ }
+      .small_box_04 > dl > dd {
+        width: 25px;
+        height: 100%;
+        float: left; }
+        .small_box_04 > dl > dd > input {
+          width: 3.2vw;
+          /*25px*/
+          height: 100%;
+          display: block; }
+      .small_box_04 > dl > dt {
+        width: calc(100% - 4.5vw);
+        /*35px*/
+        height: 100%;
+        float: left;
+        margin-left: 1.3vw;
+        /*10px*/ }
+        .small_box_04 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          font-size: 2vw;
+          /*1rem*/
+          line-height: 300%; }
+  .small_box_05 {
+    height: 7.8vw;
+    /*60px*/ }
+    .small_box_05 > dl {
+      width: 100%;
+      height: 5.2vw;
+      /*40px*/
+      margin-top: 2.6vw;
+      /*20px*/ }
+      .small_box_05 > dl > dt {
+        width: 0;
+        height: 0; }
+        .small_box_05 > dl > dt > span {
+          width: 0;
+          height: 0;
+          display: block;
+          font-size: 0; }
+      .small_box_05 > dl > dd {
+        width: 26vw;
+        /*200px*/
+        height: 5.2vw;
+        /*40px*/
+        margin-left: 29.2vw;
+        /*225px*/ }
+        .small_box_05 > dl > dd > button {
+          width: 10.4vw;
+          /*80px*/
+          height: 100%;
+          float: left;
+          display: block;
+          margin-right: 5.2vw;
+          /*40px*/
+          border-radius: 0.5vw;
+          /*4px*/
+          font-size: 2.2vw;
+          /*1.1rem*/
+          color: #ffffff; }
+        .small_box_05 > dl > dd > .btn_ok {
+          background-color: #ba1822; }
+        .small_box_05 > dl > dd > .btn_no {
+          background-color: #2f2b2a;
+          margin-right: 0; }
   /* PhotoShop 768px 기준 */
   #footer {
     width: 85.9375vw;
@@ -1218,196 +1678,316 @@
             color: #ba1822; }
         #nav > ul > li.answer_box {
           width: 100px; }
-  #nav_mobile {
+  article {
+    width: 816px;
+    height: 600px;
+    padding-top: 50px; }
+    article > div {
+      width: 50%;
+      float: left; }
+      article > div#leftBox {
+        height: 550px; }
+      article > div#rightBox {
+        height: 160px;
+        margin-top: 200px; }
+  #answerBox {
     display: none; }
-  /* dolce_sub01_article.css */
-  #section {
-    width: 815px;
-    height: 755px;
-    padding-top: 40px; }
-    #section > #maps {
+  /* left box */
+  #leftBox > ul {
+    width: 100%;
+    height: 100%; }
+    #leftBox > ul > li {
       width: 100%;
-      height: 322px; }
-    #section > #map_text {
+      height: 200px; }
+      #leftBox > ul > li > dl {
+        width: 100%;
+        height: 100%; }
+        #leftBox > ul > li > dl > * {
+          width: 100%;
+          height: 75px;
+          font-size: 1.8rem;
+          text-align: center;
+          line-height: 300%; }
+        #leftBox > ul > li > dl > dt {
+          font-weight: bold;
+          color: #ba1822; }
+        #leftBox > ul > li > dl > dd {
+          color: #2f2b2a; }
+    #leftBox > ul > .info_img {
+      height: 350px;
+      background-image: url("../img/sub03_tab01/info_main.jpg");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      #leftBox > ul > .info_img > span {
+        width: 0;
+        height: 0;
+        display: block;
+        font-size: 0; }
+  /* right box */
+  #rightBox > form {
+    width: 100%;
+    height: 100%; }
+    #rightBox > form > fieldset {
       width: 100%;
-      height: 328px;
-      margin-top: 45px; }
-  #section_mobile {
-    display: none; }
-  /* big maps */
-  #maps > div {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center; }
-  #maps > #map_all {
-    width: 270px;
-    float: left;
-    background-image: url("../img/sub03_tab02/map_all.png");
-    background-size: 110%;
-    background-color: #bdc4c4;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    font-size: 0; }
-  #maps > #map_mini {
-    width: 545px;
-    float: right;
-    background-image: url("../img/sub03_tab02/map_mini.png");
-    background-size: 65%;
-    border: 2px solid #ba1822;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-sizing: border-box;
-    background-position: 70% center;
-    position: relative; }
-    #maps > #map_mini > h3 {
-      width: 205px;
-      height: 44px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      position: absolute;
-      z-index: 500;
-      top: 50%;
-      left: 50%;
-      margin-top: -100px;
-      margin-left: -190px; }
-    #maps > #map_mini > ul {
+      height: 50%; }
+      #rightBox > form > fieldset > legend {
+        width: 0;
+        height: 0;
+        display: block;
+        font-size: 0; }
+      #rightBox > form > fieldset > dl {
+        width: 100%;
+        height: 100%; }
+        #rightBox > form > fieldset > dl > dt {
+          width: 100%;
+          height: 80px;
+          border-radius: 8px;
+          border: #bdc4c4 2px solid;
+          box-sizing: border-box; }
+          #rightBox > form > fieldset > dl > dt > span {
+            width: calc(100% - 45px);
+            height: 100%;
+            display: block;
+            float: left;
+            font-size: 1.4rem;
+            color: #222222;
+            text-indent: 30px;
+            line-height: 350%; }
+          #rightBox > form > fieldset > dl > dt > i {
+            width: 30px;
+            height: 40px;
+            margin-top: 30px;
+            margin-right: 15px;
+            float: right;
+            font-size: 1.3rem;
+            color: #2f2b2a; }
+        #rightBox > form > fieldset > dl > dd {
+          width: 100%;
+          height: 640px;
+          background-color: #bdc4c4;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px; }
+          #rightBox > form > fieldset > dl > dd > ul {
+            width: 388px;
+            height: 800px;
+            padding: 10px; }
+            #rightBox > form > fieldset > dl > dd > ul > li {
+              width: 100%; }
+  /* small box style */
+  .email_box .small_box_01 {
+    height: 70px; }
+    .email_box .small_box_01 > dl {
       width: 100%;
-      height: 100%;
-      position: relative; }
-      #maps > #map_mini > ul > li {
-        width: 15px;
-        height: 20px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("../img/sub03_tab02/map_point.png");
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat; }
-        #maps > #map_mini > ul > li > button {
+      height: 70px; }
+      .email_box .small_box_01 > dl > dt {
+        width: 30%;
+        height: 35px;
+        float: left; }
+        .email_box .small_box_01 > dl > dt > label {
           width: 100%;
           height: 100%;
-          font-size: 0;
-          background-color: transparent;
-          cursor: pointer; }
-  /* map pointer space */
-  .point_01 {
-    margin-top: 75px;
-    margin-left: 260px; }
-  .point_02 {
-    margin-top: 55px;
-    margin-left: 365px; }
-  .point_03 {
-    margin-top: 65px;
-    margin-left: 375px; }
-  .point_04 {
-    margin-top: 140px;
-    margin-left: 274px; }
-  .point_05 {
-    margin-top: 150px;
-    margin-left: 258px; }
-  .point_06 {
-    margin-top: 125px;
-    margin-left: 340px; }
-  .point_07 {
-    margin-top: 132px;
-    margin-left: 330px; }
-  .point_08 {
-    margin-top: 140px;
-    margin-left: 320px; }
-  .point_09 {
-    margin-top: 165px;
-    margin-left: 295px; }
-  .point_10 {
-    margin-top: 180px;
-    margin-left: 310px; }
-  .point_11 {
-    margin-top: 170px;
-    margin-left: 320px; }
-  .point_12 {
-    margin-top: 130px;
-    margin-left: 385px; }
-  .point_13 {
-    margin-top: 170px;
-    margin-left: 390px; }
-  .point_14 {
-    margin-top: 173px;
-    margin-left: 375px; }
-  .point_15 {
-    margin-top: 195px;
-    margin-left: 355px; }
-  .point_16 {
-    margin-top: 200px;
-    margin-left: 370px; }
-  /* table & real maps */
-  #map_text > #shoptable {
-    width: 520px;
-    height: 100%;
-    /*328px*/
-    float: left; }
-    #map_text > #shoptable > #shopinfo_01 {
-      width: 100%;
-      height: 100%; }
-      #map_text > #shoptable > #shopinfo_01 > table {
-        width: 100%;
-        height: 100%;
-        border-spacing: 0;
-        border-collapse: collapse; }
-        #map_text > #shoptable > #shopinfo_01 > table > tbody {
+          display: block;
+          font-size: 1rem;
+          text-align: center;
+          line-height: 200%; }
+      .email_box .small_box_01 > dl > dd:nth-child(2) {
+        width: 70%;
+        height: 35px;
+        float: left; }
+        .email_box .small_box_01 > dl > dd:nth-child(2) > input {
           width: 100%;
-          height: 100%; }
-          #map_text > #shoptable > #shopinfo_01 > table > tbody > tr {
-            width: 100%;
-            height: 20%;
-            border-bottom: 2px solid #bdc4c4;
-            border-top: 2px solid #bdc4c4; }
-            #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > th {
-              width: 30%;
-              text-align: center;
-              padding: 20px 0; }
-            #map_text > #shoptable > #shopinfo_01 > table > tbody > tr > td {
-              width: 70%;
-              text-align: center;
-              padding: 20px 0;
-              border-left: 2px dotted #bdc4c4; }
-            #map_text > #shoptable > #shopinfo_01 > table > tbody > tr:nth-child(2) > td {
-              padding: 10px 0; }
-  #map_text > #map_wrap {
-    width: 260px;
-    height: 100%;
-    float: right;
-    position: relative; }
-    #map_text > #map_wrap > h3 {
-      width: calc(100% - 20px);
-      height: 48px;
-      background-color: #ba1822;
-      padding-left: 20px;
-      font-size: 1.2rem;
-      line-height: 250%;
-      font-weight: bold;
-      color: #ffffff; }
-    #map_text > #map_wrap > div {
+          height: 100%;
+          display: block;
+          border-radius: 5px;
+          text-indent: 8px; }
+      .email_box .small_box_01 > dl > dd:nth-child(3) {
+        width: 100%;
+        height: 35px;
+        float: left;
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 250%; }
+  .message_box .small_box_01 {
+    height: 70px; }
+    .message_box .small_box_01 > dl {
       width: 100%;
-      height: 280px;
-      font-size: 0;
-      background-image: url("../img/sub03_tab02/real_map.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    #map_text > #map_wrap > button {
-      width: 80px;
-      height: 25px;
-      background-color: #bdc4c4;
-      position: absolute;
-      z-index: 200;
-      bottom: 0;
-      right: 0;
-      margin-bottom: 20px;
-      margin-right: 20px;
-      border-radius: 5px;
-      font-size: 0.8rem;
-      font-weight: bold;
-      box-shadow: 1px 1px 5px #222222; }
+      height: 70px; }
+      .message_box .small_box_01 > dl > dt {
+        width: 116px;
+        height: 35px;
+        float: left; }
+        .message_box .small_box_01 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 1rem;
+          text-align: center;
+          line-height: 200%; }
+      .message_box .small_box_01 > dl > dd {
+        width: 80px;
+        height: 35px;
+        float: left; }
+        .message_box .small_box_01 > dl > dd > input {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 1rem;
+          text-indent: 15px;
+          line-height: 250%; }
+      .message_box .small_box_01 > dl > dd:nth-child(2) {
+        width: 62px;
+        height: 35px;
+        float: left; }
+        .message_box .small_box_01 > dl > dd:nth-child(2) > select {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          .message_box .small_box_01 > dl > dd:nth-child(2) > select > optgroup {
+            width: 100%;
+            height: 100%;
+            display: block; }
+            .message_box .small_box_01 > dl > dd:nth-child(2) > select > optgroup > option {
+              width: 100%;
+              height: 100%;
+              display: block;
+              font-size: 1rem;
+              line-height: 200%; }
+      .message_box .small_box_01 > dl > dd:last-child {
+        width: 100%;
+        height: 35px;
+        float: left;
+        font-size: 0.75rem;
+        text-align: center;
+        line-height: 300%; }
+      .message_box .small_box_01 > dl > .ph_bar {
+        width: 8px;
+        height: 17px;
+        float: left;
+        margin: 0 7px;
+        border-bottom: #2f2b2a 1px solid; }
+        .message_box .small_box_01 > dl > .ph_bar > span {
+          width: 0;
+          height: 0;
+          display: block;
+          font-size: 0; }
+  .small_box_02 {
+    height: 50px; }
+    .small_box_02 > dl {
+      width: 100%;
+      height: 50px; }
+      .small_box_02 > dl > dt {
+        width: 30%;
+        height: 35px;
+        float: left;
+        margin-top: 7px; }
+        .small_box_02 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 1rem;
+          text-align: center;
+          line-height: 200%; }
+      .small_box_02 > dl > dd {
+        width: 70%;
+        height: 35px;
+        float: left;
+        margin-top: 7px; }
+        .small_box_02 > dl > dd > select {
+          width: 95%;
+          height: 100%;
+          display: block; }
+          .small_box_02 > dl > dd > select > optgroup {
+            width: 100%;
+            height: 100%;
+            display: block; }
+            .small_box_02 > dl > dd > select > optgroup > option {
+              width: 100%;
+              height: 100%;
+              display: block;
+              font-size: 1rem;
+              text-align: center;
+              line-height: 200%; }
+  .small_box_03 {
+    height: 360px; }
+    .small_box_03 > dl {
+      width: 100%;
+      height: 360px; }
+      .small_box_03 > dl > dt {
+        width: 30%;
+        height: 40px; }
+        .small_box_03 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          font-size: 1rem;
+          text-align: center;
+          line-height: 200%; }
+      .small_box_03 > dl > dd {
+        width: calc(100% - 28px);
+        height: 300px;
+        padding: 0 14px; }
+        .small_box_03 > dl > dd > textarea {
+          width: 340px;
+          height: 280px;
+          display: block;
+          padding: 10px;
+          overflow: scroll;
+          font-size: 1.3rem; }
+  .small_box_04 {
+    height: 30px; }
+    .small_box_04 > dl {
+      width: 100%;
+      height: 30px; }
+      .small_box_04 > dl > dd {
+        width: 20px;
+        height: 100%;
+        float: left; }
+        .small_box_04 > dl > dd > input {
+          width: 15px;
+          height: 100%;
+          display: block; }
+      .small_box_04 > dl > dt {
+        width: calc(100% - 20px);
+        height: 100%;
+        float: left; }
+        .small_box_04 > dl > dt > label {
+          width: 100%;
+          height: 100%;
+          font-size: 1rem;
+          line-height: 170%; }
+  .small_box_05 {
+    height: 60px; }
+    .small_box_05 > dl {
+      width: 100%;
+      height: 40px;
+      margin-top: 20px; }
+      .small_box_05 > dl > dt {
+        width: 0;
+        height: 0; }
+        .small_box_05 > dl > dt > span {
+          width: 0;
+          height: 0;
+          display: block;
+          font-size: 0; }
+      .small_box_05 > dl > dd {
+        width: 200px;
+        height: 40px;
+        margin-left: 94px; }
+        .small_box_05 > dl > dd > button {
+          width: 80px;
+          height: 100%;
+          float: left;
+          display: block;
+          margin-right: 40px;
+          border-radius: 4px;
+          font-size: 1.1rem;
+          color: #ffffff; }
+        .small_box_05 > dl > dd > .btn_ok {
+          background-color: #ba1822; }
+        .small_box_05 > dl > dd > .btn_no {
+          background-color: #2f2b2a;
+          margin-right: 0; }
   /* PhotoShop 1400px 기준 */
   #footer {
     width: 100%;

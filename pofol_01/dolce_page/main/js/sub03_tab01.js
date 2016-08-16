@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     
+    
     var win = $(window),
         winW = win.width();
     
@@ -59,6 +60,28 @@ $(document).ready(function(){
                     $(this).stop().show();
                 })
             });
+            
+            /* info click */
+            var btnDT = $(".click_mos").children('dt'),
+                DD = $(".click_mos").children('dd');
+    
+            DD.hide();
+            
+            btnDT.on("click",function(){
+                var parDL = $(this).parent('dl');
+                
+                DD.stop().hide();
+                $('fieldset').stop().removeClass('field_mos');
+                $('.ask_mos').stop().removeClass('arti_mos');
+                $('.right_mos').stop().removeClass('div_mos');
+                btnDT.stop().css({"border-radius": 8 });
+                
+                $(this).stop().css({"border-bottom-left-radius":0 , "border-bottom-right-radius":0 });
+                $(this).next('dd').stop().slideDown(600);
+                parDL.parent('fieldset').stop().addClass('field_mos');
+                $('.ask_mos').stop().addClass('arti_mos');
+                $('.right_mos').stop().addClass('div_mos').css({"margin-top":0});
+            });
 
         }//winW <= 679
         
@@ -98,6 +121,27 @@ $(document).ready(function(){
                 window.open("./login_pop.html","Login","width=540, height=350, left=250, top= 250, scrollbars=no, toolbars=no, location=no")
             });
             
+            /* info click */
+            var btnDT = $(".click_tab").children('dt'),
+                DD = $(".click_tab").children('dd');
+    
+            DD.hide();
+            
+            btnDT.on("click",function(){
+                var parDL = $(this).parent('dl');
+                
+                DD.stop().hide();
+                $('fieldset').stop().removeClass('field_tab');
+                $('.ask_tab').stop().removeClass('arti_tab');
+                $('.right_tab').stop().removeClass('div_tab');
+                btnDT.stop().css({"border-radius": 8 });
+                
+                $(this).stop().css({"border-bottom-left-radius":0 , "border-bottom-right-radius":0 });
+                $(this).next('dd').stop().slideDown(600);
+                parDL.parent('fieldset').stop().addClass('field_tab');
+                $('.ask_tab').stop().addClass('arti_tab');
+                $('.right_tab').stop().addClass('div_tab').css({"margin-top":0});
+            });
             
         }//680 <= winW <= 959
     
@@ -116,6 +160,29 @@ $(document).ready(function(){
             /* login popup page */
             $(".pc_sitemap").children("li").eq(0).on("click",function(){
                 window.open("./login_pop.html","Login","width=540, height=350, left=250, top= 250, scrollbars=no, toolbars=no, location=no")
+            });
+            
+            
+            /* info click */
+            var btnDT = $(".click_pc").children('dt'),
+                DD = $(".click_pc").children('dd');
+    
+            DD.hide();
+            
+            btnDT.on("click",function(){
+                var parDL = $(this).parent('dl');
+                
+                DD.stop().hide();
+                $('fieldset').stop().height(80);
+                $('.ask_pc').stop().height(600);
+                $('.right_pc').stop().height(160);
+                btnDT.stop().css({"border-radius": 8 });
+                
+                $(this).stop().css({"border-bottom-left-radius":0 , "border-bottom-right-radius":0 });
+                $(this).next('dd').stop().slideDown(600);
+                parDL.parent('fieldset').stop().height(720);
+                $('.ask_pc').stop().height(900);
+                $('.right_pc').stop().height(820).css({"margin-top":0});
             });
             
         }// 960 <= winW

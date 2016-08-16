@@ -113,7 +113,7 @@
             </ul>
         </div><!--//#nav-->
         
-        <article id="askBox">
+        <article id="askBox" class="ask_mos ask_tab ask_pc">
             <div id="leftBox">
                 <ul>
                     <li>
@@ -122,39 +122,39 @@
                             <dd>080-234-0070</dd>
                         </dl>
                     </li>
-                    <li><span>img</span></li>
+                    <li class="info_img"><span>img</span></li>
                 </ul>
             </div>
-            <div id="rightBox">
+            <div id="rightBox" class="right_mos right_tab right_pc">
                 <form action="" method="post">
                     <fieldset class="email_box">
                         <legend>이메일 문의하기</legend>
-                        <dl>
-                            <dt>이메일 문의</dt>
+                        <dl class="click_mos click_tab click_pc">
+                            <dt><span>이메일 문의</span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></dt>
                             <dd>
                                 <ul>
-                                    <li class="email_box_01">
+                                    <li class="small_box_01">
                                         <dl>
                                             <dt>
                                                 <label for="email_add">이메일 주소</label>
                                             </dt>
                                             <dd>
-                                                <input type="email" name="emailBox" id="email_add" value="" required="required" placeholder="이메일을 입력하세요." maxlang="30" />
+                                                <input type="email" name="emailBox" id="email_add" value="" required="required" placeholder="이메일을 입력하세요." maxlang="50" />
                                             </dd>
                                             <dd>
                                                 &#42;입력하신 이메일 주소로 문의내용에 대한 답변이 발송됩니다.
                                             </dd>
                                         </dl>
                                     </li>
-                                    <li class="email_box_02">
+                                    <li class="small_box_02">
                                         <dl>
                                             <dt>
-                                                <label for="selcet_box">카테고리</label>
+                                                <label for="email_selcet_box">카테고리</label>
                                             </dt>
                                             <dd>
-                                                <select name="multi_sel" id="selcet_box">
+                                                <select name="multi_sel" id="email_selcet_box">
                                                     <optgroup>
-                                                        <option>&#45; &#45; &#45; &#45; &#45;</option>               
+                                                        <option value="">&#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45;</option>               
                                                         <option value="머신 등록 관련사항">머신 등록 관련</option>
                                                         <option value="주문 관련사항">주문 관련</option>
                                                         <option value="배송 관련사항">배송 관련</option>
@@ -166,14 +166,45 @@
                                             </dd>
                                         </dl>
                                     </li>
-                                    <li class="email_box_03">
+                                    <li class="small_box_03">
                                         <dl>
                                             <dt>
-                                                <label for="typing_box">문의 내용</label>
+                                                <label for="email_typing_box">문의 내용</label>
                                             </dt>
                                             <dd>
-                                                <textarea name="textBox" id="typing_box" cols="50" rows="30" placeholder="내용을 입력하세요.">
+                                                <textarea name="textBox" id="email_typing_box">
                                                 </textarea>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="small_box_04">
+                                        <dl>
+                                            <dd>
+                                                <input type="checkbox" name="" id="email_checkbox01" value="" />
+                                            </dd>
+                                            <dt>
+                                                <label for="email_checkbox01">개인정보 수집 &amp; 이용 동의</label>
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="small_box_04">
+                                        <dl>
+                                            <dd>
+                                                <input type="checkbox" name="" id="email_checkbox02" value="" />
+                                            </dd>
+                                            <dt>
+                                                <label for="email_checkbox02">개인정보의 취급위탁 동의</label>
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="small_box_05">
+                                        <dl>
+                                            <dt>
+                                                <span>등록 및 취소</span>
+                                            </dt>
+                                            <dd>
+                                                <button type="submit" class="btn_ok">등록</button>
+                                                <button type="reset" class="btn_no">취소</button>
                                             </dd>
                                         </dl>
                                     </li>
@@ -181,28 +212,102 @@
                             </dd>
                         </dl>
                     </fieldset>
-                    <fieldset class="messege_box">
+                    <fieldset class="message_box">
                         <legend>문자 문의하기</legend>
-                        <dl>
-                            <dt>문자 문의</dt>
+                        <dl class="click_mos click_tab click_pc">
+                            <dt><span>문자 문의</span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></dt>
                             <dd>
                                 <ul>
-                                    <li class="messege_box_01">
+                                    <li class="small_box_01">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>
+                                                <label for="ph_n">휴대폰 번호</label>
+                                            </dt>
+                                            <dd>
+                                                <select name="ph_sel" id="ph_n">
+                                                    <optgroup>
+                                                        <option>&#45; &#45; &#45;</option>               
+                                                        <option value="010">010</option>
+                                                        <option value="011">011</option>
+                                                        <option value="016">016</option>
+                                                        <option value="017">017</option>
+                                                        <option value="019">019</option>                                 
+                                                    </optgroup>                                 
+                                                </select>
+                                            </dd>
+                                            <dd class="ph_bar"><span>구분선</span></dd>
+                                            <dd>
+                                                <input type="text" name="ph_Box" id="ph_n02" value="" required="required" maxlang="4" />
+                                            </dd>
+                                            <dd class="ph_bar"><span>구분선</span></dd>
+                                            <dd>
+                                                <input type="text" name="ph_Box" id="ph_n03" value="" required="required" maxlang="4" />
+                                            </dd>
+                                            <dd>
+                                                &#42;입력하신 휴대폰 번호로 문의내용에 대한 답변이 문자로 발송됩니다.
+                                            </dd>
                                         </dl>
                                     </li>
-                                    <li class="messege_box_02">
+                                    <li class="small_box_02">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>
+                                                <label for="message_selcet_box">카테고리</label>
+                                            </dt>
+                                            <dd>
+                                                <select name="multi_sel" id="message_selcet_box">
+                                                    <optgroup>
+                                                        <option value="">&#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45; &#45;</option>                
+                                                        <option value="머신 등록 관련사항">머신 등록 관련</option>
+                                                        <option value="주문 관련사항">주문 관련</option>
+                                                        <option value="배송 관련사항">배송 관련</option>
+                                                        <option value="캡슐 관련사항">캡슐 관련</option>
+                                                        <option value="머신 관련사항">머신 관련</option>                                 
+                                                        <option value="기타 문의사항">기타 문의사항</option>
+                                                    </optgroup>                                 
+                                                </select>
+                                            </dd>
                                         </dl>
                                     </li>
-                                    <li class="messege_box_03">
+                                    <li class="small_box_03">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>
+                                                <label for="message_typing_box">문의 내용</label>
+                                            </dt>
+                                            <dd>
+                                                <textarea name="textBox" id="message_typing_box" cols="50" rows="30" placeholder="내용을 입력하세요.">
+                                                </textarea>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="small_box_04">
+                                        <dl>
+                                            <dd>
+                                                <input type="checkbox" name="" id="message_checkbox01" value="" />
+                                            </dd>
+                                            <dt>
+                                                <label for="message_checkbox01">개인정보 수집 &amp; 이용 동의</label>
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="small_box_04">
+                                        <dl>
+                                            <dd>
+                                                <input type="checkbox" name="" id="message_checkbox02" value="" />
+                                            </dd>
+                                            <dt>
+                                                <label for="message_checkbox02">개인정보의 취급위탁 동의</label>
+                                            </dt>
+                                        </dl>
+                                    </li>
+                                    <li class="small_box_05">
+                                        <dl>
+                                            <dt>
+                                                <span>등록 및 취소</span>
+                                            </dt>
+                                            <dd>
+                                                <button type="submit" class="btn_ok">등록</button>
+                                                <button type="reset" class="btn_no">취소</button>
+                                            </dd>
                                         </dl>
                                     </li>
                                 </ul>
