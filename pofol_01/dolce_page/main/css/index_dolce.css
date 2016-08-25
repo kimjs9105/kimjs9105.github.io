@@ -1488,7 +1488,7 @@
           border: 1px solid #bdc4c4;
           box-sizing: border-box; }
     #artBox > #machineBox > div {
-      width: 65vw;
+      width: 62.5vw;
       /*500px*/
       height: 100%;
       /*300px*/
@@ -1500,14 +1500,14 @@
       background-size: contain; }
       #artBox > #machineBox > div > .mac_text_box {
         width: calc(100% - 6.5vw);
-        height: 7.8vw;
+        height: 9.1vw;
         /*60px*/
         background-color: rgba(34, 34, 34, 0.8);
         margin-top: 26vw;
         /*200px*/
-        padding: 2.6vw 3.2vw; }
+        padding: 1.3vw 3.2vw 2.6vw; }
         #artBox > #machineBox > div > .mac_text_box > .mac_title {
-          width: 39vw;
+          width: 38vw;
           /*300px*/
           height: 8.4vw;
           /*65px*/
