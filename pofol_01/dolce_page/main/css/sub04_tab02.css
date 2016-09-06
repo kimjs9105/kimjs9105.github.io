@@ -638,7 +638,7 @@
         margin-right: 2.6vw;
         /*20px*/
         float: left; }
-        article > ul > li:nth-child(3n) {
+        article > ul > li.child_3n {
           margin-right: 0; }
         article > ul > li > a {
           width: 100%;
@@ -937,7 +937,6 @@
           width: 120px; }
         section > ul > li.ev_fin {
           width: 110px; }
-  /* dolce_sub01_article.css */
   /* dolce_sub04_article.css */
   article {
     width: 815px;
@@ -951,7 +950,7 @@
         height: 388px;
         margin-right: 47px;
         float: left; }
-        article > ul > li:nth-child(3n) {
+        article > ul > li.child_3n {
           margin-right: 0px; }
       article > ul > .mos_more {
         display: none; }
