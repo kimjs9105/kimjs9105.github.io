@@ -638,13 +638,13 @@
         margin-right: 2.6vw;
         /*20px*/
         float: left; }
-        article > ul > li.child_3n {
-          margin-right: 0; }
         article > ul > li > a {
           width: 100%;
           height: 100%; }
           article > ul > li > a > img {
             width: 100%; }
+      article > ul > .child_3n {
+        margin-right: 0; }
       article > ul > .mos_more {
         display: none; }
   .ev_text {
@@ -950,8 +950,8 @@
         height: 388px;
         margin-right: 45px;
         float: left; }
-        article > ul > li.child_3n {
-          margin-right: 0px; }
+      article > ul > .child_3n {
+        margin-right: 0; }
       article > ul > .mos_more {
         display: none; }
   .ev_text {
