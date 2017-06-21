@@ -1,509 +1,654 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko-kr">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
-    
-    <!-- favicon style -->
-    <link rel="apple-touch-icon" href="./img/mark_gray.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="./img/mark_gray.png" />
-    
-    <!-- web font -->
-    <!--<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' />-->
-    
-    
-    <!-- css style -->
-    <link rel="stylesheet" href="./css/lib/reset.css" />
-    <link rel="stylesheet" href="./css/index.css" /><!--design style-->
-    
-    <!--[if lte IE 9]>
-    <script src="./js/dist/html5shiv.min.js"></script>
-    <script src="./js/dist/ie9.min.js"></script>
-    <script src="./js/dist/PIE.js"></script>
-    <script src="./js/dist/respond.min.js"></script>
-    <![endif]-->
-    
-    <script src="./js/jQuery/jquery-1.12.2.min.js"></script>
-    <script src="./js/jQuery/jquery-migrate-1.2.1.min.js"></script>
-    <script src="./js/jQuery/jquery-ui.min.js"></script>
-        
-    <!-- javascript 영역 -->
-    <script src="./js/galaxy_plugin.js"></script>
-    <script src="./js/index_jQuery.js"></script>
-    
-    <title>JSun&#39;s space</title>
-    <style></style>
-    <script>
-        
-    </script>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="portfolio, html, css, jquery, webDesign, publishing">
+    <meta name="description" content="web Designer and publisher jisun`s web portfolio">
+    <meta name="author" content="김지선">
+    <!--<meta http-equiv="refresh" content="60">-->
+    <!--<meta http-equiv="Pragma" content="no-cache">-->
+    <!------------ web Font - google ------------>
+    <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Raleway|Ubuntu" rel="stylesheet">-->
+    <!------------ CSS : Plugin - fontawesome ------------>
+    <link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.min.css">
+    <!------------ CSS : custom ------------>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>JSUN WORLD</title>
 </head>
 <body>
     <div id="wrap">
         <header>
-            <h1> JSUN&#39;S SPACE </h1>
+            <h1>
+                <a href="index.html">J S U N W O R L D</a>
+            </h1>
+            <div class="nav_back nav_back_pc nav_back_mob">
+                <span class="none">
+                    nav 배경이 되는 div
+                </span>
+            </div>
+            <nav>
+                <button type="button" class="nav_btn nav_btn_pc nav_btn_mob">
+                    <span class="nav_line"></span>
+                    <span class="nav_line hide_line"></span>
+                    <span class="nav_line hide_line"></span>
+                    <span class="nav_line"></span>
+                </button>
+                <button type="button" class="close_btn close_btn_pc close_btn_mob"></button>
+                <div class="menu_box menu_box_pc menu_box_mob">
+                    <ul class="mainmenu">
+                        <li class="menuList menuList_pc menuList_mob">
+                            <a href="./aboutme.html" class="mainTitle">
+                                <span class="menuText">A B O U T M E</span>
+                                <span class="menuLine"></span>
+                            </a>
+                        </li>
+                        <li class="menuList menuList_pc menuList_mob">
+                            <dl class="subMenuList subMenuList_pc subMenuList_mob">
+                                <dt class="mainTitle">
+                                    <span class="menuText">P O R T F O L I O</span>
+                                    <span class="menuLine"></span>
+                                </dt>
+                                <dd>
+                                    <a href="./portfolio_all.html" class="subTitle">
+                                        <span>A L L</span>
+                                        <span>P O R T F O L I O</span>
+                                        <span class="subLine"></span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="./portfolio_pub.html" class="subTitle">
+                                        <span>P U B L I S H I N G</span>
+                                        <span>P A R T</span>
+                                        <span class="subLine"></span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="./portfolio_des.html" class="subTitle">
+                                        <span>D E S I G N</span>
+                                        <span>P A R T</span>
+                                        <span class="subLine"></span>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="menuList menuList_pc menuList_mob">
+                            <a href="./contact.html" class="mainTitle">
+                                <span class="menuText">C O N T A C T</span>
+                                <span class="menuLine"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        
-        <article>
-            <div id="galaxy">
-                <ul>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="sml_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="mid_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <li class="big_fly"></li>
-                    <!--+(li.sml_fly)*50+(li.mid_fly)*50+(li.big_fly)*50+(li.sml_fly)*30+(li.mid_fly)*30+(li.big_fly)*30-->
-                </ul>
-            </div><!--//#galaxy-->
-            <div id="miniGalaxy">
-                <ul>
-                    <li class="min_planet ani_01">bg_animation_planet</li>
-                    <li class="min_planet ani_02">bg_animation_planet</li>
-                    <li class="max_planet ani_03">bg_animation_planet</li>
-                    <li class="min_planet ani_04">bg_animation_planet</li>
-                    <li class="min_planet ani_05">bg_animation_planet</li>
-                    <li class="max_planet ani_06">bg_animation_planet</li>
-                    <li class="max_planet ani_07">bg_animation_planet</li>
-                    <li class="min_planet ani_08">bg_animation_planet</li>
-                    <li class="min_planet ani_09">bg_animation_planet</li>
-                    <li class="max_planet ani_10">bg_animation_planet</li>
-                    <li class="min_planet ani_11">bg_animation_planet</li>
-                    <li class="min_planet ani_12">bg_animation_planet</li>
-                    <li class="min_planet ani_13">bg_animation_planet</li>
-                    <li class="min_planet ani_14">bg_animation_planet</li>
-                    <li class="min_planet ani_15">bg_animation_planet</li>
-                    <li class="max_planet ani_16">bg_animation_planet</li>
-                    <li class="min_planet ani_17">bg_animation_planet</li>
-                    <li class="min_planet ani_18">bg_animation_planet</li>
-                    <li class="max_planet ani_19">bg_animation_planet</li>
-                    <li class="min_planet ani_20">bg_animation_planet</li>
-                    <li class="min_planet ani_21">bg_animation_planet</li>
-                    <li class="max_planet ani_22">bg_animation_planet</li>
-                    <li class="max_planet ani_23">bg_animation_planet</li>
-                    <li class="min_planet ani_24">bg_animation_planet</li>
-                    <li class="min_planet ani_25">bg_animation_planet</li>
-                    <li class="max_planet ani_26">bg_animation_planet</li>
-                    <li class="min_planet ani_27">bg_animation_planet</li>
-                    <li class="min_planet ani_28">bg_animation_planet</li>
-                    <li class="max_planet ani_29">bg_animation_planet</li>
-                    <li class="min_planet ani_30">bg_animation_planet</li>
+        <section id="section_pofol">
+            <div class="publish_bg_box">
+                <div class="deco_box publish_line_box">
+                    <span class="publ_line PL_num_01"></span>
+                    <span class="publ_line PL_num_02"></span>
+                    <span class="publ_line PL_num_03"></span>
+                    <span class="publ_line PL_num_04"></span>
+                    <span class="publ_line PL_num_05"></span>
+                    <span class="publ_line PL_num_06"></span>
+                    <span class="publ_line PL_num_07"></span>
+                    <span class="publ_line PL_num_08"></span>
+                    <span class="publ_line PL_num_09"></span>
+                    <span class="publ_line PL_num_10"></span>
+                    <span class="publ_line PL_num_11"></span>
+                    <span class="publ_line PL_num_12"></span>
+                    <span class="publ_line PL_num_13"></span>
+                    <span class="publ_line PL_num_14"></span>
+                    <span class="publ_line PL_num_15"></span>
+                    <span class="publ_line PL_num_16"></span>
+                    <span class="publ_line PL_num_17"></span>
+                    <span class="publ_line PL_num_18"></span>
+                    <span class="publ_line PL_num_19"></span>
+                    <span class="publ_line PL_num_20"></span>
+                    <span class="publ_line PL_num_21"></span>
+                    <span class="publ_line PL_num_22"></span>
+                    <span class="publ_line PL_num_23"></span>
+                    <span class="publ_line PL_num_24"></span>
+                    <span class="publ_line PL_num_25"></span>
+                    <span class="publ_line PL_num_26"></span>
+                    <span class="publ_line PL_num_27"></span>
+                    <span class="publ_line PL_num_28"></span>
+                    <span class="publ_line PL_num_29"></span>
+                    <div class="mark_box mark_line_box">
+                       <!--mark hair line-->
+                        <span class="mark_line ML_hair_01"></span>
+                        <span class="mark_line ML_hair_02"></span>
+                        <span class="mark_line ML_hair_03"></span>
+                        <span class="mark_line ML_hair_04"></span>
+                        <span class="mark_line ML_hair_05"></span>
+                        <span class="mark_line ML_hair_06"></span>
+                        <span class="mark_line ML_hair_07"></span>
+                        <span class="mark_line ML_hair_08"></span>
+                        <span class="mark_line ML_hair_09"></span>
+                        <span class="mark_line ML_hair_10"></span>
+                        <span class="mark_line ML_hair_11"></span>
+                        <span class="mark_line ML_hair_12"></span>
+                        <span class="mark_line ML_hair_13"></span>
+                        <span class="mark_line ML_hair_14"></span>
+                        <span class="mark_line ML_hair_15"></span>
+                        <span class="mark_line ML_hair_16"></span>
+                        <span class="mark_line ML_hair_17"></span>
+                        <span class="mark_line ML_hair_18"></span>
+                        <span class="mark_line ML_hair_19"></span>
+                        <span class="mark_line ML_hair_20"></span>
+                        <span class="mark_line ML_hair_21"></span>
+                        <span class="mark_line ML_hair_22"></span>
+                        <span class="mark_line ML_hair_23"></span>
+                        <span class="mark_line ML_hair_24"></span>
+                        <span class="mark_line ML_hair_25"></span>
+                        <span class="mark_line ML_hair_26"></span>
+                        <span class="mark_line ML_hair_27"></span>
+                        <span class="mark_line ML_hair_28"></span>
+                        <span class="mark_line ML_hair_29"></span>
+                        <span class="mark_line ML_hair_30"></span>
+                        <span class="mark_line ML_hair_31"></span>
+                        <span class="mark_line ML_hair_32"></span>
+                        <span class="mark_line ML_hair_33"></span>
+                        <span class="mark_line ML_hair_34"></span>
+                        <span class="mark_line ML_hair_35"></span>
+                        <span class="mark_line ML_hair_36"></span>
+                        <span class="mark_line ML_hair_37"></span>
+                        <span class="mark_line ML_hair_38"></span>
+                        <span class="mark_line ML_hair_39"></span>
+                        <span class="mark_line ML_hair_40"></span>
+                        <span class="mark_line ML_hair_41"></span>
+                        <!--mark face line-->
+                        <span class="mark_line ML_face_01"></span>
+                        <span class="mark_line ML_face_02"></span>
+                        <span class="mark_line ML_face_03"></span>
+                        <span class="mark_line ML_face_04"></span>
+                        <span class="mark_line ML_face_05"></span>
+                        <span class="mark_line ML_face_06"></span>
+                        <span class="mark_line ML_face_07"></span>
+                        <span class="mark_line ML_face_08"></span>
+                        <span class="mark_line ML_face_09"></span>
+                        <span class="mark_line ML_face_10"></span>
+                        <span class="mark_line ML_face_11"></span>
+                        <span class="mark_line ML_face_12"></span>
+                        <span class="mark_line ML_face_13"></span>
+                        <span class="mark_line ML_face_14"></span>
+                        <span class="mark_line ML_face_15"></span>
+                        <span class="mark_line ML_face_16"></span>
+                        <span class="mark_line ML_face_17"></span>
+                        <span class="mark_line ML_face_18"></span>
+                        <span class="mark_line ML_face_19"></span>
+                        <span class="mark_line ML_face_20"></span>
+                        <span class="mark_line ML_face_21"></span>
+                        <span class="mark_line ML_face_22"></span>
+                    </div>
+                </div>
+                <button type="button" class="btn_box pub_btn">
+                    <span class="btn_line top_line"></span>
+                    <p class="btn_text">
+                        <span>P U B L I S H</span>
+                        <span>P O R T F O L I O</span>
+                    </p>
+                    <span class="btn_line bottom_line"></span>
+                </button>
+            </div>
+            <div class="design_bg_box">
+                <div class="deco_box design_color_box">
+                    <span class="design_color DC_num_01"></span>
+                    <span class="design_color DC_num_02"></span>
+                    <span class="design_color DC_num_03"></span>
+                    <span class="design_color DC_num_04"></span>
+                    <span class="design_color DC_num_05"></span>
+                    <div class="mark_box mark_color_box">
+                       <!--mark hair line-->
+                        <span class="mark_color MC_num_00"></span><!--mark line img box-->
+                        <span class="mark_color MC_num_01"></span>
+                        <span class="mark_color MC_num_02"></span>
+                        <span class="mark_color MC_num_03"></span>
+                        <span class="mark_color MC_num_04"></span>
+                        <span class="mark_color MC_num_05"></span>
+                        <span class="mark_color MC_num_06"></span>
+                        <span class="mark_color MC_num_07"></span>
+                        <span class="mark_color MC_num_08"></span>
+                        <span class="mark_color MC_num_09"></span>
+                        <span class="mark_color MC_num_10"></span>
+                        <span class="mark_color MC_num_11"></span>
+                        <span class="mark_color MC_num_12"></span>
+                        <span class="mark_color MC_num_13"></span>
+                        <span class="mark_color MC_num_14"></span>
+                        <span class="mark_color MC_num_15"></span>
+                        <span class="mark_color MC_num_16"></span>
+                        <span class="mark_color MC_num_17"></span>
+                        <span class="mark_color MC_num_18"></span>
+                        <span class="mark_color MC_num_19"></span>
+                        <span class="mark_color MC_num_20"></span>
+                        <span class="mark_color MC_num_21"></span>
+                        <span class="mark_color MC_num_22"></span>
+                        <span class="mark_color MC_num_23"></span>
+                        <span class="mark_color MC_num_24"></span>
+                        <span class="mark_color MC_num_25"></span>
+                        <span class="mark_color MC_num_26"></span>
+                        <span class="mark_color MC_num_27"></span>
+                        <span class="mark_color MC_num_28"></span>
+                        <span class="mark_color MC_num_29"></span>
+                        <span class="mark_color MC_num_30"></span>
+                        <span class="mark_color MC_num_31"></span>
+                        <span class="mark_color MC_num_32"></span>
+                        <span class="mark_color MC_num_33"></span>
+                        <span class="mark_color MC_num_34"></span>
+                        <span class="mark_color MC_num_35"></span>
+                        <span class="mark_color MC_num_36"></span>
+                        <span class="mark_color MC_num_37"></span>
+                        <span class="mark_color MC_num_38"></span>
+                        <span class="mark_color MC_num_39"></span>
+                        <span class="mark_color MC_num_40"></span>
+                        <span class="mark_color MC_num_41"></span>
+                        <span class="mark_color MC_num_42"></span>
+                        <span class="mark_color MC_num_43"></span>
+                        <span class="mark_color MC_num_44"></span>
+                        <span class="mark_color MC_num_45"></span>
+                        <span class="mark_color MC_num_46"></span>
+                        <span class="mark_color MC_num_47"></span>
+                        <span class="mark_color MC_num_48"></span>
+                        <span class="mark_color MC_num_49"></span>
+                        <span class="mark_color MC_num_50"></span>
+                        <span class="mark_color MC_num_51"></span>
+                        <span class="mark_color MC_num_52"></span>
+                        <span class="mark_color MC_num_53"></span>
+                        <span class="mark_color MC_num_54"></span>
+                        <span class="mark_color MC_num_55"></span>
+                        <span class="mark_color MC_num_56"></span>
+                        <span class="mark_color MC_num_57"></span>
+                        <span class="mark_color MC_num_58"></span>
+                        <span class="mark_color MC_num_59"></span>
+                        <span class="mark_color MC_num_60"></span>
+                        <span class="mark_color MC_num_61"></span>
+                        <span class="mark_color MC_num_62"></span>
+                        <span class="mark_color MC_num_63"></span>
+                        <span class="mark_color MC_num_64"></span>
+                        <span class="mark_color MC_num_65"></span>
+                        <span class="mark_color MC_num_66"></span>
+                        <span class="mark_color MC_num_67"></span>
+                        <span class="mark_color MC_num_68"></span>
+                        <span class="mark_color MC_num_69"></span>
+                        <span class="mark_color MC_num_70"></span>
+                        <span class="mark_color MC_num_71"></span>
+                        <span class="mark_color MC_num_72"></span>
+                        <span class="mark_color MC_num_73"></span>
+                        <span class="mark_color MC_num_74"></span>
+                        <span class="mark_color MC_num_75"></span>
+                        <span class="mark_color MC_num_76"></span>
+                        <span class="mark_color MC_num_77"></span>
+                        <span class="mark_color MC_num_78"></span>
+                        <span class="mark_color MC_num_79"></span>
+                        <span class="mark_color MC_num_80"></span>
+                        <span class="mark_color MC_num_81"></span>
+                        <span class="mark_color MC_num_82"></span>
+                        <span class="mark_color MC_num_83"></span>
+                        <span class="mark_color MC_num_84"></span>
+                        <span class="mark_color MC_num_85"></span>
+                        <span class="mark_color MC_num_86"></span>
+                        <span class="mark_color MC_num_87"></span>
+                        <span class="mark_color MC_num_88"></span>
+                        <span class="mark_color MC_num_89"></span>
+                        <span class="mark_color MC_num_90"></span>
+                        <span class="mark_color MC_num_91"></span>
+                        <span class="mark_color MC_num_92"></span>
+                        <span class="mark_color MC_num_93"></span>
+                        <span class="mark_color MC_num_94"></span>
+                        <span class="mark_color MC_num_95"></span>
+                        <span class="mark_color MC_num_96"></span>
+                        <span class="mark_color MC_num_97"></span>
+                        <span class="mark_color MC_num_98"></span>
+                        <span class="mark_color MC_num_99"></span>
+                        <span class="mark_color MC_num_100"></span>
+                        <span class="mark_color MC_num_101"></span>
+                        <span class="mark_color MC_num_102"></span>
+                        <span class="mark_color MC_num_103"></span>
+                        <span class="mark_color MC_num_104"></span>
+                        <span class="mark_color MC_num_105"></span>
+                        <span class="mark_color MC_num_106"></span>
+                        <span class="mark_color MC_num_107"></span>
+                        <span class="mark_color MC_num_108"></span>
+                        <span class="mark_color MC_num_109"></span>
+                        <span class="mark_color MC_num_110"></span>
+                        <span class="mark_color MC_num_111"></span>
+                        <span class="mark_color MC_num_112"></span>
+                        <span class="mark_color MC_num_113"></span>
+                        <span class="mark_color MC_num_114"></span>
+                        <span class="mark_color MC_num_115"></span>
+                        <span class="mark_color MC_num_116"></span>
+                        <span class="mark_color MC_num_117"></span>
+                        <span class="mark_color MC_num_118"></span>
+                        <span class="mark_color MC_num_119"></span>
+                        <span class="mark_color MC_num_120"></span>
+                        <span class="mark_color MC_num_121"></span>
+                        <span class="mark_color MC_num_122"></span>
+                        <span class="mark_color MC_num_123"></span>
+                        <span class="mark_color MC_num_124"></span>
+                        <span class="mark_color MC_num_125"></span>
+                        <span class="mark_color MC_num_126"></span>
+                        <span class="mark_color MC_num_127"></span>
+                        <span class="mark_color MC_num_128"></span>
+                        <span class="mark_color MC_num_129"></span>
+                        <span class="mark_color MC_num_130"></span>
+                        <span class="mark_color MC_num_131"></span>
+                        <span class="mark_color MC_num_132"></span>
+                        <span class="mark_color MC_num_133"></span>
+                        <span class="mark_color MC_num_134"></span>
+                        <span class="mark_color MC_num_135"></span>
+                    </div>
+                </div>
+                <button type="button" class="btn_box des_btn">
+                   <span class="btn_line top_line"></span>
+                    <p class="btn_text">
+                        <span>D E S I G N</span>
+                        <span>P O R T F O L I O</span>
+                    </p>
+                    <span class="btn_line bottom_line"></span>
+                </button>
+            </div>
+            <div class="allPF">
+                <button type="button" class="all_btn">
+                    <span class="all_text all_left_t">A L L</span>
+                    <span class="all_text all_left_t">P O R </span>
+                    <span class="all_text all_right_t">T F O L I O</span>
+                    <span class="all_line all_left"></span>
+                    <span class="all_line all_right"></span>
+                </button>
+            </div>
+        </section>
+        <section class="portfolio_list">
+            <div class="pofol_bgc pub_bg"></div>
+            <div class="pofol_bgc des_bg"></div>
+            <div class="pofol_bgc all_bg"></div>
+            <div class="pofol_div pofol_title">
+                <div class="title_box all_title">
+                    <h2>
+                        <span>A L L</span>
+                        <span>P O R T F O L I O</span>
+                    </h2>
+                    <ul class="other_title">
+                        <li class="other_btn">
+                            <button type="button" class="other_t other_BW other_pub">
+                                <span>PUBLISH</span>
+                                <span>PORTFOLIO</span>
+                            </button>
+                        </li>
+                        <li class="other_btn_line"></li>
+                        <li class="other_btn">
+                            <button type="button" class="other_t other_BW other_des">
+                                <span>DESIGN</span>
+                                <span>PORTFOLIO</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title_box pub_title">
+                    <h2>
+                        <span>P U B L I S H</span>
+                        <span>P O R T F O L I O</span>
+                    </h2>
+                    <ul class="other_title">
+                        <li class="other_btn">
+                            <button type="button" class="other_t other_W other_all">
+                                <span>ALL</span>
+                                <span>PORTFOLIO</span>
+                            </button>
+                        </li>
+                        <li class="other_btn_line"></li>
+                        <li class="other_btn">
+                            <button type="button" class="other_t other_W other_des">
+                                <span>DESIGN</span>
+                                <span>PORTFOLIO</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title_box des_title">
+                    <h2>
+                        <span>D E S I G N</span>
+                        <span>P O R T F O L I O</span>
+                    </h2>
+                    <ul class="other_title">
+                        <li class="other_btn">
+                            <button type="button" class="other_t other_B other_all">
+                                <span>ALL</span>
+                                <span>PORTFOLIO</span>
+                            </button>
+                        </li>
+                        <li class="other_btn_line"></li>
+                        <li class="other_btn">
+                            <button type="button" class="other_t other_B other_pub">
+                                <span>PUBLISH</span>
+                                <span>PORTFOLIO</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pofol_div pofol_list_box">
+                <ul class="pofol_list">
+                    <li class="all_type pub_type">
+                        <a href="./portfolio01_rhythm.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail01">
+                                    <span class="pf_btn pub_btn">P</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>RHYTHMCASE</dt>
+                                    <dd>핸드폰 케이스 및 기타 악세서리 판매 업체로서 반응형 쇼핑몰 홈페이지를 제작하였습니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type PD_type">
+                        <a href="./portfolio02_kwell.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail02">
+                                    <span class="pf_btn des_btn">D</span>
+                                    <span class="pf_btn pub_btn">P</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>KWELLNESS</dt>
+                                    <dd>한국의 산양삼등 건강보조식품을 홍보하는 업체로서 제품 소개 및 회사소개 홈페이지(반응형)를 제작하였습니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type des_type">
+                        <a href="./portfolio03_next.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail03">
+                                    <span class="pf_btn des_btn">D</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>NEXTINNOVATION</dt>
+                                    <dd>웹 서비스, 솔루션 개발 업체의 반응형 홈페이지를 제작하였습니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type des_type">
+                        <a href="portfolio04_naedam.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail04">
+                                    <span class="pf_btn des_btn">D</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>내담C&amp;C</dt>
+                                    <dd>SCM분야 컨설팅 및 개발, SI/SM, 반도체 유통사업을 하는 회사로서 회사소개 홈페이지를 반응형으로 제작하였습니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type pub_type">
+                        <a href="./portfolio05_jace.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail05">
+                                    <span class="pf_btn pub_btn">P</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>JACECOMPANY</dt>
+                                    <dd>국내소비재(푸드, 코스메틱) 해외수출업사업 회사로 반응형 쇼핑몰 홈페이지를 제작하였습니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type PD_type">
+                        <a href="./portfolio06_mpls.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail06">
+                                    <span class="pf_btn des_btn">D</span>
+                                    <span class="pf_btn pub_btn">P</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>화물선박홈페이지(가명)</dt>
+                                    <dd>화물 선박 관리 홈페이지를 제작하였습니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type PD_type">
+                        <a href="./portfolio07_dolce.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail07">
+                                    <span class="pf_btn des_btn">D</span>
+                                    <span class="pf_btn pub_btn">P</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>DolceGusto</dt>
+                                    <dd>기존의 Dolcegusto 홈페이지를 반응형으로 리뉴얼한 홈페이지 입니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type PD_type">
+                        <a href="./portfolio08_kerasys.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail08">
+                                    <span class="pf_btn des_btn">D</span>
+                                    <span class="pf_btn pub_btn">P</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>KERASYS</dt>
+                                    <dd>기존의 KERASYS 홈페이지를 새로운 느낌으로 리뉴얼하였습니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type des_type">
+                        <a href="./portfolio09_banner.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail09">
+                                    <span class="pf_btn des_btn">D</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>배너 / 랜딩페이지 디자인</dt>
+                                    <dd>제품의 특징과 이벤트의 성격을 살려 이벤트 페이지 및 광고 배너를 제작하였습니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="all_type des_type">
+                        <a href="./portfolio10_layout.html" class="pofol_link">
+                            <div class="pofol_box">
+                                <div class="sumnail_box sumnail10">
+                                    <span class="pf_btn des_btn">D</span>
+                                </div>
+                                <div class="sumnail_box sumnail_hover">
+                                    <img src="./img/common/more_btn_W.png" alt="더보기 버튼">
+                                    <span>더보기</span>
+                                </div>
+                                <dl class="pofol_content">
+                                    <dt>기타 홈페이지 시안작업</dt>
+                                    <dd>기타 홈페이지 초안 디자인, 시안 디자인 작업 진행 부분입니다.</dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </li>
+                    <!--<li class="all_type pub_type des_type">
+                        <a href="#" class="pofol_link">
+                            <div class="pofol_box sampleBox">
+                                
+                            </div>
+                        </a>
+                    </li>-->
                 </ul>
             </div>
-            <!-- real planet-->
-            <nav id="mainNav">
-                
-            </nav>
-            <a href="./index.html" id="logo" class="pc_a tab_a mos_a">
-                <dl class="title pc_title tab_title mos_title">
-                    <dd class="menu"><!--Logo Story--></dd>
-                    <!--<span class="col"></span>-->
-                </dl>
+            <a href="#" class="scrollTop">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
             </a>
-            <a href="./info/info.html" id="info" class="pc_a tab_a mos_info">
-                <dl class="title pc_title tab_title mos_title">
-                    <dt class="menu">Resume</dt>
-                    <dd class="col"></dd>
-                </dl>
-            </a>
-            <a href="./pofol_01/pofol_dolce.html" id="pofol01" class="pc_a tab_a mos_pofol01">
-                <dl class="title pc_title tab_title mos_title">
-                    <dt class="menu">Portfolio 01</dt>
-                    <dd class="col"></dd>
-                </dl>
-            </a>
-            <a href="./pofol_02/pofol_kerasys.html" id="pofol02" class="pc_a tab_a mos_pofol02">
-                <dl class="title pc_title tab_title mos_title">
-                    <dt class="menu">Portfolio 02</dt>
-                    <dd class="col"></dd>
-                </dl>
-            </a>
-            <a href="./mypage/myPage.html" id="mine" class="pc_a tab_a mos_mine">
-                <dl class="title pc_title tab_title mos_title">
-                    <dt class="menu">Mypage</dt>
-                    <dd class="col"></dd>
-                </dl>
-            </a>
-            
-            <!-- design planet -->
-            <div class="sub planet_1"><span>가짜행성</span></div>
-            <div class="sub planet_2"><span>가짜행성</span></div>
-            <div class="sub planet_3"><span>가짜행성</span></div>
-            <div class="sub planet_4"><span>가짜행성</span></div>
-            <div class="sub planet_5"><span>가짜행성</span></div>
-            <div class="sub planet_6"><span>가짜행성</span></div>
-            <div class="sub planet_7"><span>가짜행성</span></div>
-
-        </article>
-        
+        </section>
         <footer>
-            <div id="myBox">
-                <div class="tri"></div>
-                <div class="my_t">
-                    CONTACT<br/>
-                </div>
-                <div class="my_p">
-                   ls2022@naver.com<br/>
-                    경기도 용인시 처인구 마평동
-                </div>
-            </div><!--//#myBox-->
+            <address class="footer_box contact_box">
+                <ul class="left_add">
+                    <li>
+                        <p>김 지 선</p>
+                    </li>
+                    <!--<li>
+                        <p>0 1 0 3 2 2 7 0 2 6 6</p>
+                    </li>-->
+                    <li>
+                        <p>l s 2 0 2 2 @ n a v e r . c o m</p>
+                    </li>
+                    <li>
+                        <p>경 기 도 용 인 시 처 인 구</p>
+                    </li>
+                </ul>
+                <p class="right_add">
+                    Copyright 2017. JSUN all rights reserved.       
+                </p>
+            </address>
+            <div class="footer_box mailSend_box"></div>
         </footer>
-        
-    </div><!--//#wrap-->
+    </div>
+    <!-- JS Global Compulsory -->
+	<script src="js/jQuery/jquery-1.12.2.min.js"></script>
+	<script src="js/jQuery/jquery-ui.min.js"></script>
+	<script src="js/index.js"></script>
+	<!--[if lt IE 9]>
+	<script src="assets/plugins/respond.js"></script>
+	<script src="assets/plugins/html5shiv.js"></script>
+	<script src="assets/js/plugins/placeholder-IE-fixes.js"></script>
+	<![endif]-->
 </body>
 </html>

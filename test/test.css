@@ -1,0 +1,17 @@
+.mark_line_box>.mark_line{animation: test01 2s 1;}
+.mark_line_box:hover>.mark_line{animation: test02 2s 1;}
+
+
+@keyframes test01{
+    
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+
+@keyframes test02{
+    
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}

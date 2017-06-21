@@ -1,0 +1,16 @@
+  /*reset css*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*, html, body, h1, h2, h3, h4, h5, h6, p, div, img, li, dt, dd, a 
+    {margin:0; padding:0; border:0; vertical-align:top; color:#222; font-family: 'Nanum Gothic', arial, "noto sans", nanumGothic, dothum, sans-serif; font-size: 62.5%;}
+ul, ol, li{list-style:none; } 
+a{text-decoration: none; color: #292929;}
+a:hover{text-decoration: none;}
+table, tr, td, th, thead, tbody, tfoot{border: 1px solid #ffffff; border-spacing: 0; border-collapse: collapse; }
+address{font-style: normal;}
+
+h2,h3,h4,h5,h6 {width: 0; height: 0; overflow: hidden; font-size: 0;}
+a>span{width: 0; height: 0; display: block; overflow: hidden;}
+a{width: 100%; height: 100%; display: block; background-repeat: no-repeat; background-position: center center;}
+/* hidden class */
+.hidden{width: 0; height: 0; display: block; overflow: hidden;}
+.hidden_font{font-size:0;}
