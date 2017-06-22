@@ -527,7 +527,7 @@ $(document).on("ready",function(){
     menuRestart();
     port_btn();
     change_btn();
-    scrollTop();
+//    scrollTop();
     
     if( winW >= 751 ){
             
