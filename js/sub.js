@@ -299,68 +299,130 @@ $(document).on("ready",function(){
         
     };//contactH_small();
     
-    var galleryView = function(){
+    var galleryMainView = function(){
         
-        var showBox = $(".gallery_show"),
-            showImg = showBox.children('img'),
-            listBox = $(".gallery_list"),
-            listImg = listBox.children('li'),
-            firstImg = listImg.eq(0).children('img'),
-            mainImg = firstImg.attr('src');
-           
-        showImg.attr('src',mainImg);
+        for( c = 0; c < 5; c++ ){
+            
+            var showBox = $("#gallery_" + c),
+                showImg = showBox.children('img'),
+                listBox = $("#gallery_list_" + c),
+                listImg = listBox.children('li'),
+                firstImg = listImg.eq(0).children('img'),
+                mainImg = firstImg.attr('src');
+            
+            showImg.attr('src',mainImg);
                 
-        var sendBox = listImg.eq(0).children('.send_sum'),
-            sendFirTitle = sendBox.children('dt'),
-            sendFirText = sendBox.children('dd'),
-            showSumBox = showBox.children('.img_sum'),
-            showTitle = showSumBox.children('dt'),
-            showText = showSumBox.children('dd');
-        
-        var mainTitle = sendFirTitle.text(),
-            mainText = sendFirText.text();
-        
-        showTitle.text(mainTitle);
-        showText.text(mainText);
+            var sendBox = listImg.eq(0).children('.send_sum'),
+                sendFirTitle = sendBox.children('dt'),
+                sendFirText = sendBox.children('dd'),
+                showSumBox = showBox.children('.img_sum'),
+                showTitle = showSumBox.children('dt'),
+                showText = showSumBox.children('dd');
+
+            var mainTitle = sendFirTitle.text(),
+                mainText = sendFirText.text();
+
+            showTitle.text(mainTitle);
+            showText.text(mainText);
             
-        var checkShow = $(".checkShow"),
-            mainCheck = listImg.eq(0).children('.checkShow');
+            var checkShow = listImg.children(".checkShow"),
+                mainCheck = listImg.eq(0).children('.checkShow');
         
-        checkShow.hide();
-        mainCheck.show();
+            checkShow.hide();
+            mainCheck.show();
+
+        }
         
-        listImg.on('click',function(){
+    };//galleryMainView();
+    
+    
+    var galleryClick = function(){
+        
+        var imgListBox = $(".gallery_list"),
+            imgListImg = imgListBox.children('li');
+        
+        imgListImg.on('click',function(){
             
-            var clickImg = $(this).children('img'),
+            var listSec = $(this).closest('section'),
+                secGalleryBox = listSec.find(".gallery_show"),
+                showGallery = secGalleryBox.children('img'),
+                checkShow = $(".checkShow"),
+                clickImg = $(this).children('img'),
                 linkImg = clickImg.attr('src');
             
-            showImg.attr('src',linkImg);
+            checkShow.hide();
+            showGallery.attr('src',linkImg);
             
-            var clickSendBox = $(this).children('.send_sum'),
-                clickTitle = clickSendBox.children('dt'),
-                clickText = clickSendBox.children('dd'),
-                sendTitle = clickTitle.text(),
-                sendText = clickText.text();
-            
-            showTitle.text(sendTitle);
-            showText.text(sendText);
-            
-            var checkShow = $(".checkShow"),
+            var checkShow = imgListImg.children(".checkShow"),
                 selectCheck = $(this).children('.checkShow');
             
             checkShow.hide();
             selectCheck.show();
-                
+            
         });
         
-    };
+    };//galleryClick();   
+        
+        
+//        var showBox = $(".gallery_show"),
+//            showImg = showBox.children('img'),
+//            listBox = $(".gallery_list"),
+//            listImg = listBox.children('li'),
+//            firstImg = listImg.eq(0).children('img'),
+//            mainImg = firstImg.attr('src');
+//           
+//        showImg.attr('src',mainImg);
+//                
+//        var sendBox = listImg.eq(0).children('.send_sum'),
+//            sendFirTitle = sendBox.children('dt'),
+//            sendFirText = sendBox.children('dd'),
+//            showSumBox = showBox.children('.img_sum'),
+//            showTitle = showSumBox.children('dt'),
+//            showText = showSumBox.children('dd');
+//        
+//        var mainTitle = sendFirTitle.text(),
+//            mainText = sendFirText.text();
+//        
+//        showTitle.text(mainTitle);
+//        showText.text(mainText);
+//            
+//        var checkShow = $(".checkShow"),
+//            mainCheck = listImg.eq(0).children('.checkShow');
+//        
+//        checkShow.hide();
+//        mainCheck.show();
+//        
+//        listImg.on('click',function(){
+//            
+//            var clickImg = $(this).children('img'),
+//                linkImg = clickImg.attr('src');
+//            
+//            showImg.attr('src',linkImg);
+//            
+//            var clickSendBox = $(this).children('.send_sum'),
+//                clickTitle = clickSendBox.children('dt'),
+//                clickText = clickSendBox.children('dd'),
+//                sendTitle = clickTitle.text(),
+//                sendText = clickText.text();
+//            
+//            showTitle.text(sendTitle);
+//            showText.text(sendText);
+//            
+//            var checkShow = $(".checkShow"),
+//                selectCheck = $(this).children('.checkShow');
+//            
+//            checkShow.hide();
+//            selectCheck.show();
+//                
+//        });
     
     
     //window width 로딩시 기준
     var winW = $(window).width();
     
     contactH_large();
-    galleryView();
+    galleryMainView();
+    galleryClick();
     
     if( winW > 1007 ){
         
@@ -388,7 +450,8 @@ $(document).on("ready",function(){
     $(window).resize(function(){
         
         //공통 요소 
-        galleryView();
+        galleryMainView();
+        galleryClick();
         
         var winW = $(window).width();
     
