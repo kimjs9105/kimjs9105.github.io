@@ -421,7 +421,7 @@ $(document).on("ready",function(){
     var winW = $(window).width();
     
     contactH_large();
-    galleryMainView();
+ //   galleryMainView();
     galleryClick();
     
     if( winW > 1007 ){
@@ -450,7 +450,7 @@ $(document).on("ready",function(){
     $(window).resize(function(){
         
         //공통 요소 
-        galleryMainView();
+        //galleryMainView();
         galleryClick();
         
         var winW = $(window).width();
