@@ -346,82 +346,23 @@ $(document).on("ready",function(){
             var listSec = $(this).closest('section'),
                 secGalleryBox = listSec.find(".gallery_show"),
                 showGallery = secGalleryBox.children('img'),
-                checkShow = $(".checkShow"),
+                check_div = imgListImg.children(".workN_check"),
+                check_box = $(this).children(".workN_check"),
                 clickImg = $(this).children('img'),
                 linkImg = clickImg.attr('src');
             
-            checkShow.hide();
+            check_div.removeClass("checkShow");
+            check_box.addClass("checkShow");
             showGallery.attr('src',linkImg);
-            
-            var checkShow = imgListImg.children(".checkShow"),
-                selectCheck = $(this).children('.checkShow');
-            
-            checkShow.hide();
-            selectCheck.show();
-            
         });
         
-    };//galleryClick();   
-        
-        
-//        var showBox = $(".gallery_show"),
-//            showImg = showBox.children('img'),
-//            listBox = $(".gallery_list"),
-//            listImg = listBox.children('li'),
-//            firstImg = listImg.eq(0).children('img'),
-//            mainImg = firstImg.attr('src');
-//           
-//        showImg.attr('src',mainImg);
-//                
-//        var sendBox = listImg.eq(0).children('.send_sum'),
-//            sendFirTitle = sendBox.children('dt'),
-//            sendFirText = sendBox.children('dd'),
-//            showSumBox = showBox.children('.img_sum'),
-//            showTitle = showSumBox.children('dt'),
-//            showText = showSumBox.children('dd');
-//        
-//        var mainTitle = sendFirTitle.text(),
-//            mainText = sendFirText.text();
-//        
-//        showTitle.text(mainTitle);
-//        showText.text(mainText);
-//            
-//        var checkShow = $(".checkShow"),
-//            mainCheck = listImg.eq(0).children('.checkShow');
-//        
-//        checkShow.hide();
-//        mainCheck.show();
-//        
-//        listImg.on('click',function(){
-//            
-//            var clickImg = $(this).children('img'),
-//                linkImg = clickImg.attr('src');
-//            
-//            showImg.attr('src',linkImg);
-//            
-//            var clickSendBox = $(this).children('.send_sum'),
-//                clickTitle = clickSendBox.children('dt'),
-//                clickText = clickSendBox.children('dd'),
-//                sendTitle = clickTitle.text(),
-//                sendText = clickText.text();
-//            
-//            showTitle.text(sendTitle);
-//            showText.text(sendText);
-//            
-//            var checkShow = $(".checkShow"),
-//                selectCheck = $(this).children('.checkShow');
-//            
-//            checkShow.hide();
-//            selectCheck.show();
-//                
-//        });
+    };//galleryClick();
     
     
     //window width 로딩시 기준
     var winW = $(window).width();
     
     contactH_large();
- //   galleryMainView();
     galleryClick();
     
     if( winW > 1007 ){
@@ -450,7 +391,6 @@ $(document).on("ready",function(){
     $(window).resize(function(){
         
         //공통 요소 
-        //galleryMainView();
         galleryClick();
         
         var winW = $(window).width();

@@ -1396,7 +1396,7 @@
       height: 2270px; }
     .portfolio_list > .all_bg {
       margin-top: 60px;
-      height: 3430px;
+      height: 3130px;
       background-image: url("../img/common/all_portfolio_bg_320W.jpg"); }
   .pofol_title > .title_box {
     height: 80px; }
@@ -2464,7 +2464,7 @@
       height: 2270px; }
     .portfolio_list > .all_bg {
       margin-top: 60px;
-      height: 3430px;
+      height: 3130px;
       background-image: url("../img/common/all_portfolio_bg_360W.jpg"); }
   .pofol_title > .title_box {
     height: 80px; }
@@ -2479,7 +2479,7 @@
       font-weight: 300;
       line-height: 40px;
       text-align: center;
-      color: #efefef; }
+      color: #292929; }
   .pofol_title .all_title > .other_title > .other_btn_line {
     background-color: #fff; }
   .pofol_title .all_title > h2 > span {
@@ -2613,7 +2613,7 @@
       font-weight: 300;
       line-height: 40px;
       text-align: center;
-      color: #efefef; }
+      color: #292929; }
   .pofol_title .all_title > .other_title > .other_btn_line {
     background-color: #fff; }
   .pofol_title .all_title > h2 > span {
@@ -5353,7 +5353,7 @@
       height: 1150px; }
     .portfolio_list > .all_bg {
       margin-top: 100px;
-      height: 1480px;
+      height: 1150px;
       background-image: url("../img/common/all_portfolio_bg_960W.jpg"); }
   .pofol_list_box .pofol_list {
     width: calc(100% + 25px); }
@@ -5423,7 +5423,7 @@
   .portfolio_list > .des_bg {
     height: 1150px; }
   .portfolio_list > .all_bg {
-    height: 1480px;
+    height: 1200px;
     background-image: url("../img/common/all_portfolio_bg_1025W.jpg"); }
   .pofol_list_box {
     padding-top: 50px; }
@@ -5480,7 +5480,7 @@
     .portfolio_list > .des_bg {
       height: 1200px; }
     .portfolio_list > .all_bg {
-      height: 1530px;
+      height: 1270px;
       background-image: url("../img/common/all_portfolio_bg_1200W.jpg"); }
   .pofol_list_box {
     padding-top: 50px; }
@@ -5550,7 +5550,7 @@
   .portfolio_list > .des_bg {
     height: 1410px; }
   .portfolio_list > .all_bg {
-    height: 1810px;
+    height: 1460px;
     background-image: url("../img/common/all_portfolio_bg_1500W.jpg"); }
   .pofol_list_box {
     padding-top: 50px; }
