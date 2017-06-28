@@ -380,7 +380,7 @@ $(document).on("ready",function(){
             des_back_box.animate({opacity: 0}, 1000);
             $(".MC_num_00").animate({opacity: 0}, 500);
             des_mark_box_mob.animate({width : 70, height: 70}, 500,function(){
-                des_mark_box.animate({width : 0, height: 0}, 500);
+                des_mark_box_mob.animate({width : 0, height: 0}, 500);
             });
             
                         
