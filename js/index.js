@@ -256,7 +256,7 @@ $(document).on("ready",function(){
             publish_box = $(".publish_bg_box"),
             design = $(".des_btn"),
             des_back_box = $(".design_color"),
-            des_mark_box = $(".mark_color"),
+            des_mark_box_pc = $(".mark_color_pc"),
             design_box = $(".design_bg_box"),
             all = $(".allPF"),
             all_line = $(".all_line"),
@@ -284,8 +284,8 @@ $(document).on("ready",function(){
             $(this).find(".btn_text").hide(1000);
             des_back_box.animate({opacity: 0}, 1000);
             $(".MC_num_00").animate({opacity: 0}, 500);
-            des_mark_box.animate({width : 25, height: 25}, 500,function(){
-                des_mark_box.animate({width : 0, height: 0}, 500);
+            des_mark_box_pc.animate({width : 25, height: 25}, 500,function(){
+                des_mark_box_pc.animate({width : 0, height: 0}, 500);
             });
             
                         
@@ -380,9 +380,9 @@ $(document).on("ready",function(){
             $(this).find(".btn_text").hide(1000);
             des_back_box.animate({opacity: 0}, 1000);
             $(".MC_num_00").animate({opacity: 0}, 500);
-            des_mark_box_mob.animate({opacity: 0}, 500, function(){
-                
-                $(this).hide();                
+            des_mark_box_all.hide();
+            des_mark_box_mob.animate({width : 70, height: 70}, 500,function(){
+                des_mark_box_mob.animate({width : 0, height: 0}, 500);
             });
             
                         
