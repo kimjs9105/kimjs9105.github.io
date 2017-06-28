@@ -317,6 +317,74 @@ footer {
     .pf_de_direct .list_btn_box .des_list_btn > .pf_list_bar {
       margin-left: 87px; }
 
+/*-----section popup-----*/
+.pf_de_popup {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  background-color: rgba(89, 89, 89, 0.8); }
+  .pf_de_popup > .popup_box {
+    width: 700px;
+    height: 340px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -350px;
+    background-color: #f6f6f6; }
+
+.pop_btn_close {
+  width: 660px;
+  height: 20px;
+  padding: 20px;
+  background-color: #eee; }
+  .pop_btn_close > h5 {
+    width: auto;
+    height: 20px;
+    display: block;
+    float: left;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: #292929; }
+  .pop_btn_close > button {
+    width: 15px;
+    height: 15px;
+    float: right;
+    background-color: transparent; }
+    .pop_btn_close > button > img {
+      width: 100%;
+      height: auto; }
+
+.pop_text_box {
+  width: 640px;
+  height: 220px;
+  padding: 30px;
+  overflow: hidden; }
+  .pop_text_box > * {
+    float: left; }
+  .pop_text_box > img {
+    width: 380px;
+    height: auto; }
+  .pop_text_box > p {
+    width: 220px;
+    height: auto;
+    margin-left: 35px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    color: #292929;
+    text-align: left; }
+    .pop_text_box > p:nth-child(2) {
+      margin-top: 40px;
+      text-indent: 20px; }
+    .pop_text_box > p:nth-child(3) {
+      margin-top: 10px; }
+
 /*-----section designPart-----*/
 .pf_design_d {
   background-color: #363636; }
