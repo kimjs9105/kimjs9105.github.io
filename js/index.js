@@ -380,10 +380,9 @@ $(document).on("ready",function(){
             $(this).find(".btn_text").hide(1000);
             des_back_box.animate({opacity: 0}, 1000);
             $(".MC_num_00").animate({opacity: 0}, 500);
-            des_mark_box_all.hide();
-            des_mark_box_mob.animate({width : 70, height: 70}, 500,function(){
-                des_mark_box_all.hide();
-                des_mark_box_mob.animate({width : 0, height: 0}, 500);
+            des_mark_box_mob.animate({opacity: 0}, 500, function(){
+                
+                $(this).hide();                
             });
             
                         
