@@ -63,6 +63,19 @@ $(document).on("ready",function(){
             subListPC.hide();
 
         });
+        
+        navBackPC.on("click",function(){
+
+            closeIconPC.css({zIndex: 200});
+            menuIconPC.removeClass("cross_btn").addClass("nav_btn");
+            menuBoxPC.stop().animate({marginRight: -250}, 1000);
+            $(this).css({right: "-100%"});
+            menuTitle_secPC.css({height: 80});
+            subMenuPC.css({height: 80});
+            subTitlePC.children('.menuLine').removeClass("lineBlock");
+            subListPC.hide();
+
+        });
     
     };
     
@@ -95,7 +108,6 @@ $(document).on("ready",function(){
 
             $(this).stop().animate({height: 220}, 1000);
             subMenuM.stop().animate({height: 220}, 1000);
-            //subTitle.children('.menuLine').addClass("lineBlock");
             subListM.show();
 
         });
@@ -104,7 +116,6 @@ $(document).on("ready",function(){
 
             $(this).stop().animate({height: 60}, 1000);
             subMenuM.stop().animate({height: 60}, 1000);
-            //subTitle.children('.menuLine').removeClass("lineBlock");
             subListM.hide();
         });
 
@@ -116,7 +127,18 @@ $(document).on("ready",function(){
             navBackM.css({right: "-100%"});
             menuTitle_secM.css({height: 60});
             subMenuM.css({height: 60});
-            //subTitle.children('.menuLine').removeClass("lineBlock");
+            subListM.hide();
+
+        });
+        
+        navBackM.on("click",function(){
+
+            closeIconM.css({zIndex: 200});
+            menuIconM.removeClass("cross_btn").addClass("nav_btn");
+            menuBoxM.stop().animate({marginRight: -250}, 1000);
+            $(this).css({right: "-100%"});
+            menuTitle_secM.css({height: 60});
+            subMenuM.css({height: 60});
             subListM.hide();
 
         });

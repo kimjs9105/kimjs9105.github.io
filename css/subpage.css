@@ -79,29 +79,30 @@ footer {
 .resume_section {
   width: 100%;
   overflow: hidden; }
-  .resume_section > .resume_box .content_box {
-    height: 100%;
-    margin: 0 auto; }
-    .resume_section > .resume_box .content_box .title_box h2 {
-      float: left; }
-    .resume_section > .resume_box .content_box .title_box h3 {
-      float: left; }
-  .resume_section > .resume_box .title_W > * {
-    color: #efefef; }
-  .resume_section > .resume_box .title_B > * {
-    color: #363648; }
-  .resume_section > .resume_box:nth-child(2) {
-    background-color: #282c37; }
-  .resume_section > .resume_box:nth-child(3) {
-    background-color: #f4f4ec; }
-  .resume_section > .resume_box:nth-child(4) {
-    background-color: #2E2B2B; }
-  .resume_section > .resume_box:nth-child(5) {
-    background-color: #787878; }
-  .resume_section > .resume_box:nth-child(6) {
-    background-color: #E8F1F5; }
-  .resume_section > .resume_box:nth-child(7) {
-    background-color: #282c2e; }
+  .resume_section > .resume_box {
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .resume_section > .resume_box .content_box {
+      height: 100%;
+      margin: 0 auto; }
+      .resume_section > .resume_box .content_box .title_box h2 {
+        float: left; }
+      .resume_section > .resume_box .content_box .title_box h3 {
+        float: left; }
+    .resume_section > .resume_box .title_W > * {
+      color: #efefef; }
+    .resume_section > .resume_box .title_B > * {
+      color: #363648; }
+    .resume_section > .resume_box:nth-child(3) {
+      background-color: #f4f4ec; }
+    .resume_section > .resume_box:nth-child(4) {
+      background-color: #2E2B2B; }
+    .resume_section > .resume_box:nth-child(5) {
+      background-color: #787878; }
+    .resume_section > .resume_box:nth-child(6) {
+      background-color: #E8F1F5; }
+    .resume_section > .resume_box:nth-child(7) {
+      background-color: #282c2e; }
 
 /*---------- section 별 css ----------*/
 /*-----section 00 content-----*/
@@ -111,13 +112,22 @@ footer {
   .int_textbox > p {
     height: auto;
     float: left;
-    margin-top: 50px;
-    font-size: 13px;
+    margin-top: 30px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 30px;
     text-align: center;
     color: #efefef;
     text-align: left; }
+    .int_textbox > p > .intro_title {
+      width: 100%;
+      height: auto;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+      text-align: center;
+      color: #efefef;
+      text-align: left; }
   .int_textbox > img {
     height: auto;
     display: block;
@@ -270,7 +280,7 @@ footer {
     left: 0;
     z-index: 100; }
 
-/*-----section 03 content-----*/
+/*-----section 03 license-----*/
 .license_box {
   height: 450px;
   float: left; }
@@ -292,13 +302,18 @@ footer {
       margin: 0 auto; }
     .license_box .lic_img > .small_img {
       width: 70%; }
-  .license_box .lic_bot {
-    margin-bottom: 42px; }
   .license_box .lic_title {
     height: 25px;
     font-size: 14px;
     font-weight: 600;
     line-height: 25px;
+    text-align: center;
+    color: #efefef; }
+  .license_box .lic_line_one {
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 50px;
     text-align: center;
     color: #efefef; }
   .license_box .lic_text {
@@ -313,7 +328,7 @@ footer {
 
 /*-----section 04/05 content-----*/
 .tools_box {
-  height: 450px;
+  height: 530px;
   float: left; }
   .tools_box > ul {
     height: 100%;
@@ -405,19 +420,19 @@ footer {
 
 /*------------------------ contact page ------------------------*/
 .contact_section {
-  width: 100%; }
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
   .contact_section > div {
     position: relative; }
     .contact_section > div > .content_box {
-      width: 600px;
-      height: 480px;
+      height: 440px;
       position: absolute;
       top: 50%;
-      margin-top: -230px; }
+      margin-top: -220px; }
   .contact_section > .img_sec {
     background-color: #f8f4f5; }
-  .contact_section > .con_sec {
-    background-color: #fff; }
 
 .img_box .img_list {
   width: 150px;
@@ -468,7 +483,7 @@ footer {
     height: 100%;
     float: left;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 50px;
     text-align: center;
     color: #292929;
@@ -485,7 +500,7 @@ footer {
     width: auto;
     height: 100%;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 50px;
     text-align: center;
     color: #292929;
@@ -708,7 +723,8 @@ footer {
     .resume_section > .resume_box {
       width: 100%;
       height: 1050px;
-      padding-top: 60px; }
+      padding-top: 60px;
+      background-position: top center; }
       .resume_section > .resume_box .content_box {
         width: 280px; }
         .resume_section > .resume_box .content_box .title_box {
@@ -742,12 +758,18 @@ footer {
         float: left; }
       .resume_section > .resume_box .title_B {
         float: left; }
+      .resume_section > .resume_box:nth-child(2) {
+        background-image: url("../img/about/setion01_bgi_560.jpg"); }
       .resume_section > .resume_box:nth-child(3) {
         height: 800px; }
       .resume_section > .resume_box:nth-child(4) {
         height: 900px; }
       .resume_section > .resume_box:nth-child(5) {
-        height: 2000px; }
+        height: 1550px; }
+      .resume_section > .resume_box:nth-child(6) {
+        height: 1190px; }
+      .resume_section > .resume_box:nth-child(7) {
+        height: 1150px; }
   /*---section 00 content---*/
   .int_textbox {
     width: 100%;
@@ -829,22 +851,22 @@ footer {
       .tools_box > ul:first-child {
         margin-right: 20px; }
   /*------------- Contact page -------------*/
-  .contact_section > div {
-    width: 100%;
-    height: calc(100% - 60px);
-    margin-top: 100px; }
-    .contact_section > div > .content_box {
-      width: 320px;
-      height: 70%;
-      margin-top: -250px; }
-  .contact_section > .img_sec {
-    display: none; }
-    .contact_section > .img_sec > .content_box {
-      right: 50%;
-      margin-right: -160px; }
-  .contact_section > .con_sec > .content_box {
-    left: 50%;
-    margin-left: -160px; }
+  .contact_section {
+    background-image: url("../img/contact/contact_mob_bgi.jpg"); }
+    .contact_section > div {
+      width: 100%;
+      height: calc(100% - 60px);
+      margin-top: 60px; }
+      .contact_section > div > .content_box {
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 5px solid #fff;
+        box-sizing: border-box; }
+    .contact_section > .img_sec {
+      display: none; }
+    .contact_section > .con_sec > .content_box {
+      left: 50%;
+      margin-left: -150px; }
   .img_box .img_list {
     width: 136px; }
   .img_box .img_list:nth-child(3) {
@@ -855,7 +877,7 @@ footer {
     width: 5px;
     margin-right: 10px; }
   .con_box .con_list .ml120 {
-    margin-left: 40px; }
+    margin-left: 27px; }
   .con_box .con_list .add_text {
     letter-spacing: 5px; }
   /*------------- Portfolio page -------------*/
@@ -929,7 +951,8 @@ footer {
     .resume_section > .resume_box {
       width: 100%;
       height: 1050px;
-      padding-top: 60px; }
+      padding-top: 60px;
+      background-position: top center; }
       .resume_section > .resume_box .content_box {
         width: 300px; }
         .resume_section > .resume_box .content_box .title_box {
@@ -963,12 +986,18 @@ footer {
         float: left; }
       .resume_section > .resume_box .title_B {
         float: left; }
+      .resume_section > .resume_box:nth-child(2) {
+        background-image: url("../img/about/setion01_bgi_560.jpg"); }
       .resume_section > .resume_box:nth-child(3) {
         height: 800px; }
       .resume_section > .resume_box:nth-child(4) {
         height: 900px; }
       .resume_section > .resume_box:nth-child(5) {
-        height: 2000px; }
+        height: 1550px; }
+      .resume_section > .resume_box:nth-child(6) {
+        height: 1200px; }
+      .resume_section > .resume_box:nth-child(7) {
+        height: 1150px; }
   /*---section 00 content---*/
   .int_textbox {
     width: 100%;
@@ -1045,22 +1074,25 @@ footer {
       .tools_box > ul:first-child {
         margin-right: 20px; }
   /*------------- Contact page -------------*/
-  .contact_section > div {
-    width: 100%;
-    height: calc(100% - 60px);
-    margin-top: 100px; }
-    .contact_section > div > .content_box {
-      width: 320px;
-      height: 70%;
-      margin-top: -250px; }
-  .contact_section > .img_sec {
-    display: none; }
-    .contact_section > .img_sec > .content_box {
-      right: 50%;
-      margin-right: -160px; }
-  .contact_section > .con_sec > .content_box {
-    left: 50%;
-    margin-left: -160px; }
+  .contact_section {
+    background-image: url("../img/contact/contact_mob_bgi.jpg"); }
+    .contact_section > div {
+      width: 100%;
+      height: calc(100% - 60px);
+      margin-top: 60px; }
+      .contact_section > div > .content_box {
+        width: 320px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 5px solid #fff;
+        box-sizing: border-box; }
+    .contact_section > .img_sec {
+      display: none; }
+      .contact_section > .img_sec > .content_box {
+        right: 50%;
+        margin-right: -160px; }
+    .contact_section > .con_sec > .content_box {
+      left: 50%;
+      margin-left: -160px; }
   .img_box .img_list {
     width: 136px; }
   .img_box .img_list:nth-child(3) {
@@ -1149,14 +1181,16 @@ footer {
           height: 36px; }
           .resume_section > .resume_box .content_box .title_box h2 {
             padding-right: 20px; }
+      .resume_section > .resume_box:nth-child(2) {
+        background-image: url("../img/about/setion01_bgi_780.jpg"); }
       .resume_section > .resume_box:nth-child(4) {
         height: 800px; }
       .resume_section > .resume_box:nth-child(5) {
-        height: 1050px; }
+        height: 980px; }
       .resume_section > .resume_box:nth-child(6) {
-        height: 990px; }
+        height: 1150px; }
       .resume_section > .resume_box:nth-child(7) {
-        height: 990px; }
+        height: 1100px; }
   /*---section 00 content---*/
   .int_textbox {
     width: 100%;
@@ -1251,11 +1285,10 @@ footer {
   .contact_section > div {
     width: 100%;
     height: calc(100% - 80px);
-    margin-top: 100px; }
+    margin-top: 80px; }
     .contact_section > div > .content_box {
       width: 550px;
-      height: 70%;
-      margin-top: -250px; }
+      border: 10px solid #fff; }
   .contact_section > .img_sec > .content_box {
     margin-right: -275px; }
   .contact_section > .con_sec > .content_box {
@@ -1341,14 +1374,16 @@ footer {
       width: 700px; }
       .resume_section > .resume_box .content_box .title_box h3:last-child {
         margin-right: 150px; }
+    .resume_section > .resume_box:nth-child(2) {
+      background-image: url("../img/about/setion01_bgi_960.jpg"); }
     .resume_section > .resume_box:nth-child(4) {
       height: 500px; }
     .resume_section > .resume_box:nth-child(5) {
       height: 550px; }
     .resume_section > .resume_box:nth-child(6) {
-      height: 550px; }
+      height: 620px; }
     .resume_section > .resume_box:nth-child(7) {
-      height: 550px; }
+      height: 620px; }
   /*---section 00 content---*/
   .int_textbox {
     width: 100%;
@@ -1450,10 +1485,12 @@ footer {
         margin-right: 40px; }
       .license_box > dl:last-child {
         margin-right: 0; }
+    .license_box .lic_CG {
+      margin-bottom: 43px; }
   /*---section 04/05 content---*/
   .tools_box {
     width: 100%;
-    padding: 50px 0; }
+    padding: 50px 0 0; }
     .tools_box > ul {
       width: 340px; }
       .tools_box > ul:first-child {
@@ -1462,20 +1499,21 @@ footer {
   .contact_section > div {
     width: 50%;
     height: calc(100% - 80px);
-    float: right;
-    margin-top: 80px; }
+    float: right; }
     .contact_section > div > .content_box {
       width: 390px;
-      height: 480px;
-      margin-top: -230px; }
+      background-color: transparent;
+      border: 0; }
   .contact_section > .img_sec {
     display: block; }
     .contact_section > .img_sec > .content_box {
       right: 0;
       margin-right: 0; }
-  .contact_section > .con_sec > .content_box {
-    left: 0;
-    margin-left: 0; }
+  .contact_section > .con_sec {
+    background-color: #fff; }
+    .contact_section > .con_sec > .content_box {
+      left: 0;
+      margin-left: 0; }
   .img_box .img_list:nth-child(1) {
     margin-left: 20px; }
   .img_box .img_list:nth-child(3) {
@@ -1550,7 +1588,8 @@ footer {
     padding-top: 100px; }
     .resume_section > .resume_box {
       width: 100%;
-      height: 550px; }
+      height: 550px;
+      background-position: center center; }
       .resume_section > .resume_box .content_box {
         width: 840px; }
         .resume_section > .resume_box .content_box .title_box {
@@ -1564,8 +1603,19 @@ footer {
         float: left; }
       .resume_section > .resume_box .title_B {
         float: left; }
+      .resume_section > .resume_box:nth-child(2) {
+        background-image: url("../img/about/setion01_bgi_1025.jpg"); }
+      .resume_section > .resume_box:nth-child(3) {
+        background-color: #f4f4ec; }
       .resume_section > .resume_box:nth-child(4) {
-        height: 460px; }
+        height: 460px;
+        background-color: #2E2B2B; }
+      .resume_section > .resume_box:nth-child(5) {
+        background-color: #787878; }
+      .resume_section > .resume_box:nth-child(6) {
+        background-color: #E8F1F5; }
+      .resume_section > .resume_box:nth-child(7) {
+        background-color: #282c2e; }
   /*---section 00 content---*/
   .int_textbox {
     width: 100%;
@@ -1629,10 +1679,12 @@ footer {
     padding: 50px 0; }
     .license_box > dl {
       width: 180px; }
+    .license_box .lic_CG {
+      margin-bottom: 48px; }
   /*---section 04/05 content---*/
   .tools_box {
     width: 100%;
-    padding: 50px 0; }
+    padding: 50px 0 0; }
     .tools_box > ul {
       width: 400px; }
       .tools_box > ul:first-child {
@@ -1731,6 +1783,18 @@ footer {
       float: right; }
       .resume_section > .resume_box .title_B h3 {
         margin-left: 8px; }
+    .resume_section > .resume_box:nth-child(2) {
+      background-image: url("../img/about/setion01_bgi_1200.jpg"); }
+    .resume_section > .resume_box:nth-child(3) {
+      background-color: #f4f4ec; }
+    .resume_section > .resume_box:nth-child(4) {
+      background-color: #2E2B2B; }
+    .resume_section > .resume_box:nth-child(5) {
+      background-color: #787878; }
+    .resume_section > .resume_box:nth-child(6) {
+      background-color: #E8F1F5; }
+    .resume_section > .resume_box:nth-child(7) {
+      background-color: #282c2e; }
   /*---section 00 content---*/
   .int_textbox {
     width: 700px;
@@ -1877,11 +1941,27 @@ footer {
     float: right; }
     .resume_section > .resume_box .title_B h3 {
       margin-left: 10px; }
+  .resume_section > .resume_box:nth-child(2) {
+    background-image: url("../img/about/setion01_bgi_1500.jpg"); }
+  .resume_section > .resume_box:nth-child(3) {
+    background-color: #f4f4ec; }
+  .resume_section > .resume_box:nth-child(4) {
+    background-color: #2E2B2B; }
+  .resume_section > .resume_box:nth-child(5) {
+    background-color: #787878; }
+  .resume_section > .resume_box:nth-child(6) {
+    background-color: #E8F1F5; }
+  .resume_section > .resume_box:nth-child(7) {
+    background-color: #282c2e; }
   /*---section 00 content---*/
   .int_textbox {
-    width: 800px; }
+    width: 800px;
+    padding-top: 10px; }
+    .int_textbox > p {
+      margin-top: 0; }
     .int_textbox > img {
-      width: 250px; }
+      width: 250px;
+      margin-top: 20px; }
   /*---section 01 content---*/
   .basic_info_box {
     width: 450px; }
@@ -1959,12 +2039,25 @@ footer {
     width: 1200px; }
     .resume_section > .resume_box .content_box .title_box {
       padding-top: 70px; }
+  .resume_section > .resume_box:nth-child(2) {
+    background-image: url("../img/about/setion01_bgi_1900.jpg"); }
+  .resume_section > .resume_box:nth-child(3) {
+    background-color: #f4f4ec; }
+  .resume_section > .resume_box:nth-child(4) {
+    background-color: #2E2B2B; }
+  .resume_section > .resume_box:nth-child(5) {
+    background-color: #787878; }
+  .resume_section > .resume_box:nth-child(6) {
+    background-color: #E8F1F5; }
+  .resume_section > .resume_box:nth-child(7) {
+    background-color: #282c2e; }
   /*---section 00 content---*/
   .int_textbox {
     width: 900px;
     padding: 50px 100px; }
     .int_textbox > p {
-      width: 500px; }
+      width: 500px;
+      margin-top: 30px; }
     .int_textbox > img {
       width: 300px; }
   /*---section 01 content---*/
