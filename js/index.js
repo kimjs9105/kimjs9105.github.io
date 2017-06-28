@@ -161,40 +161,32 @@ $(document).on("ready",function(){
     
     
     /* Portfolio btn click show portfolio */
-    var port_btn = function(){
+    var port_btn_pub = function(){
         
-        var publish = $(".pub_btn"),
+        let publish = $(".pub_btn"),
             pub_back_line = $(".publ_line"),
             pub_mark_line = $(".mark_line"),
-            publish_box = $(".publish_bg_box");
-        
-        var design = $(".des_btn"),
+            publish_box = $(".publish_bg_box"),
+            design = $(".des_btn"),
             des_back_box = $(".design_color"),
             des_mark_box = $(".mark_color"),
-            design_box = $(".design_bg_box");
-        
-        var all = $(".allPF"),
+            design_box = $(".design_bg_box"),
+            all = $(".allPF"),
             all_line = $(".all_line"),
-            all_text = $(".all_text");
-        
-        var showSection = $("#section_pofol"),
-            pofolSection = $(".portfolio_list");
-        
-        var pofol_bg = $(".pofol_bgc"),
+            all_text = $(".all_text"),
+            showSection = $("#section_pofol"),
+            pofolSection = $(".portfolio_list"),
             pub_bg = $(".pub_bg"),
             des_bg = $(".des_bg"),
             all_bg = $(".all_bg"),
             pofol_title = $(".pofol_title"),
             title_box = $(".title_box"),
             p_title = $(".pub_title"),
-            d_title = $(".des_title"),
-            all_title = $(".all_title"),
             pofol_box = $(".pofol_list_box"),
             p_type = $(".pub_type"),
             d_type = $(".des_type"),
-            pd_type = $(".PD_type");  
-        
-        var header = $('header'),
+            pd_type = $(".PD_type"),
+            header = $('header'),
             footer = $('footer');
         
         publish.on("click",function(){
@@ -253,6 +245,37 @@ $(document).on("ready",function(){
             design_box.delay(1000).animate({width : 0}, 1000);
             
         });//publish_btn click
+        
+    };//port_btn_pub()
+    
+    var port_btn_des_pc = function(){
+        
+        let publish = $(".pub_btn"),
+            pub_back_line = $(".publ_line"),
+            pub_mark_line = $(".mark_line"),
+            publish_box = $(".publish_bg_box"),
+            design = $(".des_btn"),
+            des_back_box = $(".design_color"),
+            des_mark_box = $(".mark_color"),
+            design_box = $(".design_bg_box"),
+            all = $(".allPF"),
+            all_line = $(".all_line"),
+            all_text = $(".all_text"),
+            showSection = $("#section_pofol"),
+            pofolSection = $(".portfolio_list"),
+            pub_bg = $(".pub_bg"),
+            des_bg = $(".des_bg"),
+            all_bg = $(".all_bg"),
+            pofol_title = $(".pofol_title"),
+            title_box = $(".title_box"),
+            d_title = $(".des_title"),
+            pofol_box = $(".pofol_list_box"),
+            p_type = $(".pub_type"),
+            d_type = $(".des_type"),
+            pd_type = $(".PD_type"),
+            header = $('header'),
+            footer = $('footer');
+        
         
         design.on("click",function(){
             
@@ -315,6 +338,130 @@ $(document).on("ready",function(){
             
         });//Dedign_btn click
         
+    };//port_btn_des_pc()
+    
+    var port_btn_des_mob = function(){
+        
+        let publish = $(".pub_btn"),
+            pub_back_line = $(".publ_line"),
+            pub_mark_line = $(".mark_line"),
+            publish_box = $(".publish_bg_box"),
+            design = $(".des_btn"),
+            des_back_box = $(".design_color"),
+            des_mark_box_all = $(".mark_color"),
+            des_mark_box_mob = $(".mark_color_mob"),
+            design_box = $(".design_bg_box"),
+            all = $(".allPF"),
+            all_line = $(".all_line"),
+            all_text = $(".all_text"),
+            showSection = $("#section_pofol"),
+            pofolSection = $(".portfolio_list"),
+            pub_bg = $(".pub_bg"),
+            des_bg = $(".des_bg"),
+            all_bg = $(".all_bg"),
+            pofol_title = $(".pofol_title"),
+            title_box = $(".title_box"),
+            d_title = $(".des_title"),
+            pofol_box = $(".pofol_list_box"),
+            p_type = $(".pub_type"),
+            d_type = $(".des_type"),
+            pd_type = $(".PD_type"),
+            header = $('header'),
+            footer = $('footer');
+        
+        des_mark_box_all.hide();
+        des_mark_box_mob.show();
+        
+        design.on("click",function(){
+            
+            /*publish box*/
+            $(this).find(".btn_line").animate({width : 0, height: 0}, 1000);
+            $(this).find(".btn_text").hide(1000);
+            des_back_box.animate({opacity: 0}, 1000);
+            $(".MC_num_00").animate({opacity: 0}, 500);
+            des_mark_box_mob.animate({width : 70, height: 70}, 500,function(){
+                des_mark_box.animate({width : 0, height: 0}, 500);
+            });
+            
+                        
+            /*publish box*/
+            publish.hide();
+            pub_back_line.hide();
+            pub_mark_line.hide();   
+            
+            /*all box*/
+            all.hide();
+            all_line.hide();
+            all_text.hide();   
+            
+            /*box width change*/
+            design_box.delay(1000).animate({width : 100 + "%"}, 1000, function(){
+                
+                header.css({backgroundColor : "#595959"});
+                
+                showSection.hide();
+                pofol_title.css({opacity: 0});
+                pofol_box.css({opacity: 0});
+                p_type.hide();
+                pd_type.css({opacity: 0});
+                d_type.css({opacity: 0});
+                
+                pub_bg.hide();
+                des_bg.css({opacity: 1});
+                all_bg.hide();
+                
+                pofolSection.show(function(){
+                    
+                    title_box.css({display: "none"});
+                    d_title.css({display: "block"});                   
+                    
+                    pofol_title.delay(300).animate({opacity: 1}, 500, function(){
+
+                        pofol_box.animate({opacity: 1}, 500, function(){
+
+                            d_type.animate({opacity: 1}, 500);
+                            pd_type.animate({opacity: 1}, 500);
+                            footer.css({display: "block"});
+
+                        });
+                    });
+                });
+                
+            });
+            
+            publish_box.delay(1000).animate({width : 0}, 1000);
+            
+        });//Dedign_btn click
+        
+    };//port_btn_des_mob()
+    
+    var port_btn_all = function(){
+        
+        let publish = $(".pub_btn"),
+            pub_back_line = $(".publ_line"),
+            pub_mark_line = $(".mark_line"),
+            publish_box = $(".publish_bg_box"),
+            design = $(".des_btn"),
+            des_back_box = $(".design_color"),
+            des_mark_box = $(".mark_color"),
+            design_box = $(".design_bg_box"),
+            all = $(".allPF"),
+            all_line = $(".all_line"),
+            all_text = $(".all_text"),
+            showSection = $("#section_pofol"),
+            pofolSection = $(".portfolio_list"),
+            pub_bg = $(".pub_bg"),
+            des_bg = $(".des_bg"),
+            all_bg = $(".all_bg"),
+            pofol_title = $(".pofol_title"),
+            title_box = $(".title_box"),
+            all_title = $(".all_title"),
+            pofol_box = $(".pofol_list_box"),
+            p_type = $(".pub_type"),
+            d_type = $(".des_type"),
+            pd_type = $(".PD_type"),
+            header = $('header'),
+            footer = $('footer');
         
         all.on("click",function(){
             
@@ -378,22 +525,19 @@ $(document).on("ready",function(){
             
         });//All_btn click
         
-        
-        
-    };//port_btn()
+    };//port_btn_all()
     
     
     /* Portfolio List click change group */
     var change_btn = function(){
         
-        var pub_b = $(".other_pub"),
+        let pub_b = $(".other_pub"),
             des_b = $(".other_des"),
             all_b = $(".other_all"),
             p_type = $(".pub_type"),
             d_type = $(".des_type"),
-            a_type = $(".PD_type");
-        
-        var pofol_bg = $(".pofol_bgc"),
+            a_type = $(".PD_type"),
+            pofol_bg = $(".pofol_bgc"),
             pub_bg = $(".pub_bg"),
             des_bg = $(".des_bg"),
             all_bg = $(".all_bg"),
@@ -402,10 +546,7 @@ $(document).on("ready",function(){
             p_title = $(".pub_title"),
             d_title = $(".des_title"),
             all_title = $(".all_title"),
-            pofol_box = $(".pofol_list_box"),
-            p_type = $(".pub_type"),
-            d_type = $(".des_type"),
-            pd_type = $(".PD_type");
+            pofol_box = $(".pofol_list_box");
         
         pub_b.on("click",function(){
             
@@ -417,7 +558,7 @@ $(document).on("ready",function(){
             pofol_box.animate({opacity: 0}, 500, function(){
                 
                 p_type.show().css({opacity: 0});
-                pd_type.show().css({opacity: 0});
+                a_type.show().css({opacity: 0});
                 d_type.hide();
                 
             });
@@ -434,7 +575,7 @@ $(document).on("ready",function(){
 
                     
                     p_type.animate({opacity: 1}, 500);
-                    pd_type.animate({opacity: 1}, 500);
+                    a_type.animate({opacity: 1}, 500);
 
                 });
             });
@@ -451,7 +592,7 @@ $(document).on("ready",function(){
             pofol_box.animate({opacity: 0}, 500, function(){
                 
                 p_type.hide();
-                pd_type.show().css({opacity: 0});
+                a_type.show().css({opacity: 0});
                 d_type.show().css({opacity: 0});
                 
             });
@@ -468,7 +609,7 @@ $(document).on("ready",function(){
 
                     
                     d_type.animate({opacity: 1}, 500);
-                    pd_type.animate({opacity: 1}, 500);
+                    a_type.animate({opacity: 1}, 500);
 
                 });
             });
@@ -486,7 +627,7 @@ $(document).on("ready",function(){
             pofol_box.animate({opacity: 0}, 500, function(){
                 
                 p_type.show().css({opacity: 0});
-                pd_type.show().css({opacity: 0});
+                a_type.show().css({opacity: 0});
                 d_type.show().css({opacity: 0});
                 
             });
@@ -503,7 +644,7 @@ $(document).on("ready",function(){
 
                     p_type.animate({opacity: 1}, 500);
                     d_type.animate({opacity: 1}, 500);
-                    pd_type.animate({opacity: 1}, 500);
+                    a_type.animate({opacity: 1}, 500);
 
                 });
             });
@@ -513,32 +654,6 @@ $(document).on("ready",function(){
     };//change_btn()
     
     
-    /* Portfolio page scrollTop */
-    var scrollTop = function(){
-        
-        $(window).scroll(function(){
-            
-            var winTop = $(this).scrollTop(),
-                scrollBtn = $(".scrollTop");
-            
-            if ( winTop > 100 ){
-                
-                scrollBtn.fadeIn(800);
-                scrollBtn.on("click",function(e){
-                    e.preventDefault();
-                    $('body').animate({scrollTop: 0}, 800);
-                });
-                
-            } else{
-                
-                scrollBtn.fadeOut(800);
-            }
-            
-        });
-        
-        
-    };//scrollTop()
-    
     //js responsive setting
     
     //window width 로딩시 기준
@@ -547,25 +662,29 @@ $(document).on("ready",function(){
     //공통 요소 
     indexHeight();
     menuRestart();
-    port_btn();
+    port_btn_pub();
+    port_btn_all();
     change_btn();
 //    scrollTop();
     
     if( winW >= 751 ){
             
         mainMenuBig();
+        port_btn_des_pc();
             
     }
     
     if( 560 < winW <= 751 ){
         
         mainMenuBig();
+        port_btn_des_pc();
         
     }
     
     if( winW <= 560 ){
         
         mainMenuSmall();
+        port_btn_des_mob();
         
     }
     
