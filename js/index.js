@@ -248,7 +248,7 @@ $(document).on("ready",function(){
         
     };//port_btn_pub()
     
-    var port_btn_des_pc = function(){
+    var port_btn_des = function(){
         
         let publish = $(".pub_btn"),
             pub_back_line = $(".publ_line"),
@@ -256,7 +256,7 @@ $(document).on("ready",function(){
             publish_box = $(".publish_bg_box"),
             design = $(".des_btn"),
             des_back_box = $(".design_color"),
-            des_mark_box_pc = $(".mark_color_pc"),
+            des_mark_box = $(".mark_color"),
             design_box = $(".design_bg_box"),
             all = $(".allPF"),
             all_line = $(".all_line"),
@@ -284,9 +284,7 @@ $(document).on("ready",function(){
             $(this).find(".btn_text").hide(1000);
             des_back_box.animate({opacity: 0}, 1000);
             $(".MC_num_00").animate({opacity: 0}, 500);
-            des_mark_box_pc.animate({width : 25, height: 25}, 500,function(){
-                des_mark_box_pc.animate({width : 0, height: 0}, 500);
-            });
+            des_mark_box.animate({width : 0, height: 0}, 500);
             
                         
             /*publish box*/
@@ -340,102 +338,102 @@ $(document).on("ready",function(){
         
     };//port_btn_des_pc()
     
-    var port_btn_des_mob = function(){
-        
-        let publish = $(".pub_btn"),
-            pub_back_line = $(".publ_line"),
-            pub_mark_line = $(".mark_line"),
-            publish_box = $(".publish_bg_box"),
-            design = $(".des_btn"),
-            des_back_box = $(".design_color"),
-            des_mark_box_all = $(".mark_color"),
-            des_mark_box_mob = $(".mark_color_mob"),
-            design_box = $(".design_bg_box"),
-            all = $(".allPF"),
-            all_line = $(".all_line"),
-            all_text = $(".all_text"),
-            showSection = $("#section_pofol"),
-            pofolSection = $(".portfolio_list"),
-            pub_bg = $(".pub_bg"),
-            des_bg = $(".des_bg"),
-            all_bg = $(".all_bg"),
-            pofol_title = $(".pofol_title"),
-            title_box = $(".title_box"),
-            d_title = $(".des_title"),
-            pofol_box = $(".pofol_list_box"),
-            p_type = $(".pub_type"),
-            d_type = $(".des_type"),
-            pd_type = $(".PD_type"),
-            header = $('header'),
-            footer = $('footer');
-        
-        des_mark_box_all.hide();
-        des_mark_box_mob.show();
-        $('.MC_num_00').show();
-        
-        design.on("click",function(){
-            
-            /*publish box*/
-            $(this).find(".btn_line").animate({width : 0, height: 0}, 1000);
-            $(this).find(".btn_text").hide(1000);
-            des_back_box.animate({opacity: 0}, 1000);
-            $(".MC_num_00").animate({opacity: 0}, 500);
-            des_mark_box_all.hide();
-            des_mark_box_mob.animate({width : 70, height: 70}, 500,function(){
-                des_mark_box_mob.animate({width : 0, height: 0}, 500);
-            });
-            
-                        
-            /*publish box*/
-            publish.hide();
-            pub_back_line.hide();
-            pub_mark_line.hide();   
-            
-            /*all box*/
-            all.hide();
-            all_line.hide();
-            all_text.hide();   
-            
-            /*box width change*/
-            design_box.delay(1000).animate({width : 100 + "%"}, 1000, function(){
-                
-                header.css({backgroundColor : "#595959"});
-                
-                showSection.hide();
-                pofol_title.css({opacity: 0});
-                pofol_box.css({opacity: 0});
-                p_type.hide();
-                pd_type.css({opacity: 0});
-                d_type.css({opacity: 0});
-                
-                pub_bg.hide();
-                des_bg.css({opacity: 1});
-                all_bg.hide();
-                
-                pofolSection.show(function(){
-                    
-                    title_box.css({display: "none"});
-                    d_title.css({display: "block"});                   
-                    
-                    pofol_title.delay(300).animate({opacity: 1}, 500, function(){
-
-                        pofol_box.animate({opacity: 1}, 500, function(){
-
-                            d_type.animate({opacity: 1}, 500);
-                            pd_type.animate({opacity: 1}, 500);
-                            footer.css({display: "block"});
-
-                        });
-                    });
-                });
-                
-            });
-            
-            publish_box.delay(1000).animate({width : 0}, 1000);
-            
-        });//Dedign_btn click
-        
-    };//port_btn_des_mob()
+//    var port_btn_des_mob = function(){
+//        
+//        let publish = $(".pub_btn"),
+//            pub_back_line = $(".publ_line"),
+//            pub_mark_line = $(".mark_line"),
+//            publish_box = $(".publish_bg_box"),
+//            design = $(".des_btn"),
+//            des_back_box = $(".design_color"),
+//            des_mark_box_all = $(".mark_color"),
+//            des_mark_box_mob = $(".mark_color_mob"),
+//            design_box = $(".design_bg_box"),
+//            all = $(".allPF"),
+//            all_line = $(".all_line"),
+//            all_text = $(".all_text"),
+//            showSection = $("#section_pofol"),
+//            pofolSection = $(".portfolio_list"),
+//            pub_bg = $(".pub_bg"),
+//            des_bg = $(".des_bg"),
+//            all_bg = $(".all_bg"),
+//            pofol_title = $(".pofol_title"),
+//            title_box = $(".title_box"),
+//            d_title = $(".des_title"),
+//            pofol_box = $(".pofol_list_box"),
+//            p_type = $(".pub_type"),
+//            d_type = $(".des_type"),
+//            pd_type = $(".PD_type"),
+//            header = $('header'),
+//            footer = $('footer');
+//        
+//        des_mark_box_all.hide();
+//        des_mark_box_mob.show();
+//        $('.MC_num_00').show();
+//        
+//        design.on("click",function(){
+//            
+//            /*publish box*/
+//            $(this).find(".btn_line").animate({width : 0, height: 0}, 1000);
+//            $(this).find(".btn_text").hide(1000);
+//            des_back_box.animate({opacity: 0}, 1000);
+//            $(".MC_num_00").animate({opacity: 0}, 500);
+//            des_mark_box_all.hide();
+//            des_mark_box_mob.animate({width : 70, height: 70}, 500,function(){
+//                des_mark_box_mob.animate({width : 0, height: 0}, 500);
+//            });
+//            
+//                        
+//            /*publish box*/
+//            publish.hide();
+//            pub_back_line.hide();
+//            pub_mark_line.hide();   
+//            
+//            /*all box*/
+//            all.hide();
+//            all_line.hide();
+//            all_text.hide();   
+//            
+//            /*box width change*/
+//            design_box.delay(1000).animate({width : 100 + "%"}, 1000, function(){
+//                
+//                header.css({backgroundColor : "#595959"});
+//                
+//                showSection.hide();
+//                pofol_title.css({opacity: 0});
+//                pofol_box.css({opacity: 0});
+//                p_type.hide();
+//                pd_type.css({opacity: 0});
+//                d_type.css({opacity: 0});
+//                
+//                pub_bg.hide();
+//                des_bg.css({opacity: 1});
+//                all_bg.hide();
+//                
+//                pofolSection.show(function(){
+//                    
+//                    title_box.css({display: "none"});
+//                    d_title.css({display: "block"});                   
+//                    
+//                    pofol_title.delay(300).animate({opacity: 1}, 500, function(){
+//
+//                        pofol_box.animate({opacity: 1}, 500, function(){
+//
+//                            d_type.animate({opacity: 1}, 500);
+//                            pd_type.animate({opacity: 1}, 500);
+//                            footer.css({display: "block"});
+//
+//                        });
+//                    });
+//                });
+//                
+//            });
+//            
+//            publish_box.delay(1000).animate({width : 0}, 1000);
+//            
+//        });//Dedign_btn click
+//        
+//    };//port_btn_des_mob()
     
     var port_btn_all = function(){
         
@@ -665,6 +663,7 @@ $(document).on("ready",function(){
     indexHeight();
     menuRestart();
     port_btn_pub();
+    port_btn_des();
     port_btn_all();
     change_btn();
 //    scrollTop();
@@ -672,21 +671,21 @@ $(document).on("ready",function(){
     if( winW >= 751 ){
             
         mainMenuBig();
-        port_btn_des_pc();
+        //port_btn_des_pc();
             
     }
     
     if( 560 < winW <= 751 ){
         
         mainMenuBig();
-        port_btn_des_pc();
+        //port_btn_des_pc();
         
     }
     
     if( winW <= 560 ){
         
         mainMenuSmall();
-        port_btn_des_mob();
+        //port_btn_des_mob();
         
     }
     
