@@ -371,6 +371,7 @@ $(document).on("ready",function(){
         
         des_mark_box_all.hide();
         des_mark_box_mob.show();
+        $('.MC_num_00').show();
         
         design.on("click",function(){
             
