@@ -784,409 +784,84 @@
   .design_color_box .design_color {
     display: none; }
   /*---------- Design box - mark box ----------*/
-  .mark_color_box {
-    /*display: none;*/ }
-    .mark_color_box .MC_num_01 {
-      display: none; }
-    .mark_color_box .MC_num_02 {
-      display: none; }
-    .mark_color_box .MC_num_03 {
-      display: none; }
-    .mark_color_box .MC_num_04 {
-      background-color: #e3acb1;
-      transform: rotate(50deg);
-      opacity: 0.8;
-      margin-top: 13px;
-      margin-left: -10px; }
-    .mark_color_box .MC_num_05 {
-      display: none; }
-    .mark_color_box .MC_num_06 {
-      display: none; }
-    .mark_color_box .MC_num_07 {
-      display: none; }
-    .mark_color_box .MC_num_08 {
-      display: none; }
-    .mark_color_box .MC_num_09 {
-      display: none; }
-    .mark_color_box .MC_num_10 {
-      display: none; }
-    .mark_color_box .MC_num_11 {
-      display: none; }
-    .mark_color_box .MC_num_12 {
-      background-color: #b74558;
-      transform: rotate(40deg);
-      margin-top: 55px;
-      margin-left: -15px; }
-    .mark_color_box .MC_num_13 {
-      display: none; }
-    .mark_color_box .MC_num_14 {
-      display: none; }
-    .mark_color_box .MC_num_15 {
-      background-color: #e68950;
-      transform: rotate(40deg);
-      margin-top: 48px;
-      margin-left: 35px; }
-    .mark_color_box .MC_num_16 {
-      display: none; }
-    .mark_color_box .MC_num_17 {
-      display: none; }
-    .mark_color_box .MC_num_18 {
-      display: none; }
-    .mark_color_box .MC_num_19 {
-      display: none; }
-    .mark_color_box .MC_num_20 {
-      display: none; }
-    .mark_color_box .MC_num_21 {
-      background-color: #ebd56d;
-      transform: rotate(40deg);
-      margin-top: 100px;
-      margin-left: -9px; }
-    .mark_color_box .MC_num_22 {
-      display: none; }
-    .mark_color_box .MC_num_23 {
-      display: none; }
-    .mark_color_box .MC_num_24 {
-      display: none; }
-    .mark_color_box .MC_num_25 {
-      display: none; }
-    .mark_color_box .MC_num_26 {
-      display: none; }
-    .mark_color_box .MC_num_27 {
-      display: none; }
-    .mark_color_box .MC_num_28 {
-      display: none; }
-    .mark_color_box .MC_num_29 {
-      display: none; }
-    .mark_color_box .MC_num_30 {
-      display: none; }
-    .mark_color_box .MC_num_31 {
-      display: none; }
-    .mark_color_box .MC_num_32 {
-      background-color: #8fcb4b;
-      transform: rotate(50deg);
-      margin-top: 93px;
-      margin-left: 59px; }
-    .mark_color_box .MC_num_33 {
-      display: none; }
-    .mark_color_box .MC_num_34 {
-      display: none; }
-    .mark_color_box .MC_num_35 {
-      display: none; }
-    .mark_color_box .MC_num_36 {
-      display: none; }
-    .mark_color_box .MC_num_37 {
-      display: none; }
-    .mark_color_box .MC_num_38 {
-      display: none; }
-    .mark_color_box .MC_num_39 {
-      display: none; }
-    .mark_color_box .MC_num_40 {
-      display: none; }
-    .mark_color_box .MC_num_41 {
-      background-color: #cdd8cd;
-      transform: rotate(50deg);
-      margin-top: 131px;
-      margin-left: 51px; }
-    .mark_color_box .MC_num_42 {
-      background-color: #9bbbd8;
-      transform: rotate(60deg);
-      margin-top: 144px;
-      margin-left: -12px; }
-    .mark_color_box .MC_num_43 {
-      display: none; }
-    .mark_color_box .MC_num_44 {
-      display: none; }
-    .mark_color_box .MC_num_45 {
-      display: none; }
-    .mark_color_box .MC_num_46 {
-      display: none; }
-    .mark_color_box .MC_num_47 {
-      display: none; }
-    .mark_color_box .MC_num_48 {
-      display: none; }
-    .mark_color_box .MC_num_49 {
-      display: none; }
-    .mark_color_box .MC_num_50 {
-      display: none; }
-    .mark_color_box .MC_num_51 {
-      display: none; }
-    .mark_color_box .MC_num_52 {
-      display: none; }
-    .mark_color_box .MC_num_53 {
-      display: none; }
-    .mark_color_box .MC_num_54 {
-      display: none; }
-    .mark_color_box .MC_num_55 {
-      display: none; }
-    .mark_color_box .MC_num_56 {
-      display: none; }
-    .mark_color_box .MC_num_57 {
-      display: none; }
-    .mark_color_box .MC_num_58 {
-      display: none; }
-    .mark_color_box .MC_num_59 {
-      display: none; }
-    .mark_color_box .MC_num_60 {
-      display: none; }
-    .mark_color_box .MC_num_61 {
-      display: none; }
-    .mark_color_box .MC_num_62 {
-      display: none; }
-    .mark_color_box .MC_num_63 {
-      display: none; }
-    .mark_color_box .MC_num_64 {
-      display: none; }
-    .mark_color_box .MC_num_65 {
-      display: none; }
-    .mark_color_box .MC_num_66 {
-      display: none; }
-    .mark_color_box .MC_num_67 {
-      display: none; }
-    .mark_color_box .MC_num_68 {
-      display: none; }
-    .mark_color_box .MC_num_69 {
-      display: none; }
-    .mark_color_box .MC_num_70 {
-      background-color: #75a0d0;
-      transform: rotate(20deg);
-      margin-top: 188px;
-      margin-left: 31px; }
-    .mark_color_box .MC_num_71 {
-      display: none; }
-    .mark_color_box .MC_num_72 {
-      background-color: #a995b9;
-      transform: rotate(30deg);
-      margin-top: 204px;
-      margin-left: -28px; }
-    .mark_color_box .MC_num_73 {
-      display: none;
-      background-color: #8d6b9e;
-      transform: rotate(40deg);
-      margin-top: 206px;
-      margin-left: 36px; }
-    .mark_color_box .MC_num_74 {
-      display: none;
-      width: 15px;
-      height: 15px;
-      background-color: #7782b9;
-      transform: rotate(50deg);
-      margin-top: 208px;
-      margin-left: 23px; }
-    .mark_color_box .MC_num_75 {
-      display: none;
-      background-color: #9bbbd8;
-      transform: rotate(80deg);
-      margin-top: 220px;
-      margin-left: 20px; }
-    .mark_color_box .MC_num_76 {
-      display: none;
-      width: 15px;
-      height: 15px;
-      background-color: #ccafc7;
-      transform: rotate(40deg);
-      margin-top: 218px;
-      margin-left: 12px; }
-    .mark_color_box .MC_num_76 {
-      display: none;
-      width: 15px;
-      height: 15px;
-      background-color: #794759;
-      transform: rotate(40deg);
-      margin-top: 218px;
-      margin-left: -5px; }
-    .mark_color_box .MC_num_77 {
-      display: none;
-      background-color: #8d6b9e;
-      transform: rotate(40deg);
-      margin-top: 225px;
-      margin-left: 3px; }
-    .mark_color_box .MC_num_78 {
-      display: none; }
-    .mark_color_box .MC_num_79 {
-      display: none; }
-    .mark_color_box .MC_num_80 {
-      display: none;
-      background-color: #719dc4;
-      transform: rotate(20deg);
-      opacity: 0.7;
-      margin-top: 163px;
-      margin-left: 97px; }
-    .mark_color_box .MC_num_81 {
-      display: none;
-      background-color: #a5c3ce;
-      transform: rotate(40deg);
-      opacity: 0.7;
-      margin-top: 176px;
-      margin-left: 85px; }
-    .mark_color_box .MC_num_82 {
-      display: none;
-      background-color: #cdd8cd;
-      transform: rotate(60deg);
-      opacity: 0.7;
-      margin-top: 189px;
-      margin-left: 73px; }
-    .mark_color_box .MC_num_83 {
-      display: none;
-      background-color: #e3acb1;
-      transform: rotate(60deg);
-      opacity: 0.7;
-      margin-top: 200px;
-      margin-left: 61px; }
-    .mark_color_box .MC_num_84 {
-      display: none;
-      background-color: #ccafc7;
-      transform: rotate(50deg);
-      opacity: 0.7;
-      margin-top: 216px;
-      margin-left: 49px; }
-    .mark_color_box .MC_num_85 {
-      display: none;
-      background-color: #9bbbd8;
-      transform: rotate(40deg);
-      opacity: 0.7;
-      margin-top: 224px;
-      margin-left: 36px; }
-    .mark_color_box .MC_num_86 {
-      display: none;
-      background-color: #ebd9d8;
-      transform: rotate(30deg);
-      opacity: 0.7;
-      margin-top: 238px;
-      margin-left: 23px; }
-    .mark_color_box .MC_num_87 {
-      display: none;
-      background-color: #e5c8bf;
-      transform: rotate(60deg);
-      opacity: 0.7;
-      margin-top: 242px;
-      margin-left: 5px; }
-    .mark_color_box .MC_num_88 {
-      display: none;
-      background-color: #d1695e;
-      transform: rotate(80deg);
-      opacity: 0.7;
-      margin-top: 238px;
-      margin-left: -10px; }
-    .mark_color_box .MC_num_89 {
-      display: none;
-      background-color: #b55b83;
-      transform: rotate(40deg);
-      opacity: 0.7;
-      margin-top: 256px;
-      margin-left: -10px; }
-    .mark_color_box .MC_num_90 {
-      display: none;
-      display: none; }
-    .mark_color_box .MC_num_91 {
-      display: none;
-      background-color: #a5c3ce;
-      transform: rotate(50deg);
-      opacity: 0.7;
-      margin-top: 175px;
-      margin-left: 110px; }
-    .mark_color_box .MC_num_92 {
-      display: none;
-      background-color: #e1d6d1;
-      transform: rotate(30deg);
-      opacity: 0.7;
-      margin-top: 187px;
-      margin-left: 98px; }
-    .mark_color_box .MC_num_93 {
-      display: none; }
-    .mark_color_box .MC_num_94 {
-      display: none; }
-    .mark_color_box .MC_num_95 {
-      display: none; }
-    .mark_color_box .MC_num_96 {
-      display: none; }
-    .mark_color_box .MC_num_97 {
-      display: none; }
-    .mark_color_box .MC_num_98 {
-      display: none; }
-    .mark_color_box .MC_num_99 {
-      display: none;
-      background-color: #d9783d;
-      transform: rotate(40deg);
-      opacity: 0.7;
-      margin-top: 255px;
-      margin-left: 13px; }
-    .mark_color_box .MC_num_100 {
-      display: none;
-      background-color: #956289;
-      transform: rotate(60deg);
-      opacity: 0.7;
-      margin-top: 268px;
-      margin-left: 3px; }
-    .mark_color_box .MC_num_101 {
-      display: none; }
-    .mark_color_box .MC_num_102 {
-      display: none; }
-    .mark_color_box .MC_num_103 {
-      display: none; }
-    .mark_color_box .MC_num_104 {
-      display: none; }
-    .mark_color_box .MC_num_105 {
-      display: none; }
-    .mark_color_box .MC_num_106 {
-      display: none; }
-    .mark_color_box .MC_num_107 {
-      display: none; }
-    .mark_color_box .MC_num_108 {
-      display: none; }
-    .mark_color_box .MC_num_109 {
-      display: none; }
-    .mark_color_box .MC_num_110 {
-      display: none; }
-    .mark_color_box .MC_num_111 {
-      display: none; }
-    .mark_color_box .MC_num_112 {
-      display: none; }
-    .mark_color_box .MC_num_113 {
-      display: none; }
-    .mark_color_box .MC_num_114 {
-      display: none; }
-    .mark_color_box .MC_num_115 {
-      display: none; }
-    .mark_color_box .MC_num_116 {
-      display: none; }
-    .mark_color_box .MC_num_117 {
-      display: none; }
-    .mark_color_box .MC_num_118 {
-      display: none; }
-    .mark_color_box .MC_num_119 {
-      display: none; }
-    .mark_color_box .MC_num_120 {
-      display: none; }
-    .mark_color_box .MC_num_121 {
-      display: none; }
-    .mark_color_box .MC_num_122 {
-      display: none; }
-    .mark_color_box .MC_num_123 {
-      display: none; }
-    .mark_color_box .MC_num_124 {
-      display: none; }
-    .mark_color_box .MC_num_125 {
-      display: none; }
-    .mark_color_box .MC_num_126 {
-      display: none; }
-    .mark_color_box .MC_num_127 {
-      display: none; }
-    .mark_color_box .MC_num_128 {
-      display: none; }
-    .mark_color_box .MC_num_129 {
-      display: none; }
-    .mark_color_box .MC_num_130 {
-      display: none; }
-    .mark_color_box .MC_num_131 {
-      display: none; }
-    .mark_color_box .MC_num_132 {
-      display: none; }
-    .mark_color_box .MC_num_133 {
-      display: none; }
-    .mark_color_box .MC_num_134 {
-      display: none; }
-    .mark_color_box .MC_num_135 {
-      display: none; }
+  .mark_color_box .MC_num_01 {
+    background-color: #e3acb1;
+    transform: rotate(50deg);
+    opacity: 0.8;
+    margin-top: 13px;
+    margin-left: -10px; }
+  .mark_color_box .MC_num_02 {
+    background-color: #b74558;
+    transform: rotate(40deg);
+    margin-top: 55px;
+    margin-left: -15px; }
+  .mark_color_box .MC_num_03 {
+    background-color: #e68950;
+    transform: rotate(40deg);
+    margin-top: 48px;
+    margin-left: 35px; }
+  .mark_color_box .MC_num_04 {
+    background-color: #ebd56d;
+    transform: rotate(40deg);
+    margin-top: 100px;
+    margin-left: -9px; }
+  .mark_color_box .MC_num_05 {
+    background-color: #8fcb4b;
+    transform: rotate(50deg);
+    margin-top: 93px;
+    margin-left: 59px; }
+  .mark_color_box .MC_num_06 {
+    background-color: #cdd8cd;
+    transform: rotate(50deg);
+    margin-top: 131px;
+    margin-left: 51px; }
+  .mark_color_box .MC_num_07 {
+    background-color: #9bbbd8;
+    transform: rotate(60deg);
+    margin-top: 144px;
+    margin-left: -12px; }
+  .mark_color_box .MC_num_08 {
+    background-color: #75a0d0;
+    transform: rotate(20deg);
+    margin-top: 188px;
+    margin-left: 31px; }
+  .mark_color_box .MC_num_09 {
+    background-color: #a995b9;
+    transform: rotate(30deg);
+    margin-top: 204px;
+    margin-left: -28px; }
+  .mark_color_box .MC_num_11 {
+    display: none; }
+  .mark_color_box .MC_num_12 {
+    display: none; }
+  .mark_color_box .MC_num_13 {
+    display: none; }
+  .mark_color_box .MC_num_14 {
+    display: none; }
+  .mark_color_box .MC_num_15 {
+    display: none; }
+  .mark_color_box .MC_num_16 {
+    display: none; }
+  .mark_color_box .MC_num_17 {
+    display: none; }
+  .mark_color_box .MC_num_18 {
+    display: none; }
+  .mark_color_box .MC_num_19 {
+    display: none; }
+  .mark_color_box .MC_num_20 {
+    display: none; }
+  .mark_color_box .MC_num_21 {
+    display: none; }
+  .mark_color_box .MC_num_22 {
+    display: none; }
+  .mark_color_box .MC_num_23 {
+    display: none; }
+  .mark_color_box .MC_num_24 {
+    display: none; }
+  .mark_color_box .MC_num_25 {
+    display: none; }
+  .mark_color_box .MC_num_26 {
+    display: none; }
   .mark_color_box .mark_color {
     width: 50px;
     height: 50px; }
@@ -1708,409 +1383,84 @@
   .design_color_box .design_color {
     display: none; }
   /*---------- Design box - mark box ----------*/
-  .mark_color_box {
-    /*display: none;*/ }
-    .mark_color_box .MC_num_01 {
-      display: none; }
-    .mark_color_box .MC_num_02 {
-      display: none; }
-    .mark_color_box .MC_num_03 {
-      display: none; }
-    .mark_color_box .MC_num_04 {
-      background-color: #e3acb1;
-      transform: rotate(50deg);
-      opacity: 0.8;
-      margin-top: 13px;
-      margin-left: -10px; }
-    .mark_color_box .MC_num_05 {
-      display: none; }
-    .mark_color_box .MC_num_06 {
-      display: none; }
-    .mark_color_box .MC_num_07 {
-      display: none; }
-    .mark_color_box .MC_num_08 {
-      display: none; }
-    .mark_color_box .MC_num_09 {
-      display: none; }
-    .mark_color_box .MC_num_10 {
-      display: none; }
-    .mark_color_box .MC_num_11 {
-      display: none; }
-    .mark_color_box .MC_num_12 {
-      background-color: #b74558;
-      transform: rotate(40deg);
-      margin-top: 55px;
-      margin-left: -15px; }
-    .mark_color_box .MC_num_13 {
-      display: none; }
-    .mark_color_box .MC_num_14 {
-      display: none; }
-    .mark_color_box .MC_num_15 {
-      background-color: #e68950;
-      transform: rotate(40deg);
-      margin-top: 48px;
-      margin-left: 35px; }
-    .mark_color_box .MC_num_16 {
-      display: none; }
-    .mark_color_box .MC_num_17 {
-      display: none; }
-    .mark_color_box .MC_num_18 {
-      display: none; }
-    .mark_color_box .MC_num_19 {
-      display: none; }
-    .mark_color_box .MC_num_20 {
-      display: none; }
-    .mark_color_box .MC_num_21 {
-      background-color: #ebd56d;
-      transform: rotate(40deg);
-      margin-top: 100px;
-      margin-left: -9px; }
-    .mark_color_box .MC_num_22 {
-      display: none; }
-    .mark_color_box .MC_num_23 {
-      display: none; }
-    .mark_color_box .MC_num_24 {
-      display: none; }
-    .mark_color_box .MC_num_25 {
-      display: none; }
-    .mark_color_box .MC_num_26 {
-      display: none; }
-    .mark_color_box .MC_num_27 {
-      display: none; }
-    .mark_color_box .MC_num_28 {
-      display: none; }
-    .mark_color_box .MC_num_29 {
-      display: none; }
-    .mark_color_box .MC_num_30 {
-      display: none; }
-    .mark_color_box .MC_num_31 {
-      display: none; }
-    .mark_color_box .MC_num_32 {
-      background-color: #8fcb4b;
-      transform: rotate(50deg);
-      margin-top: 93px;
-      margin-left: 59px; }
-    .mark_color_box .MC_num_33 {
-      display: none; }
-    .mark_color_box .MC_num_34 {
-      display: none; }
-    .mark_color_box .MC_num_35 {
-      display: none; }
-    .mark_color_box .MC_num_36 {
-      display: none; }
-    .mark_color_box .MC_num_37 {
-      display: none; }
-    .mark_color_box .MC_num_38 {
-      display: none; }
-    .mark_color_box .MC_num_39 {
-      display: none; }
-    .mark_color_box .MC_num_40 {
-      display: none; }
-    .mark_color_box .MC_num_41 {
-      background-color: #cdd8cd;
-      transform: rotate(50deg);
-      margin-top: 131px;
-      margin-left: 51px; }
-    .mark_color_box .MC_num_42 {
-      background-color: #9bbbd8;
-      transform: rotate(60deg);
-      margin-top: 144px;
-      margin-left: -12px; }
-    .mark_color_box .MC_num_43 {
-      display: none; }
-    .mark_color_box .MC_num_44 {
-      display: none; }
-    .mark_color_box .MC_num_45 {
-      display: none; }
-    .mark_color_box .MC_num_46 {
-      display: none; }
-    .mark_color_box .MC_num_47 {
-      display: none; }
-    .mark_color_box .MC_num_48 {
-      display: none; }
-    .mark_color_box .MC_num_49 {
-      display: none; }
-    .mark_color_box .MC_num_50 {
-      display: none; }
-    .mark_color_box .MC_num_51 {
-      display: none; }
-    .mark_color_box .MC_num_52 {
-      display: none; }
-    .mark_color_box .MC_num_53 {
-      display: none; }
-    .mark_color_box .MC_num_54 {
-      display: none; }
-    .mark_color_box .MC_num_55 {
-      display: none; }
-    .mark_color_box .MC_num_56 {
-      display: none; }
-    .mark_color_box .MC_num_57 {
-      display: none; }
-    .mark_color_box .MC_num_58 {
-      display: none; }
-    .mark_color_box .MC_num_59 {
-      display: none; }
-    .mark_color_box .MC_num_60 {
-      display: none; }
-    .mark_color_box .MC_num_61 {
-      display: none; }
-    .mark_color_box .MC_num_62 {
-      display: none; }
-    .mark_color_box .MC_num_63 {
-      display: none; }
-    .mark_color_box .MC_num_64 {
-      display: none; }
-    .mark_color_box .MC_num_65 {
-      display: none; }
-    .mark_color_box .MC_num_66 {
-      display: none; }
-    .mark_color_box .MC_num_67 {
-      display: none; }
-    .mark_color_box .MC_num_68 {
-      display: none; }
-    .mark_color_box .MC_num_69 {
-      display: none; }
-    .mark_color_box .MC_num_70 {
-      background-color: #75a0d0;
-      transform: rotate(20deg);
-      margin-top: 188px;
-      margin-left: 31px; }
-    .mark_color_box .MC_num_71 {
-      display: none; }
-    .mark_color_box .MC_num_72 {
-      background-color: #a995b9;
-      transform: rotate(30deg);
-      margin-top: 204px;
-      margin-left: -28px; }
-    .mark_color_box .MC_num_73 {
-      display: none;
-      background-color: #8d6b9e;
-      transform: rotate(40deg);
-      margin-top: 206px;
-      margin-left: 36px; }
-    .mark_color_box .MC_num_74 {
-      display: none;
-      width: 15px;
-      height: 15px;
-      background-color: #7782b9;
-      transform: rotate(50deg);
-      margin-top: 208px;
-      margin-left: 23px; }
-    .mark_color_box .MC_num_75 {
-      display: none;
-      background-color: #9bbbd8;
-      transform: rotate(80deg);
-      margin-top: 220px;
-      margin-left: 20px; }
-    .mark_color_box .MC_num_76 {
-      display: none;
-      width: 15px;
-      height: 15px;
-      background-color: #ccafc7;
-      transform: rotate(40deg);
-      margin-top: 218px;
-      margin-left: 12px; }
-    .mark_color_box .MC_num_76 {
-      display: none;
-      width: 15px;
-      height: 15px;
-      background-color: #794759;
-      transform: rotate(40deg);
-      margin-top: 218px;
-      margin-left: -5px; }
-    .mark_color_box .MC_num_77 {
-      display: none;
-      background-color: #8d6b9e;
-      transform: rotate(40deg);
-      margin-top: 225px;
-      margin-left: 3px; }
-    .mark_color_box .MC_num_78 {
-      display: none; }
-    .mark_color_box .MC_num_79 {
-      display: none; }
-    .mark_color_box .MC_num_80 {
-      display: none;
-      background-color: #719dc4;
-      transform: rotate(20deg);
-      opacity: 0.7;
-      margin-top: 163px;
-      margin-left: 97px; }
-    .mark_color_box .MC_num_81 {
-      display: none;
-      background-color: #a5c3ce;
-      transform: rotate(40deg);
-      opacity: 0.7;
-      margin-top: 176px;
-      margin-left: 85px; }
-    .mark_color_box .MC_num_82 {
-      display: none;
-      background-color: #cdd8cd;
-      transform: rotate(60deg);
-      opacity: 0.7;
-      margin-top: 189px;
-      margin-left: 73px; }
-    .mark_color_box .MC_num_83 {
-      display: none;
-      background-color: #e3acb1;
-      transform: rotate(60deg);
-      opacity: 0.7;
-      margin-top: 200px;
-      margin-left: 61px; }
-    .mark_color_box .MC_num_84 {
-      display: none;
-      background-color: #ccafc7;
-      transform: rotate(50deg);
-      opacity: 0.7;
-      margin-top: 216px;
-      margin-left: 49px; }
-    .mark_color_box .MC_num_85 {
-      display: none;
-      background-color: #9bbbd8;
-      transform: rotate(40deg);
-      opacity: 0.7;
-      margin-top: 224px;
-      margin-left: 36px; }
-    .mark_color_box .MC_num_86 {
-      display: none;
-      background-color: #ebd9d8;
-      transform: rotate(30deg);
-      opacity: 0.7;
-      margin-top: 238px;
-      margin-left: 23px; }
-    .mark_color_box .MC_num_87 {
-      display: none;
-      background-color: #e5c8bf;
-      transform: rotate(60deg);
-      opacity: 0.7;
-      margin-top: 242px;
-      margin-left: 5px; }
-    .mark_color_box .MC_num_88 {
-      display: none;
-      background-color: #d1695e;
-      transform: rotate(80deg);
-      opacity: 0.7;
-      margin-top: 238px;
-      margin-left: -10px; }
-    .mark_color_box .MC_num_89 {
-      display: none;
-      background-color: #b55b83;
-      transform: rotate(40deg);
-      opacity: 0.7;
-      margin-top: 256px;
-      margin-left: -10px; }
-    .mark_color_box .MC_num_90 {
-      display: none;
-      display: none; }
-    .mark_color_box .MC_num_91 {
-      display: none;
-      background-color: #a5c3ce;
-      transform: rotate(50deg);
-      opacity: 0.7;
-      margin-top: 175px;
-      margin-left: 110px; }
-    .mark_color_box .MC_num_92 {
-      display: none;
-      background-color: #e1d6d1;
-      transform: rotate(30deg);
-      opacity: 0.7;
-      margin-top: 187px;
-      margin-left: 98px; }
-    .mark_color_box .MC_num_93 {
-      display: none; }
-    .mark_color_box .MC_num_94 {
-      display: none; }
-    .mark_color_box .MC_num_95 {
-      display: none; }
-    .mark_color_box .MC_num_96 {
-      display: none; }
-    .mark_color_box .MC_num_97 {
-      display: none; }
-    .mark_color_box .MC_num_98 {
-      display: none; }
-    .mark_color_box .MC_num_99 {
-      display: none;
-      background-color: #d9783d;
-      transform: rotate(40deg);
-      opacity: 0.7;
-      margin-top: 255px;
-      margin-left: 13px; }
-    .mark_color_box .MC_num_100 {
-      display: none;
-      background-color: #956289;
-      transform: rotate(60deg);
-      opacity: 0.7;
-      margin-top: 268px;
-      margin-left: 3px; }
-    .mark_color_box .MC_num_101 {
-      display: none; }
-    .mark_color_box .MC_num_102 {
-      display: none; }
-    .mark_color_box .MC_num_103 {
-      display: none; }
-    .mark_color_box .MC_num_104 {
-      display: none; }
-    .mark_color_box .MC_num_105 {
-      display: none; }
-    .mark_color_box .MC_num_106 {
-      display: none; }
-    .mark_color_box .MC_num_107 {
-      display: none; }
-    .mark_color_box .MC_num_108 {
-      display: none; }
-    .mark_color_box .MC_num_109 {
-      display: none; }
-    .mark_color_box .MC_num_110 {
-      display: none; }
-    .mark_color_box .MC_num_111 {
-      display: none; }
-    .mark_color_box .MC_num_112 {
-      display: none; }
-    .mark_color_box .MC_num_113 {
-      display: none; }
-    .mark_color_box .MC_num_114 {
-      display: none; }
-    .mark_color_box .MC_num_115 {
-      display: none; }
-    .mark_color_box .MC_num_116 {
-      display: none; }
-    .mark_color_box .MC_num_117 {
-      display: none; }
-    .mark_color_box .MC_num_118 {
-      display: none; }
-    .mark_color_box .MC_num_119 {
-      display: none; }
-    .mark_color_box .MC_num_120 {
-      display: none; }
-    .mark_color_box .MC_num_121 {
-      display: none; }
-    .mark_color_box .MC_num_122 {
-      display: none; }
-    .mark_color_box .MC_num_123 {
-      display: none; }
-    .mark_color_box .MC_num_124 {
-      display: none; }
-    .mark_color_box .MC_num_125 {
-      display: none; }
-    .mark_color_box .MC_num_126 {
-      display: none; }
-    .mark_color_box .MC_num_127 {
-      display: none; }
-    .mark_color_box .MC_num_128 {
-      display: none; }
-    .mark_color_box .MC_num_129 {
-      display: none; }
-    .mark_color_box .MC_num_130 {
-      display: none; }
-    .mark_color_box .MC_num_131 {
-      display: none; }
-    .mark_color_box .MC_num_132 {
-      display: none; }
-    .mark_color_box .MC_num_133 {
-      display: none; }
-    .mark_color_box .MC_num_134 {
-      display: none; }
-    .mark_color_box .MC_num_135 {
-      display: none; }
+  .mark_color_box .MC_num_01 {
+    background-color: #e3acb1;
+    transform: rotate(50deg);
+    opacity: 0.8;
+    margin-top: 13px;
+    margin-left: -10px; }
+  .mark_color_box .MC_num_02 {
+    background-color: #b74558;
+    transform: rotate(40deg);
+    margin-top: 55px;
+    margin-left: -15px; }
+  .mark_color_box .MC_num_03 {
+    background-color: #e68950;
+    transform: rotate(40deg);
+    margin-top: 48px;
+    margin-left: 35px; }
+  .mark_color_box .MC_num_04 {
+    background-color: #ebd56d;
+    transform: rotate(40deg);
+    margin-top: 100px;
+    margin-left: -9px; }
+  .mark_color_box .MC_num_05 {
+    background-color: #8fcb4b;
+    transform: rotate(50deg);
+    margin-top: 93px;
+    margin-left: 59px; }
+  .mark_color_box .MC_num_06 {
+    background-color: #cdd8cd;
+    transform: rotate(50deg);
+    margin-top: 131px;
+    margin-left: 51px; }
+  .mark_color_box .MC_num_07 {
+    background-color: #9bbbd8;
+    transform: rotate(60deg);
+    margin-top: 144px;
+    margin-left: -12px; }
+  .mark_color_box .MC_num_08 {
+    background-color: #75a0d0;
+    transform: rotate(20deg);
+    margin-top: 188px;
+    margin-left: 31px; }
+  .mark_color_box .MC_num_09 {
+    background-color: #a995b9;
+    transform: rotate(30deg);
+    margin-top: 204px;
+    margin-left: -28px; }
+  .mark_color_box .MC_num_11 {
+    display: none; }
+  .mark_color_box .MC_num_12 {
+    display: none; }
+  .mark_color_box .MC_num_13 {
+    display: none; }
+  .mark_color_box .MC_num_14 {
+    display: none; }
+  .mark_color_box .MC_num_15 {
+    display: none; }
+  .mark_color_box .MC_num_16 {
+    display: none; }
+  .mark_color_box .MC_num_17 {
+    display: none; }
+  .mark_color_box .MC_num_18 {
+    display: none; }
+  .mark_color_box .MC_num_19 {
+    display: none; }
+  .mark_color_box .MC_num_20 {
+    display: none; }
+  .mark_color_box .MC_num_21 {
+    display: none; }
+  .mark_color_box .MC_num_22 {
+    display: none; }
+  .mark_color_box .MC_num_23 {
+    display: none; }
+  .mark_color_box .MC_num_24 {
+    display: none; }
+  .mark_color_box .MC_num_25 {
+    display: none; }
+  .mark_color_box .MC_num_26 {
+    display: none; }
   .mark_color_box .mark_color {
     width: 70px;
     height: 70px; }
@@ -2228,8 +1578,8 @@
   .deco_box {
     top: 80px; }
   .mark_color_box .mark_color {
-    width: 20px;
-    height: 20px; }
+    width: 50px;
+    height: 50px; }
   .mark_color_box .MC_num_00 {
     width: 130px;
     height: 300px; }
@@ -3050,625 +2400,124 @@
     background-image: url("../img/design_bgi/circle_09.png"); }
   /*---------- Design box - mark box ----------*/
   .mark_color_box .MC_num_01 {
-    display: none; }
-  .mark_color_box .MC_num_02 {
     display: block;
-    background-color: #ebd9d8;
-    transform: rotate(60deg);
-    opacity: 0.8;
-    margin-top: 10px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_03 {
-    display: block;
-    background-color: #a995b9;
+    background-color: #d1695e;
     transform: rotate(60deg);
     opacity: 0.8;
     margin-top: 27px;
-    margin-left: -3px; }
-  .mark_color_box .MC_num_04 {
+    margin-left: -23px; }
+  .mark_color_box .MC_num_02 {
+    display: block;
     background-color: #e3acb1;
     transform: rotate(50deg);
     opacity: 0.8;
-    margin-top: 13px;
-    margin-left: 10px; }
-  .mark_color_box .MC_num_05 {
+    margin-top: 2px;
+    margin-left: -10px; }
+  .mark_color_box .MC_num_03 {
     display: block;
     background-color: #d1695e;
     transform: rotate(20deg);
     opacity: 0.8;
     margin-top: 20px;
     margin-left: 22px; }
-  .mark_color_box .MC_num_06 {
-    display: block;
-    background-color: #d25289;
-    transform: rotate(30deg);
-    margin-top: 37px;
-    margin-left: 12px; }
-  .mark_color_box .MC_num_07 {
-    display: block;
-    background-color: #794759;
-    transform: rotate(50deg);
-    margin-top: 47px;
-    margin-left: 2px; }
-  .mark_color_box .MC_num_08 {
-    display: block;
-    background-color: #bf7695;
-    transform: rotate(40deg);
-    margin-top: 40px;
-    margin-left: -15px; }
-  .mark_color_box .MC_num_09 {
-    display: block;
-    background-color: #95505a;
-    transform: rotate(30deg);
-    margin-top: 58px;
-    margin-left: -15px; }
-  .mark_color_box .MC_num_10 {
-    display: none; }
-  .mark_color_box .MC_num_11 {
+  .mark_color_box .MC_num_04 {
     display: block;
     background-color: #e68950;
     transform: rotate(40deg);
-    margin-top: 26px;
+    margin-top: 46px;
     margin-left: 40px; }
-  .mark_color_box .MC_num_12 {
+  .mark_color_box .MC_num_05 {
+    display: block;
     background-color: #b74558;
     transform: rotate(40deg);
     margin-top: 55px;
-    margin-left: 15px; }
-  .mark_color_box .MC_num_13 {
-    display: block;
-    background-color: #cd4e4a;
-    transform: rotate(60deg);
-    margin-top: 42px;
-    margin-left: 30px; }
-  .mark_color_box .MC_num_14 {
-    display: block;
-    background-color: #d1695e;
-    transform: rotate(20deg);
-    margin-top: 68px;
-    margin-left: 2px; }
-  .mark_color_box .MC_num_15 {
-    background-color: #e68950;
-    transform: rotate(40deg);
-    margin-top: 78px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_16 {
-    display: none; }
-  .mark_color_box .MC_num_17 {
+    margin-left: 5px; }
+  .mark_color_box .MC_num_06 {
     display: block;
     background-color: #bac764;
     transform: rotate(50deg);
-    margin-top: 40px;
-    margin-left: 53px; }
-  .mark_color_box .MC_num_18 {
-    display: block;
-    background-color: #89b15b;
-    transform: rotate(20deg);
-    margin-top: 52px;
-    margin-left: 42px; }
-  .mark_color_box .MC_num_19 {
-    display: block;
-    background-color: #bac764;
-    transform: rotate(40deg);
-    margin-top: 68px;
-    margin-left: 30px; }
-  .mark_color_box .MC_num_20 {
+    margin-top: 90px;
+    margin-left: 63px; }
+  .mark_color_box .MC_num_07 {
     display: block;
     background-color: #decb4e;
-    transform: rotate(60deg);
-    margin-top: 76px;
-    margin-left: 19px; }
-  .mark_color_box .MC_num_21 {
-    background-color: #ebd56d;
-    transform: rotate(40deg);
-    margin-top: 90px;
-    margin-left: 9px; }
-  .mark_color_box .MC_num_22 {
+    transform: rotate(20deg);
+    margin-top: 82px;
+    margin-left: 32px; }
+  .mark_color_box .MC_num_08 {
     display: block;
     background-color: #e9c25c;
-    transform: rotate(70deg);
-    margin-top: 98px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_23 {
-    display: none; }
-  .mark_color_box .MC_num_24 {
+    transform: rotate(50deg);
+    margin-top: 90px;
+    margin-left: -25px; }
+  .mark_color_box .MC_num_09 {
     display: block;
     background-color: #568c44;
     transform: rotate(40deg);
-    margin-top: 62px;
+    margin-top: 122px;
     margin-left: 55px; }
-  .mark_color_box .MC_num_25 {
+  .mark_color_box .MC_num_10 {
     display: block;
     background-color: #80b494;
-    transform: rotate(50deg);
-    margin-top: 76px;
-    margin-left: 46px; }
-  .mark_color_box .MC_num_26 {
-    display: block;
-    background-color: #e1d6d1;
-    transform: rotate(40deg);
-    opacity: 0.8;
-    margin-top: 85px;
-    margin-left: 32px; }
-  .mark_color_box .MC_num_27 {
-    display: block;
-    background-color: #fad5d3;
-    transform: rotate(30deg);
-    opacity: 0.8;
-    margin-top: 95px;
-    margin-left: 22px; }
-  .mark_color_box .MC_num_28 {
-    display: block;
-    background-color: #e3acb1;
-    transform: rotate(40deg);
-    margin-top: 108px;
-    margin-left: 8px; }
-  .mark_color_box .MC_num_29 {
-    display: block;
-    background-color: #e5c8bf;
-    transform: rotate(50deg);
+    transform: rotate(20deg);
     margin-top: 116px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_30 {
-    display: none; }
-  .mark_color_box .MC_num_31 {
-    display: block;
-    background-color: #80b494;
-    transform: rotate(30deg);
-    margin-top: 68px;
-    margin-left: 72px; }
-  .mark_color_box .MC_num_32 {
-    background-color: #8fcb4b;
-    transform: rotate(50deg);
-    margin-top: 83px;
-    margin-left: 59px; }
-  .mark_color_box .MC_num_33 {
+    margin-left: 6px; }
+  .mark_color_box .MC_num_11 {
     display: block;
     background-color: #719c93;
     transform: rotate(20deg);
-    margin-top: 98px;
-    margin-left: 48px; }
-  .mark_color_box .MC_num_34 {
+    margin-top: 158px;
+    margin-left: 68px; }
+  .mark_color_box .MC_num_12 {
     display: block;
-    background-color: #e5c8bf;
-    transform: rotate(40deg);
-    margin-top: 107px;
-    margin-left: 31px; }
-  .mark_color_box .MC_num_35 {
-    display: block;
-    background-color: #bf7695;
-    transform: rotate(70deg);
-    margin-top: 120px;
-    margin-left: 20px; }
-  .mark_color_box .MC_num_36 {
-    display: block;
-    background-color: #d25289;
-    transform: rotate(30deg);
-    margin-top: 131px;
-    margin-left: 8px; }
-  .mark_color_box .MC_num_37 {
-    display: block;
-    background-color: #8d6b9e;
-    transform: rotate(60deg);
-    margin-top: 130px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_38 {
-    display: none; }
-  .mark_color_box .MC_num_39 {
-    display: block;
-    background-color: #74a563;
-    transform: rotate(20deg);
-    margin-top: 86px;
-    margin-left: 75px; }
-  .mark_color_box .MC_num_40 {
-    display: block;
-    background-color: #89b15b;
-    transform: rotate(30deg);
-    margin-top: 98px;
-    margin-left: 65px; }
-  .mark_color_box .MC_num_41 {
-    background-color: #cdd8cd;
-    transform: rotate(50deg);
-    margin-top: 111px;
-    margin-left: 51px; }
-  .mark_color_box .MC_num_42 {
     background-color: #9bbbd8;
     transform: rotate(60deg);
-    margin-top: 124px;
-    margin-left: 42px; }
-  .mark_color_box .MC_num_43 {
+    margin-top: 154px;
+    margin-left: 32px; }
+  .mark_color_box .MC_num_13 {
     display: block;
     background-color: #6d8cb8;
     transform: rotate(40deg);
     margin-top: 136px;
-    margin-left: 29px; }
-  .mark_color_box .MC_num_44 {
+    margin-left: -19px; }
+  .mark_color_box .MC_num_14 {
     display: block;
-    background-color: #6d557a;
-    transform: rotate(20deg);
-    margin-top: 150px;
-    margin-left: 16px; }
-  .mark_color_box .MC_num_45 {
-    display: block;
-    background-color: #515885;
-    transform: rotate(40deg);
-    margin-top: 150px;
-    margin-left: 0px; }
-  .mark_color_box .MC_num_46 {
-    display: block;
-    background-color: #6d557a;
-    transform: rotate(60deg);
-    margin-top: 155px;
-    margin-left: -15px; }
-  .mark_color_box .MC_num_47 {
-    display: none; }
-  .mark_color_box .MC_num_48 {
-    display: block;
-    background-color: #9bbbd8;
-    transform: rotate(60deg);
-    margin-top: 102px;
-    margin-left: 80px; }
-  .mark_color_box .MC_num_49 {
-    display: block;
-    background-color: #bac764;
-    transform: rotate(50deg);
-    margin-top: 122px;
-    margin-left: 68px; }
-  .mark_color_box .MC_num_50 {
-    display: block;
-    background-color: #86b7ad;
-    transform: rotate(30deg);
-    margin-top: 135px;
-    margin-left: 58px; }
-  .mark_color_box .MC_num_51 {
-    display: block;
-    background-color: #7782b9;
-    transform: rotate(20deg);
-    margin-top: 146px;
-    margin-left: 46px; }
-  .mark_color_box .MC_num_52 {
-    display: block;
-    background-color: #75a0d0;
-    transform: rotate(40deg);
-    margin-top: 158px;
-    margin-left: 33px; }
-  .mark_color_box .MC_num_53 {
-    display: block;
-    background-color: #6d8cb8;
-    transform: rotate(60deg);
-    margin-top: 172px;
-    margin-left: 23px; }
-  .mark_color_box .MC_num_54 {
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #60578e;
-    transform: rotate(60deg);
-    margin-top: 168px;
-    margin-left: 10px; }
-  .mark_color_box .MC_num_55 {
-    display: block;
-    background-color: #8d6b9e;
-    transform: rotate(20deg);
-    margin-top: 183px;
-    margin-left: 6px; }
-  .mark_color_box .MC_num_56 {
-    display: block;
-    background-color: #7782b9;
-    transform: rotate(30deg);
-    margin-top: 170px;
-    margin-left: -8px; }
-  .mark_color_box .MC_num_57 {
-    display: none; }
-  .mark_color_box .MC_num_58 {
-    display: block;
-    background-color: #7782b9;
-    transform: rotate(30deg);
-    margin-top: 119px;
-    margin-left: 86px; }
-  .mark_color_box .MC_num_59 {
-    display: block;
-    background-color: #8eacc6;
-    transform: rotate(20deg);
-    margin-top: 135px;
-    margin-left: 76px; }
-  .mark_color_box .MC_num_60 {
-    display: block;
-    background-color: #9bbbd8;
-    transform: rotate(50deg);
-    margin-top: 151px;
-    margin-left: 62px; }
-  .mark_color_box .MC_num_61 {
-    display: block;
-    background-color: #8eacc6;
-    transform: rotate(40deg);
-    margin-top: 163px;
-    margin-left: 50px; }
-  .mark_color_box .MC_num_62 {
-    display: block;
-    background-color: #7782b9;
-    transform: rotate(10deg);
-    margin-top: 178px;
-    margin-left: 40px; }
-  .mark_color_box .MC_num_63 {
-    display: block;
-    background-color: #6d557a;
-    transform: rotate(40deg);
-    margin-top: 190px;
-    margin-left: 28px; }
-  .mark_color_box .MC_num_64 {
-    display: block;
-    width: 17px;
-    height: 17px;
-    background-color: #515885;
-    transform: rotate(20deg);
-    margin-top: 197px;
-    margin-left: 15px; }
-  .mark_color_box .MC_num_65 {
-    display: block;
-    background-color: #6d8cb8;
-    transform: rotate(40deg);
-    margin-top: 206px;
-    margin-left: 2px; }
-  .mark_color_box .MC_num_66 {
-    display: block;
-    background-color: #75a0d0;
-    transform: rotate(20deg);
-    margin-top: 189px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_67 {
-    display: none; }
-  .mark_color_box .MC_num_68 {
-    display: none; }
-  .mark_color_box .MC_num_69 {
-    display: block;
-    background-color: #6d8cb8;
-    transform: rotate(60deg);
-    margin-top: 152px;
-    margin-left: 82px; }
-  .mark_color_box .MC_num_70 {
-    background-color: #75a0d0;
-    transform: rotate(70deg);
-    margin-top: 168px;
-    margin-left: 71px; }
-  .mark_color_box .MC_num_71 {
-    display: block;
-    background-color: #bcccd8;
-    transform: rotate(50deg);
-    margin-top: 178px;
-    margin-left: 58px; }
-  .mark_color_box .MC_num_72 {
-    background-color: #a995b9;
-    transform: rotate(30deg);
-    margin-top: 194px;
-    margin-left: 48px; }
-  .mark_color_box .MC_num_73 {
-    display: block;
-    background-color: #8d6b9e;
-    transform: rotate(40deg);
-    margin-top: 206px;
-    margin-left: 36px; }
-  .mark_color_box .MC_num_74 {
-    display: block;
-    width: 15px;
-    height: 15px;
     background-color: #7782b9;
     transform: rotate(50deg);
-    margin-top: 208px;
-    margin-left: 23px; }
-  .mark_color_box .MC_num_75 {
-    display: block;
-    background-color: #9bbbd8;
-    transform: rotate(80deg);
-    margin-top: 220px;
-    margin-left: 20px; }
-  .mark_color_box .MC_num_76 {
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #ccafc7;
-    transform: rotate(40deg);
-    margin-top: 218px;
-    margin-left: 12px; }
-  .mark_color_box .MC_num_76 {
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #794759;
-    transform: rotate(40deg);
-    margin-top: 218px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_77 {
-    display: block;
-    background-color: #8d6b9e;
-    transform: rotate(40deg);
-    margin-top: 225px;
-    margin-left: 3px; }
-  .mark_color_box .MC_num_78 {
-    display: none; }
-  .mark_color_box .MC_num_79 {
-    display: none; }
-  .mark_color_box .MC_num_80 {
-    display: block;
-    background-color: #719dc4;
-    transform: rotate(20deg);
-    opacity: 0.7;
-    margin-top: 163px;
-    margin-left: 97px; }
-  .mark_color_box .MC_num_81 {
-    display: block;
-    background-color: #a5c3ce;
-    transform: rotate(40deg);
-    opacity: 0.7;
     margin-top: 176px;
-    margin-left: 85px; }
-  .mark_color_box .MC_num_82 {
+    margin-left: -10px; }
+  .mark_color_box .MC_num_15 {
     display: block;
-    background-color: #cdd8cd;
-    transform: rotate(60deg);
-    opacity: 0.7;
-    margin-top: 189px;
-    margin-left: 73px; }
-  .mark_color_box .MC_num_83 {
-    display: block;
-    background-color: #e3acb1;
-    transform: rotate(60deg);
-    opacity: 0.7;
-    margin-top: 200px;
-    margin-left: 61px; }
-  .mark_color_box .MC_num_84 {
+    background-color: #8d6b9e;
+    transform: rotate(20deg);
+    margin-top: 223px;
+    margin-left: -16px; }
+  .mark_color_box .MC_num_16 {
     display: block;
     background-color: #ccafc7;
     transform: rotate(50deg);
     opacity: 0.7;
-    margin-top: 216px;
-    margin-left: 49px; }
-  .mark_color_box .MC_num_85 {
-    display: block;
-    background-color: #9bbbd8;
-    transform: rotate(40deg);
-    opacity: 0.7;
-    margin-top: 224px;
-    margin-left: 36px; }
-  .mark_color_box .MC_num_86 {
-    display: block;
-    background-color: #ebd9d8;
-    transform: rotate(30deg);
-    opacity: 0.7;
-    margin-top: 238px;
-    margin-left: 23px; }
-  .mark_color_box .MC_num_87 {
-    display: block;
-    background-color: #e5c8bf;
-    transform: rotate(60deg);
-    opacity: 0.7;
-    margin-top: 242px;
-    margin-left: 5px; }
-  .mark_color_box .MC_num_88 {
-    display: block;
-    background-color: #d1695e;
-    transform: rotate(80deg);
-    opacity: 0.7;
-    margin-top: 238px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_89 {
-    display: block;
-    background-color: #b55b83;
-    transform: rotate(40deg);
-    opacity: 0.7;
-    margin-top: 256px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_90 {
+    margin-top: 196px;
+    margin-left: 29px; }
+  .mark_color_box .MC_num_17 {
     display: none; }
-  .mark_color_box .MC_num_91 {
-    display: block;
-    background-color: #a5c3ce;
-    transform: rotate(50deg);
-    opacity: 0.7;
-    margin-top: 175px;
-    margin-left: 110px; }
-  .mark_color_box .MC_num_92 {
-    display: block;
-    background-color: #e1d6d1;
-    transform: rotate(30deg);
-    opacity: 0.7;
-    margin-top: 187px;
-    margin-left: 98px; }
-  .mark_color_box .MC_num_93 {
+  .mark_color_box .MC_num_18 {
     display: none; }
-  .mark_color_box .MC_num_94 {
+  .mark_color_box .MC_num_19 {
     display: none; }
-  .mark_color_box .MC_num_95 {
+  .mark_color_box .MC_num_20 {
     display: none; }
-  .mark_color_box .MC_num_96 {
+  .mark_color_box .MC_num_21 {
     display: none; }
-  .mark_color_box .MC_num_97 {
+  .mark_color_box .MC_num_22 {
     display: none; }
-  .mark_color_box .MC_num_98 {
+  .mark_color_box .MC_num_23 {
     display: none; }
-  .mark_color_box .MC_num_99 {
-    display: block;
-    background-color: #d9783d;
-    transform: rotate(40deg);
-    opacity: 0.7;
-    margin-top: 255px;
-    margin-left: 13px; }
-  .mark_color_box .MC_num_100 {
-    display: block;
-    background-color: #956289;
-    transform: rotate(60deg);
-    opacity: 0.7;
-    margin-top: 268px;
-    margin-left: 3px; }
-  .mark_color_box .MC_num_101 {
+  .mark_color_box .MC_num_24 {
     display: none; }
-  .mark_color_box .MC_num_102 {
+  .mark_color_box .MC_num_25 {
     display: none; }
-  .mark_color_box .MC_num_103 {
-    display: none; }
-  .mark_color_box .MC_num_104 {
-    display: none; }
-  .mark_color_box .MC_num_105 {
-    display: none; }
-  .mark_color_box .MC_num_106 {
-    display: none; }
-  .mark_color_box .MC_num_107 {
-    display: none; }
-  .mark_color_box .MC_num_108 {
-    display: none; }
-  .mark_color_box .MC_num_109 {
-    display: none; }
-  .mark_color_box .MC_num_110 {
-    display: none; }
-  .mark_color_box .MC_num_111 {
-    display: none; }
-  .mark_color_box .MC_num_112 {
-    display: none; }
-  .mark_color_box .MC_num_113 {
-    display: none; }
-  .mark_color_box .MC_num_114 {
-    display: none; }
-  .mark_color_box .MC_num_115 {
-    display: none; }
-  .mark_color_box .MC_num_116 {
-    display: none; }
-  .mark_color_box .MC_num_117 {
-    display: none; }
-  .mark_color_box .MC_num_118 {
-    display: none; }
-  .mark_color_box .MC_num_119 {
-    display: none; }
-  .mark_color_box .MC_num_120 {
-    display: none; }
-  .mark_color_box .MC_num_121 {
-    display: none; }
-  .mark_color_box .MC_num_122 {
-    display: none; }
-  .mark_color_box .MC_num_123 {
-    display: none; }
-  .mark_color_box .MC_num_124 {
-    display: none; }
-  .mark_color_box .MC_num_125 {
-    display: none; }
-  .mark_color_box .MC_num_126 {
-    display: none; }
-  .mark_color_box .MC_num_127 {
-    display: none; }
-  .mark_color_box .MC_num_128 {
-    display: none; }
-  .mark_color_box .MC_num_129 {
-    display: none; }
-  .mark_color_box .MC_num_130 {
-    display: none; }
-  .mark_color_box .MC_num_131 {
-    display: none; }
-  .mark_color_box .MC_num_132 {
-    display: none; }
-  .mark_color_box .MC_num_133 {
-    display: none; }
-  .mark_color_box .MC_num_134 {
-    display: none; }
-  .mark_color_box .MC_num_135 {
+  .mark_color_box .MC_num_26 {
     display: none; }
   .mark_box {
     width: 130px;
@@ -4294,766 +3143,163 @@
     width: 180px;
     height: 370px; }
   .mark_color_box .MC_num_01 {
+    display: block;
     background-color: #ccafc7;
     transform: rotate(30deg);
     opacity: 0.8;
     margin-top: 0;
     margin-left: -3px; }
   .mark_color_box .MC_num_02 {
-    background-color: #ebd9d8;
-    transform: rotate(60deg);
-    opacity: 0.8;
-    margin-top: 10px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_03 {
-    background-color: #a995b9;
-    transform: rotate(60deg);
-    opacity: 0.8;
-    margin-top: 27px;
-    margin-left: -3px; }
-  .mark_color_box .MC_num_04 {
+    display: block;
     background-color: #e3acb1;
     transform: rotate(50deg);
     opacity: 0.8;
     margin-top: 13px;
-    margin-left: 10px; }
-  .mark_color_box .MC_num_05 {
-    background-color: #d1695e;
-    transform: rotate(20deg);
-    opacity: 0.8;
-    margin-top: 20px;
-    margin-left: 22px; }
-  .mark_color_box .MC_num_06 {
+    margin-left: 40px; }
+  .mark_color_box .MC_num_03 {
+    display: block;
     background-color: #d25289;
     transform: rotate(30deg);
-    margin-top: 37px;
-    margin-left: 12px; }
-  .mark_color_box .MC_num_07 {
-    background-color: #794759;
-    transform: rotate(50deg);
-    margin-top: 47px;
-    margin-left: 2px; }
-  .mark_color_box .MC_num_08 {
-    background-color: #bf7695;
-    transform: rotate(40deg);
-    margin-top: 40px;
-    margin-left: -15px; }
-  .mark_color_box .MC_num_09 {
+    margin-top: 50px;
+    margin-left: 55px; }
+  .mark_color_box .MC_num_04 {
+    display: block;
     background-color: #95505a;
     transform: rotate(30deg);
-    margin-top: 58px;
-    margin-left: -15px; }
-  .mark_color_box .MC_num_10 {
+    margin-top: 38px;
+    margin-left: -25px; }
+  .mark_color_box .MC_num_05 {
     display: block;
-    background-color: #e9c25c;
-    transform: rotate(40deg);
-    margin-top: 13px;
-    margin-left: 35px; }
-  .mark_color_box .MC_num_11 {
-    background-color: #e68950;
-    transform: rotate(40deg);
-    margin-top: 26px;
-    margin-left: 40px; }
-  .mark_color_box .MC_num_12 {
     background-color: #b74558;
     transform: rotate(40deg);
-    margin-top: 55px;
+    margin-top: 45px;
     margin-left: 15px; }
-  .mark_color_box .MC_num_13 {
-    background-color: #cd4e4a;
-    transform: rotate(60deg);
-    margin-top: 42px;
-    margin-left: 30px; }
-  .mark_color_box .MC_num_14 {
-    background-color: #d1695e;
-    transform: rotate(20deg);
-    margin-top: 68px;
-    margin-left: 2px; }
-  .mark_color_box .MC_num_15 {
+  .mark_color_box .MC_num_06 {
+    display: block;
     background-color: #e68950;
     transform: rotate(40deg);
     margin-top: 78px;
     margin-left: -5px; }
-  .mark_color_box .MC_num_16 {
+  .mark_color_box .MC_num_07 {
     display: block;
-    background-color: #ebd56d;
-    transform: rotate(60deg);
-    margin-top: 30px;
-    margin-left: 65px; }
-  .mark_color_box .MC_num_17 {
     background-color: #bac764;
     transform: rotate(50deg);
-    margin-top: 40px;
-    margin-left: 53px; }
-  .mark_color_box .MC_num_18 {
-    background-color: #89b15b;
-    transform: rotate(20deg);
-    margin-top: 52px;
-    margin-left: 42px; }
-  .mark_color_box .MC_num_19 {
-    background-color: #bac764;
-    transform: rotate(40deg);
-    margin-top: 68px;
-    margin-left: 30px; }
-  .mark_color_box .MC_num_20 {
-    background-color: #decb4e;
-    transform: rotate(60deg);
-    margin-top: 76px;
-    margin-left: 19px; }
-  .mark_color_box .MC_num_21 {
-    background-color: #ebd56d;
-    transform: rotate(40deg);
     margin-top: 90px;
-    margin-left: 9px; }
-  .mark_color_box .MC_num_22 {
+    margin-left: 39px; }
+  .mark_color_box .MC_num_08 {
+    display: block;
+    background-color: #decb4e;
+    transform: rotate(30deg);
+    margin-top: 115px;
+    margin-left: 5px; }
+  .mark_color_box .MC_num_09 {
+    display: block;
     background-color: #e9c25c;
-    transform: rotate(70deg);
-    margin-top: 98px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_23 {
-    display: block;
-    background-color: #74a563;
-    transform: rotate(20deg);
-    margin-top: 50px;
-    margin-left: 68px; }
-  .mark_color_box .MC_num_24 {
-    background-color: #568c44;
-    transform: rotate(40deg);
-    margin-top: 62px;
-    margin-left: 55px; }
-  .mark_color_box .MC_num_25 {
-    background-color: #80b494;
-    transform: rotate(50deg);
-    margin-top: 76px;
-    margin-left: 46px; }
-  .mark_color_box .MC_num_26 {
-    background-color: #e1d6d1;
-    transform: rotate(40deg);
-    opacity: 0.8;
-    margin-top: 85px;
-    margin-left: 32px; }
-  .mark_color_box .MC_num_27 {
-    background-color: #fad5d3;
-    transform: rotate(30deg);
-    opacity: 0.8;
-    margin-top: 95px;
-    margin-left: 22px; }
-  .mark_color_box .MC_num_28 {
-    background-color: #e3acb1;
-    transform: rotate(40deg);
-    margin-top: 108px;
-    margin-left: 8px; }
-  .mark_color_box .MC_num_29 {
-    background-color: #e5c8bf;
-    transform: rotate(50deg);
-    margin-top: 116px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_30 {
-    display: block;
-    background-color: #89b15b;
-    transform: rotate(40deg);
-    margin-top: 58px;
-    margin-left: 84px; }
-  .mark_color_box .MC_num_31 {
-    background-color: #80b494;
-    transform: rotate(30deg);
-    margin-top: 68px;
-    margin-left: 72px; }
-  .mark_color_box .MC_num_32 {
-    background-color: #8fcb4b;
-    transform: rotate(50deg);
-    margin-top: 83px;
-    margin-left: 59px; }
-  .mark_color_box .MC_num_33 {
-    background-color: #719c93;
-    transform: rotate(20deg);
-    margin-top: 98px;
-    margin-left: 48px; }
-  .mark_color_box .MC_num_34 {
-    background-color: #e5c8bf;
-    transform: rotate(40deg);
-    margin-top: 107px;
-    margin-left: 31px; }
-  .mark_color_box .MC_num_35 {
-    background-color: #bf7695;
     transform: rotate(70deg);
     margin-top: 120px;
-    margin-left: 20px; }
-  .mark_color_box .MC_num_36 {
-    background-color: #d25289;
-    transform: rotate(30deg);
-    margin-top: 131px;
-    margin-left: 8px; }
-  .mark_color_box .MC_num_37 {
-    background-color: #8d6b9e;
-    transform: rotate(60deg);
-    margin-top: 130px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_38 {
+    margin-left: -25px; }
+  .mark_color_box .MC_num_10 {
     display: block;
-    background-color: #93bdc8;
-    transform: rotate(40deg);
-    margin-top: 74px;
-    margin-left: 86px; }
-  .mark_color_box .MC_num_39 {
     background-color: #74a563;
     transform: rotate(20deg);
-    margin-top: 86px;
-    margin-left: 75px; }
-  .mark_color_box .MC_num_40 {
-    background-color: #89b15b;
-    transform: rotate(30deg);
-    margin-top: 98px;
-    margin-left: 65px; }
-  .mark_color_box .MC_num_41 {
-    background-color: #cdd8cd;
-    transform: rotate(50deg);
-    margin-top: 111px;
-    margin-left: 51px; }
-  .mark_color_box .MC_num_42 {
-    background-color: #9bbbd8;
-    transform: rotate(60deg);
-    margin-top: 124px;
-    margin-left: 42px; }
-  .mark_color_box .MC_num_43 {
-    background-color: #6d8cb8;
-    transform: rotate(40deg);
-    margin-top: 136px;
-    margin-left: 29px; }
-  .mark_color_box .MC_num_44 {
-    background-color: #6d557a;
-    transform: rotate(20deg);
-    margin-top: 150px;
-    margin-left: 16px; }
-  .mark_color_box .MC_num_45 {
-    background-color: #515885;
-    transform: rotate(40deg);
-    margin-top: 150px;
-    margin-left: 0px; }
-  .mark_color_box .MC_num_46 {
-    background-color: #6d557a;
-    transform: rotate(60deg);
-    margin-top: 155px;
-    margin-left: -15px; }
-  .mark_color_box .MC_num_47 {
+    margin-top: 90px;
+    margin-left: 78px; }
+  .mark_color_box .MC_num_11 {
     display: block;
-    background-color: #bcccd8;
+    background-color: #568c44;
     transform: rotate(40deg);
-    margin-top: 88px;
-    margin-left: 92px; }
-  .mark_color_box .MC_num_48 {
-    background-color: #9bbbd8;
-    transform: rotate(60deg);
-    margin-top: 102px;
-    margin-left: 80px; }
-  .mark_color_box .MC_num_49 {
-    background-color: #bac764;
-    transform: rotate(50deg);
     margin-top: 122px;
-    margin-left: 68px; }
-  .mark_color_box .MC_num_50 {
-    background-color: #86b7ad;
-    transform: rotate(30deg);
-    margin-top: 135px;
-    margin-left: 58px; }
-  .mark_color_box .MC_num_51 {
-    background-color: #7782b9;
-    transform: rotate(20deg);
-    margin-top: 146px;
-    margin-left: 46px; }
-  .mark_color_box .MC_num_52 {
-    background-color: #75a0d0;
-    transform: rotate(40deg);
-    margin-top: 158px;
-    margin-left: 33px; }
-  .mark_color_box .MC_num_53 {
-    background-color: #6d8cb8;
-    transform: rotate(60deg);
-    margin-top: 172px;
-    margin-left: 23px; }
-  .mark_color_box .MC_num_54 {
-    width: 15px;
-    height: 15px;
-    background-color: #60578e;
-    transform: rotate(60deg);
-    margin-top: 168px;
-    margin-left: 10px; }
-  .mark_color_box .MC_num_55 {
-    background-color: #8d6b9e;
-    transform: rotate(20deg);
-    margin-top: 183px;
-    margin-left: 6px; }
-  .mark_color_box .MC_num_56 {
-    background-color: #7782b9;
-    transform: rotate(30deg);
-    margin-top: 170px;
-    margin-left: -8px; }
-  .mark_color_box .MC_num_57 {
-    display: block;
-    background-color: #cdd8cd;
-    transform: rotate(50deg);
-    margin-top: 108px;
-    margin-left: 100px; }
-  .mark_color_box .MC_num_58 {
-    background-color: #7782b9;
-    transform: rotate(30deg);
-    margin-top: 119px;
-    margin-left: 86px; }
-  .mark_color_box .MC_num_59 {
-    background-color: #8eacc6;
-    transform: rotate(20deg);
-    margin-top: 135px;
-    margin-left: 76px; }
-  .mark_color_box .MC_num_60 {
-    background-color: #9bbbd8;
-    transform: rotate(50deg);
-    margin-top: 151px;
-    margin-left: 62px; }
-  .mark_color_box .MC_num_61 {
-    background-color: #8eacc6;
-    transform: rotate(40deg);
-    margin-top: 163px;
-    margin-left: 50px; }
-  .mark_color_box .MC_num_62 {
-    background-color: #7782b9;
-    transform: rotate(10deg);
-    margin-top: 178px;
-    margin-left: 40px; }
-  .mark_color_box .MC_num_63 {
-    background-color: #6d557a;
-    transform: rotate(40deg);
-    margin-top: 190px;
-    margin-left: 28px; }
-  .mark_color_box .MC_num_64 {
-    width: 17px;
-    height: 17px;
-    background-color: #515885;
-    transform: rotate(20deg);
-    margin-top: 197px;
-    margin-left: 15px; }
-  .mark_color_box .MC_num_65 {
-    background-color: #6d8cb8;
-    transform: rotate(40deg);
-    margin-top: 206px;
-    margin-left: 2px; }
-  .mark_color_box .MC_num_66 {
-    background-color: #75a0d0;
-    transform: rotate(20deg);
-    margin-top: 189px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_67 {
-    display: block;
-    background-color: #bcccd8;
-    transform: rotate(40deg);
-    margin-top: 125px;
-    margin-left: 108px; }
-  .mark_color_box .MC_num_68 {
-    display: block;
-    background-color: #75a0d0;
-    transform: rotate(70deg);
-    margin-top: 136px;
-    margin-left: 96px; }
-  .mark_color_box .MC_num_69 {
-    background-color: #6d8cb8;
-    transform: rotate(60deg);
-    margin-top: 152px;
-    margin-left: 82px; }
-  .mark_color_box .MC_num_70 {
-    background-color: #75a0d0;
-    transform: rotate(70deg);
-    margin-top: 168px;
-    margin-left: 71px; }
-  .mark_color_box .MC_num_71 {
-    background-color: #bcccd8;
-    transform: rotate(50deg);
-    margin-top: 178px;
-    margin-left: 58px; }
-  .mark_color_box .MC_num_72 {
-    background-color: #a995b9;
-    transform: rotate(30deg);
-    margin-top: 194px;
-    margin-left: 48px; }
-  .mark_color_box .MC_num_73 {
-    background-color: #8d6b9e;
-    transform: rotate(40deg);
-    margin-top: 206px;
-    margin-left: 36px; }
-  .mark_color_box .MC_num_74 {
-    width: 15px;
-    height: 15px;
-    background-color: #7782b9;
-    transform: rotate(50deg);
-    margin-top: 208px;
-    margin-left: 23px; }
-  .mark_color_box .MC_num_75 {
-    background-color: #9bbbd8;
-    transform: rotate(80deg);
-    margin-top: 220px;
-    margin-left: 20px; }
-  .mark_color_box .MC_num_76 {
-    width: 15px;
-    height: 15px;
-    background-color: #ccafc7;
-    transform: rotate(40deg);
-    margin-top: 218px;
-    margin-left: 12px; }
-  .mark_color_box .MC_num_76 {
-    width: 15px;
-    height: 15px;
-    background-color: #794759;
-    transform: rotate(40deg);
-    margin-top: 218px;
-    margin-left: -5px; }
-  .mark_color_box .MC_num_77 {
-    background-color: #8d6b9e;
-    transform: rotate(40deg);
-    margin-top: 225px;
-    margin-left: 3px; }
-  .mark_color_box .MC_num_78 {
-    display: block;
-    background-color: #9bbbd8;
-    transform: rotate(70deg);
-    margin-top: 140px;
-    margin-left: 120px; }
-  .mark_color_box .MC_num_79 {
-    display: block;
-    background-color: #8eacc6;
-    transform: rotate(40deg);
-    margin-top: 151px;
-    margin-left: 106px; }
-  .mark_color_box .MC_num_80 {
-    background-color: #719dc4;
-    transform: rotate(20deg);
-    margin-top: 163px;
-    margin-left: 97px; }
-  .mark_color_box .MC_num_81 {
-    background-color: #a5c3ce;
-    transform: rotate(40deg);
-    margin-top: 176px;
-    margin-left: 85px; }
-  .mark_color_box .MC_num_82 {
-    background-color: #cdd8cd;
-    transform: rotate(60deg);
-    margin-top: 189px;
-    margin-left: 73px; }
-  .mark_color_box .MC_num_83 {
-    background-color: #e3acb1;
-    transform: rotate(60deg);
-    margin-top: 200px;
-    margin-left: 61px; }
-  .mark_color_box .MC_num_84 {
-    background-color: #ccafc7;
-    transform: rotate(50deg);
-    margin-top: 216px;
-    margin-left: 49px; }
-  .mark_color_box .MC_num_85 {
-    background-color: #9bbbd8;
-    transform: rotate(40deg);
-    margin-top: 224px;
-    margin-left: 36px; }
-  .mark_color_box .MC_num_86 {
-    background-color: #ebd9d8;
-    transform: rotate(30deg);
-    margin-top: 238px;
-    margin-left: 23px; }
-  .mark_color_box .MC_num_87 {
-    background-color: #e5c8bf;
-    transform: rotate(60deg);
-    margin-top: 242px;
-    margin-left: 5px; }
-  .mark_color_box .MC_num_88 {
-    background-color: #d1695e;
-    transform: rotate(80deg);
-    margin-top: 238px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_89 {
-    background-color: #b55b83;
-    transform: rotate(40deg);
-    margin-top: 256px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_90 {
-    display: block;
-    background-color: #bcccd8;
-    transform: rotate(40deg);
-    margin-top: 160px;
-    margin-left: 120px; }
-  .mark_color_box .MC_num_91 {
-    background-color: #a5c3ce;
-    transform: rotate(50deg);
-    margin-top: 175px;
-    margin-left: 110px; }
-  .mark_color_box .MC_num_92 {
-    background-color: #e1d6d1;
-    transform: rotate(30deg);
-    margin-top: 187px;
-    margin-left: 98px; }
-  .mark_color_box .MC_num_93 {
-    display: block;
-    background-color: #a6ccc5;
-    transform: rotate(20deg);
-    margin-top: 200px;
-    margin-left: 82px; }
-  .mark_color_box .MC_num_94 {
-    display: block;
-    background-color: #bcccd8;
-    transform: rotate(40deg);
-    margin-top: 215px;
-    margin-left: 70px; }
-  .mark_color_box .MC_num_95 {
-    display: block;
-    background-color: #e5c8bf;
-    transform: rotate(20deg);
-    margin-top: 230px;
-    margin-left: 59px; }
-  .mark_color_box .MC_num_96 {
-    display: block;
-    background-color: #e3acb1;
-    transform: rotate(60deg);
-    margin-top: 242px;
-    margin-left: 45px; }
-  .mark_color_box .MC_num_97 {
-    display: block;
-    background-color: #d1695e;
-    transform: rotate(40deg);
-    margin-top: 255px;
-    margin-left: 33px; }
-  .mark_color_box .MC_num_98 {
-    display: block;
-    background-color: #e49c57;
-    transform: rotate(70deg);
-    margin-top: 269px;
-    margin-left: 22px; }
-  .mark_color_box .MC_num_99 {
-    background-color: #d9783d;
-    transform: rotate(40deg);
-    margin-top: 255px;
-    margin-left: 13px; }
-  .mark_color_box .MC_num_100 {
-    background-color: #956289;
-    transform: rotate(60deg);
-    margin-top: 268px;
-    margin-left: 3px; }
-  .mark_color_box .MC_num_101 {
-    display: block;
-    background-color: #d25289;
-    transform: rotate(30deg);
-    margin-top: 282px;
-    margin-left: -10px; }
-  .mark_color_box .MC_num_102 {
-    display: block;
-    background-color: #93bdc8;
-    transform: rotate(40deg);
-    margin-top: 185px;
-    margin-left: 123px; }
-  .mark_color_box .MC_num_103 {
-    display: block;
-    background-color: #cdd8cd;
-    transform: rotate(20deg);
-    margin-top: 198px;
-    margin-left: 110px; }
-  .mark_color_box .MC_num_104 {
-    display: block;
-    background-color: #eeda76;
-    transform: rotate(30deg);
-    margin-top: 209px;
-    margin-left: 98px; }
-  .mark_color_box .MC_num_105 {
-    display: block;
-    background-color: #e9c25c;
-    transform: rotate(50deg);
-    margin-top: 220px;
-    margin-left: 88px; }
-  .mark_color_box .MC_num_106 {
-    display: block;
-    background-color: #b74558;
-    transform: rotate(40deg);
-    margin-top: 233px;
-    margin-left: 76px; }
-  .mark_color_box .MC_num_107 {
-    display: block;
-    background-color: #d1695e;
-    transform: rotate(80deg);
-    margin-top: 248px;
-    margin-left: 65px; }
-  .mark_color_box .MC_num_108 {
-    display: block;
-    background-color: #cd4e4a;
-    transform: rotate(60deg);
-    margin-top: 262px;
-    margin-left: 50px; }
-  .mark_color_box .MC_num_109 {
-    display: block;
-    background-color: #d98071;
-    transform: rotate(40deg);
-    margin-top: 275px;
-    margin-left: 38px; }
-  .mark_color_box .MC_num_110 {
-    display: block;
-    background-color: #ebd56d;
-    transform: rotate(70deg);
-    margin-top: 285px;
-    margin-left: 26px; }
-  .mark_color_box .MC_num_111 {
-    display: block;
-    background-color: #e68950;
-    transform: rotate(40deg);
-    margin-top: 298px;
-    margin-left: 20px; }
-  .mark_color_box .MC_num_112 {
-    display: block;
-    background-color: #b74558;
-    transform: rotate(80deg);
-    margin-top: 286px;
-    margin-left: 5px; }
-  .mark_color_box .MC_num_113 {
-    display: block;
-    background-color: #77ada2;
-    transform: rotate(50deg);
-    margin-top: 200px;
-    margin-left: 130px; }
-  .mark_color_box .MC_num_114 {
-    display: block;
-    background-color: #74a563;
-    transform: rotate(30deg);
-    margin-top: 216px;
-    margin-left: 118px; }
-  .mark_color_box .MC_num_115 {
-    display: block;
-    background-color: #89b15b;
-    transform: rotate(40deg);
-    margin-top: 231px;
-    margin-left: 104px; }
-  .mark_color_box .MC_num_116 {
-    display: block;
-    background-color: #decb4e;
-    transform: rotate(70deg);
-    margin-top: 245px;
-    margin-left: 93px; }
-  .mark_color_box .MC_num_117 {
-    display: block;
-    background-color: #e49c57;
-    transform: rotate(50deg);
-    margin-top: 258px;
-    margin-left: 80px; }
-  .mark_color_box .MC_num_118 {
-    display: block;
-    background-color: #de7a3d;
-    transform: rotate(40deg);
-    margin-top: 270px;
-    margin-left: 68px; }
-  .mark_color_box .MC_num_119 {
-    display: block;
-    background-color: #95505a;
-    transform: rotate(30deg);
-    margin-top: 283px;
     margin-left: 55px; }
-  .mark_color_box .MC_num_120 {
-    display: block;
-    background-color: #e68950;
-    transform: rotate(80deg);
-    margin-top: 298px;
-    margin-left: 43px; }
-  .mark_color_box .MC_num_121 {
-    display: block;
-    background-color: #e07267;
-    transform: rotate(60deg);
-    margin-top: 315px;
-    margin-left: 28px; }
-  .mark_color_box .MC_num_122 {
-    display: block;
-    background-color: #ef9f52;
-    transform: rotate(40deg);
-    margin-top: 330px;
-    margin-left: 18px; }
-  .mark_color_box .MC_num_123 {
-    display: block;
-    background-color: #ec7662;
-    transform: rotate(30deg);
-    margin-top: 340px;
-    margin-left: -3px; }
-  .mark_color_box .MC_num_124 {
-    display: block;
-    background-color: #cd4e4a;
-    transform: rotate(40deg);
-    margin-top: 310px;
-    margin-left: 10px; }
-  .mark_color_box .MC_num_125 {
-    display: block;
-    background-color: #decb4e;
-    transform: rotate(40deg);
-    margin-top: 305px;
-    margin-left: -7px; }
-  .mark_color_box .MC_num_126 {
-    display: block;
-    background-color: #f9e794;
-    transform: rotate(20deg);
-    margin-top: 322px;
-    margin-left: -2px; }
-  .mark_color_box .MC_num_127 {
-    display: block;
-    background-color: #df4843;
-    transform: rotate(40deg);
-    margin-top: 348px;
-    margin-left: 10px; }
-  .mark_color_box .MC_num_128 {
+  .mark_color_box .MC_num_12 {
     display: block;
     background-color: #80b494;
     transform: rotate(30deg);
-    margin-top: 216px;
-    margin-left: 142px; }
-  .mark_color_box .MC_num_129 {
-    display: block;
-    background-color: #699159;
-    transform: rotate(50deg);
-    margin-top: 231px;
-    margin-left: 129px; }
-  .mark_color_box .MC_num_130 {
-    display: block;
-    background-color: #7ad4c2;
-    transform: rotate(40deg);
-    margin-top: 231px;
-    margin-left: 150px; }
-  .mark_color_box .MC_num_131 {
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #c8d383;
-    transform: rotate(40deg);
-    margin-top: 248px;
-    margin-left: 112px; }
-  .mark_color_box .MC_num_132 {
-    display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #f19258;
-    transform: rotate(60deg);
-    margin-top: 258px;
+    margin-top: 128px;
     margin-left: 102px; }
-  .mark_color_box .MC_num_133 {
+  .mark_color_box .MC_num_13 {
     display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #e34742;
-    transform: rotate(60deg);
-    margin-top: 300px;
-    margin-left: 63px; }
-  .mark_color_box .MC_num_134 {
+    background-color: #8fcb4b;
+    transform: rotate(20deg);
+    margin-top: 163px;
+    margin-left: -10px; }
+  .mark_color_box .MC_num_14 {
     display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #df5894;
+    background-color: #93bdc8;
     transform: rotate(40deg);
-    margin-top: 314px;
-    margin-left: 45px; }
-  .mark_color_box .MC_num_135 {
+    margin-top: 165px;
+    margin-left: 76px; }
+  .mark_color_box .MC_num_15 {
     display: block;
-    width: 15px;
-    height: 15px;
-    background-color: #7e1916;
+    background-color: #89b15b;
+    transform: rotate(70deg);
+    margin-top: 153px;
+    margin-left: 35px; }
+  .mark_color_box .MC_num_16 {
+    display: block;
+    background-color: #9bbbd8;
+    transform: rotate(60deg);
+    margin-top: 194px;
+    margin-left: 52px; }
+  .mark_color_box .MC_num_17 {
+    display: block;
+    background-color: #6d8cb8;
+    transform: rotate(40deg);
+    margin-top: 206px;
+    margin-left: 20px; }
+  .mark_color_box .MC_num_18 {
+    display: block;
+    background-color: #515885;
+    transform: rotate(20deg);
+    margin-top: 210px;
+    margin-left: -10px; }
+  .mark_color_box .MC_num_19 {
+    display: block;
+    background-color: #9bbbd8;
     transform: rotate(80deg);
-    opacity: 0.5;
-    margin-top: 308px;
-    margin-left: 56px; }
+    margin-top: 192px;
+    margin-left: 120px; }
+  .mark_color_box .MC_num_20 {
+    display: block;
+    background-color: #7782b9;
+    transform: rotate(30deg);
+    margin-top: 210px;
+    margin-left: 86px; }
+  .mark_color_box .MC_num_21 {
+    display: block;
+    background-color: #6d557a;
+    transform: rotate(40deg);
+    margin-top: 240px;
+    margin-left: 58px; }
+  .mark_color_box .MC_num_22 {
+    display: block;
+    background-color: #8d6b9e;
+    transform: rotate(10deg);
+    margin-top: 256px;
+    margin-left: 16px; }
+  .mark_color_box .MC_num_23 {
+    display: block;
+    background-color: #e3acb1;
+    transform: rotate(60deg);
+    margin-top: 275px;
+    margin-left: 48px; }
+  .mark_color_box .MC_num_24 {
+    display: block;
+    background-color: #a25289;
+    transform: rotate(40deg);
+    margin-top: 256px;
+    margin-left: -19px; }
+  .mark_color_box .MC_num_25 {
+    display: block;
+    background-color: #b55b83;
+    transform: rotate(40deg);
+    margin-top: 306px;
+    margin-left: -10px; }
+  .mark_color_box .MC_num_26 {
+    display: block;
+    background-color: #e5c8bf;
+    transform: rotate(20deg);
+    margin-top: 290px;
+    margin-left: 19px; }
   .deco_box {
     top: 120px; }
   .mark_box {
