@@ -167,7 +167,8 @@ footer {
     margin: 0 auto; }
 
 .pf_de_pages .pages_img {
-  box-shadow: 3px 3px 15px #898989; }
+  -webkit-filter: drop-shadow(10px 10px 15px #afafaf);
+  filter: drop-shadow(10px 10px 15px #afafaf); }
 
 /*-----section gallery-----*/
 .pf_de_workN {
