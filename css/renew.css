@@ -1,0 +1,25 @@
+.renew_box{width: 100%; height: 100%; display: none; background-color: rgba(20,20,20,0.7); position: fixed; z-index: 5000; top: 0; left: 0;}
+.renew_box > button{width: 76px; height: 68px; display: none; background-image: url("../img/close.jpg"); background-position: center center; 
+    background-size: 100%; background-repeat: no-repeat; cursor: pointer; position: absolute; top: 0; right: 0; margin-top: 50px; margin-right: 50px;}
+.renew_box > button > span{width: 0; height: 0; display: none; font-size: 0;}
+.renew_box > .main_text{width: 900px; height: 200px; padding: 100px 0; background-color: #F5EEEE;
+    position: absolute; top: 50%; left: 50%; margin-top: -200px; margin-left: -450px;}
+.renew_box > .main_text > p {width: 100%; height: 200px; font-size: 25px; text-align: center; color: #292929; line-height: 70px;}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    
+    .renew_box > .main_text{width: 650px; height: 150px; padding: 100px 0; margin-top: -175px; margin-left: -325px;}
+    .renew_box > .main_text > p {width: 100%; height: 150px; font-size: 18px; text-align: center; color: #292929; line-height: 50px;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+    
+    .renew_box > .main_text{width: 420px; height: auto; padding: 50px 20px; margin-top: -150px; margin-left: -230px;}
+    .renew_box > .main_text > p {width: 100%; height: auto; font-size: 18px; text-align: center; color: #292929; line-height: 50px;}
+}
+
+@media screen and (max-width: 479px){
+    
+    .renew_box > .main_text{width: 260px; height: auto; padding: 30px 20px; margin-top: -180px; margin-left: -150px;}
+    .renew_box > .main_text > p {width: 100%; height: auto; font-size: 18px; text-align: center; color: #292929; line-height: 50px;}
+}
