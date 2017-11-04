@@ -163,7 +163,7 @@ $(document).on("ready",function(){
     /* Portfolio btn click show portfolio */
     var port_btn_pub = function(){
         
-        let publish = $(".pub_btn"),
+        var publish = $(".pub_btn"),
             pub_back_line = $(".publ_line"),
             pub_mark_line = $(".mark_line"),
             publish_box = $(".publish_bg_box"),
@@ -250,7 +250,7 @@ $(document).on("ready",function(){
     
     var port_btn_des = function(){
         
-        let publish = $(".pub_btn"),
+        var publish = $(".pub_btn"),
             pub_back_line = $(".publ_line"),
             pub_mark_line = $(".mark_line"),
             publish_box = $(".publish_bg_box"),
@@ -340,7 +340,7 @@ $(document).on("ready",function(){
     
     var port_btn_all = function(){
         
-        let publish = $(".pub_btn"),
+        var publish = $(".pub_btn"),
             pub_back_line = $(".publ_line"),
             pub_mark_line = $(".mark_line"),
             publish_box = $(".publish_bg_box"),
@@ -434,7 +434,7 @@ $(document).on("ready",function(){
     /* Portfolio List click change group */
     var change_btn = function(){
         
-        let pub_b = $(".other_pub"),
+        var pub_b = $(".other_pub"),
             des_b = $(".other_des"),
             all_b = $(".other_all"),
             p_type = $(".pub_type"),
@@ -597,7 +597,9 @@ $(document).on("ready",function(){
         //공통 요소 
         menuRestart();
         indexHeight();
-        port_btn();
+        port_btn_all();
+        port_btn_pub();
+        port_btn_des();
         change_btn();
         
         var winW = $(window).width();

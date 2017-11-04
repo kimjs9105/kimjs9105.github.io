@@ -22,18 +22,19 @@ $(document).on("ready",function(){
         
         secbtn_W.on("click",function(e){
             
+          console.log("화이트");  
+            
             e.preventDefault();
             
             /*해당 section scrollTop 설정*/
             var btn = $(this).index() + 1,
-                allBox = $('body'),
+                allBox = $('html, body'),
                 resumeBoxH = $(".resume_box").height(),
                 resumeCount = btn - 1,
                 resumeH = resumeBoxH * resumeCount,
                 headC = 60 * resumeCount;    
             
-            allBox.stop().animate({scrollTop: resumeH + headC}, 1500);
-            
+            allBox.stop().animate({'scrollTop': resumeH + headC}, 1500);
             
             /*전체 span/img 설정*/
             secbtn.children('span').css({display: "block", border : "3px solid #fff"});
@@ -50,11 +51,13 @@ $(document).on("ready",function(){
         
         secbtn_B.on("click",function(e){
                  
+            
+            console.log("블랙");
             e.preventDefault();
             
             /*해당 section scrollTop 설정*/
             var btn = $(this).index() + 1,
-                allBox = $('body'),
+                allBox = $('html, body'),
                 resumeBoxH = $(".resume_box").height(),
                 resumeCount = btn - 1,
                 resumeH = resumeBoxH * resumeCount,
