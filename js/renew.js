@@ -1,7 +1,7 @@
 $(function(){
     
     
-    $('.pofol_link').on('click',function(){
+    $('.non_detail').on('click',function(){
         
         $('.renew_box').css({display: 'block'});
         $('#renew_close').css({display: 'block'});
@@ -14,4 +14,4 @@ $(function(){
         
     })
     
-})
+});

@@ -105,7 +105,7 @@ footer {
       background-color: #282c2e; }
 
 /*---------- section 별 css ----------*/
-/*-----section 00 content-----*/
+/*-----section 00 intro-----*/
 .int_textbox {
   height: 400px;
   float: left; }
@@ -132,7 +132,7 @@ footer {
     height: auto;
     display: block; }
 
-/*-----section 01 content-----*/
+/*-----section 01 infomation-----*/
 .basic_info_box {
   height: 500px;
   float: left; }
@@ -222,7 +222,7 @@ footer {
   bottom: 0;
   right: 0; }
 
-/*-----section 02 content-----*/
+/*-----section 02 history-----*/
 .history_box {
   float: left;
   position: relative; }
@@ -597,7 +597,7 @@ footer {
       display: block; }
     .pofol_list_box .pofol_list > li:hover .pofol_box > .sumnail_box {
       animation: sumnailHover 1s 1;
-      background-size: 140%; }
+      background-size: 120%; }
     .pofol_list_box .pofol_list > li:hover .pofol_box > .sumnail_box > .pf_btn {
       display: none; }
     .pofol_list_box .pofol_list > li:hover .pofol_box > .sumnail_hover {
@@ -1202,8 +1202,8 @@ footer {
   .basic_info_box {
     width: 500px; }
   .conBox01_img {
-    width: 300px;
-    margin-right: 180px; }
+    width: 350px;
+    margin-right: 140px; }
   /*---section 02 content---*/
   .history_box {
     width: 100%;
@@ -1452,6 +1452,8 @@ footer {
         margin-right: -5px; }
       .history_box > .edu_box > li:nth-child(4) {
         width: 160px;
+        height: 110px;
+        padding-top: 20px;
         margin-top: -25px; }
         .history_box > .edu_box > li:nth-child(4) .his_line {
           width: 1px;
@@ -1632,7 +1634,7 @@ footer {
   .basic_info_box {
     width: 450px; }
   .conBox01_img {
-    width: 340px;
+    width: 400px;
     margin-right: 0; }
   /*---section 02 content---*/
   .history_box {
@@ -1814,7 +1816,7 @@ footer {
   .basic_info_box {
     width: 450px; }
   .conBox01_img {
-    width: 360px;
+    width: 400px;
     margin-right: 90px; }
   /*---section 02 content---*/
   .history_box {
@@ -1970,7 +1972,7 @@ footer {
   .basic_info_box {
     width: 450px; }
   .conBox01_img {
-    width: 380px;
+    width: 450px;
     margin-right: 90px; }
   /*---section 02 content---*/
   .history_box {
@@ -1986,7 +1988,7 @@ footer {
       .history_box > .edu_box > li:nth-child(4) {
         float: right; }
     .history_box > .career_box {
-      margin-left: 70px; }
+      margin-left: 90px; }
       .history_box > .career_box > li:nth-child(2) {
         margin-right: 5px; }
       .history_box > .career_box > li:nth-child(3) {
@@ -2069,8 +2071,8 @@ footer {
   .basic_info_box {
     width: 550px; }
   .conBox01_img {
-    width: 425px;
-    margin-right: 150px; }
+    width: 500px;
+    margin-right: 100px; }
   /*---section 02 content---*/
   .history_box {
     width: 1100px;
@@ -2080,25 +2082,31 @@ footer {
       .history_box > ul > li {
         margin-right: 26px; }
     .history_box .his_mid_line {
-      width: 1000px;
-      margin-left: -500px; }
+      width: 1040px;
+      margin-left: -520px; }
     .history_box > .edu_box {
       width: 950px;
-      margin-left: 90px; }
+      margin-left: 50px; }
       .history_box > .edu_box > li:nth-child(1) {
         margin-right: 26px; }
       .history_box > .edu_box > li:nth-child(2) {
         margin-right: 100px; }
     .history_box > .career_box {
-      margin-left: 150px; }
+      width: 1000px;
+      margin-left: 140px; }
       .history_box > .career_box > li:nth-child(1) {
         margin-right: 26px; }
       .history_box > .career_box > li:nth-child(2) {
         margin-right: 15px; }
       .history_box > .career_box > li:nth-child(3) {
-        margin-right: 26px; }
+        margin-right: 16px; }
       .history_box > .career_box > li:nth-child(4) {
+        margin-right: 16px; }
+      .history_box > .career_box > li:nth-child(5) {
         float: right; }
+        .history_box > .career_box > li:nth-child(5) .his_text {
+          width: 120px;
+          margin: 0 auto; }
   /*---section 03 content---*/
   .license_box {
     width: 900px;

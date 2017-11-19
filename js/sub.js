@@ -22,8 +22,6 @@ $(document).on("ready",function(){
         
         secbtn_W.on("click",function(e){
             
-          console.log("화이트");  
-            
             e.preventDefault();
             
             /*해당 section scrollTop 설정*/
@@ -51,8 +49,6 @@ $(document).on("ready",function(){
         
         secbtn_B.on("click",function(e){
                  
-            
-            console.log("블랙");
             e.preventDefault();
             
             /*해당 section scrollTop 설정*/
@@ -302,75 +298,140 @@ $(document).on("ready",function(){
         
     };//contactH_small();
     
-//    var galleryMainView = function(){
-//        
-//        for( c = 0; c < 5; c++ ){
-//            
-//            var showBox = $("#gallery_" + c),
-//                showImg = showBox.children('img'),
-//                listBox = $("#gallery_list_" + c),
-//                listImg = listBox.children('li'),
-//                firstImg = listImg.eq(0).children('img'),
-//                mainImg = firstImg.attr('src');
-//            
-//            showImg.attr('src',mainImg);
-//                
-//            var sendBox = listImg.eq(0).children('.send_sum'),
-//                sendFirTitle = sendBox.children('dt'),
-//                sendFirText = sendBox.children('dd'),
-//                showSumBox = showBox.children('.img_sum'),
-//                showTitle = showSumBox.children('dt'),
-//                showText = showSumBox.children('dd');
-//
-//            var mainTitle = sendFirTitle.text(),
-//                mainText = sendFirText.text();
-//
-//            showTitle.text(mainTitle);
-//            showText.text(mainText);
-//            
-//            var checkShow = listImg.children(".checkShow"),
-//                mainCheck = listImg.eq(0).children('.checkShow');
-//        
-//            checkShow.hide();
-//            mainCheck.show();
-//
-//        }
-//        
-//    };//galleryMainView();
     /* portfolio page gallery */
-    var galleryClick = function(){
         
-        var imgListBox = $(".gallery_list"),
-            imgListImg = imgListBox.children('li');
+    var main_show_box = $('.workN_show'),
+        img_list_box = $('.workN_list');
+
+    var first_box = img_list_box.children('li').eq(0),
+        first_img = first_box.find('img').attr('src'),
+        first_title = first_box.find('dt').text(),
+        first_text = first_box.find('dd').text();
+
+        main_show_box.find('img').attr('src', first_img);
+        main_show_box.find('dt').text(first_title);
+        main_show_box.find('dd').text(first_text);
+    
+    //이미지 가운데 정렬    
+    var mainboxW = main_show_box.width(),
+        mainboxH = main_show_box.height(),
+        imgW = main_show_box.find('img').width(),
+        imgH = main_show_box.find('img').height();
+
+    function imgPosition(){
+
+        var newW = main_show_box.find('img').width(),
+            newH = main_show_box.find('img').height();
+
+        main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
+
+    }
+
+    if(imgW > imgH){
+
+        if(imgW >= mainboxW){
+
+            main_show_box.find('img').css({width: "95%", height: 'auto'});
+            imgPosition();
+
+        }
+
+        imgPosition();
+
+    }else if(imgH > imgW){
+
+        if(imgH >= mainboxW){
+
+            main_show_box.find('img').css({width: 'auto', height: "95%"});
+            imgPosition();
+
+        }
+
+        imgPosition();
+
+    }else if(imgW === imgH){
+
+        if(imgW >= mainboxW){
+
+            main_show_box.find('img').css({width: "95%", height: 'auto'});
+            imgPosition();
+
+        }
+
+        imgPosition();
+
+
+    }
         
-        imgListImg.on('click',function(){
+    function gallery(){
+        
+        img_list_box.children('li').on('click',function(){
             
-            var listSec = $(this).closest('section'),
-                secGalleryBox = listSec.find(".gallery_show"),
-                showGallery = secGalleryBox.children('img'),
-                check_div = imgListImg.children(".workN_check"),
-                check_box = $(this).children(".workN_check"),
-                clickImg = $(this).children('img'),
-                linkImg = clickImg.attr('src');
+            var selec_img = $(this).find('img').attr('src'),
+                selec_title = $(this).find('dt').text(),
+                selec_text = $(this).find('dd').text();
             
-            check_div.removeClass("checkShow");
-            check_box.addClass("checkShow");
-            showGallery.attr('src',linkImg);
+            main_show_box.find('img').attr('src', selec_img);
+            main_show_box.find('dt').text(selec_title);
+            main_show_box.find('dd').text(selec_text);
             
-            var showText = secGalleryBox.children(".img_sum"),
-                showText_dt = showText.children('dt'),
-                showText_dd = showText.children('dd'),
-                clickText = $(this).children(".send_sum"),
-                clickText_dt = clickText.children('dt').text(),
-                clickText_dd = clickText.children('dd').text();
+            img_list_box.children('li').find('div').removeClass('checkShow');
+            $(this).find('div').addClass('checkShow');
             
-            showText_dt.text(clickText_dt);
-            showText_dd.text(clickText_dd);
+            //이미지 가운데 정렬    
+            var mainboxW = main_show_box.width(),
+                mainboxH = main_show_box.height(),
+                imgW = main_show_box.find('img').width(),
+                imgH = main_show_box.find('img').height();
+            
+            function imgPosition(){
+                    
+                var newW = main_show_box.find('img').width(),
+                    newH = main_show_box.find('img').height();
+                    
+                main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
+                
+            }
+            
+            if(imgW > imgH){
+                
+                if(imgW >= mainboxW){
+                
+                    main_show_box.find('img').css({width: "98%", height: 'auto'});
+                    imgPosition();
+                    
+                }
+                
+                imgPosition();
+                                
+            }else if(imgH > imgW){
+                
+                if(imgH >= mainboxW){
+                
+                    main_show_box.find('img').css({width: 'auto', height: "98%"});
+                    imgPosition();
+                    
+                }
+                
+                imgPosition();
+                
+            }else if(imgW === imgH){
+                
+                if(imgW >= mainboxW){
+                
+                    main_show_box.find('img').css({width: "98%", height: 'auto'});
+                    imgPosition();
+                    
+                }
+                
+                imgPosition();
+                
+                
+            }
             
         });
         
-    };//galleryClick();
-    
+    }
     
     /* portfolio page popup */
     var link_popup = function(){
@@ -421,8 +482,8 @@ $(document).on("ready",function(){
     var winW = $(window).width();
     
     contactH_large();
-    galleryClick();
     link_popup();
+    gallery();
     
     if( winW > 1007 ){
         
@@ -450,8 +511,8 @@ $(document).on("ready",function(){
     $(window).resize(function(){
         
         //공통 요소 
-        galleryClick();
         link_popup();
+        gallery();
         
         var winW = $(window).width();
     
