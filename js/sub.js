@@ -299,7 +299,6 @@ $(document).on("ready",function(){
     };//contactH_small();
     
     /* portfolio page gallery */
-        
     var main_show_box = $('.workN_show'),
         img_list_box = $('.workN_list');
 
@@ -318,48 +317,65 @@ $(document).on("ready",function(){
         imgW = main_show_box.find('img').width(),
         imgH = main_show_box.find('img').height();
 
-    function imgPosition(){
-
-        var newW = main_show_box.find('img').width(),
-            newH = main_show_box.find('img').height();
-
-        main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
-
-    }
-
     if(imgW > imgH){
 
         if(imgW >= mainboxW){
 
             main_show_box.find('img').css({width: "95%", height: 'auto'});
-            imgPosition();
+            
+            var rebox = $('.workN_show').find('img'),
+                newW = rebox.width(),
+                newH = rebox.height();
+
+            main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
 
         }
 
-        imgPosition();
+        var rebox_non = $('.workN_show').find('img'),
+            newW_non = rebox_non.width(),
+            newH_non = rebox_non.height();
+
+        main_show_box.find('img').css({marginTop: -newH_non /2, marginLeft: -newW_non / 2});
 
     }else if(imgH > imgW){
 
         if(imgH >= mainboxW){
 
             main_show_box.find('img').css({width: 'auto', height: "95%"});
-            imgPosition();
+            
+            var rebox = $('.workN_show').find('img'),
+                newW = rebox.width(),
+                newH = rebox.height();
+
+            main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
 
         }
 
-        imgPosition();
+        var rebox_non = $('.workN_show').find('img'),
+            newW_non = rebox_non.width(),
+            newH_non = rebox_non.height();
+
+        main_show_box.find('img').css({marginTop: -newH_non /2, marginLeft: -newW_non / 2});
 
     }else if(imgW === imgH){
 
         if(imgW >= mainboxW){
 
             main_show_box.find('img').css({width: "95%", height: 'auto'});
-            imgPosition();
+            
+            var rebox = $('.workN_show').find('img'),
+                newW = rebox.width(),
+                newH = rebox.height();
+
+            main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
 
         }
 
-        imgPosition();
+        var rebox_non = $('.workN_show').find('img'),
+            newW_non = rebox_non.width(),
+            newH_non = rebox_non.height();
 
+        main_show_box.find('img').css({marginTop: -newH_non /2, marginLeft: -newW_non / 2});
 
     }
         
@@ -384,49 +400,68 @@ $(document).on("ready",function(){
                 imgW = main_show_box.find('img').width(),
                 imgH = main_show_box.find('img').height();
             
-            function imgPosition(){
-                    
-                var newW = main_show_box.find('img').width(),
-                    newH = main_show_box.find('img').height();
-                    
-                main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
-                
-            }
-            
             if(imgW > imgH){
-                
+
                 if(imgW >= mainboxW){
-                
-                    main_show_box.find('img').css({width: "98%", height: 'auto'});
-                    imgPosition();
-                    
+
+                    main_show_box.find('img').css({width: "95%", height: 'auto'});
+
+                    var rebox = $('.workN_show').find('img'),
+                        newW = rebox.width(),
+                        newH = rebox.height();
+
+                    main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
+
                 }
-                
-                imgPosition();
-                                
+
+                var rebox_non = $('.workN_show').find('img'),
+                    newW_non = rebox_non.width(),
+                    newH_non = rebox_non.height();
+
+                main_show_box.find('img').css({marginTop: -newH_non /2, marginLeft: -newW_non / 2});
+
             }else if(imgH > imgW){
-                
+
                 if(imgH >= mainboxW){
-                
-                    main_show_box.find('img').css({width: 'auto', height: "98%"});
-                    imgPosition();
-                    
+
+                    main_show_box.find('img').css({width: 'auto', height: "95%"});
+
+                    var rebox = $('.workN_show').find('img'),
+                        newW = rebox.width(),
+                        newH = rebox.height();
+
+                    main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
+
                 }
-                
-                imgPosition();
-                
+
+                var rebox_non = $('.workN_show').find('img'),
+                    newW_non = rebox_non.width(),
+                    newH_non = rebox_non.height();
+
+                main_show_box.find('img').css({marginTop: -newH_non /2, marginLeft: -newW_non / 2});
+
+
             }else if(imgW === imgH){
-                
+
                 if(imgW >= mainboxW){
-                
-                    main_show_box.find('img').css({width: "98%", height: 'auto'});
-                    imgPosition();
-                    
+
+                    main_show_box.find('img').css({width: "95%", height: 'auto'});
+
+                    var rebox = $('.workN_show').find('img'),
+                        newW = rebox.width(),
+                        newH = rebox.height();
+
+                    main_show_box.find('img').css({marginTop: -newH /2, marginLeft: -newW / 2});
+
                 }
-                
-                imgPosition();
-                
-                
+
+                var rebox_non = $('.workN_show').find('img'),
+                    newW_non = rebox_non.width(),
+                    newH_non = rebox_non.height();
+
+                main_show_box.find('img').css({marginTop: -newH_non /2, marginLeft: -newW_non / 2});
+
+
             }
             
         });
