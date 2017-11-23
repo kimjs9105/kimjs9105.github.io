@@ -314,8 +314,8 @@ $(document).on("ready",function(){
     //이미지 가운데 정렬    
     var mainboxW = main_show_box.width(),
         mainboxH = main_show_box.height(),
-        imgW = main_show_box.find('img').width(),
-        imgH = main_show_box.find('img').height();
+        imgW = first_box.find('img').width(),
+        imgH = first_box.find('img').height();
 
     if(imgW > imgH){
 
@@ -397,8 +397,8 @@ $(document).on("ready",function(){
             //이미지 가운데 정렬    
             var mainboxW = main_show_box.width(),
                 mainboxH = main_show_box.height(),
-                imgW = main_show_box.find('img').width(),
-                imgH = main_show_box.find('img').height();
+                imgW = $(this).find('img').width(),
+                imgH = $(this).find('img').height();
             
             if(imgW > imgH){
 
