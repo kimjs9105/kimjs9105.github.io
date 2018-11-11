@@ -75,15 +75,15 @@
 
                     console.log(thisPos);
 
-                    if(thisPos >= 0){
+                    if(thisPos >= -40){
                         $(this).stop().animate({scrollLeft: 0}, 100);
-                    }else if(thisPos < 0 && thisPos >= -200){
+                    }else if(thisPos < -40 && thisPos >= -240){
                         $(this).stop().animate({scrollLeft: 200}, 100);
-                    }else if(thisPos < -200 && thisPos >= -400){
+                    }else if(thisPos < -240 && thisPos >= -440){
                         $(this).stop().animate({scrollLeft: 400}, 100);
-                    }else if(thisPos < -400 && thisPos >= -600){
+                    }else if(thisPos < -440 && thisPos >= -640){
                         $(this).stop().animate({scrollLeft: 600}, 100);
-                    }else if(thisPos < -600){
+                    }else if(thisPos < -640){
                         $(this).stop().animate({scrollLeft: 800}, 100);
                     }
                 });
