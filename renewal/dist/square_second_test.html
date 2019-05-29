@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .wrap{ width: 800px; height: 600px; margin: 0 auto; overflow: hidden; }
+    .wrap div{ width: 200px; height: 200px; float: left; position: relative; }
+    .wrap div:before { width: 200px; height: 200px; content: "cover"; display: block; position: absolute; top: 0; left: 0; margin-left: 100%;
+    background: #333; color: #fff; font-size: 30px; text-align: center; line-height: 200px;}
+  </style>
+</head>
+<body>
+  <div class="wrap" id="coverWrap">
+    <div style="background: #fadc54;"></div>
+    <div style="background: #2a9854;"></div>
+    <div style="background: #aadcff;"></div>
+    <div style="background: #a0f58f;"></div>
+    <div style="background: #650acc;"></div>
+    <div style="background: #342157;"></div>
+    <div style="background: #910453;"></div>
+    <div style="background: #112549;"></div>
+    <div style="background: #a5fef5;"></div>
+    <div style="background: #1efacd;"></div>
+    <div style="background: #134786;"></div>
+    <div style="background: #910fae;"></div>
+  </div>
+
+  <script>
+    var mainBox = document.getElementById('coverWrap');
+
+    var boxPosition = [];
+
+    for(var i=0; i<mainBox.childElementCount; i++){
+      var positionTop = mainBox.children[i].offsetTop;
+      var positionLeft = mainBox.children[i].offsetLeft;
+
+      console.log('div' + i + " top : " + positionTop + " / Left : " + positionLeft);
+
+    }
+
+    mainBox.addEventListener('mousemove', function(event){
+      var xm = event.pageX;
+      var ym = event.pageY;
+
+      console.log('x좌표 : ' + xm);
+      console.log('y좌표 : ' + ym);
+    });
+  </script>
+</body>
+</html>

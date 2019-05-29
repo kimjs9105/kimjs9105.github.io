@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .wrap{ width: 500px; height: 500px; margin: 0 auto; overflow: hidden; position: relative; background: #fadc54;}
+    .wrap div { width: 500px; height: 500px; display: block; position: absolute; top: 0; left: 0; margin-left: -100%;
+    background: #333; color: #fff; font-size: 30px; text-align: center; line-height: 200px; transition: all 1s; -webkit-transition: all 1s;}
+
+    .left_in div {margin-left: 0%;}
+    .right_in div {margin-right: 0%;}
+    .left_in div {margin-left: 0%;}
+    .right_in div {margin-right: 0%;}
+    .left_out div {margin-left: 0%;}
+    .right_out div {margin-left: 0%;}
+
+    .right_out div {margin-left: 100%;}
+  </style>
+</head>
+<body>
+  <div class="wrap" id="coverWrap">
+    <div>cover</div>
+  </div>
+
+  <script>
+    var mainBox = document.getElementById('coverWrap');
+
+    var boxTop = mainBox.offsetTop;
+    var boxBottom = boxTop + 500;
+    var boxLeft = mainBox.offsetLeft;
+    var boxRight = boxLeft + 500;
+
+    var mouseEnterX, mouseEnterY;
+    var mouseMoveX, mouseMoveY;
+    var mouseLeaveX, mouseLeaveY;
+
+    mainBox.addEventListener('mouseenter', function(event){
+
+      mouseEnterX = event.pageX;
+      mouseEnterY = event.pageY;
+
+      if(boxLeft < mouseEnterX && boxLeft + 50 >= mouseEnterX){
+        console.log('왼쪽 진입');
+
+        mainBox.children[0].style.left = 0;
+        mainBox.children[0].style.right = "auto";
+        mainBox.children[0].style.marginLeft = "-100%";
+
+        mainBox.className = 'wrap left_in';
+
+      }else if(boxRight > mouseEnterX && boxRight - 50 <= mouseEnterX){
+        console.log('오른쪽 진입');
+
+        mainBox.children[0].style.left = "auto";
+        mainBox.children[0].style.right = 0;
+        mainBox.children[0].style.marginRight = "-100%";
+
+        mainBox.className = 'wrap right_in';
+
+      }else if(boxTop < mouseEnterY && boxTop + 50 >= mouseEnterY){
+        console.log('위쪽 진입');
+      }else if(boxBottom > mouseEnterY && boxBottom - 50 <= mouseEnterY){
+        console.log('아래쪽 진입');
+      }
+
+    });
+
+    mainBox.addEventListener('mouseleave', function(event){
+
+      mouseLeaveX = event.pageX;
+      mouseLeaveY = event.pageY;
+
+      // console.log('mouse leave X : ' + mouseLeaveX);
+      // console.log('mouse leave Y : ' + mouseLeaveY);
+
+      // console.log('box top : ' + boxTop);
+      // console.log('box bottom : ' + boxBottom);
+      // console.log('box left : ' + boxLeft);
+      // console.log('box right : ' + boxRight);
+      //
+      // var LP = mouseLeaveX - boxLeft,
+      //     RP = mouseLeaveX - boxRight,
+      //     TP = mouseLeaveY - boxTop,
+      //     BP = mouseLeaveY - boxBottom;
+      //
+      // console.log('LP : ' + LP );
+      // console.log('RP : ' + RP );
+      // console.log('TP : ' + TP );
+      // console.log('BP : ' + BP );
+
+      if(boxLeft > mouseLeaveX){
+        console.log('왼쪽 나감');
+        //  && boxLeft + 50 >= mouseLeaveX
+        // mainBox.className = 'wrap right_out';
+
+      }else if(boxRight < mouseLeaveX){
+        console.log('오른쪽 나감');
+
+        // && boxRight - 50 <= mouseLeaveX
+      }else if(boxTop > mouseLeaveY){
+        console.log('위쪽 나감');
+
+        // && boxTop + 50 >= mouseLeaveY
+      }else if(boxBottom < mouseLeaveY){
+        console.log('아래쪽 나감');
+
+         // && boxBottom - 50 <= mouseLeaveY
+      }
+
+    });
+  </script>
+</body>
+</html>
