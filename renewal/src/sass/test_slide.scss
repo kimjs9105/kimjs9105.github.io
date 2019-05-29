@@ -7,10 +7,10 @@ font-family: 'Monoton', cursive;
 */
 
 #wrap{
-  width: 100%; height: 100%;
+  width: 100%; height: 100vh; overflow: hidden;
 
   nav{
-    width: 250px; height: 100%; background: #f7f7f7;
+    width: 250px; height: 100vh; background: #f7f7f7;
     position: fixed; top: 0; left: 0;
   }
 
@@ -103,7 +103,7 @@ font-family: 'Monoton', cursive;
 
 // page : portfolio slide
 .slide_main{
-  width: 1300px; height: 100%; float: left; background: #eee; position: relative;
+  width: 1300px; height: 100vh; float: left; background: #eee; position: relative; overflow: hidden;
 
   > div { display: none; }
   > .on { display: block; }
@@ -126,8 +126,11 @@ font-family: 'Monoton', cursive;
     p{ font: 500 16px/24px 'Noto Sans KR','Noto Sans',sans-serif; color: #222; }
 
     button{
-      width: 50px; height: 50px; background: #fff; border: 0;
+      width: 50px; height: 50px; background: #fff; border: 0; opacity: 0;
       position: absolute; bottom: 0; right: 0; margin-bottom: 50px; margin-right: 50px;
+
+
+      &.act{ opacity: 1; transition: all 0.5s 0.3s; -webkit-transition: all 0.5s 0.3s; }
 
       &:before, &:after{
         content: " "; display: block; width: 17px; height: 3px; background: #222;
@@ -168,7 +171,7 @@ font-family: 'Monoton', cursive;
 }
 
 .slide_side{
-  width: calc(100% - 1300px); height: 100%; float: left; background: #989898;
+  width: calc(100% - 1300px); height: 100vh; float: left; background: #989898;
   overflow: hidden; position: relative;
 
   .slide_side_cover{
