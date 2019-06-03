@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VUE JS 예습</title>
+
+  <!-- 콘솔 경고를 포함한 개발 버전(최상위 버전) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+  <!-- 상용 버전, 속도와 용량 최적화 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <!-- 해당 자료는 https://kr.vuejs.org/v2/guide/index.html 를 기초로 만들어진 자료임 -->
+  <!-- 00. hello world 출력하기 -->
+  <!--
+    <div id="app">
+      {{ message }}
+    </div>
+
+    <script>
+      var app = new Vue({
+        el : '#app',
+        data : {
+          message : "hello world!"
+        }
+      })
+    </script>
+  -->
+
+
+
+  <!-- 01.속성값을 이용하여 알람창 만들기 -->
+  <!--
+    <div id="app02">
+      <span v-bind:title="message">
+        마우스를 올리면 숨겨진 메세지를 확인 할 수 있습니다
+      </span>
+    </div>
+
+    <script>
+      var app2 = new Vue({
+        el : '#app02',
+        data : {
+          message : '이 페이지는 ' + new Date() + '에 로드 되었습니다.'
+        }
+      })
+    </script>
+  -->
+  <!--
+    * 디렉티브 : Vue에서 제공하는 특수 속성으로 'v-'접두어가 붙어있음.
+                렌더링 된 DOM에 특수한 반응 동작을 실행함.
+   -->
+
+
+
+  <!-- 02.조건문과 반복문 구성하기 -->
+  <!-- 02-1 조건문 작성하기 -->
+  <!--
+    <div id="app03">
+      <p v-if="seen">이 문장을 볼수 있다면 해당 상태는 true 입니다</p>
+    </div>
+
+    <script>
+      var app3 = new Vue({
+        el : '#app03',
+        data : {
+          seen : true
+        }
+      });
+    </script>
+  -->
+  <!--
+    * 브라우저 로드 후 콘솔창에 [app3.seen = false]를 입력하면 사라지는 것을 확인 -> false가 적용됨
+   -->
+
+   <!-- 02-2 반복문 작성하기 -->
+   <!--
+     <div id="app04">
+       <ul>
+         <li v-for="todoS in todoList">
+           {{ todoS.list }}
+         </li>
+       </ul>
+     </div>
+
+     <script>
+       var app4 = new Vue({
+         el : '#app04',
+         data : {
+           todoList : [
+             { list : 'Vue JS 배우기' },
+             { list : 'Vue JS를 통한 게시판 구성하기' }
+           ]
+         }
+       });
+     </script>
+   -->
+   <!--
+      * 리스트로 출력될 변수 값은 사용자가 원하는 값으로 지정 가능하다
+        : todoList, todoS, list 변수 명 변경 가능
+    -->
+</body>
+</html>
