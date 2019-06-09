@@ -5,15 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Noto+Sans|Noto+Sans+KR|Staatliches" rel="stylesheet">
+
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/test_slide.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Noto+Sans|Noto+Sans+KR|Staatliches" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Rajdhani:500,600" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/nav.js"></script>
+
 </head>
 <body>
   <div id="wrap">
-    <nav>
-      <!-- 네비게이션 -->
+
+    <nav id="gnb" data-main=0 data-sub=0>
+        <button type="button" class="open"></button>
+        <!-- 활성화 버전 메뉴 -->
+        <!-- <div id="actGnb" class="on">
+            <ul>
+                <li class="title">SUB01</li>
+                <li class="open">
+                    <ul>
+                        <li><a href="#!" class="act">LOGO&HISTORY</a></li>
+                        <li><a href="#!">RESPONSIBILITY</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> -->
+        <!-- 전체 버전 메뉴 -->
+        <!-- <div id="allGnb">
+            <ul>
+                <li class="open">
+                    <a href="#!" class="title">SUB01</a>
+                    <ul>
+                        <li><a href="#!">LOGO&HISTORY</a></li>
+                        <li><a href="#!">RESPONSIBILITY</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#!" class="title">SUB02</a>
+                    <ul>
+                        <li><a href="#!">2016</a></li>
+                        <li><a href="#!">2017</a></li>
+                        <li><a href="#!">2018</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#!" class="title">SUB03</a>
+                    <ul>
+                        <li><a href="#!">HTLM</a></li>
+                        <li><a href="#!">CSS</a></li>
+                        <li><a href="#!">Javascript/jQuery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#!" class="title">SUB04</a>
+                    <ul>
+                        <li><a href="#!">Header</a></li>
+                        <li><a href="#!">Footer</a></li>
+                        <li><a href="#!">Slide</a></li>
+                    </ul>
+                </li>
+                <li><a href="#!" class="title">SUB05</a></li>
+            </ul>
+        </div> -->
+        <!-- 전체 버전 메뉴 배경 -->
     </nav>
+    <div class="gnb_back"></div>
+
     <section>
       <div class="slide_main" id="slideCon">
         <div class="slideBox on">

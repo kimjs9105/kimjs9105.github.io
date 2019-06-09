@@ -5,15 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Noto+Sans|Noto+Sans+KR|Staatliches" rel="stylesheet">
+
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/test_slide.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Noto+Sans|Noto+Sans+KR|Staatliches" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Rajdhani:500,600" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/nav.js"></script>
+
 </head>
 <body>
   <div id="wrap">
-    <nav>
-      <!-- 네비게이션 -->
+
+    <nav id="gnb" data-main=2 data-sub=0>
+      <button type="button" class="open"></button>
     </nav>
+    <div class="gnb_back"></div>
+
     <section>
       <div class="section_contact">
         <h3>연락처</h3>

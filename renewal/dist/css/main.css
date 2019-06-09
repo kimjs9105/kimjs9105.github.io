@@ -1,3 +1,4 @@
+/* Mainpage Style Sheet */
 /*
 font-family: 'Staatliches', cursive;
 font-family: 'Major Mono Display', monospace;
@@ -7,7 +8,10 @@ font-family: 'Monoton', cursive;
 */
 #wrap {
   width: 100%;
-  height: auto; }
+  height: auto;
+  /* Mainpage Nav */
+  /* Mainpage Nav */
+  /* Mainpage Section 01 : Slide banner */ }
   #wrap #navBtn {
     width: 40px;
     height: 40px;

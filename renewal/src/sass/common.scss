@@ -1,0 +1,123 @@
+/* Subpage Hader, Nav , Footer Style Sheet */
+
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+*/
+
+#wrap{
+    width: 100%; height: 100%; min-height: 900px; overflow: hidden;
+
+    // sub page common nav
+    nav{
+        width: 300px; height: 100%; background: #f7f7f7;
+        position: fixed; top: 0; left: 0; z-index: 15;
+        transition: all 0.5s; -webkit-transition: all 0.5s;
+
+        &.on{ width: 400px; }
+    }
+
+    .gnb_back{
+        width: 100%; height: 100%; background: rgba(20,20,20,0.2);
+        position: fixed; top: 0; left: 0; z-index: 5; opacity: 0; display: none;
+        transition: opacity 0.5s; -webkit-transition: opacity 0.5s;
+
+        &.on{ opacity: 1; display: block; }
+    }
+}
+
+/* Subpage Common Nav*/
+nav {
+    button{
+        width: 40px; height: 40px;
+        position: absolute; top: 50%; left: 0; margin-top: -20px; margin-left: 20px;
+
+        &:before, &:after{
+            content: ""; display: block; width: 12px; height: 2px; background: #222;
+            position: absolute; top: 50%; left: 50%; margin-left: -6px;
+            // transition: all 0.5s; -webkit-transition: all 0.5s;
+        }
+
+        &:before{ transform: rotate(-45deg); }
+        &:after{ transform: rotate(45deg); }
+
+        &.open{
+            &:before{ margin-top: -4px; }
+            &:after{ margin-top: 3px; }
+        }
+
+        &.close{
+            &:before{ margin-top: 0; animation: navBtnCloseTop 0.6s 1; }
+            &:after{ margin-top: 0; animation: navBtnCloseBottom 0.6s 0.1s 1; }
+        }
+
+        &.reopen{
+            &:before{ margin-top: -4px; animation: navBtnOpenTop 0.6s 1; }
+            &:after{ margin-top: 3px; animation: navBtnOpenBottom 0.6s 0.1s 1; }
+        }
+    }
+
+    div{
+        width: calc(100% - 90px); height: auto; display: none;
+        position: absolute; top: 50%; right: 0; transform: translateY(-50%); -webkit-transform: translateY(-50%);
+
+        li{
+            width: 100%; height: auto; margin: 5px 0;
+            a{
+                width: calc(100% - 40px); height: 30px; position: relative;
+                font: 500 20px/30px 'Rajdhani', sans-serif; color: #222;
+
+                &.act::after{
+                    content: ""; display: block; width: 30px; height: 3px;
+                    position: absolute; top: 50%; right: 0; margin-top: -1px;
+                    background: linear-gradient(90deg, #7a7a7a, #f7f7f7)
+                }
+            }
+
+            ul{ display: none; }
+        }
+
+        .title{
+            height: 50px; margin-bottom: 10px;
+            font: 600 30px/50px 'Rajdhani', sans-serif;
+
+            &:last-of-type{ margin-bottom: 0; }
+        }
+
+        &.on{ display: block; }
+
+        .open > ul{ display: block; margin-bottom: 30px; }
+        .nonSub > ul{ display: none; }
+    }
+
+
+}
+
+// nav animation setting
+@keyframes navBtnCloseTop{
+    0%{ margin-top: -4px; margin-left: -6px; opacity: 1; }
+    45%{ margin-top: -11px; margin-left: 1px; opacity: 0; }
+    55%{ margin-top: 7px; margin-left: -13px; opacity: 0; }
+    100%{ margin-top: 0px; margin-left: -6px; opacity: 1; }
+}
+
+@keyframes navBtnOpenTop{
+    0%{ margin-top: 0px; margin-left: -6px; opacity: 1; }
+    45%{ margin-top: 7px; margin-left: -13px; opacity: 0; }
+    55%{ margin-top: -11px; margin-left: 1px; opacity: 0; }
+    100%{ margin-top: -4px; margin-left: -6px; opacity: 1; }
+}
+@keyframes navBtnCloseBottom{
+    0%{ margin-top: 3px; margin-left: -6px; opacity: 1; }
+    45%{ margin-top: 10px; margin-left: 1px; opacity: 0; }
+    55%{ margin-top: -7px; margin-left: -13px; opacity: 0; }
+    100%{ margin-top: 0px; margin-left: -6px; opacity: 1; }
+}
+
+@keyframes navBtnOpenBottom{
+    0%{ margin-top: 0px; margin-left: -6px; opacity: 1; }
+    45%{ margin-top: -7px; margin-left: -13px; opacity: 0; }
+    55%{ margin-top: 10px; margin-left: 1px; opacity: 0; }
+    100%{ margin-top: 3px; margin-left: -6px; opacity: 1; }
+}
