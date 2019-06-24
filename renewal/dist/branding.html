@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/sub.css">
   <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Monoton|Noto+Sans|Noto+Sans+KR|Staatliches" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Rajdhani:500,600" rel="stylesheet">
 
@@ -19,9 +20,47 @@
 </head>
 <body>
   <div id="wrap">
-    <nav>
-      <!-- 네비게이션 -->
+    <nav id="gnb">
+        <button type="button" class="open"></button>
+        <!-- 활성화 버전 메뉴 -->
+        <div id="actGnb" class="on">
+            <ul class="themeR">
+                <li class="title">ABOUT</li>
+                <li class="open">
+                    <ul>
+                        <li><a href="./history.html" class="act">BRAND & HISTORY</a></li>
+                        <li><a href="./resume.html">RESUME</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 전체 버전 메뉴 -->
+        <div id="allGnb" class="all_gnb">
+            <ul>
+                <li class="open themeR">
+                    <a href="#!" class="title">ABOUT</a>
+                    <ul>
+                        <li><a href="./branding.html" class="act">BRAND & HISTORY</a></li>
+                        <li><a href="./resume.html">RESUME</a></li>
+                    </ul>
+                </li>
+                <li class="themeB">
+                    <a href="#!" class="title">PROJECT</a>
+                    <ul>
+                        <li><a href="./build_2016.html">BUILD - 2016</a></li>
+                        <li><a href="./build_2017.html">BUILD - 2017</a></li>
+                        <li><a href="./build_2018.html">BUILD - 2018</a></li>
+                        <li><a href="./build_2019.html">BUILD - 2019</a></li>
+                        <li><a href="./operation.html">OPERATION</a></li>
+                    </ul>
+                </li>
+                <li class="themeG"><a href="./contact.html" class="title">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- 전체 버전 메뉴 배경 -->
     </nav>
+    <div class="gnb_back"></div>
+
     <section>
       <div class="section_logo">
         <h3>LOGO</h3>
@@ -39,12 +78,12 @@
             </p>
           </div>
           <div class="imgbox-02">
-            <img src="images/sub/logo_cover.jpg" alt="" class="cover">
-            <img src="images/sub/logo.jpg" alt="">
+            <img src="./images/sub/logo_cover.jpg" alt="" class="cover">
+            <img src="./images/sub/logo.jpg" alt="">
           </div>
           <div class="imgbox-03">
-            <img src="images/sub/naming_cover.jpg" alt="" class="cover">
-            <img src="images/sub/naming.jpg" alt="">
+            <img src="./images/sub/naming_cover.jpg" alt="" class="cover">
+            <img src="./images/sub/naming.jpg" alt="">
           </div>
         </div>
       </div>

@@ -9,18 +9,13 @@ font-family: 'Monoton', cursive;
 */
 
 #wrap{
-  width: 100%; height: 100vh; overflow: hidden;
-
-  nav{
-    width: 250px; height: 100vh; background: #f7f7f7;
-    position: fixed; top: 0; left: 0;
-  }
+  width: 100%; overflow: hidden;
 
   section{
-    width: calc(100% - 250px); height: 938px; float: right; position: relative;
+    width: calc(100% - 300px); height: auto; float: right; position: relative;
 
     [class*="section_"] {
-      width: calc(100% - 200px); padding: 6%;
+      width: calc(100% - 300px); padding: 6%;
 
       h3{ width: 100%; height: 50px; margin-bottom: 50px; position: relative;
         font: 500 35px/50px 'Noto Sans KR','Noto Sans',sans-serif; color: #222;
@@ -32,9 +27,10 @@ font-family: 'Monoton', cursive;
       }
     }
 
-    .section_logo h3:after{background-image: linear-gradient(45deg, #fe9191, #ca2374);}
-    .section_history h3:after{background-image: linear-gradient(45deg, #3a0088, #a275e3);}
-    .section_resume h3:after{background-image: linear-gradient(45deg, #009f9d, #07456f);}
+    .section_logo h3:after{background-image: linear-gradient(45deg, #ffaf65, #f36886, #ff5959);}
+    .section_history h3:after{background-image: linear-gradient(45deg, #c40b13 35%, #621295, #f69314);}
+    .section_resume h3:after{background-image: linear-gradient(45deg, #323232, #ff0b55, #ffdee6);}
+
     .section_contact h3:after{background-image: linear-gradient(45deg, #0b8457, #a1dd70);}
   }
 }

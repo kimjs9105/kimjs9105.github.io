@@ -20,8 +20,38 @@
 <body>
   <div id="wrap">
 
-    <nav id="gnb" data-main=2 data-sub=0>
-      <button type="button" class="open"></button>
+    <nav id="gnb">
+        <button type="button" class="open"></button>
+        <!-- 활성화 버전 메뉴 -->
+        <div id="actGnb" class="on">
+            <ul class="themeG">
+                <li class="title">CONTACT</li>
+            </ul>
+        </div>
+        <!-- 전체 버전 메뉴 -->
+        <div id="allGnb" class="all_gnb">
+            <ul>
+                <li class="themeR">
+                    <a href="#!" class="title">ABOUT</a>
+                    <ul>
+                        <li><a href="./branding.html">BRAND & HISTORY</a></li>
+                        <li><a href="./resume.html">RESUME</a></li>
+                    </ul>
+                </li>
+                <li class="themeB">
+                    <a href="#!" class="title">PROJECT</a>
+                    <ul>
+                      <li><a href="./build_2016.html">BUILD - 2016</a></li>
+                      <li><a href="./build_2017.html">BUILD - 2017</a></li>
+                      <li><a href="./build_2018.html">BUILD - 2018</a></li>
+                      <li><a href="./build_2019.html">BUILD - 2019</a></li>
+                      <li><a href="./operation.html">OPERATION</a></li>
+                    </ul>
+                </li>
+                <li class="open themeG"><a href="./contact.html" class="title">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- 전체 버전 메뉴 배경 -->
     </nav>
     <div class="gnb_back"></div>
 

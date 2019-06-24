@@ -4,8 +4,8 @@ $('document').ready(function(){
         $subValue = $('nav').attr('data-sub');
 
     // 초기 로드 시 자동셋팅 영역
-    loadActMenu($mainValue, $subValue);
-    loadMenu($mainValue);
+    // loadActMenu($mainValue, $subValue);
+    // loadMenu($mainValue);
 
     var $nav = $('#gnb'),
         $navBtn = $('#gnb button'),
@@ -44,8 +44,8 @@ $('document').ready(function(){
         $allGnb.addClass('on');
       }
 
-      $allGnb.children('ul').children('li').removeClass('open');
-      $allGnb.children('ul').children('li').eq($mainValue).addClass('open');
+      // $allGnb.children('ul').children('li').removeClass('open');
+      // $allGnb.children('ul').children('li').eq($mainValue).addClass('open');
     });
 
     var mainMenu = $allGnb.find('.title');
@@ -94,7 +94,7 @@ function loadMenu(mainIndex){
 
   var mainMenu = menuArr.length;
 
-  $('nav').append('<div id="allGnb"><ul></ul></div>');
+  $('nav').append('<div id="allGnb" class="allGnb"><ul></ul></div>');
 
   for( i = 0; i < mainMenu; i++ ){
     var mainTitle = menuArr[i].main;
@@ -107,7 +107,7 @@ function loadMenu(mainIndex){
 
       $('nav #allGnb > ul > li').eq(i-1).after('<li><a href="'+ mainLink +'.html" class="title">' + mainTitle + '</a><ul></ul></li>');
     }else{
-      
+
         $('nav #allGnb > ul > li').eq(i-1).after('<li><a href="#!" class="title">' + mainTitle + '</a><ul></ul></li>');
     }
 
