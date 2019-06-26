@@ -145,20 +145,21 @@ font-family: 'Monoton', cursive;
 
 .resume_container .resume_infomation .full {
   width: 100%;
-  margin-bottom: 25px; }
+  margin-bottom: 100px; }
   .resume_container .resume_infomation .full.basic_info {
     height: 250px; }
-  .resume_container .resume_infomation .full.career_info {
-    height: 300px;
-    background: #f9f9f9; }
-  .resume_container .resume_infomation .full.abil_info {
+  .resume_container .resume_infomation .full.career {
+    height: auto; }
+  .resume_container .resume_infomation .full.ability {
+    height: auto; }
+  .resume_container .resume_infomation .full.hobby {
     height: 300px; }
   .resume_container .resume_infomation .full > div {
     width: 50%;
     height: 100%; }
 
 .resume_container .resume_infomation h6 {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   font: 600 25px/35px 'NanumSquare','Noto Sans KR','Noto Sans',sans-serif; }
 
 .resume_container .resume_infomation .basic dl * {
@@ -196,24 +197,216 @@ font-family: 'Monoton', cursive;
   background: #0af;
   display: block; }
 
-.resume_container .resume_infomation .license::before, .resume_container .resume_infomation .license::after {
-  content: " ";
-  display: block;
-  clear: both; }
+.resume_container .resume_infomation .career h6 {
+  padding-bottom: 20px; }
 
-.resume_container .resume_infomation .career::before, .resume_container .resume_infomation .career::after {
-  content: " ";
+.resume_container .resume_infomation .career ul {
+  width: 90%;
+  height: 160px;
   display: block;
-  clear: both; }
+  margin: 0 auto;
+  position: relative; }
+  .resume_container .resume_infomation .career ul li {
+    width: auto;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .resume_container .resume_infomation .career ul li::before, .resume_container .resume_infomation .career ul li::after {
+      content: "";
+      display: block;
+      background: #555;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%); }
+    .resume_container .resume_infomation .career ul li::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%; }
+    .resume_container .resume_infomation .career ul li::after {
+      width: 1px; }
+  .resume_container .resume_infomation .career ul p {
+    font: 400 14px/22px 'Noto Sans KR','Noto Sans',sans-serif;
+    color: #222;
+    position: relative;
+    text-indent: 10px;
+    color: #666; }
+    .resume_container .resume_infomation .career ul p:first-of-type {
+      font: 600 16px/26px 'Noto Sans KR','Noto Sans',sans-serif;
+      color: #222;
+      text-indent: 0;
+      text-align: center; }
+  .resume_container .resume_infomation .career ul p ~ p::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background: #666; }
 
-.resume_container .resume_infomation .hobby li {
-  width: 20%;
+.resume_container .resume_infomation .career ul ~ ul::before {
+  content: "";
+  display: block;
+  width: calc(100% + 20px);
+  height: 2px;
+  background: #555;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); }
+
+.resume_container .resume_infomation .career .company li::before, .resume_container .resume_infomation .career .company li::after {
+  bottom: 0; }
+
+.resume_container .resume_infomation .career .company li:nth-of-type(1) {
+  margin-top: 25px;
+  margin-left: 150px; }
+  .resume_container .resume_infomation .career .company li:nth-of-type(1)::before, .resume_container .resume_infomation .career .company li:nth-of-type(1)::after {
+    margin-bottom: -70px; }
+  .resume_container .resume_infomation .career .company li:nth-of-type(1)::after {
+    height: 60px; }
+
+.resume_container .resume_infomation .career .company li:nth-of-type(2) {
+  margin-top: 45px;
+  margin-left: 550px; }
+  .resume_container .resume_infomation .career .company li:nth-of-type(2)::before, .resume_container .resume_infomation .career .company li:nth-of-type(2)::after {
+    margin-bottom: -50px; }
+  .resume_container .resume_infomation .career .company li:nth-of-type(2)::after {
+    height: 40px; }
+
+.resume_container .resume_infomation .career .company li:nth-of-type(3) {
+  margin-top: 30px;
+  margin-left: 800px; }
+  .resume_container .resume_infomation .career .company li:nth-of-type(3)::before, .resume_container .resume_infomation .career .company li:nth-of-type(3)::after {
+    margin-bottom: -65px; }
+  .resume_container .resume_infomation .career .company li:nth-of-type(3)::after {
+    height: 55px; }
+
+.resume_container .resume_infomation .career .education li::before, .resume_container .resume_infomation .career .education li::after {
+  top: 0; }
+
+.resume_container .resume_infomation .career .education li:nth-of-type(1) {
+  margin-top: 60px;
+  margin-left: 15px; }
+  .resume_container .resume_infomation .career .education li:nth-of-type(1)::before, .resume_container .resume_infomation .career .education li:nth-of-type(1)::after {
+    margin-top: -63px; }
+  .resume_container .resume_infomation .career .education li:nth-of-type(1)::after {
+    height: 55px; }
+
+.resume_container .resume_infomation .career .education li:nth-of-type(2) {
+  margin-top: 40px;
+  margin-left: 350px; }
+  .resume_container .resume_infomation .career .education li:nth-of-type(2)::before, .resume_container .resume_infomation .career .education li:nth-of-type(2)::after {
+    margin-top: -43px; }
+  .resume_container .resume_infomation .career .education li:nth-of-type(2)::after {
+    height: 35px; }
+
+.resume_container .resume_infomation .career .education li:nth-of-type(3) {
+  margin-top: 65px;
+  margin-left: 900px; }
+  .resume_container .resume_infomation .career .education li:nth-of-type(3)::before, .resume_container .resume_infomation .career .education li:nth-of-type(3)::after {
+    margin-top: -68px; }
+  .resume_container .resume_infomation .career .education li:nth-of-type(3)::after {
+    height: 60px; }
+
+.resume_container .resume_infomation .ability ul {
+  display: flex; }
+
+.resume_container .resume_infomation .ability li {
+  flex: 1 0 0; }
+
+.resume_container .resume_infomation .ability img {
+  width: 60px;
+  height: 60px;
+  background: #fa9;
+  display: block;
+  float: left;
+  margin-right: 10px; }
+
+.resume_container .resume_infomation .ability div {
+  width: calc(100% - 90px);
   float: left; }
 
-.resume_container .resume_infomation .hobby img {
-  width: 150px;
-  display: block;
-  margin: 0 auto; }
+.resume_container .resume_infomation .ability span {
+  font: 400 12px/15px 'Noto Sans KR','Noto Sans',sans-serif;
+  letter-spacing: 0.5px; }
+
+.resume_container .resume_infomation .ability p {
+  width: 100%;
+  margin-top: 25px;
+  font: 400 12px/15px 'Noto Sans KR','Noto Sans',sans-serif;
+  letter-spacing: 0.5px;
+  position: relative; }
+  .resume_container .resume_infomation .ability p::before, .resume_container .resume_infomation .ability p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    margin-top: -18px; }
+  .resume_container .resume_infomation .ability p::before {
+    width: 100%;
+    background: #f1f1f1; }
+
+.resume_container .resume_infomation .ability li:nth-of-type(1) p {
+  text-indent: 70%; }
+
+.resume_container .resume_infomation .ability li:nth-of-type(1) p::after {
+  width: 90%;
+  background-image: linear-gradient(45deg, #323232, #ff5f2e, #ffdee6); }
+
+.resume_container .resume_infomation .ability li:nth-of-type(2) p {
+  text-indent: 70%; }
+
+.resume_container .resume_infomation .ability li:nth-of-type(2) p::after {
+  width: 90%;
+  background-image: linear-gradient(45deg, #323232, #4F86C6, #ffdee6); }
+
+.resume_container .resume_infomation .ability li:nth-of-type(3) p {
+  text-indent: 70%; }
+
+.resume_container .resume_infomation .ability li:nth-of-type(3) p::after {
+  width: 50%;
+  background-image: linear-gradient(45deg, #323232, #FFBC42, #ffdee6); }
+
+.resume_container .resume_infomation .ability li:nth-of-type(4) p {
+  text-indent: 70%; }
+
+.resume_container .resume_infomation .ability li:nth-of-type(4) p::after {
+  width: 70%;
+  background-image: linear-gradient(45deg, #323232, #353866, #ffdee6); }
+
+.resume_container .resume_infomation .ability li:nth-of-type(5) p {
+  text-indent: 70%; }
+
+.resume_container .resume_infomation .ability li:nth-of-type(5) p::after {
+  width: 60%;
+  background-image: linear-gradient(45deg, #323232, #353866, #ffdee6); }
+
+.resume_container .resume_infomation .ability li:nth-of-type(6) p {
+  text-indent: 70%; }
+
+.resume_container .resume_infomation .ability li:nth-of-type(6) p::after {
+  width: 60%;
+  background-image: linear-gradient(45deg, #323232, #f1404b, #285943, #ffdee6); }
+
+.resume_container .resume_infomation .hobby {
+  display: none; }
+  .resume_container .resume_infomation .hobby li {
+    width: 20%;
+    float: left; }
+  .resume_container .resume_infomation .hobby img {
+    width: 150px;
+    display: block;
+    margin: 0 auto; }
+  .resume_container .resume_infomation .hobby p {
+    font: 400 16px/26px 'Noto Sans KR','Noto Sans',sans-serif;
+    text-align: center; }
 
 .slide_main {
   width: 1300px;

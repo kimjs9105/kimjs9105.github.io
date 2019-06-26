@@ -123,16 +123,17 @@ font-family: 'Monoton', cursive;
 
   .resume_infomation{
     .full{
-      width: 100%; margin-bottom: 25px;
+      width: 100%; margin-bottom: 100px;
 
       &.basic_info{ height: 250px; }
-      &.career_info { height: 300px; background: #f9f9f9; }
-      &.abil_info { height: 300px;}
+      &.career { height: auto; }
+      &.ability { height: auto; }
+      &.hobby { height: 300px; }
 
       > div{ width: 50%; height: 100%; }
     }
 
-    h6{ padding-bottom: 20px; font: 600 25px/35px 'NanumSquare','Noto Sans KR','Noto Sans',sans-serif; }
+    h6{ padding-bottom: 50px; font: 600 25px/35px 'NanumSquare','Noto Sans KR','Noto Sans',sans-serif; }
 
     .basic {
       dl *{ float: left; font: 400 16px/35px 'Noto Sans KR','Noto Sans',sans-serif; }
@@ -148,18 +149,138 @@ font-family: 'Monoton', cursive;
       dt { width: 100%; font: 400 16px/26px 'Noto Sans KR','Noto Sans',sans-serif; text-align: center; }
       span{ font: 400 12px/26px 'Noto Sans KR','Noto Sans',sans-serif; }
       dd { width: 100px; height: 100px; margin: 0 auto 15px; background: #0af; display: block; }
-
-      &::before, &::after{ content: " "; display: block; clear: both; }
     }
 
     .career{
+      h6{ padding-bottom: 20px; }
+      ul{ width: 90%; height: 160px; display: block; margin: 0 auto; position: relative;
+        li{
+          width: auto; height: auto; display: block; position: absolute; top: 0; left: 0;
+          &::before,&::after{
+            content: ""; display: block; background: #555; position: absolute; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);
+          }
+          &::before{ width: 8px; height: 8px; border-radius: 50%; }
+          &::after{ width: 1px; }
+        }
 
-      &::before, &::after{ content: " "; display: block; clear: both; }
+        p{
+          font: 400 14px/22px 'Noto Sans KR','Noto Sans',sans-serif; color: #222; position: relative; text-indent: 10px; color: #666;
+
+          &:first-of-type{ font: 600 16px/26px 'Noto Sans KR','Noto Sans',sans-serif; color: #222; text-indent: 0; text-align: center; }
+        }
+
+        p ~ p::before{
+          content: ""; position: absolute; width: 5px; height: 1px; top: 50%; left: 0;
+          background: #666;
+        }
+      }
+
+      ul ~ ul::before{
+        content: ""; display: block; width: calc(100% + 20px); height: 2px; background: #555; position: absolute; top: 0; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);
+      }
+
+      .company{
+        li{
+          &::before,&::after{ bottom: 0; }
+        }
+
+        li:nth-of-type(1){
+          margin-top: 25px; margin-left: 150px;
+          &::before,&::after{ margin-bottom: -70px; }
+          &::after{ height: 60px; }
+        }
+
+        li:nth-of-type(2){
+          margin-top: 45px; margin-left: 550px;
+          &::before,&::after{ margin-bottom: -50px; }
+          &::after{ height: 40px; }
+        }
+
+        li:nth-of-type(3){
+          margin-top: 30px; margin-left: 800px;
+          &::before,&::after{ margin-bottom: -65px; }
+          &::after{ height: 55px; }
+        }
+      }
+
+      .education{
+        li{
+          &::before,&::after{ top: 0; }
+        }
+
+        li:nth-of-type(1){
+          margin-top: 60px; margin-left: 15px;
+          &::before,&::after{ margin-top: -63px; }
+          &::after{ height: 55px;}
+        }
+
+        li:nth-of-type(2){
+          margin-top: 40px; margin-left: 350px;
+          &::before,&::after{ margin-top: -43px; }
+          &::after{ height: 35px;}
+        }
+
+        li:nth-of-type(3){
+          margin-top: 65px; margin-left: 900px;
+          &::before,&::after{ margin-top: -68px; }
+          &::after{ height: 60px;}
+        }
+      }
     }
 
-    .hobby{
+    .ability{
+      ul{ display: flex; }
+      li{ flex: 1 0 0;}
+
+      img{ width: 60px; height: 60px; background: #fa9; display: block; float: left; margin-right: 10px; }
+
+      div{ width: calc(100% - 90px); float: left; }
+      span{ font: 400 12px/15px 'Noto Sans KR','Noto Sans',sans-serif; letter-spacing: 0.5px; }
+      p{
+        width: 100%; margin-top: 25px; font: 400 12px/15px 'Noto Sans KR','Noto Sans',sans-serif; letter-spacing: 0.5px; position: relative;
+
+        &::before, &::after{
+          content: ""; display: block; position: absolute; top: 0; left: 0; height: 14px; margin-top: -18px;
+        }
+
+        &::before { width: 100%; background: #f1f1f1; }
+      }
+
+      li:nth-of-type(1){
+        p{ text-indent: 70%; }
+        p::after{ width: 90%; background-image: linear-gradient(45deg, #323232, #ff5f2e, #ffdee6); }
+      }
+
+      li:nth-of-type(2){
+        p{ text-indent: 70%; }
+        p::after{ width: 90%; background-image: linear-gradient(45deg, #323232, #4F86C6, #ffdee6); }
+      }
+
+      li:nth-of-type(3){
+        p{ text-indent: 70%; }
+        p::after{ width: 50%; background-image: linear-gradient(45deg, #323232, #FFBC42, #ffdee6); }
+      }
+
+      li:nth-of-type(4){
+        p{ text-indent: 70%; }
+        p::after{ width: 70%; background-image: linear-gradient(45deg, #323232, #353866, #ffdee6); }
+      }
+
+      li:nth-of-type(5){
+        p{ text-indent: 70%; }
+        p::after{ width: 60%; background-image: linear-gradient(45deg, #323232, #353866, #ffdee6); }
+      }
+
+      li:nth-of-type(6){
+        p{ text-indent: 70%; }
+        p::after{ width: 60%; background-image: linear-gradient(45deg, #323232, #f1404b, #285943, #ffdee6); }
+      }
+    }
+
+    .hobby{ display: none;
       li{ width: 20%; float: left; }
-      img{ width: 150px; display: block; margin: 0 auto;}
+      img{ width: 150px; display: block; margin: 0 auto; }
+      p{ font: 400 16px/26px 'Noto Sans KR','Noto Sans',sans-serif; text-align: center; }
     }
   }
 }
