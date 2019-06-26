@@ -10,12 +10,11 @@ font-family: 'Monoton', cursive;
   width: 100%;
   overflow: hidden; }
   #wrap section {
-    width: calc(100% - 300px);
+    width: calc(100% - 320px);
     height: auto;
     float: right;
     position: relative; }
     #wrap section [class*="section_"] {
-      width: calc(100% - 300px);
       padding: 6%; }
       #wrap section [class*="section_"] h3 {
         width: 100%;
@@ -112,6 +111,110 @@ font-family: 'Monoton', cursive;
         background: #f59758;
         margin-top: -90px; }
 
+.resume_container .left {
+  float: left; }
+
+.resume_container .right {
+  float: right; }
+
+.resume_container .resume_intro {
+  height: 350px;
+  padding-bottom: 50px; }
+  .resume_container .resume_intro .left {
+    width: 72%;
+    height: auto;
+    margin-right: 8%; }
+    .resume_container .resume_intro .left h2 {
+      padding-bottom: 25px;
+      font: 600 25px/35px 'NanumSquare', 'Noto Sans KR','Noto Sans',sans-serif;
+      color: #222;
+      text-indent: 25px; }
+    .resume_container .resume_intro .left p {
+      padding: 7px 0;
+      font: 400 16px/26px 'Noto Sans KR','Noto Sans',sans-serif;
+      color: #555;
+      letter-spacing: -0.25px; }
+  .resume_container .resume_intro .right {
+    width: 20%;
+    height: auto; }
+    .resume_container .resume_intro .right img {
+      width: 100%;
+      height: 300px;
+      background: #fa0;
+      display: block; }
+
+.resume_container .resume_infomation .full {
+  width: 100%;
+  margin-bottom: 25px; }
+  .resume_container .resume_infomation .full.basic_info {
+    height: 250px; }
+  .resume_container .resume_infomation .full.career_info {
+    height: 300px;
+    background: #f9f9f9; }
+  .resume_container .resume_infomation .full.abil_info {
+    height: 300px; }
+  .resume_container .resume_infomation .full > div {
+    width: 50%;
+    height: 100%; }
+
+.resume_container .resume_infomation h6 {
+  padding-bottom: 20px;
+  font: 600 25px/35px 'NanumSquare','Noto Sans KR','Noto Sans',sans-serif; }
+
+.resume_container .resume_infomation .basic dl * {
+  float: left;
+  font: 400 16px/35px 'Noto Sans KR','Noto Sans',sans-serif; }
+
+.resume_container .resume_infomation .basic dt {
+  width: 150px; }
+
+.resume_container .resume_infomation .basic dd {
+  width: calc(100% - 150px); }
+
+.resume_container .resume_infomation .basic::before, .resume_container .resume_infomation .basic::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.resume_container .resume_infomation .license li {
+  width: 25%;
+  height: 150px;
+  float: left; }
+
+.resume_container .resume_infomation .license dt {
+  width: 100%;
+  font: 400 16px/26px 'Noto Sans KR','Noto Sans',sans-serif;
+  text-align: center; }
+
+.resume_container .resume_infomation .license span {
+  font: 400 12px/26px 'Noto Sans KR','Noto Sans',sans-serif; }
+
+.resume_container .resume_infomation .license dd {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  background: #0af;
+  display: block; }
+
+.resume_container .resume_infomation .license::before, .resume_container .resume_infomation .license::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.resume_container .resume_infomation .career::before, .resume_container .resume_infomation .career::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.resume_container .resume_infomation .hobby li {
+  width: 20%;
+  float: left; }
+
+.resume_container .resume_infomation .hobby img {
+  width: 150px;
+  display: block;
+  margin: 0 auto; }
+
 .slide_main {
   width: 1300px;
   height: 100vh;
@@ -195,7 +298,7 @@ font-family: 'Monoton', cursive;
   bottom: 0;
   left: 50%;
   margin-bottom: 50px;
-  margin-left: 500px; }
+  margin-left: 525px; }
   .slide_btn button {
     width: 50px;
     height: 50px;

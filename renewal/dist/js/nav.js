@@ -56,6 +56,8 @@ $('document').ready(function(){
       $(this).parent('li').addClass('open');
 
     });
+
+
 });
 
 function loadActMenu(mainIndex, subIndex){

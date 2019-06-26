@@ -4,13 +4,41 @@ font-family: 'Noto Sans', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Rajdhani', sans-serif;
 */
+@font-face {
+  font-family: 'NanumSquare';
+  src: url("./NanumSquareL.eot");
+  src: url("./NanumSquareL.woff") format("woff"), url("./NanumSquareL.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url("./NanumSquareR.eot");
+  src: url("./NanumSquareR.woff") format("woff"), url("./NanumSquareR.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url("./NanumSquareB.eot");
+  src: url("./NanumSquareB.woff") format("woff"), url("./NanumSquareB.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url("./NanumSquareEB.eot");
+  src: url("./NanumSquareEB.woff") format("woff"), url("./NanumSquareEB.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
 #wrap {
   width: 100%;
   height: auto;
   min-height: 100%;
   overflow: hidden; }
   #wrap nav {
-    width: 300px;
+    width: 320px;
     height: 100%;
     background: #fafafa;
     position: fixed;
@@ -21,7 +49,7 @@ font-family: 'Rajdhani', sans-serif;
     transition: all 0.5s;
     -webkit-transition: all 0.5s; }
     #wrap nav.on {
-      width: 340px; }
+      width: 350px; }
   #wrap .gnb_back {
     width: 100%;
     height: 100%;
@@ -100,7 +128,7 @@ nav div {
       position: relative;
       font: 500 20px/30px 'Rajdhani', sans-serif;
       color: #222; }
-      nav div li a.act::after {
+      nav div li a::after {
         content: "";
         display: block;
         width: 20px;
@@ -110,8 +138,13 @@ nav div {
         right: 0;
         margin-top: -1px;
         margin-right: -20px; }
+      nav div li a span {
+        font: 500 15px/30px 'Rajdhani', sans-serif; }
     nav div li ul {
-      display: none; }
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s;
+      -webkit-transition: height 0.5s; }
   nav div .title {
     height: 50px;
     margin-bottom: 10px;
@@ -120,23 +153,38 @@ nav div {
       margin-bottom: 0; }
   nav div.all_gnb {
     right: 100%; }
+    nav div.all_gnb .themeR.open .title,
+    nav div.all_gnb .themeR .title:hover {
+      color: #bf000c; }
+    nav div.all_gnb .themeB.open .title,
+    nav div.all_gnb .themeB .title:hover {
+      color: #003496; }
+    nav div.all_gnb .themeG.open .title,
+    nav div.all_gnb .themeG .title:hover {
+      color: #009975; }
     nav div.all_gnb li a {
       max-width: calc(100% - 30px); }
   nav div.on {
     right: 0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s; }
+  nav div .themeR li a:hover::after,
   nav div .themeR .act::after {
     background: linear-gradient(90deg, #ff6768, #f7f7f7); }
+  nav div .themeB li a:hover::after,
   nav div .themeB .act::after {
     background: linear-gradient(90deg, #064acb, #f7f7f7); }
+  nav div .themeG li a:hover::after,
   nav div .themeG .act::after {
     background: linear-gradient(90deg, #009975, #f7f7f7); }
   nav div .open > ul {
-    display: block;
-    margin-bottom: 30px; }
-  nav div .nonSub > ul {
-    display: none; }
+    height: auto;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s; }
+  nav div .open.themeR > ul {
+    height: 90px; }
+  nav div .open.themeB > ul {
+    height: 160px; }
 
 @keyframes navBtnCloseTop {
   0% {

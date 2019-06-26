@@ -6,16 +6,52 @@ font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Rajdhani', sans-serif;
 */
 
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('./NanumSquareL.eot');
+  src: url('./NanumSquareL.woff') format('woff'),
+       url('./NanumSquareL.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('./NanumSquareR.eot');
+  src: url('./NanumSquareR.woff') format('woff'),
+       url('./NanumSquareR.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('./NanumSquareB.eot');
+  src: url('./NanumSquareB.woff') format('woff'),
+       url('./NanumSquareB.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('./NanumSquareEB.eot');
+  src: url('./NanumSquareEB.woff') format('woff'),
+       url('./NanumSquareEB.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
 #wrap{
     width: 100%; height: auto; min-height: 100%; overflow: hidden;
 
     // sub page common nav
     nav{
-        width: 300px; height: 100%; background: #fafafa;
+        width: 320px; height: 100%; background: #fafafa;
         position: fixed; top: 0; left: 0; z-index: 15; overflow: hidden;
         transition: all 0.5s; -webkit-transition: all 0.5s;
 
-        &.on{width: 340px;}
+        &.on{width: 350px;}
     }
 
     .gnb_back{
@@ -69,13 +105,15 @@ nav {
                 max-width: calc(100% - 30px); height: 30px; padding-right: 10px; display: inline-block; position: relative;
                 font: 500 20px/30px 'Rajdhani', sans-serif; color: #222;
 
-                &.act::after{
+                &::after{
                     content: ""; display: block; width: 20px; height: 3px;
                     position: absolute; top: 50%; right: 0; margin-top: -1px; margin-right: -20px;
                 }
+
+                span{ font: 500 15px/30px 'Rajdhani', sans-serif; }
             }
 
-            ul{ display: none; }
+            ul{ height: 0; overflow: hidden; transition: height 0.5s; -webkit-transition: height 0.5s; }
         }
 
         .title{
@@ -86,16 +124,39 @@ nav {
         }
 
         &.all_gnb{ right: 100%;
+            .themeR.open .title,
+            .themeR .title:hover { color : #bf000c; }
+
+            .themeB.open .title,
+            .themeB .title:hover { color : #003496; }
+
+            .themeG.open .title,
+            .themeG .title:hover { color : #009975; }
+
             li a { max-width: calc(100% - 30px);}
+
         }
+
         &.on{ right: 0; transition: all 0.5s; -webkit-transition: all 0.5s; }
 
-        .themeR .act::after{ background: linear-gradient(90deg, #ff6768, #f7f7f7); }
-        .themeB .act::after{ background: linear-gradient(90deg, #064acb, #f7f7f7); }
-        .themeG .act::after{ background: linear-gradient(90deg, #009975, #f7f7f7); }
+        .themeR{
+            li a:hover::after,
+            .act::after{ background: linear-gradient(90deg, #ff6768, #f7f7f7); }
+        }
+        .themeB{
+            li a:hover::after,
+            .act::after{ background: linear-gradient(90deg, #064acb, #f7f7f7); }
+        }
+        .themeG{
+            li a:hover::after,
+            .act::after{ background: linear-gradient(90deg, #009975, #f7f7f7); }
+        }
 
-        .open > ul{ display: block; margin-bottom: 30px; }
-        .nonSub > ul{ display: none; }
+        .open{
+            > ul{ height: auto; transition: height 0.5s; -webkit-transition: height 0.5s; }
+            &.themeR > ul { height: 90px; }
+            &.themeB > ul { height: 160px; }
+        }
     }
 
 
