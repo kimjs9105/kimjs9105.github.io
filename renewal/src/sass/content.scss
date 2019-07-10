@@ -167,10 +167,11 @@ font-family: 'Monoton', cursive;
           font: 400 14px/22px 'Noto Sans KR','Noto Sans',sans-serif; color: #222; position: relative; text-indent: 10px; color: #666;
 
           &:first-of-type{ font: 600 16px/26px 'Noto Sans KR','Noto Sans',sans-serif; color: #222; text-indent: 0; text-align: center; }
+          b { padding-left: 47px; font-weight: 400; }
         }
 
         p ~ p::before{
-          content: ""; position: absolute; width: 5px; height: 1px; top: 50%; left: 0;
+          content: ""; position: absolute; width: 5px; height: 1px; top: 11px; left: 0;
           background: #666;
         }
       }
@@ -229,10 +230,10 @@ font-family: 'Monoton', cursive;
     }
 
     .ability{
-      ul{ display: flex; }
-      li{ flex: 1 0 0;}
+      ul{ width: 100%; display: inline-block; }
+      li{ width: 16.6%; float: left; }
 
-      img{ width: 60px; height: 60px; background: #fa9; display: block; float: left; margin-right: 10px; }
+      img{ width: 60px; height: 60px; display: block; float: left; margin-right: 10px; }
 
       div{ width: calc(100% - 90px); float: left; }
       span{ font: 400 12px/15px 'Noto Sans KR','Noto Sans',sans-serif; letter-spacing: 0.5px; }
@@ -248,32 +249,32 @@ font-family: 'Monoton', cursive;
 
       li:nth-of-type(1){
         p{ text-indent: 70%; }
-        p::after{ width: 90%; background-image: linear-gradient(45deg, #323232, #ff5f2e, #ffdee6); }
+        p::after{ width: 90%; background-image: linear-gradient(45deg, #e65125, #f1672d, #f1f1f1); }
       }
 
       li:nth-of-type(2){
         p{ text-indent: 70%; }
-        p::after{ width: 90%; background-image: linear-gradient(45deg, #323232, #4F86C6, #ffdee6); }
+        p::after{ width: 90%; background-image: linear-gradient(45deg, #0574b9, #2ba9dc, #f1f1f1); }
       }
 
       li:nth-of-type(3){
         p{ text-indent: 70%; }
-        p::after{ width: 50%; background-image: linear-gradient(45deg, #323232, #FFBC42, #ffdee6); }
+        p::after{ width: 50%; background-image: linear-gradient(45deg, #e6a329, #f1bf23, #f1f1f1); }
       }
 
       li:nth-of-type(4){
         p{ text-indent: 70%; }
-        p::after{ width: 70%; background-image: linear-gradient(45deg, #323232, #353866, #ffdee6); }
+        p::after{ width: 70%; background-image: linear-gradient(45deg, #1169ad, #121b28); }
       }
 
       li:nth-of-type(5){
         p{ text-indent: 70%; }
-        p::after{ width: 60%; background-image: linear-gradient(45deg, #323232, #353866, #ffdee6); }
+        p::after{ width: 60%; background-image: linear-gradient(45deg, #70b0ed, #3369b1, #a8d6ff); }
       }
 
       li:nth-of-type(6){
         p{ text-indent: 70%; }
-        p::after{ width: 60%; background-image: linear-gradient(45deg, #323232, #f1404b, #285943, #ffdee6); }
+        p::after{ width: 70%; background-image: linear-gradient(45deg, #d24625, #007233); }
       }
     }
 

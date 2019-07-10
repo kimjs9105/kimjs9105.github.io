@@ -238,12 +238,15 @@ font-family: 'Monoton', cursive;
       color: #222;
       text-indent: 0;
       text-align: center; }
+    .resume_container .resume_infomation .career ul p b {
+      padding-left: 47px;
+      font-weight: 400; }
   .resume_container .resume_infomation .career ul p ~ p::before {
     content: "";
     position: absolute;
     width: 5px;
     height: 1px;
-    top: 50%;
+    top: 11px;
     left: 0;
     background: #666; }
 
@@ -314,15 +317,16 @@ font-family: 'Monoton', cursive;
     height: 60px; }
 
 .resume_container .resume_infomation .ability ul {
-  display: flex; }
+  width: 100%;
+  display: inline-block; }
 
 .resume_container .resume_infomation .ability li {
-  flex: 1 0 0; }
+  width: 16.6%;
+  float: left; }
 
 .resume_container .resume_infomation .ability img {
   width: 60px;
   height: 60px;
-  background: #fa9;
   display: block;
   float: left;
   margin-right: 10px; }
@@ -358,42 +362,42 @@ font-family: 'Monoton', cursive;
 
 .resume_container .resume_infomation .ability li:nth-of-type(1) p::after {
   width: 90%;
-  background-image: linear-gradient(45deg, #323232, #ff5f2e, #ffdee6); }
+  background-image: linear-gradient(45deg, #e65125, #f1672d, #f1f1f1); }
 
 .resume_container .resume_infomation .ability li:nth-of-type(2) p {
   text-indent: 70%; }
 
 .resume_container .resume_infomation .ability li:nth-of-type(2) p::after {
   width: 90%;
-  background-image: linear-gradient(45deg, #323232, #4F86C6, #ffdee6); }
+  background-image: linear-gradient(45deg, #0574b9, #2ba9dc, #f1f1f1); }
 
 .resume_container .resume_infomation .ability li:nth-of-type(3) p {
   text-indent: 70%; }
 
 .resume_container .resume_infomation .ability li:nth-of-type(3) p::after {
   width: 50%;
-  background-image: linear-gradient(45deg, #323232, #FFBC42, #ffdee6); }
+  background-image: linear-gradient(45deg, #e6a329, #f1bf23, #f1f1f1); }
 
 .resume_container .resume_infomation .ability li:nth-of-type(4) p {
   text-indent: 70%; }
 
 .resume_container .resume_infomation .ability li:nth-of-type(4) p::after {
   width: 70%;
-  background-image: linear-gradient(45deg, #323232, #353866, #ffdee6); }
+  background-image: linear-gradient(45deg, #1169ad, #121b28); }
 
 .resume_container .resume_infomation .ability li:nth-of-type(5) p {
   text-indent: 70%; }
 
 .resume_container .resume_infomation .ability li:nth-of-type(5) p::after {
   width: 60%;
-  background-image: linear-gradient(45deg, #323232, #353866, #ffdee6); }
+  background-image: linear-gradient(45deg, #70b0ed, #3369b1, #a8d6ff); }
 
 .resume_container .resume_infomation .ability li:nth-of-type(6) p {
   text-indent: 70%; }
 
 .resume_container .resume_infomation .ability li:nth-of-type(6) p::after {
-  width: 60%;
-  background-image: linear-gradient(45deg, #323232, #f1404b, #285943, #ffdee6); }
+  width: 70%;
+  background-image: linear-gradient(45deg, #d24625, #007233); }
 
 .resume_container .resume_infomation .hobby {
   display: none; }
