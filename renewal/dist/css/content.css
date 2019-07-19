@@ -565,3 +565,55 @@ font-family: 'Monoton', cursive;
       text-indent: 25px; }
     .slide_side .slideList.on {
       opacity: 1; }
+
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  #wrap nav {
+    width: 270px; }
+  #wrap nav.on {
+    width: 290px; }
+  #wrap section {
+    width: calc(100% - 270px); }
+  nav button {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: 10px; }
+  nav div {
+    width: calc(100% - 55px); }
+  nav div li a {
+    height: 28px;
+    font: 500 18px/28px 'Rajdhani', sans-serif; }
+  nav div .title {
+    height: 42px;
+    margin-bottom: 5px;
+    font: 500 28px/42px 'Rajdhani', sans-serif; }
+  .slide_main {
+    width: 100%; } }
+
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+  #wrap nav {
+    width: 230px; }
+  #wrap nav.on {
+    width: 240px; }
+  #wrap section {
+    width: calc(100% - 230px); }
+  nav button {
+    width: 30px;
+    height: 30px;
+    margin-top: -190px;
+    margin-left: 30px; }
+  nav div {
+    width: calc(100% - 30px); }
+  nav div li a {
+    height: 28px;
+    font: 500 18px/28px 'Rajdhani', sans-serif; }
+  nav div .title {
+    height: 42px;
+    margin-bottom: 5px;
+    font: 500 24px/42px 'Rajdhani', sans-serif; }
+  nav div li a::after {
+    width: 12px;
+    margin-right: -6px;
+    margin-top: -2px; }
+  .slide_main {
+    width: 100%; } }
