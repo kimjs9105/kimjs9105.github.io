@@ -72,6 +72,9 @@
 .pc_dn {
   display: none; }
 
+.mo_dn {
+  display: block; }
+
 .sr-only {
   width: 0;
   height: 0;
@@ -80,7 +83,9 @@
 
 @media screen and (max-width: 960px) {
   .pc_dn {
-    display: block; } }
+    display: block; }
+  .mo_dn {
+    display: none; } }
 
 /* 메인 페이지 섹션 및 공통 스타일 */
 #con_main {
@@ -98,7 +103,7 @@
   #con_main .con_company {
     width: 100%;
     height: 320px;
-    padding-top: 150px;
+    margin-top: 150px;
     background: url("../images/bg-main-company.jpg") center top 100% no-repeat; }
   #con_main .con_partners {
     width: 1200px;
@@ -141,9 +146,9 @@
       transition: all .5s;
       -webkit-transition: all .5s; }
     #con_main .btn-more::after {
-      width: 35px;
+      width: 48px;
       height: 15px;
-      background: #fff;
+      background: url("../images/btn-dir.png") 0px 0px no-repeat;
       top: 50%;
       right: 0;
       margin-top: -8px;
@@ -157,7 +162,7 @@
         transition: all .5s;
         -webkit-transition: all .5s; }
       #con_main .btn-more:hover::after {
-        background: #0a7fb3; }
+        background-position: -48px 0; }
 
 #con_main .con_banner .main_banner {
   width: 100%;
@@ -216,7 +221,7 @@
 #con_main .con_banner .mini_banner {
   width: 1200px;
   height: 160px;
-  background: url("../images/bg-quick-banner.jpg") center top 100% no-repeat;
+  background: url("../images/bg-quick-banner.jpg") left top 100% no-repeat;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -80px);
@@ -301,6 +306,28 @@
 #con_main .con_company * {
   color: #fff; }
 
+#con_main .con_partners .con_ptn_slide {
+  position: relative; }
+  #con_main .con_partners .con_ptn_slide::before, #con_main .con_partners .con_ptn_slide::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    top: 50%;
+    margin-top: -50px;
+    z-index: 15; }
+  #con_main .con_partners .con_ptn_slide::before {
+    left: 0;
+    background-image: linear-gradient(90deg, #fff 60%, rgba(0, 0, 0, 0)); }
+  #con_main .con_partners .con_ptn_slide::after {
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #fff 60%); }
+
+#con_main .con_partners .con_ptn_slide div {
+  margin-left: 20px;
+  margin-right: 50px; }
+
 #con_main .con_partners .btn-more {
   margin-top: 50px;
   color: #032d4d;
@@ -308,8 +335,237 @@
   #con_main .con_partners .btn-more::before {
     background: #032d4d; }
   #con_main .con_partners .btn-more::after {
-    background: #032d4d; }
+    background-position: -96px 0; }
   #con_main .con_partners .btn-more:hover {
     color: #fff; }
     #con_main .con_partners .btn-more:hover::after {
-      background: #fff; }
+      background-position: 0 0; }
+
+@media screen and (max-width: 1200px) and (min-width: 961px) {
+  #con_main {
+    width: 100%;
+    height: auto;
+    min-height: 350px; }
+    #con_main .con_business {
+      width: 940px; }
+    #con_main .con_partners {
+      width: 940px; }
+  #con_main .con_banner .main_banner .con_slide_text {
+    width: 800px; }
+    #con_main .con_banner .main_banner .con_slide_text h6 {
+      font: 600 46px/46px "NanumSquare"; }
+    #con_main .con_banner .main_banner .con_slide_text p {
+      font: 600 30px/54px "NanumSquare"; }
+  #con_main .con_banner .mini_banner {
+    width: 950px;
+    background-position: -120px; }
+    #con_main .con_banner .mini_banner .mini_ban_text {
+      margin-left: 160px; }
+  #con_main .con_business .con_busi_link {
+    height: 300px; }
+    #con_main .con_business .con_busi_link .busi_content {
+      width: 465px;
+      height: 300px;
+      background-size: 465px auto; }
+      #con_main .con_business .con_busi_link .busi_content:first-of-type {
+        margin-right: 10px;
+        background-size: 465px auto; }
+      #con_main .con_business .con_busi_link .busi_content p {
+        padding-top: 100px; } }
+
+@media screen and (max-width: 960px) and (min-width: 601px) {
+  #con_main {
+    width: 100%;
+    height: auto;
+    min-height: 350px; }
+    #con_main .con_business {
+      width: 560px; }
+    #con_main .con_company {
+      margin-top: 100px; }
+    #con_main .con_partners {
+      width: 560px;
+      padding: 100px 0; }
+  #con_main .con_banner .main_banner .con_slide_text {
+    width: 560px; }
+    #con_main .con_banner .main_banner .con_slide_text h6 {
+      font: 600 46px/46px "NanumSquare"; }
+    #con_main .con_banner .main_banner .con_slide_text p {
+      font: 600 30px/54px "NanumSquare"; }
+  #con_main .con_banner .mini_banner {
+    width: 580px;
+    background-position: -80px;
+    background: url("../images/bg-quick-banner-m.jpg") right top no-repeat;
+    background-size: cover; }
+    #con_main .con_banner .mini_banner .mini_ban_text {
+      width: 480px;
+      margin-top: 35px;
+      margin-left: 50px; }
+    #con_main .con_banner .mini_banner .mini_ban_text h6 {
+      color: #032d4d;
+      font: 600 32px/40px "NanumSquare"; }
+    #con_main .con_banner .mini_banner .mini_ban_text a {
+      color: #032d4d;
+      margin-right: 0; }
+    #con_main .con_banner .mini_banner .mini_ban_text p.pc_dn {
+      margin-right: 60px;
+      color: #666; }
+  #con_main .con_business p.pc_dn {
+    width: 450px;
+    margin: 0 auto 50px;
+    text-align: center;
+    line-height: 24px; }
+  #con_main .con_business .con_busi_link {
+    height: auto; }
+    #con_main .con_business .con_busi_link .busi_content {
+      width: 560px;
+      height: 300px;
+      float: none;
+      margin: 0 auto;
+      background-size: 560px auto; }
+      #con_main .con_business .con_busi_link .busi_content:first-of-type {
+        margin-right: 0;
+        margin-bottom: 20px;
+        background-size: 560px auto; }
+      #con_main .con_business .con_busi_link .busi_content p {
+        padding-top: 100px; } }
+
+@media screen and (max-width: 600px) {
+  #con_main {
+    width: 100%;
+    height: auto;
+    min-height: 350px; }
+    #con_main .con_banner {
+      width: 100%;
+      height: 450px; }
+    #con_main .con_business {
+      width: calc(100% - 40px);
+      height: auto; }
+    #con_main .con_company {
+      margin-top: 80px;
+      height: 220px; }
+    #con_main .con_partners {
+      width: calc(100% - 40px);
+      padding: 80px 0; }
+    #con_main h4 {
+      padding-bottom: 15px;
+      font: 600 22px/22px "notoSans";
+      text-align: center;
+      letter-spacing: 6px; }
+    #con_main h4 + p {
+      padding-bottom: 30px;
+      font: 400 14px/22px "notoSansKR";
+      text-align: center;
+      letter-spacing: -1px; }
+    #con_main .btn-more {
+      width: 200px;
+      height: 45px;
+      padding-left: 20px;
+      font: 400 16px/43px "notoSansKR"; }
+      #con_main .btn-more::before {
+        width: 0;
+        height: 43px; }
+      #con_main .btn-more::after {
+        width: 40px;
+        height: 15px;
+        background: url("../images/btn-dir.png") -8px 0px no-repeat;
+        margin-right: 20px; }
+      #con_main .btn-more:hover::before {
+        width: 198px; }
+      #con_main .btn-more:hover::after {
+        background-position: -56px 0; }
+  #con_main .con_banner .main_banner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: url("../images/con-banner-img01-m.jpg") no-repeat;
+    background-size: 100% auto;
+    background-position: center top; }
+    #con_main .con_banner .main_banner::before {
+      background: url("../images/con-banner-img02-m.jpg") no-repeat;
+      background-size: 100% auto;
+      background-position: center center; }
+    #con_main .con_banner .main_banner::after {
+      background: url("../images/con-banner-img03-m.jpg") no-repeat;
+      background-size: 100% auto;
+      background-position: center center; }
+    #con_main .con_banner .main_banner .con_slide_text {
+      width: calc(100% - 40px);
+      margin-top: -20px; }
+      #con_main .con_banner .main_banner .con_slide_text h6 {
+        font: 600 28px/40px "NanumSquare"; }
+      #con_main .con_banner .main_banner .con_slide_text p {
+        font: 600 18px/30px "NanumSquare"; }
+      #con_main .con_banner .main_banner .con_slide_text::after {
+        height: 400px;
+        margin-top: 20px; }
+  #con_main .con_banner .mini_banner {
+    width: calc(100% - 40px);
+    height: 125px;
+    background: url("../images/bg-quick-banner-m.jpg") right top no-repeat;
+    background-size: cover;
+    transform: translate(-50%, -40px);
+    -webkit-transform: translate(-50%, -40px); }
+    #con_main .con_banner .mini_banner .mini_ban_text {
+      width: calc(100% - 20px);
+      margin-top: 15px;
+      margin-left: 10px; }
+    #con_main .con_banner .mini_banner .mini_ban_text h6 {
+      color: #032d4d;
+      font: 600 22px/30px "NanumSquare"; }
+    #con_main .con_banner .mini_banner .mini_ban_text a {
+      color: #032d4d;
+      margin-right: 0; }
+    #con_main .con_banner .mini_banner .mini_ban_text p.pc_dn {
+      margin-right: 8px;
+      color: #666;
+      font-size: 13px; }
+  #con_main .con_business p.pc_dn {
+    width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px; }
+  #con_main .con_business .con_busi_link {
+    height: auto; }
+    #con_main .con_business .con_busi_link .busi_content {
+      width: 100%;
+      height: 210px;
+      float: none;
+      margin: 0 auto;
+      background-size: 100%; }
+      #con_main .con_business .con_busi_link .busi_content:first-of-type {
+        margin-right: 0;
+        margin-bottom: 10px;
+        background-size: 100%; }
+      #con_main .con_business .con_busi_link .busi_content p {
+        padding: 70px 0 15px;
+        font: 400 26px/26px "notoSansKR";
+        letter-spacing: 2px; }
+  #con_main .con_company h4 {
+    padding: 45px 0 15px; }
+  #con_main .con_company p {
+    padding-bottom: 35px; }
+  #con_main .con_company * {
+    color: #fff; }
+  #con_main .con_partners .con_ptn_slide::before, #con_main .con_partners .con_ptn_slide::after {
+    width: 40px;
+    height: 100px; }
+  #con_main .con_partners .con_ptn_slide::before {
+    background-image: linear-gradient(90deg, #fff 30%, rgba(0, 0, 0, 0)); }
+  #con_main .con_partners .con_ptn_slide::after {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #fff 30%); }
+  #con_main .con_partners .con_ptn_slide div {
+    height: 40px;
+    margin-left: 0;
+    margin-right: 30px; }
+  #con_main .con_partners .con_ptn_slide div img {
+    width: auto;
+    height: 40px; }
+  #con_main .con_partners .btn-more {
+    margin-top: 35px; }
+    #con_main .con_partners .btn-more::after {
+      background-position: -104px 0; }
+    #con_main .con_partners .btn-more:hover {
+      color: #fff; }
+      #con_main .con_partners .btn-more:hover::after {
+        background-position: -8px 0; } }

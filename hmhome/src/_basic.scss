@@ -100,8 +100,10 @@ $fontB : #111;
 
 // set class
 .pc_dn{ display: none; }
+.mo_dn{ display: block; }
 .sr-only{ width: 0; height: 0; font-size: 0; text-indent: -999999px; }
 
 @media screen and ( max-width: 960px ){
   .pc_dn{ display: block; }
+  .mo_dn{ display: none; }
 }
