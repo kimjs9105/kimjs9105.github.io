@@ -3,3 +3,4 @@ gulpfile.js
 *.json
 project/
 testFile/
+hm_log_home/node_modules/
