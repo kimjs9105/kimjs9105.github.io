@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     var winW = $('.foot_info').width();
 
-    alert(winW);
+    alert("푸터 박스"+winW);
   });
 
 });

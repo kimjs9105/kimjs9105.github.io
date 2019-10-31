@@ -121,10 +121,10 @@
       width: calc(100% - 40px); height: 125px;
       background: url('../images/bg-quick-banner-m.jpg') right top no-repeat; background-size: cover;
       transform: translate(-50%, -40px); -webkit-transform: translate(-50%, -40px);
-      .mini_ban_text{ width: calc(100% - 20px); margin-top: 15px; margin-left: 10px; }
-      .mini_ban_text h6{ color: $darkB; font: 600 22px/30px "NanumSquare"; }
+      .mini_ban_text{ width: calc(100% - 30px); margin-top: 15px; margin-left: 15px; }
+      .mini_ban_text h6{ color: $darkB; font: 600 20px/30px "NanumSquare"; }
       .mini_ban_text a{ color: $darkB; margin-right: 0; }
-      .mini_ban_text p.pc_dn { margin-right: 8px; color: #666; font-size: 13px; }
+      .mini_ban_text p.pc_dn { margin-right: 8px; color: #666; font-size: 12px; }
     }
   }//#con_main .con_banner
 
@@ -161,7 +161,7 @@
 
     .btn-more{
       margin-top: 35px;
-      
+
       &::after{ background-position: -104px 0; }
 
       &:hover{

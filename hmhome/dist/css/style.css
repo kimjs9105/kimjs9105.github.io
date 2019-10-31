@@ -506,19 +506,19 @@
     transform: translate(-50%, -40px);
     -webkit-transform: translate(-50%, -40px); }
     #con_main .con_banner .mini_banner .mini_ban_text {
-      width: calc(100% - 20px);
+      width: calc(100% - 30px);
       margin-top: 15px;
-      margin-left: 10px; }
+      margin-left: 15px; }
     #con_main .con_banner .mini_banner .mini_ban_text h6 {
       color: #032d4d;
-      font: 600 22px/30px "NanumSquare"; }
+      font: 600 20px/30px "NanumSquare"; }
     #con_main .con_banner .mini_banner .mini_ban_text a {
       color: #032d4d;
       margin-right: 0; }
     #con_main .con_banner .mini_banner .mini_ban_text p.pc_dn {
       margin-right: 8px;
       color: #666;
-      font-size: 13px; }
+      font-size: 12px; }
   #con_main .con_business p.pc_dn {
     width: 100%;
     margin: 0 auto 30px;
