@@ -15,5 +15,12 @@ $(document).ready(function(){
       $('.menu_bg').css({display: 'none'});
     });
   });
-  
+
+  $('#test_W').on('click', function(){
+
+    var winW = $(window).width();
+
+    alert(winW);
+  });
+
 });
