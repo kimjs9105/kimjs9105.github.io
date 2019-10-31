@@ -18,7 +18,7 @@ $(document).ready(function(){
 
   $('#test_W').on('click', function(){
 
-    var winW = $(window).width();
+    var winW = $('.foot_info').width();
 
     alert(winW);
   });
