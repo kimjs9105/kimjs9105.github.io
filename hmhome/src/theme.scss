@@ -203,7 +203,7 @@ footer{
   }
 
   footer{
-    .foot_logo{ width: 100%; }
+    .foot_logo, .foot_info{ width: 100%; }
     .foot_logo img{ width: 100%; }
     .foot_info li{ width: 100%; float: none; margin-right: 0; margin-bottom: 3px; font: 400 14px/22px "notoSansKR"; }
     .foot_info li::after{ display:none; }
@@ -215,10 +215,7 @@ footer{
 
 
   footer{
-    .foot_logo{ width: 100%; }
     .foot_logo img{ width: 270px; }
-    .foot_info li{ width: 100%; float: none; margin-right: 0; margin-bottom: 3px; font: 400 14px/22px "notoSansKR"; }
-    .foot_info li::after{ display:none; }
-    .foot_info p { padding-top: 25px; font-size: 12px; }
+    .foot_info p { font-size: 12px; }
   }
 }

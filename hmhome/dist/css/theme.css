@@ -461,7 +461,7 @@ footer {
       header .menu_btn::after {
         width: 22px;
         margin-top: 22px; }
-  footer .foot_logo {
+  footer .foot_logo, footer .foot_info {
     width: 100%; }
   footer .foot_logo img {
     width: 100%; }
@@ -477,18 +477,7 @@ footer {
     padding-top: 25px; } }
 
 @media screen and (max-width: 420px) {
-  footer .foot_logo {
-    width: 100%; }
   footer .foot_logo img {
     width: 270px; }
-  footer .foot_info li {
-    width: 100%;
-    float: none;
-    margin-right: 0;
-    margin-bottom: 3px;
-    font: 400 14px/22px "notoSansKR"; }
-  footer .foot_info li::after {
-    display: none; }
   footer .foot_info p {
-    padding-top: 25px;
     font-size: 12px; } }
