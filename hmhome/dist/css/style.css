@@ -319,10 +319,12 @@
     z-index: 15; }
   #con_main .con_partners .con_ptn_slide::before {
     left: 0;
-    background-image: linear-gradient(90deg, #fff 60%, rgba(0, 0, 0, 0)); }
+    background: url("../images/con-partner-left.png") left top no-repeat;
+    background-size: cover; }
   #con_main .con_partners .con_ptn_slide::after {
     right: 0;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #fff 60%); }
+    background: url("../images/con-partner-right.png") right top no-repeat;
+    background-size: cover; }
 
 #con_main .con_partners .con_ptn_slide div {
   margin-left: 20px;
@@ -551,11 +553,13 @@
     width: 40px;
     height: 100px; }
   #con_main .con_partners .con_ptn_slide::before {
-    margin-left: -15px;
-    background-image: linear-gradient(90deg, #fff 40%, rgba(0, 0, 0, 0)); }
+    margin-left: -5px;
+    background: url("../images/con-partner-left_m.png") left top no-repeat;
+    background-size: cover; }
   #con_main .con_partners .con_ptn_slide::after {
-    margin-right: -15px;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #fff 40%); }
+    margin-right: -5px;
+    background: url("../images/con-partner-right_m.png") right top no-repeat;
+    background-size: cover; }
   #con_main .con_partners .con_ptn_slide div {
     height: 40px;
     margin-left: 0;
@@ -563,6 +567,8 @@
   #con_main .con_partners .con_ptn_slide div img {
     width: auto;
     height: 40px; }
+  #con_main .con_partners .con_ptn_slide div.slick-list {
+    margin-right: 0; }
   #con_main .con_partners .btn-more {
     margin-top: 35px; }
     #con_main .con_partners .btn-more::after {

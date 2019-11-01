@@ -16,11 +16,4 @@ $(document).ready(function(){
     });
   });
 
-  $('#test_W').on('click', function(){
-
-    var winW = $('.foot_info').width();
-
-    alert("푸터 박스"+winW);
-  });
-
 });

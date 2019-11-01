@@ -123,8 +123,8 @@
       display: block; content: ""; position: absolute; width: 80px; height: 100px; top: 50%; margin-top: -50px; z-index: 15;
     }
 
-    &::before{ left: 0; background-image: linear-gradient(90deg, #fff 60%, rgba(0,0,0,0)); }
-    &::after{ right: 0; background-image: linear-gradient(90deg, rgba(0,0,0,0), #fff 60%); }
+    &::before{ left: 0; background: url('../images/con-partner-left.png') left top no-repeat; background-size: cover; }
+    &::after{ right: 0; background: url('../images/con-partner-right.png') right top no-repeat; background-size: cover; }
   }
 
   .con_ptn_slide div { margin-left: 20px; margin-right: 50px; }

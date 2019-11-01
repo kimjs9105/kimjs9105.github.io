@@ -151,13 +151,14 @@
         width: 40px; height: 100px;
       }
 
-      &::before{ margin-left: -15px; background-image: linear-gradient(90deg, #fff 40%, rgba(0,0,0,0)); }
-      &::after{ margin-right: -15px; background-image: linear-gradient(90deg, rgba(0,0,0,0), #fff 40%); }
+      &::before{ margin-left: -5px; background: url('../images/con-partner-left_m.png') left top no-repeat; background-size: cover; }
+      &::after{ margin-right: -5px; background: url('../images/con-partner-right_m.png') right top no-repeat; background-size: cover; }
 
     }
 
     .con_ptn_slide div { height: 40px; margin-left: 0; margin-right: 30px; }
     .con_ptn_slide div img { width: auto; height: 40px; }
+    .con_ptn_slide div.slick-list { margin-right: 0; }
 
     .btn-more{
       margin-top: 35px;
