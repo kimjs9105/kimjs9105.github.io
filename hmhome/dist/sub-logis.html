@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
   <title>희망운수(주)</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/slick.css">
@@ -14,7 +15,7 @@
 <body>
   <div id="wrap">
     <header>
-      <a href="#!" class="pc_dn call_btn"><img src="./images/icon-call-m.png" alt="희망운수 전화하기"></a>
+      <a href="tel:031-334-0029" class="pc_dn call_btn"><img src="./images/icon-call-m.png" alt="희망운수 전화하기"></a>
       <h1><a href="./index.html"><img src="./images/hmlog_logo_B.png" alt="희망운수 로고"></a></h1>
       <a href="#!" class="pc_dn menu_btn" id="btn-menu"><span class="sr-only">메뉴 열기 버튼</span></a>
       <div class="pc_dn menu_bg"></div>
@@ -40,20 +41,21 @@
         <ul>
           <li><a href="">인사말</a></li>
           <li><a href="">연혁</a></li>
-          <li><a href="">오시는 길</a></li>
+          <li class="on"><a href="">오시는 길</a></li>
         </ul>
       </div>
 
       <div class="sub-content sub-log-con_01">
-        
+
       </div>
 
       <div class="sub-content sub-log-con_02">
 
       </div>
 
-      <div class="sub-content sub-log-con_03">
-
+      <div class="sub-content sub-log-con_03 on">
+        <p class="intro-sents">희망운수(주)는 고객분들의 방문을 환영합니다.</p>
+        <div id="map" class="mapHM"></div>
       </div>
 
     </section>
@@ -81,21 +83,19 @@
   <script src="./js/jquery-3.4.1.min.js"></script>
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script src="./js/slick.min.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9b30e87450b498d7871d53b92b94b906"></script>
   <script type="text/javascript">
 
     $(document).ready(function(){
-
-      $('.con_ptn_slide').slick({
-        infinite: true,
-        speed: 3000,
-        centerMode: true,
-        variableWidth: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-      });
     });
+
+    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+    	center: new kakao.maps.LatLng(37.255118, 127.241819), //지도의 중심좌표.
+    	level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+
+    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
   </script>
   <script src="./js/common.js"></script>

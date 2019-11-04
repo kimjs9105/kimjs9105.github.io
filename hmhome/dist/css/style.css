@@ -69,6 +69,27 @@
   font-weight: 800;
   font-style: normal; }
 
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url("./font/NanumBarunGothicLight.eot");
+  src: url("./font/NanumBarunGothicLight.woff") format("woff"), url("./font/NanumBarunGothicLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url("./font/NanumBarunGothic.eot");
+  src: url("./font/NanumBarunGothic.woff") format("woff"), url("./font/NanumBarunGothic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url("./font/NanumBarunGothicBold.eot");
+  src: url("./font/NanumBarunGothicBold.woff") format("woff"), url("./font/NanumBarunGothicBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
 .pc_dn {
   display: none; }
 
@@ -342,6 +363,87 @@
     color: #fff; }
     #con_main .con_partners .btn-more:hover::after {
       background-position: 0 0; }
+
+/* 서브 페이지 공통 스타일 */
+.sub-banner {
+  width: 100%;
+  height: auto; }
+
+.sub-banner img {
+  width: 100%; }
+
+.sub-title {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 30px 0; }
+  .sub-title h2 {
+    width: 250px;
+    height: 50px;
+    float: left;
+    padding-left: 20px;
+    font: 600 26px/50px "NanumBarunGothic";
+    color: #032d4d;
+    position: relative; }
+    .sub-title h2::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 50px;
+      background: url("../images/icon-sub-title.jpg") left top 100% no-repeat; }
+  .sub-title ul {
+    width: calc(100% - 270px);
+    height: 50px;
+    float: right;
+    position: relative; }
+    .sub-title ul::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 1px;
+      background: #929292;
+      bottom: 0;
+      right: 0; }
+    .sub-title ul li {
+      width: auto;
+      height: 50px;
+      padding: 0 20px;
+      float: left;
+      border-bottom: 1px solid #929292;
+      box-sizing: border-box; }
+      .sub-title ul li a {
+        font: 400 20px/50px "NanumBarunGothic";
+        color: #111; }
+      .sub-title ul li.on {
+        border: 1px solid #929292;
+        border-bottom: 0; }
+        .sub-title ul li.on a {
+          color: #034077; }
+
+.sub-content {
+  display: none;
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 95px; }
+  .sub-content.on {
+    display: block; }
+  .sub-content .intro-sents {
+    padding-bottom: 25px;
+    font: 400 15px/20px "NanumBarunGothic";
+    color: #111; }
+
+/* 서브 페이지 페이지 별 스타일 */
+#sub-logis .sub-title ul::after {
+  width: calc(100% - 287px); }
+
+#sub-logis .sub-log-con_03 .mapHM {
+  width: 1200px;
+  height: 360px;
+  background: #aaa; }
 
 @media screen and (max-width: 1200px) and (min-width: 961px) {
   #con_main {

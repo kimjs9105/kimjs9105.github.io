@@ -142,4 +142,51 @@
   }
 }
 
+
+/* 서브 페이지 공통 스타일 */
+.sub-banner{ width: 100%; height: auto; }
+.sub-banner img { width: 100%; }
+
+.sub-title{
+  width: 1200px; height: 50px; margin: 0 auto; padding: 30px 0;
+
+  h2{ width: 250px; height: 50px; float: left; padding-left: 20px;
+    font: 600 26px/50px "NanumBarunGothic"; color: $darkB; position: relative;
+    &::before{ display: block; position: absolute; content: ""; top: 0; left: 0;
+      width: 4px; height: 50px; background: url('../images/icon-sub-title.jpg') left top 100% no-repeat; }
+  }
+
+  ul{ width: calc(100% - 270px); height: 50px; float: right; position: relative;
+    &::after{ content: ""; display: block; position: absolute;
+    height: 1px; background: #929292; bottom: 0; right: 0; }
+
+    li{ width: auto; height: 50px; padding: 0 20px; float: left;
+      border-bottom: 1px solid #929292; box-sizing: border-box;
+
+      a{ font: 400 20px/50px "NanumBarunGothic"; color: $fontB; }
+
+      &.on{ border: 1px solid #929292; border-bottom: 0;
+        a{ color: #034077; }
+      }
+    }
+  }
+}// .sub-title
+
+.sub-content{
+  display: none; width: 1200px; height: auto; margin: 0 auto; padding-bottom: 95px;
+
+  &.on{ display: block; }
+
+  .intro-sents{ padding-bottom: 25px; font: 400 15px/20px "NanumBarunGothic"; color: $fontB; }
+}// .sub-content
+
+/* 서브 페이지 페이지 별 스타일 */
+#sub-logis{
+  .sub-title ul::after{ width: calc(100% - 287px); }
+
+  .sub-log-con_03{
+    .mapHM{ width: 1200px; height: 360px; background: #aaa; }
+  }
+}
+
 @import "respon";

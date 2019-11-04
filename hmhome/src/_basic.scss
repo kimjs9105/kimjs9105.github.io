@@ -88,6 +88,33 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('./font/NanumBarunGothicLight.eot');
+  src: url('./font/NanumBarunGothicLight.woff') format('woff'),
+       url('./font/NanumBarunGothicLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('./font/NanumBarunGothic.eot');
+  src: url('./font/NanumBarunGothic.woff') format('woff'),
+       url('./font/NanumBarunGothic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('./font/NanumBarunGothicBold.eot');
+  src: url('./font/NanumBarunGothicBold.woff') format('woff'),
+       url('./font/NanumBarunGothicBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
 // color list
 $white : #fff;
 $black : #000;
