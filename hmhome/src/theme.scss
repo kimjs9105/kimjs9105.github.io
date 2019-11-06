@@ -45,11 +45,11 @@ footer{
     ul{ width: 100%; display: inline-block; }
     li{ width: auto; margin-right: 40px; float: left; font: 400 15px/25px "notoSansKR"; position: relative;
       &:last-of-type{ margin-right: 0; }
-      &::after{ content: ""; display: block; position: absolute; top: 50%; right: -21px; margin-top: -6px;
+      &::after{ content: ""; display: block; position: absolute; top: 50%; right: -21px; margin-top: -5px;
       width: 2px; height: 10px; background: $white; }
       &.deco_none::after{ display: none; }
     }
-    p{ width: 100%; display: block; font: 400 12px/24px "notoSansKR"; }
+    p{ width: 100%; display: block; padding-top: 2px; font: 400 13px/24px "notoSansKR"; }
   }
   .foot_logo{ width: 500px; padding-top: 50px; float: right;
     img{ display: block; float: right; }
@@ -94,7 +94,7 @@ footer{
 // 모바일 버전 전체 틀
 @media screen and ( max-width: 960px ){
 
-  header{ position: relative;
+  header{ position: fixed; background: $white; border-bottom: 1px solid #ddd; z-index: 50;
 
     .call_btn{ float: left; }
 

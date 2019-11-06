@@ -177,16 +177,37 @@
 
   &.on{ display: block; }
 
-  .intro-sents{ padding-bottom: 25px; font: 400 15px/20px "NanumBarunGothic"; color: $fontB; }
+  .intro-sents{ padding-bottom: 25px; padding-left: 10px;  font: 400 15px/20px "NanumBarunGothic"; color: $fontB; }
 }// .sub-content
 
 /* 서브 페이지 페이지 별 스타일 */
 #sub-logis{
   .sub-title ul::after{ width: calc(100% - 287px); }
 
-  .sub-log-con_03{
-    .mapHM{ width: 1200px; height: 360px; background: #aaa; }
+  .sub-log-03{
+    .mapHM{ width: 100%; height: 360px; background: #aaa; }
+    .map_info{
+      width: 100%; height: auto; padding-top: 35px;
+
+      li{ width: auto; height: 18px; padding-left: 20px; padding-bottom: 8px;
+        font: 400 15px/18px "NanumBarunGothic"; text-align: center; position: relative;
+
+        &:nth-of-type(4){ height: 40px; line-height: 20px; }
+
+        &::before{ display: block; content: ""; position: absolute; top: 0; left: 50%; margin-top: -1px;
+          height: 18px; background: url('../images/icon-sub-maps.jpg') no-repeat; }
+
+        &:nth-of-type(1) { color: $darkB; font-weight: 600; font-size: 18px; padding-bottom: 14px; }
+        &:nth-of-type(2)::before{ width: 13px; background-position: 0px 0px; margin-left: -155px; }
+        &:nth-of-type(3)::before{ width: 16px; background-position: -15px 0px; margin-left: -243px; }
+        &:nth-of-type(4)::before{ width: 16px; background-position: -15px 0px; margin-top: 1px; margin-left: -128px; }
+        &:nth-of-type(5)::before{ width: 17px; background-position: -32px 0px; margin-left: -96px; }
+        &:nth-of-type(6)::before{ width: 13px; background-position: -50px 0px; margin-left: -66px; }
+
+      }
+    }
   }
+
 }
 
 @import "respon";

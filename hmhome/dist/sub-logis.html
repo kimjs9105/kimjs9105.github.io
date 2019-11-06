@@ -33,29 +33,40 @@
 
     <!-- 컨텐츠 영역 -->
     <section id="sub-logis">
-      <div class="sub-banner"><img src="./images/con-sub-banner-01.jpg" alt=""></div>
+      <div class="sub-banner">
+        <img class="mo_dn" src="./images/con-sub-banner-01.jpg" alt="">
+        <img class="pc_dn" src="./images/con-sub-banner-01-m.jpg" alt="">
+      </div>
 
       <div class="sub-title">
         <h2>회사소개</h2>
-
-        <ul>
-          <li><a href="">인사말</a></li>
-          <li><a href="">연혁</a></li>
-          <li class="on"><a href="">오시는 길</a></li>
+        <a class="pc_dn mob_sub_tit" href="#!">오시는 길</a>
+        <ul class="sub-con-tabs">
+          <li><a href="#!" data-con="sub-log-01">인사말</a></li>
+          <li><a href="#!" data-con="sub-log-02">연혁</a></li>
+          <li class="on"><a href="#!" data-con="sub-log-03">오시는 길</a></li>
         </ul>
       </div>
 
-      <div class="sub-content sub-log-con_01">
-
+      <div class="sub-content sub-log-01">
+        <p class="intro-sents">희망운수(주)</p>
       </div>
 
-      <div class="sub-content sub-log-con_02">
-
+      <div class="sub-content sub-log-02">
+        <p class="intro-sents">환영합니다.</p>
       </div>
 
-      <div class="sub-content sub-log-con_03 on">
+      <div class="sub-content sub-log-03 on">
         <p class="intro-sents">희망운수(주)는 고객분들의 방문을 환영합니다.</p>
         <div id="map" class="mapHM"></div>
+        <ul class="map_info">
+          <li>희망운수(주)</li>
+          <li>경기도 용인시 처인구 양지면 주북로5번길 96 3층</li>
+          <li class="mo_dn">용인터미널에서 2, 82, 95번 버스 탑승. 예원마을 앞 정거장에서 도보 5분 소요.</li>
+          <li class="pc_dn">용인터미널에서 2, 82, 95번 버스 탑승.<br>예원마을 앞 정거장에서 도보 5분 소요.</li>
+          <li>hmlogistics@naver.com</li>
+          <li>031)334-0028,9</li>
+        </ul>
       </div>
 
     </section>
@@ -108,7 +119,7 @@
     // 마커를 생성합니다
     var marker = new kakao.maps.Marker({
         position: markerPosition,
-        image: markerImage // 마커이미지 설정 
+        image: markerImage // 마커이미지 설정
     });
 
     // 마커가 지도 위에 표시되도록 설정합니다

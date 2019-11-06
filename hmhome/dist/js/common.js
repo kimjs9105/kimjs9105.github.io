@@ -16,4 +16,37 @@ $(document).ready(function(){
     });
   });
 
+  var $sectionTabs = $('section .sub-con-tabs a');
+  var $sectionTit = $('section .mob_sub_tit');
+
+  $sectionTabs.on('click', function(){
+    var $selectTabs = $(this).attr('data-con');
+    var $selectText = $(this).text();
+
+    $('.sub-content').removeClass("on");
+    $('.' + $selectTabs).addClass("on");
+    $('section .sub-con-tabs li').removeClass("on");
+    $(this).parent().addClass("on");
+
+    var winMob = $(window).width();
+    if( winMob <= 600 ){
+
+      $('.sub-title > ul').slideToggle(500);
+      $sectionTit.text($selectText);
+    }
+  });
+
+  $sectionTit.on('click', function(){
+
+    $sectionTit.next('ul').slideToggle(500);
+
+    if($sectionTit.hasClass("on")){
+      $sectionTit.removeClass("on");
+    }else{
+      $sectionTit.addClass("on");
+    }
+  });
+
+
+
 });

@@ -215,7 +215,7 @@ footer {
         position: absolute;
         top: 50%;
         right: -21px;
-        margin-top: -6px;
+        margin-top: -5px;
         width: 2px;
         height: 10px;
         background: #fff; }
@@ -224,7 +224,8 @@ footer {
     footer .foot_info p {
       width: 100%;
       display: block;
-      font: 400 12px/24px "notoSansKR"; }
+      padding-top: 2px;
+      font: 400 13px/24px "notoSansKR"; }
   footer .foot_logo {
     width: 500px;
     padding-top: 50px;
@@ -289,7 +290,10 @@ footer {
 
 @media screen and (max-width: 960px) {
   header {
-    position: relative; }
+    position: fixed;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 50; }
     header .call_btn {
       float: left; }
     header h1 {
