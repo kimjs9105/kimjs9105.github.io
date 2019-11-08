@@ -40,23 +40,33 @@
 
       <div class="sub-title">
         <h2>회사소개</h2>
-        <a class="pc_dn mob_sub_tit" href="#!">오시는 길</a>
+        <a class="pc_dn mob_sub_tit" href="#!">인사말</a>
         <ul class="sub-con-tabs">
-          <li><a href="#!" data-con="sub-log-01">인사말</a></li>
-          <li><a href="#!" data-con="sub-log-02">연혁</a></li>
-          <li class="on"><a href="#!" data-con="sub-log-03">오시는 길</a></li>
+          <li class="on"><a href="#!" data-con="sub-log-01">인사말</a></li>
+          <li><a href="#!" data-con="sub-log-02">오시는 길</a></li>
         </ul>
       </div>
 
-      <div class="sub-content sub-log-01">
-        <p class="intro-sents">희망운수(주)</p>
+      <div class="sub-content sub-log-01 on">
+        <div class="log_con_left">
+          <img src="./images/con-sub-logis-01.jpg" alt="">
+        </div>
+        <div class="log_con_right">
+          <h5>희망운수(주)를 찾아주셔서 진심으로 감사합니다.</h5>
+          <p>혁신과 안전의 희망운수(주)가 정상의 무대를 향해 힘차게 전진하고 있습니다. <br>
+            희망운수(주)를 찾아주셔서 진심으로 감사드립니다.<br>
+          고객 만족을 위한 일류 서비스 창조에 더욱 노력하겠습니다. <br><br>
+          희망운수(주)는 2010년 6월 개인 사업자로 시작하여<br>
+          2015년 12월 내륙 운송, 프로젝트 화물 운송, 물류 컨설팅등<br>
+          전방위 물류 서비스를 제공하는 운수 법인을 설립하였습니다.<br><br>
+          다년간의 운영과 혁신으로 전국 뮬류망을 소유하고 있으며 전국 영역에 걸쳐<br>
+          맞춤형 물류 정보와 공급망을 제공하고 고객의 가치 창조를 위해 노력하고 있습니다.<br>
+          <span>"고객만족을 위한 정상의 서비스를 창조"</span>하는<br>
+          최고의 종합 물류 회사로 새롭게 도약할 것 입니다.</p>
+        </div>
       </div>
 
       <div class="sub-content sub-log-02">
-        <p class="intro-sents">환영합니다.</p>
-      </div>
-
-      <div class="sub-content sub-log-03 on">
         <p class="intro-sents">희망운수(주)는 고객분들의 방문을 환영합니다.</p>
         <div id="map" class="mapHM"></div>
         <ul class="map_info">
@@ -109,8 +119,8 @@
     var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
     var imageSrc = 'http://kimjs9105.github.io/hmhome/dist/images/map_picker.png', // 마커이미지의 주소입니다
-        imageSize = new kakao.maps.Size(99, 70), // 마커이미지의 크기입니다
-        imageOption = {offset: new kakao.maps.Point(45, 68)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+        imageSize = new kakao.maps.Size(60, 77), // 마커이미지의 크기입니다
+        imageOption = {offset: new kakao.maps.Point(30, 75)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
 // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
     var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),

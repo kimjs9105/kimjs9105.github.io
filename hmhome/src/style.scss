@@ -176,15 +176,29 @@
   display: none; width: 1200px; height: auto; margin: 0 auto; padding-bottom: 95px;
 
   &.on{ display: block; }
-
-  .intro-sents{ padding-bottom: 25px; padding-left: 10px;  font: 400 15px/20px "NanumBarunGothic"; color: $fontB; }
+  p { font: 400 15px/22px "NanumBarunGothic"; letter-spacing: 0.5px; color: $fontB; }
+  .intro-sents{ padding-bottom: 25px; padding-left: 10px; }
 }// .sub-content
 
 /* 서브 페이지 페이지 별 스타일 */
 #sub-logis{
-  .sub-title ul::after{ width: calc(100% - 287px); }
+  .sub-title ul::after{ width: calc(100% - 211px); }
 
-  .sub-log-03{
+  .sub-log-01{ width: 1200px; height: 400px; padding-top: 50px;
+    >div{ width: 50%; height: auto; float: left; }
+    .log_con_left {
+      img{ width: 100%; height: auto; display: block; }
+    }
+
+    .log_con_right{
+      width: calc(50% - 80px); height: 100%; float: left; padding-left: 80px;
+      background: url('../images/con-sub-logis-bg.png') bottom right no-repeat;
+      h5{ padding: 40px 0 20px; font: 600 18px/24px "NanumBarunGothic"; color: $fontB; }
+      p span{ color: $darkB; font-weight: 600; }
+    }
+  }
+
+  .sub-log-02{
     .mapHM{ width: 100%; height: 360px; background: #aaa; }
     .map_info{
       width: 100%; height: auto; padding-top: 35px;
