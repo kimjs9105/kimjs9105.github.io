@@ -191,10 +191,11 @@
     }
 
     .log_con_right{
-      width: calc(50% - 80px); height: 100%; float: left; padding-left: 80px;
+      width: calc(50% - 80px); padding-left: 80px;
       background: url('../images/con-sub-logis-bg.png') bottom right no-repeat;
       h5{ padding: 40px 0 20px; font: 600 18px/24px "NanumBarunGothic"; color: $fontB; }
       p span{ color: $darkB; font-weight: 600; }
+      p.free_text, *.mo_text{ display: none; }
     }
   }
 
@@ -221,7 +222,14 @@
       }
     }
   }
+}//#sub-logis
 
-}
+#sub-operating{
+  .sub-content > div {
+    width: 100%; height: 250px; margin: 20px 0; padding: 25px; background: #eee; border-radius: 125px; box-sizing: border-box;
+
+    img{ width: 200px; height: 200px; background: $white; border-radius: 50%; }
+  }
+}//#sub-operating
 
 @import "respon";

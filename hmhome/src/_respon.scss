@@ -35,6 +35,21 @@
   .sub-title{ width: 940px; }
   .sub-content{ width: 940px; }
 
+  #sub-logis{
+    .sub-title ul::after{ width: calc(100% - 211px); }
+
+    .sub-log-01{ width: 940px;
+
+      .log_con_right{
+        width: calc(50% - 50px); padding-left: 50px;
+        h5{ padding: 0 0 20px;}
+        p{ display: none; }
+        p.free_text{ display: block; }
+      }
+    }
+
+  }// #sub-logis
+
 }
 
 @media screen and ( max-width: 960px ) and ( min-width: 601px ){
@@ -84,6 +99,25 @@
     ul{ width: calc(100% - 200px); }
   }
   .sub-content{ width: calc(100% - 40px); }
+
+  #sub-logis{
+    .sub-title ul::after{ width: calc(100% - 211px); }
+
+    .sub-log-01{ width: calc(100% - 40px); height: auto;
+
+      >div{ width: 100%; height: auto; float: none; }
+      .log_con_left {
+        img{ width: 100%; max-width: 600px; margin: 0 auto; }
+      }
+
+      .log_con_right{
+        width: 100%; padding-left: 0;
+        h5{ padding: 50px 0 20px; text-align: center; }
+        p{ display: block; text-align: center; }
+        p.free_text{ display: none; }
+      }
+    }
+  }// #sub-logis
 }
 
 @media screen and ( max-width: 600px ){
@@ -192,10 +226,9 @@
 
   /* 서브 페이지 */
   .sub-banner{ display: none; }
-  .sub-title{ width: 100%; height: auto; padding: 0; background-size: auto 100%; position: relative;
-    background: url('../images/con-sub-banner-01-m.jpg') center center no-repeat;
+  .sub-title{ width: 100%; height: auto; padding: 0; position: relative;
     h2{ width: 100%; height: 200px; padding: 0; float: none; background: rgba(0,0,0,0.3);
-      font: 600 40px/220px "NanumBarunGothic"; color: $white; text-align: center; letter-spacing: 8px; }
+      font: 600 34px/220px "NanumBarunGothic"; color: $white; text-align: center; letter-spacing: 8px; }
     h2::before{ display: none; }
     .mob_sub_tit{ width: 100%; height: 50px; background: $darkB; position: relative;
       font: 400 20px/50px "NanumBarunGothic"; color: $white; text-indent: 25px;
@@ -219,9 +252,27 @@
       }
     }
   }
-  .sub-content{ width: calc(100% - 40px); padding-top: 30px;  }
+  .sub-content{ width: calc(100% - 40px); padding-top: 30px; }
 
   #sub-logis{
-    .sub-title ul{ margin-bottom: -180px; }
+    .sub-title{ background: url('../images/con-sub-banner-01-m.jpg') center top no-repeat; background-size: auto 220px; }
+    .sub-title ul{ margin-bottom: -130px; }
+
+    .sub-log-01{ width: calc(100% - 40px); height: auto;
+
+      >div{ width: 100%; height: auto; float: none; }
+      .log_con_left {
+        img{ width: 100%; max-width: 600px; margin: 0 auto; }
+      }
+
+      .log_con_right{
+        width: 100%; padding-left: 0;
+        h5{ display: none;  }
+        p{ display: none; }
+        p.free_text{ display: none; }
+        *.mo_text{ display: block; text-align: center; }
+        // h5.mo_text{ padding: 50px 0 20px; text-align: center; font: 600 18px/24px "NanumBarunGothic"; color: $fontB;}
+      }
+    }
   }
 }
