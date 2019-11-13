@@ -181,25 +181,70 @@
 }// .sub-content
 
 /* 서브 페이지 페이지 별 스타일 */
-#sub-logis{
-  .sub-title ul::after{ width: calc(100% - 211px); }
+#sub-company{
+  .sub-title ul::after{ width: calc(100% - 321px); }
 
-  .sub-log-01{ width: 1200px; height: 400px; padding-top: 50px;
+  .sub-company-01{ padding-top: 100px; }
+
+  [class*="company-intro-"]{
+    height: 630px;
+    .text-con, .img-con{ height: 500px; float: left; box-sizing: border-box; }
+    .text-con{ width: 500px; }
+    .img-con{ width: 700px; }
+    .text-con.left{ padding-right: 50px; }
+    .text-con.right{ padding-left: 50px; }
+
+    img{ width: 100%; }
+    h6{ height: 80px; margin-bottom: 40px; position: relative;
+      font: 600 34px/50px "NanumBarunGothic"; letter-spacing: 0.5px; color: $darkB;
+
+      &::before, &::after{ content: ""; display: block; position: absolute; bottom: 0; height: 2px; z-index: 20; }
+      &::before{ margin-bottom: 10px; background: #1a88b8; }
+      &::after{ margin-bottom: -10px; background: #2bc5ff; }
+    }
+    p{ font: 400 16px/40px "NanumBarunGothic"; letter-spacing: 0.5px; color: $fontB; }
+    .left h6, .left p { text-align: right; }
+    .left h6::before{ right: 0; margin-right: -120px; }
+    .left h6::after{ right: 0; margin-right: -80px; }
+
+    .right h6, .right p { text-align: left; }
+    .right h6::before{ left: 0; margin-left: -120px; }
+    .right h6::after{ left: 0; margin-left: -80px; }
+  }
+
+  .company-intro-01{
+    .text-con{ padding-top: 140px; }
+    h6::before{ width: 470px; }
+    h6::after{ width: 300px; }
+  }
+
+  .company-intro-02{
+    .text-con{ padding-top: 120px; }
+    h6::before{ width: 270px; }
+    h6::after{ width: 380px; }
+  }
+
+  .company-intro-03{
+    .text-con{ padding-top: 190px; }
+    h6::before{ width: 350px; }
+    h6::after{ width: 500px; }
+  }
+
+  .sub-company-02{ width: 1200px; height: 500px; padding-top: 70px;
     >div{ width: 50%; height: auto; float: left; }
-    .log_con_left {
+    .company_con_left {
       img{ width: 100%; height: auto; display: block; }
     }
 
-    .log_con_right{
+    .company_con_right{
       width: calc(50% - 80px); padding-left: 80px;
-      background: url('../images/con-sub-logis-bg.png') bottom right no-repeat;
+      background: url('../images/con-sub-com-bg.png') bottom right no-repeat;
       h5{ padding: 40px 0 20px; font: 600 18px/24px "NanumBarunGothic"; color: $fontB; }
       p span{ color: $darkB; font-weight: 600; }
-      p.free_text, *.mo_text{ display: none; }
     }
   }
 
-  .sub-log-02{
+  .sub-company-03{
     .mapHM{ width: 100%; height: 360px; background: #aaa; }
     .map_info{
       width: 100%; height: auto; padding-top: 35px;
@@ -224,11 +269,18 @@
   }
 }//#sub-logis
 
-#sub-operating{
-  .sub-content > div {
-    width: 100%; height: 250px; margin: 20px 0; padding: 25px; background: #eee; border-radius: 125px; box-sizing: border-box;
 
-    img{ width: 200px; height: 200px; background: $white; border-radius: 50%; }
+#sub-operating{
+  .sub-content{ height: 500px; }
+  .sub-content > div {
+    width: 292px; height: 400px; margin-top: 20px; margin-right: 10px; float: left;
+    &:last-of-type{ margin-right: 0; }
+
+    div{ width: 100%; height: 200px; background: #e9e9e9; }
+    img { width: 100%; height: auto; }
+    .text-con{ padding: 30px; box-sizing: border-box; }
+    h5{ padding: 15px 0 10px; font: 600 21px/26px "NanumBarunGothic"; color: $darkB; }
+    p{ font: 400 15px/22px "NanumBarunGothic"; }
   }
 }//#sub-operating
 

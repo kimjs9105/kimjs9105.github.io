@@ -440,45 +440,130 @@
     padding-left: 10px; }
 
 /* 서브 페이지 페이지 별 스타일 */
-#sub-logis .sub-title ul::after {
-  width: calc(100% - 211px); }
+#sub-company .sub-title ul::after {
+  width: calc(100% - 321px); }
 
-#sub-logis .sub-log-01 {
+#sub-company .sub-company-01 {
+  padding-top: 100px; }
+
+#sub-company [class*="company-intro-"] {
+  height: 630px; }
+  #sub-company [class*="company-intro-"] .text-con, #sub-company [class*="company-intro-"] .img-con {
+    height: 500px;
+    float: left;
+    box-sizing: border-box; }
+  #sub-company [class*="company-intro-"] .text-con {
+    width: 500px; }
+  #sub-company [class*="company-intro-"] .img-con {
+    width: 700px; }
+  #sub-company [class*="company-intro-"] .text-con.left {
+    padding-right: 50px; }
+  #sub-company [class*="company-intro-"] .text-con.right {
+    padding-left: 50px; }
+  #sub-company [class*="company-intro-"] img {
+    width: 100%; }
+  #sub-company [class*="company-intro-"] h6 {
+    height: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    font: 600 34px/50px "NanumBarunGothic";
+    letter-spacing: 0.5px;
+    color: #032d4d; }
+    #sub-company [class*="company-intro-"] h6::before, #sub-company [class*="company-intro-"] h6::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      z-index: 20; }
+    #sub-company [class*="company-intro-"] h6::before {
+      margin-bottom: 10px;
+      background: #1a88b8; }
+    #sub-company [class*="company-intro-"] h6::after {
+      margin-bottom: -10px;
+      background: #2bc5ff; }
+  #sub-company [class*="company-intro-"] p {
+    font: 400 16px/40px "NanumBarunGothic";
+    letter-spacing: 0.5px;
+    color: #111; }
+  #sub-company [class*="company-intro-"] .left h6, #sub-company [class*="company-intro-"] .left p {
+    text-align: right; }
+  #sub-company [class*="company-intro-"] .left h6::before {
+    right: 0;
+    margin-right: -120px; }
+  #sub-company [class*="company-intro-"] .left h6::after {
+    right: 0;
+    margin-right: -80px; }
+  #sub-company [class*="company-intro-"] .right h6, #sub-company [class*="company-intro-"] .right p {
+    text-align: left; }
+  #sub-company [class*="company-intro-"] .right h6::before {
+    left: 0;
+    margin-left: -120px; }
+  #sub-company [class*="company-intro-"] .right h6::after {
+    left: 0;
+    margin-left: -80px; }
+
+#sub-company .company-intro-01 .text-con {
+  padding-top: 140px; }
+
+#sub-company .company-intro-01 h6::before {
+  width: 470px; }
+
+#sub-company .company-intro-01 h6::after {
+  width: 300px; }
+
+#sub-company .company-intro-02 .text-con {
+  padding-top: 120px; }
+
+#sub-company .company-intro-02 h6::before {
+  width: 270px; }
+
+#sub-company .company-intro-02 h6::after {
+  width: 380px; }
+
+#sub-company .company-intro-03 .text-con {
+  padding-top: 190px; }
+
+#sub-company .company-intro-03 h6::before {
+  width: 350px; }
+
+#sub-company .company-intro-03 h6::after {
+  width: 500px; }
+
+#sub-company .sub-company-02 {
   width: 1200px;
-  height: 400px;
-  padding-top: 50px; }
-  #sub-logis .sub-log-01 > div {
+  height: 500px;
+  padding-top: 70px; }
+  #sub-company .sub-company-02 > div {
     width: 50%;
     height: auto;
     float: left; }
-  #sub-logis .sub-log-01 .log_con_left img {
+  #sub-company .sub-company-02 .company_con_left img {
     width: 100%;
     height: auto;
     display: block; }
-  #sub-logis .sub-log-01 .log_con_right {
+  #sub-company .sub-company-02 .company_con_right {
     width: calc(50% - 80px);
     padding-left: 80px;
-    background: url("../images/con-sub-logis-bg.png") bottom right no-repeat; }
-    #sub-logis .sub-log-01 .log_con_right h5 {
+    background: url("../images/con-sub-com-bg.png") bottom right no-repeat; }
+    #sub-company .sub-company-02 .company_con_right h5 {
       padding: 40px 0 20px;
       font: 600 18px/24px "NanumBarunGothic";
       color: #111; }
-    #sub-logis .sub-log-01 .log_con_right p span {
+    #sub-company .sub-company-02 .company_con_right p span {
       color: #032d4d;
       font-weight: 600; }
-    #sub-logis .sub-log-01 .log_con_right p.free_text, #sub-logis .sub-log-01 .log_con_right *.mo_text {
-      display: none; }
 
-#sub-logis .sub-log-02 .mapHM {
+#sub-company .sub-company-03 .mapHM {
   width: 100%;
   height: 360px;
   background: #aaa; }
 
-#sub-logis .sub-log-02 .map_info {
+#sub-company .sub-company-03 .map_info {
   width: 100%;
   height: auto;
   padding-top: 35px; }
-  #sub-logis .sub-log-02 .map_info li {
+  #sub-company .sub-company-03 .map_info li {
     width: auto;
     height: 18px;
     padding-left: 20px;
@@ -486,10 +571,10 @@
     font: 400 15px/18px "NanumBarunGothic";
     text-align: center;
     position: relative; }
-    #sub-logis .sub-log-02 .map_info li:nth-of-type(4) {
+    #sub-company .sub-company-03 .map_info li:nth-of-type(4) {
       height: 40px;
       line-height: 20px; }
-    #sub-logis .sub-log-02 .map_info li::before {
+    #sub-company .sub-company-03 .map_info li::before {
       display: block;
       content: "";
       position: absolute;
@@ -498,46 +583,60 @@
       margin-top: -1px;
       height: 18px;
       background: url("../images/icon-sub-maps.jpg") no-repeat; }
-    #sub-logis .sub-log-02 .map_info li:nth-of-type(1) {
+    #sub-company .sub-company-03 .map_info li:nth-of-type(1) {
       color: #032d4d;
       font-weight: 600;
       font-size: 18px;
       padding-bottom: 14px; }
-    #sub-logis .sub-log-02 .map_info li:nth-of-type(2)::before {
+    #sub-company .sub-company-03 .map_info li:nth-of-type(2)::before {
       width: 13px;
       background-position: 0px 0px;
       margin-left: -155px; }
-    #sub-logis .sub-log-02 .map_info li:nth-of-type(3)::before {
+    #sub-company .sub-company-03 .map_info li:nth-of-type(3)::before {
       width: 16px;
       background-position: -15px 0px;
       margin-left: -243px; }
-    #sub-logis .sub-log-02 .map_info li:nth-of-type(4)::before {
+    #sub-company .sub-company-03 .map_info li:nth-of-type(4)::before {
       width: 16px;
       background-position: -15px 0px;
       margin-top: 1px;
       margin-left: -128px; }
-    #sub-logis .sub-log-02 .map_info li:nth-of-type(5)::before {
+    #sub-company .sub-company-03 .map_info li:nth-of-type(5)::before {
       width: 17px;
       background-position: -32px 0px;
       margin-left: -96px; }
-    #sub-logis .sub-log-02 .map_info li:nth-of-type(6)::before {
+    #sub-company .sub-company-03 .map_info li:nth-of-type(6)::before {
       width: 13px;
       background-position: -50px 0px;
       margin-left: -66px; }
 
+#sub-operating .sub-content {
+  height: 500px; }
+
 #sub-operating .sub-content > div {
-  width: 100%;
-  height: 250px;
-  margin: 20px 0;
-  padding: 25px;
-  background: #eee;
-  border-radius: 125px;
-  box-sizing: border-box; }
-  #sub-operating .sub-content > div img {
-    width: 200px;
+  width: 292px;
+  height: 400px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: left; }
+  #sub-operating .sub-content > div:last-of-type {
+    margin-right: 0; }
+  #sub-operating .sub-content > div div {
+    width: 100%;
     height: 200px;
-    background: #fff;
-    border-radius: 50%; }
+    background: #e9e9e9; }
+  #sub-operating .sub-content > div img {
+    width: 100%;
+    height: auto; }
+  #sub-operating .sub-content > div .text-con {
+    padding: 30px;
+    box-sizing: border-box; }
+  #sub-operating .sub-content > div h5 {
+    padding: 15px 0 10px;
+    font: 600 21px/26px "NanumBarunGothic";
+    color: #032d4d; }
+  #sub-operating .sub-content > div p {
+    font: 400 15px/22px "NanumBarunGothic"; }
 
 @media screen and (max-width: 1200px) and (min-width: 961px) {
   /* 메인 페이지 */
@@ -576,19 +675,27 @@
     width: 940px; }
   .sub-content {
     width: 940px; }
-  #sub-logis .sub-title ul::after {
+  #sub-company .sub-title ul::after {
     width: calc(100% - 211px); }
-  #sub-logis .sub-log-01 {
+  #sub-company .sub-company-02 {
     width: 940px; }
-    #sub-logis .sub-log-01 .log_con_right {
+    #sub-company .sub-company-02 .company_con_right {
       width: calc(50% - 50px);
       padding-left: 50px; }
-      #sub-logis .sub-log-01 .log_con_right h5 {
+      #sub-company .sub-company-02 .company_con_right h5 {
         padding: 0 0 20px; }
-      #sub-logis .sub-log-01 .log_con_right p {
-        display: none; }
-      #sub-logis .sub-log-01 .log_con_right p.free_text {
-        display: block; } }
+  #sub-operating .sub-content {
+    height: 400px; }
+  #sub-operating .sub-content > div {
+    width: 232px;
+    height: 310px; }
+    #sub-operating .sub-content > div div {
+      width: 100%;
+      height: 155px; }
+    #sub-operating .sub-content > div .text-con {
+      padding: 20px; }
+    #sub-operating .sub-content > div h5 {
+      padding: 5px 0; } }
 
 @media screen and (max-width: 960px) and (min-width: 601px) {
   section {
@@ -658,30 +765,39 @@
       width: calc(100% - 200px); }
   .sub-content {
     width: calc(100% - 40px); }
-  #sub-logis .sub-title ul::after {
+  #sub-company .sub-title ul::after {
     width: calc(100% - 211px); }
-  #sub-logis .sub-log-01 {
+  #sub-company .sub-company-02 {
     width: calc(100% - 40px);
     height: auto; }
-    #sub-logis .sub-log-01 > div {
+    #sub-company .sub-company-02 > div {
       width: 100%;
       height: auto;
       float: none; }
-    #sub-logis .sub-log-01 .log_con_left img {
+    #sub-company .sub-company-02 .company_con_left img {
       width: 100%;
       max-width: 600px;
       margin: 0 auto; }
-    #sub-logis .sub-log-01 .log_con_right {
+    #sub-company .sub-company-02 .company_con_right {
       width: 100%;
       padding-left: 0; }
-      #sub-logis .sub-log-01 .log_con_right h5 {
+      #sub-company .sub-company-02 .company_con_right h5 {
         padding: 50px 0 20px;
         text-align: center; }
-      #sub-logis .sub-log-01 .log_con_right p {
-        display: block;
+      #sub-company .sub-company-02 .company_con_right p {
         text-align: center; }
-      #sub-logis .sub-log-01 .log_con_right p.free_text {
-        display: none; } }
+  #sub-operating .sub-content {
+    height: 500px; }
+  #sub-operating .sub-content > div {
+    width: 232px;
+    height: 310px; }
+    #sub-operating .sub-content > div div {
+      width: 100%;
+      height: 155px; }
+    #sub-operating .sub-content > div .text-con {
+      padding: 20px; }
+    #sub-operating .sub-content > div h5 {
+      padding: 5px 0; } }
 
 @media screen and (max-width: 600px) {
   section {
@@ -911,31 +1027,24 @@
   .sub-content {
     width: calc(100% - 40px);
     padding-top: 30px; }
-  #sub-logis .sub-title {
+  #sub-company .sub-title {
     background: url("../images/con-sub-banner-01-m.jpg") center top no-repeat;
     background-size: auto 220px; }
-  #sub-logis .sub-title ul {
+  #sub-company .sub-title ul {
     margin-bottom: -130px; }
-  #sub-logis .sub-log-01 {
+  #sub-company .sub-company-02 {
     width: calc(100% - 40px);
     height: auto; }
-    #sub-logis .sub-log-01 > div {
+    #sub-company .sub-company-02 > div {
       width: 100%;
       height: auto;
       float: none; }
-    #sub-logis .sub-log-01 .log_con_left img {
+    #sub-company .sub-company-02 .company_con_left img {
       width: 100%;
       max-width: 600px;
       margin: 0 auto; }
-    #sub-logis .sub-log-01 .log_con_right {
+    #sub-company .sub-company-02 .company_con_right {
       width: 100%;
       padding-left: 0; }
-      #sub-logis .sub-log-01 .log_con_right h5 {
-        display: none; }
-      #sub-logis .sub-log-01 .log_con_right p {
-        display: none; }
-      #sub-logis .sub-log-01 .log_con_right p.free_text {
-        display: none; }
-      #sub-logis .sub-log-01 .log_con_right *.mo_text {
-        display: block;
+      #sub-company .sub-company-02 .company_con_right *.mo_text {
         text-align: center; } }
