@@ -374,13 +374,13 @@
 
 .sub-title {
   width: 1200px;
-  height: 50px;
-  margin: 0 auto;
-  padding: 30px 0; }
+  height: 110px;
+  margin: 0 auto; }
   .sub-title h2 {
     width: 250px;
     height: 50px;
     float: left;
+    margin: 30px 0;
     padding-left: 20px;
     font: 600 26px/50px "NanumBarunGothic";
     color: #032d4d;
@@ -397,6 +397,7 @@
   .sub-title ul {
     width: calc(100% - 270px);
     height: 50px;
+    margin: 30px 0;
     float: right;
     position: relative; }
     .sub-title ul::after {
@@ -424,13 +425,16 @@
           color: #034077; }
 
 .sub-content {
-  display: none;
   width: 1200px;
   height: auto;
-  margin: 0 auto;
-  padding-bottom: 95px; }
+  padding-bottom: 95px;
+  position: absolute;
+  z-index: -5;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); }
   .sub-content.on {
-    display: block; }
+    z-index: 5; }
   .sub-content p {
     font: 400 15px/22px "NanumBarunGothic";
     letter-spacing: 0.5px;
@@ -440,175 +444,165 @@
     padding-left: 10px; }
 
 /* 서브 페이지 페이지 별 스타일 */
-#sub-company .sub-title ul::after {
-  width: calc(100% - 321px); }
-
-#sub-company .sub-company-01 {
-  padding-top: 100px; }
-
-#sub-company [class*="company-intro-"] {
-  height: 630px; }
-  #sub-company [class*="company-intro-"] .text-con, #sub-company [class*="company-intro-"] .img-con {
+#sub-company {
+  position: relative; }
+  #sub-company .sub-title ul::after {
+    width: calc(100% - 321px); }
+  #sub-company [class*="company-intro-"] {
+    height: 630px; }
+    #sub-company [class*="company-intro-"] .text-con, #sub-company [class*="company-intro-"] .img-con {
+      height: 500px;
+      float: left;
+      box-sizing: border-box; }
+    #sub-company [class*="company-intro-"] .text-con {
+      width: 500px; }
+    #sub-company [class*="company-intro-"] .img-con {
+      width: 700px; }
+    #sub-company [class*="company-intro-"] .text-con.left {
+      padding-right: 50px; }
+    #sub-company [class*="company-intro-"] .text-con.right {
+      padding-left: 50px; }
+    #sub-company [class*="company-intro-"] img {
+      width: 100%; }
+    #sub-company [class*="company-intro-"] h6 {
+      height: 80px;
+      margin-bottom: 40px;
+      position: relative;
+      font: 600 34px/50px "NanumBarunGothic";
+      letter-spacing: 0.5px;
+      color: #032d4d; }
+      #sub-company [class*="company-intro-"] h6::before, #sub-company [class*="company-intro-"] h6::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        z-index: 20; }
+      #sub-company [class*="company-intro-"] h6::before {
+        margin-bottom: 10px;
+        background: #1a88b8; }
+      #sub-company [class*="company-intro-"] h6::after {
+        margin-bottom: -10px;
+        background: #2bc5ff; }
+    #sub-company [class*="company-intro-"] p {
+      font: 400 16px/40px "NanumBarunGothic";
+      letter-spacing: 0.5px;
+      color: #111; }
+    #sub-company [class*="company-intro-"] .left h6, #sub-company [class*="company-intro-"] .left p {
+      text-align: right; }
+    #sub-company [class*="company-intro-"] .left h6::before {
+      right: 0;
+      margin-right: -120px; }
+    #sub-company [class*="company-intro-"] .left h6::after {
+      right: 0;
+      margin-right: -80px; }
+    #sub-company [class*="company-intro-"] .right h6, #sub-company [class*="company-intro-"] .right p {
+      text-align: left; }
+    #sub-company [class*="company-intro-"] .right h6::before {
+      left: 0;
+      margin-left: -120px; }
+    #sub-company [class*="company-intro-"] .right h6::after {
+      left: 0;
+      margin-left: -80px; }
+  #sub-company .company-intro-01 {
+    padding-top: 100px; }
+    #sub-company .company-intro-01 .text-con {
+      padding-top: 140px; }
+    #sub-company .company-intro-01 h6::before {
+      width: 470px; }
+    #sub-company .company-intro-01 h6::after {
+      width: 300px; }
+  #sub-company .company-intro-02 .text-con {
+    padding-top: 120px; }
+  #sub-company .company-intro-02 h6::before {
+    width: 270px; }
+  #sub-company .company-intro-02 h6::after {
+    width: 380px; }
+  #sub-company .company-intro-03 {
+    height: 550px; }
+    #sub-company .company-intro-03 .text-con {
+      padding-top: 190px; }
+    #sub-company .company-intro-03 h6::before {
+      width: 350px; }
+    #sub-company .company-intro-03 h6::after {
+      width: 500px; }
+  #sub-company .sub-company-02 {
+    width: 1200px;
     height: 500px;
-    float: left;
-    box-sizing: border-box; }
-  #sub-company [class*="company-intro-"] .text-con {
-    width: 500px; }
-  #sub-company [class*="company-intro-"] .img-con {
-    width: 700px; }
-  #sub-company [class*="company-intro-"] .text-con.left {
-    padding-right: 50px; }
-  #sub-company [class*="company-intro-"] .text-con.right {
-    padding-left: 50px; }
-  #sub-company [class*="company-intro-"] img {
-    width: 100%; }
-  #sub-company [class*="company-intro-"] h6 {
-    height: 80px;
-    margin-bottom: 40px;
-    position: relative;
-    font: 600 34px/50px "NanumBarunGothic";
-    letter-spacing: 0.5px;
-    color: #032d4d; }
-    #sub-company [class*="company-intro-"] h6::before, #sub-company [class*="company-intro-"] h6::after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      height: 2px;
-      z-index: 20; }
-    #sub-company [class*="company-intro-"] h6::before {
-      margin-bottom: 10px;
-      background: #1a88b8; }
-    #sub-company [class*="company-intro-"] h6::after {
-      margin-bottom: -10px;
-      background: #2bc5ff; }
-  #sub-company [class*="company-intro-"] p {
-    font: 400 16px/40px "NanumBarunGothic";
-    letter-spacing: 0.5px;
-    color: #111; }
-  #sub-company [class*="company-intro-"] .left h6, #sub-company [class*="company-intro-"] .left p {
-    text-align: right; }
-  #sub-company [class*="company-intro-"] .left h6::before {
-    right: 0;
-    margin-right: -120px; }
-  #sub-company [class*="company-intro-"] .left h6::after {
-    right: 0;
-    margin-right: -80px; }
-  #sub-company [class*="company-intro-"] .right h6, #sub-company [class*="company-intro-"] .right p {
-    text-align: left; }
-  #sub-company [class*="company-intro-"] .right h6::before {
-    left: 0;
-    margin-left: -120px; }
-  #sub-company [class*="company-intro-"] .right h6::after {
-    left: 0;
-    margin-left: -80px; }
-
-#sub-company .company-intro-01 .text-con {
-  padding-top: 140px; }
-
-#sub-company .company-intro-01 h6::before {
-  width: 470px; }
-
-#sub-company .company-intro-01 h6::after {
-  width: 300px; }
-
-#sub-company .company-intro-02 .text-con {
-  padding-top: 120px; }
-
-#sub-company .company-intro-02 h6::before {
-  width: 270px; }
-
-#sub-company .company-intro-02 h6::after {
-  width: 380px; }
-
-#sub-company .company-intro-03 .text-con {
-  padding-top: 190px; }
-
-#sub-company .company-intro-03 h6::before {
-  width: 350px; }
-
-#sub-company .company-intro-03 h6::after {
-  width: 500px; }
-
-#sub-company .sub-company-02 {
-  width: 1200px;
-  height: 500px;
-  padding-top: 70px; }
-  #sub-company .sub-company-02 > div {
-    width: 50%;
-    height: auto;
-    float: left; }
-  #sub-company .sub-company-02 .company_con_left img {
+    padding-top: 70px; }
+    #sub-company .sub-company-02 > div {
+      width: 50%;
+      height: auto;
+      float: left; }
+    #sub-company .sub-company-02 .company_con_left img {
+      width: 100%;
+      height: auto;
+      display: block; }
+    #sub-company .sub-company-02 .company_con_right {
+      width: calc(50% - 80px);
+      padding-left: 80px;
+      background: url("../images/con-sub-com-bg.png") bottom right no-repeat; }
+      #sub-company .sub-company-02 .company_con_right h5 {
+        padding: 40px 0 20px;
+        font: 600 18px/24px "NanumBarunGothic";
+        color: #111; }
+      #sub-company .sub-company-02 .company_con_right p span {
+        color: #032d4d;
+        font-weight: 600; }
+  #sub-company .sub-company-03 .mapHM {
+    width: 100%;
+    height: 360px;
+    background: #aaa; }
+  #sub-company .sub-company-03 .map_info {
     width: 100%;
     height: auto;
-    display: block; }
-  #sub-company .sub-company-02 .company_con_right {
-    width: calc(50% - 80px);
-    padding-left: 80px;
-    background: url("../images/con-sub-com-bg.png") bottom right no-repeat; }
-    #sub-company .sub-company-02 .company_con_right h5 {
-      padding: 40px 0 20px;
-      font: 600 18px/24px "NanumBarunGothic";
-      color: #111; }
-    #sub-company .sub-company-02 .company_con_right p span {
-      color: #032d4d;
-      font-weight: 600; }
-
-#sub-company .sub-company-03 .mapHM {
-  width: 100%;
-  height: 360px;
-  background: #aaa; }
-
-#sub-company .sub-company-03 .map_info {
-  width: 100%;
-  height: auto;
-  padding-top: 35px; }
-  #sub-company .sub-company-03 .map_info li {
-    width: auto;
-    height: 18px;
-    padding-left: 20px;
-    padding-bottom: 8px;
-    font: 400 15px/18px "NanumBarunGothic";
-    text-align: center;
-    position: relative; }
-    #sub-company .sub-company-03 .map_info li:nth-of-type(4) {
-      height: 40px;
-      line-height: 20px; }
-    #sub-company .sub-company-03 .map_info li::before {
-      display: block;
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-top: -1px;
+    padding-top: 35px; }
+    #sub-company .sub-company-03 .map_info li {
+      width: auto;
       height: 18px;
-      background: url("../images/icon-sub-maps.jpg") no-repeat; }
-    #sub-company .sub-company-03 .map_info li:nth-of-type(1) {
-      color: #032d4d;
-      font-weight: 600;
-      font-size: 18px;
-      padding-bottom: 14px; }
-    #sub-company .sub-company-03 .map_info li:nth-of-type(2)::before {
-      width: 13px;
-      background-position: 0px 0px;
-      margin-left: -155px; }
-    #sub-company .sub-company-03 .map_info li:nth-of-type(3)::before {
-      width: 16px;
-      background-position: -15px 0px;
-      margin-left: -243px; }
-    #sub-company .sub-company-03 .map_info li:nth-of-type(4)::before {
-      width: 16px;
-      background-position: -15px 0px;
-      margin-top: 1px;
-      margin-left: -128px; }
-    #sub-company .sub-company-03 .map_info li:nth-of-type(5)::before {
-      width: 17px;
-      background-position: -32px 0px;
-      margin-left: -96px; }
-    #sub-company .sub-company-03 .map_info li:nth-of-type(6)::before {
-      width: 13px;
-      background-position: -50px 0px;
-      margin-left: -66px; }
+      padding-left: 20px;
+      padding-bottom: 8px;
+      font: 400 15px/18px "NanumBarunGothic";
+      text-align: center;
+      position: relative; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(4) {
+        height: 40px;
+        line-height: 20px; }
+      #sub-company .sub-company-03 .map_info li::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-top: -1px;
+        height: 18px;
+        background: url("../images/icon-sub-maps.jpg") no-repeat; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(1) {
+        color: #032d4d;
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 14px; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(2)::before {
+        width: 13px;
+        background-position: 0px 0px;
+        margin-left: -155px; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(3)::before {
+        width: 16px;
+        background-position: -15px 0px;
+        margin-left: -243px; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(4)::before {
+        width: 16px;
+        background-position: -15px 0px;
+        margin-top: 1px;
+        margin-left: -128px; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(5)::before {
+        width: 17px;
+        background-position: -32px 0px;
+        margin-left: -96px; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(6)::before {
+        width: 13px;
+        background-position: -50px 0px;
+        margin-left: -66px; }
 
 #sub-operating .sub-content {
   height: 500px; }

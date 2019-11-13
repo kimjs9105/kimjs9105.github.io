@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+  // window load setting
+
+  var sectionBannerH = $('.sub-banner').height();
+  var sectionTitH = $('.sub-title').height();
+  var sectionActiveH = $('.sub-content.on').height();
+
+  $('section').css({height: sectionBannerH + sectionTitH + sectionActiveH + 95});
+
+  // action
   var $menu_btn = $('#btn-menu');
   var $menu_close_btn = $('#btn-menu-close');
 
@@ -22,11 +32,14 @@ $(document).ready(function(){
   $sectionTabs.on('click', function(){
     var $selectTabs = $(this).attr('data-con');
     var $selectText = $(this).text();
+    var sectionH = $('.' + $selectTabs).height();
 
     $('.sub-content').removeClass("on");
     $('.' + $selectTabs).addClass("on");
     $('section .sub-con-tabs li').removeClass("on");
     $(this).parent().addClass("on");
+
+    $('section').css({height: sectionBannerH + sectionTitH + sectionH + 95});
 
     var winMob = $(window).width();
     if( winMob <= 600 ){
