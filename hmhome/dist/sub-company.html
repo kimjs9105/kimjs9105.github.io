@@ -40,7 +40,7 @@
 
       <div class="sub-title">
         <h2>회사소개</h2>
-        <a class="pc_dn mob_sub_tit" href="#!">인사말</a>
+        <a class="pc_dn mob_sub_tit" href="#!">사업영역</a>
         <ul class="sub-con-tabs">
           <li class="on"><a href="#!" data-con="sub-company-01">사업영역</a></li>
           <li><a href="#!" data-con="sub-company-02">인사말</a></li>
@@ -51,30 +51,30 @@
       <div class="sub-content sub-company-01 on">
 
         <div class="company-intro-01">
-          <div class="text-con left">
-            <h6>물류 네트워크와 원스톱 솔루션</h6>
-            <p>희망운수(주)가 가지고 있는 네트워크 및 파트너십과<br>완전히 통합된 가치사슬을 기반으로 하여,<br>
-              비용대비 효과성을 입증하기 위한 서비스와<br>원스톱 솔루션을 제시합니다.</p>
-          </div>
           <div class="img-con right"><img src="./images/con-sub-com-intro-01.jpg" alt=""></div>
-        </div>
-
-        <div class="company-intro-02">
-          <div class="img-con left"><img src="./images/con-sub-com-intro-02.jpg" alt=""></div>
-          <div class="text-con right">
+          <div class="text-con left">
             <h6>선두적인 물류 서비스 제공</h6>
             <p>희망운수(주)는<br>사업을 확장하고자 하는 회사를 위한<br>선두적인 시장 확장 서비스를 제공하는 기업입니다. <br>
               귀사의 비지니스 확장을 위해 필요한 운송 서비스를 <br>희망운수(주)에서 제공할 것임을 확신합니다.</p>
           </div>
         </div>
 
+        <div class="company-intro-02">
+          <div class="img-con left"><img src="./images/con-sub-com-intro-02.jpg" alt=""></div>
+          <div class="text-con right">
+            <h6>물류 네트워크와 원스톱 솔루션</h6>
+            <p>희망운수(주)가 가지고 있는 네트워크 및 파트너십과<br>완전히 통합된 가치사슬을 기반으로 하여,<br>
+              비용대비 효과성을 입증하기 위한 서비스와<br>원스톱 솔루션을 제시합니다.</p>
+          </div>
+        </div>
+
         <div class="company-intro-03">
+          <div class="img-con right"><img src="./images/con-sub-com-intro-03.jpg" alt=""></div>
           <div class="text-con left">
             <h6>믿음과 신뢰의 운송기업</h6>
             <p>다년간의 폭넓은 현장 경험과 운송 시장의 전문지식을 갖춘<br>뛰어난 임직원이 현장 상황을 관리하여,<br>
               고객님께서 믿을 수 있는 서비스를 제공하겠습니다.</p>
           </div>
-          <div class="img-con right"><img src="./images/con-sub-com-intro-03.jpg" alt=""></div>
         </div>
 
       </div>
@@ -169,8 +169,8 @@
     var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
     var imageSrc = 'http://kimjs9105.github.io/hmhome/dist/images/map_picker.png', // 마커이미지의 주소입니다
-        imageSize = new kakao.maps.Size(60, 77), // 마커이미지의 크기입니다
-        imageOption = {offset: new kakao.maps.Point(30, 75)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+        imageSize = new kakao.maps.Size(32, 41), // 마커이미지의 크기입니다
+        imageOption = {offset: new kakao.maps.Point(16, 41)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
 // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
     var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),

@@ -452,10 +452,14 @@
     height: 630px; }
     #sub-company [class*="company-intro-"] .text-con, #sub-company [class*="company-intro-"] .img-con {
       height: 500px;
-      float: left;
       box-sizing: border-box; }
+    #sub-company [class*="company-intro-"] .left {
+      float: left; }
+    #sub-company [class*="company-intro-"] .right {
+      float: right; }
     #sub-company [class*="company-intro-"] .text-con {
-      width: 500px; }
+      width: 500px;
+      height: auto; }
     #sub-company [class*="company-intro-"] .img-con {
       width: 700px; }
     #sub-company [class*="company-intro-"] .text-con.left {
@@ -468,7 +472,7 @@
       height: 80px;
       margin-bottom: 40px;
       position: relative;
-      font: 600 34px/50px "NanumBarunGothic";
+      font: 600 32px/50px "NanumBarunGothic";
       letter-spacing: 0.5px;
       color: #032d4d; }
       #sub-company [class*="company-intro-"] h6::before, #sub-company [class*="company-intro-"] h6::after {
@@ -561,7 +565,7 @@
       width: auto;
       height: 18px;
       padding-left: 20px;
-      padding-bottom: 8px;
+      padding-bottom: 12px;
       font: 400 15px/18px "NanumBarunGothic";
       text-align: center;
       position: relative; }
@@ -574,35 +578,34 @@
         position: absolute;
         top: 0;
         left: 50%;
-        margin-top: -1px;
-        height: 18px;
-        background: url("../images/icon-sub-maps.jpg") no-repeat; }
+        margin-top: -3px;
+        height: 22px;
+        background: url("../images/icon-sub-maps.png") no-repeat; }
       #sub-company .sub-company-03 .map_info li:nth-of-type(1) {
         color: #032d4d;
         font-weight: 600;
         font-size: 18px;
         padding-bottom: 14px; }
       #sub-company .sub-company-03 .map_info li:nth-of-type(2)::before {
-        width: 13px;
-        background-position: 0px 0px;
-        margin-left: -155px; }
-      #sub-company .sub-company-03 .map_info li:nth-of-type(3)::before {
-        width: 16px;
-        background-position: -15px 0px;
-        margin-left: -243px; }
-      #sub-company .sub-company-03 .map_info li:nth-of-type(4)::before {
-        width: 16px;
-        background-position: -15px 0px;
-        margin-top: 1px;
-        margin-left: -128px; }
-      #sub-company .sub-company-03 .map_info li:nth-of-type(5)::before {
         width: 17px;
-        background-position: -32px 0px;
-        margin-left: -96px; }
+        background-position: 0px 0px;
+        margin-left: -160px; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(3)::before {
+        width: 37px;
+        background-position: -17px 0px;
+        margin-left: -265px; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(4)::before {
+        width: 37px;
+        background-position: -17px 0px;
+        margin-left: -148px; }
+      #sub-company .sub-company-03 .map_info li:nth-of-type(5)::before {
+        width: 28px;
+        background-position: -54px 0px;
+        margin-left: -105px; }
       #sub-company .sub-company-03 .map_info li:nth-of-type(6)::before {
-        width: 13px;
-        background-position: -50px 0px;
-        margin-left: -66px; }
+        width: 23px;
+        background-position: -82px 0px;
+        margin-left: -72px; }
 
 #sub-operating .sub-content {
   height: 500px; }
@@ -671,6 +674,27 @@
     width: 940px; }
   #sub-company .sub-title ul::after {
     width: calc(100% - 211px); }
+  #sub-company .sub-company-01 {
+    width: 940px; }
+  #sub-company [class*="company-intro-"] {
+    height: 520px; }
+    #sub-company [class*="company-intro-"] .text-con {
+      width: 440px; }
+    #sub-company [class*="company-intro-"] .img-con {
+      width: 500px;
+      height: 400px; }
+    #sub-company [class*="company-intro-"] .text-con.left {
+      padding-right: 30px; }
+    #sub-company [class*="company-intro-"] .text-con.right {
+      padding-left: 30px; }
+  #sub-company .company-intro-01 .text-con {
+    padding-top: 60px; }
+  #sub-company .company-intro-02 .text-con {
+    padding-top: 95px; }
+  #sub-company .company-intro-03 {
+    height: 400px; }
+    #sub-company .company-intro-03 .text-con {
+      padding-top: 80px; }
   #sub-company .sub-company-02 {
     width: 940px; }
     #sub-company .sub-company-02 .company_con_right {
@@ -761,9 +785,60 @@
     width: calc(100% - 40px); }
   #sub-company .sub-title ul::after {
     width: calc(100% - 211px); }
+  #sub-company .sub-company-01 {
+    width: calc(100% - 40px); }
+  #sub-company [class*="company-intro-"] {
+    height: auto; }
+    #sub-company [class*="company-intro-"] .text-con, #sub-company [class*="company-intro-"] .img-con {
+      width: 100%;
+      height: auto; }
+    #sub-company [class*="company-intro-"] .left {
+      float: none; }
+    #sub-company [class*="company-intro-"] .right {
+      float: none; }
+    #sub-company [class*="company-intro-"] .text-con.left {
+      padding-right: 0px; }
+    #sub-company [class*="company-intro-"] .text-con.right {
+      padding-left: 0px; }
+    #sub-company [class*="company-intro-"] img {
+      width: 100%;
+      max-width: 760px;
+      display: block;
+      margin: 0 auto 30px; }
+    #sub-company [class*="company-intro-"] h6::before {
+      width: 100px; }
+    #sub-company [class*="company-intro-"] h6::after {
+      width: 150px; }
+    #sub-company [class*="company-intro-"] .left h6, #sub-company [class*="company-intro-"] .left p {
+      text-align: center; }
+    #sub-company [class*="company-intro-"] .left h6::before {
+      right: 50%;
+      margin-right: -50px; }
+    #sub-company [class*="company-intro-"] .left h6::after {
+      right: 50%;
+      margin-right: -75px; }
+    #sub-company [class*="company-intro-"] .right h6, #sub-company [class*="company-intro-"] .right p {
+      text-align: center; }
+    #sub-company [class*="company-intro-"] .right h6::before {
+      left: 50%;
+      margin-left: -50px; }
+    #sub-company [class*="company-intro-"] .right h6::after {
+      left: 50%;
+      margin-left: -75px; }
+  #sub-company .company-intro-01 {
+    padding-top: 10px; }
+    #sub-company .company-intro-01 .text-con {
+      padding: 20px 0 80px; }
+  #sub-company .company-intro-02 .text-con {
+    padding: 20px 0 80px; }
+  #sub-company .company-intro-03 {
+    height: auto; }
+    #sub-company .company-intro-03 .text-con {
+      padding: 20px 0 80px; }
   #sub-company .sub-company-02 {
     width: calc(100% - 40px);
-    height: auto; }
+    height: auto;
+    padding-top: 10px; }
     #sub-company .sub-company-02 > div {
       width: 100%;
       height: auto;
@@ -951,7 +1026,8 @@
     position: relative; }
     .sub-title h2 {
       width: 100%;
-      height: 200px;
+      height: 220px;
+      margin: 0;
       padding: 0;
       float: none;
       background: rgba(0, 0, 0, 0.3);
@@ -1007,7 +1083,8 @@
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
       position: absolute;
       bottom: 0;
-      left: 0; }
+      left: 0;
+      z-index: 20; }
       .sub-title ul::after {
         display: none; }
       .sub-title ul li {
@@ -1020,15 +1097,89 @@
           border: 0; }
   .sub-content {
     width: calc(100% - 40px);
-    padding-top: 30px; }
+    padding-top: 30px;
+    padding-bottom: 0; }
   #sub-company .sub-title {
     background: url("../images/con-sub-banner-01-m.jpg") center top no-repeat;
     background-size: auto 220px; }
   #sub-company .sub-title ul {
-    margin-bottom: -130px; }
+    margin-bottom: -180px; }
+  #sub-company .sub-company-01 {
+    width: calc(100% - 40px); }
+  #sub-company [class*="company-intro-"] {
+    height: auto; }
+    #sub-company [class*="company-intro-"] .text-con, #sub-company [class*="company-intro-"] .img-con {
+      width: 100%;
+      height: auto; }
+    #sub-company [class*="company-intro-"] .left {
+      float: none; }
+    #sub-company [class*="company-intro-"] .right {
+      float: none; }
+    #sub-company [class*="company-intro-"] .text-con.left {
+      padding-right: 0px; }
+    #sub-company [class*="company-intro-"] .text-con.right {
+      padding-left: 0px; }
+    #sub-company [class*="company-intro-"] img {
+      width: 100%;
+      max-width: 760px;
+      display: block;
+      margin: 0 auto 10px; }
+    #sub-company [class*="company-intro-"] h6 {
+      height: 50px;
+      margin-bottom: 30px;
+      position: relative;
+      font: 600 24px/40px "NanumBarunGothic";
+      letter-spacing: 0.5px;
+      color: #032d4d; }
+      #sub-company [class*="company-intro-"] h6::before, #sub-company [class*="company-intro-"] h6::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        z-index: 20; }
+      #sub-company [class*="company-intro-"] h6::before {
+        width: 100px;
+        margin-bottom: 0px;
+        background: #1a88b8; }
+      #sub-company [class*="company-intro-"] h6::after {
+        width: 150px;
+        margin-bottom: -10px;
+        background: #2bc5ff; }
+    #sub-company [class*="company-intro-"] p {
+      font: 400 15px/28px "NanumBarunGothic";
+      letter-spacing: -0.4px;
+      color: #111; }
+    #sub-company [class*="company-intro-"] .left h6, #sub-company [class*="company-intro-"] .left p {
+      text-align: center; }
+    #sub-company [class*="company-intro-"] .left h6::before {
+      right: 50%;
+      margin-right: -50px; }
+    #sub-company [class*="company-intro-"] .left h6::after {
+      right: 50%;
+      margin-right: -75px; }
+    #sub-company [class*="company-intro-"] .right h6, #sub-company [class*="company-intro-"] .right p {
+      text-align: center; }
+    #sub-company [class*="company-intro-"] .right h6::before {
+      left: 50%;
+      margin-left: -50px; }
+    #sub-company [class*="company-intro-"] .right h6::after {
+      left: 50%;
+      margin-left: -75px; }
+  #sub-company .company-intro-01 {
+    padding-top: 10px; }
+    #sub-company .company-intro-01 .text-con {
+      padding: 20px 0 80px; }
+  #sub-company .company-intro-02 .text-con {
+    padding: 20px 0 80px; }
+  #sub-company .company-intro-03 {
+    height: auto; }
+    #sub-company .company-intro-03 .text-con {
+      padding: 20px 0 80px; }
   #sub-company .sub-company-02 {
     width: calc(100% - 40px);
-    height: auto; }
+    padding-top: 30px;
+    height: 1000px; }
     #sub-company .sub-company-02 > div {
       width: 100%;
       height: auto;
@@ -1041,4 +1192,6 @@
       width: 100%;
       padding-left: 0; }
       #sub-company .sub-company-02 .company_con_right *.mo_text {
-        text-align: center; } }
+        text-align: center; }
+  #sub-company .sub-company-03 {
+    height: 700px; } }

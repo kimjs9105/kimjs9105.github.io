@@ -188,15 +188,17 @@
 
   [class*="company-intro-"]{
     height: 630px;
-    .text-con, .img-con{ height: 500px; float: left; box-sizing: border-box; }
-    .text-con{ width: 500px; }
+    .text-con, .img-con{ height: 500px; box-sizing: border-box; }
+    .left{ float: left; }
+    .right{ float: right; }
+    .text-con{ width: 500px; height: auto; }
     .img-con{ width: 700px; }
     .text-con.left{ padding-right: 50px; }
     .text-con.right{ padding-left: 50px; }
 
     img{ width: 100%; }
     h6{ height: 80px; margin-bottom: 40px; position: relative;
-      font: 600 34px/50px "NanumBarunGothic"; letter-spacing: 0.5px; color: $darkB;
+      font: 600 32px/50px "NanumBarunGothic"; letter-spacing: 0.5px; color: $darkB;
 
       &::before, &::after{ content: ""; display: block; position: absolute; bottom: 0; height: 2px; z-index: 20; }
       &::before{ margin-bottom: 10px; background: #1a88b8; }
@@ -249,20 +251,20 @@
     .map_info{
       width: 100%; height: auto; padding-top: 35px;
 
-      li{ width: auto; height: 18px; padding-left: 20px; padding-bottom: 8px;
+      li{ width: auto; height: 18px; padding-left: 20px; padding-bottom: 12px;
         font: 400 15px/18px "NanumBarunGothic"; text-align: center; position: relative;
 
         &:nth-of-type(4){ height: 40px; line-height: 20px; }
 
-        &::before{ display: block; content: ""; position: absolute; top: 0; left: 50%; margin-top: -1px;
-          height: 18px; background: url('../images/icon-sub-maps.jpg') no-repeat; }
+        &::before{ display: block; content: ""; position: absolute; top: 0; left: 50%; margin-top: -3px;
+          height: 22px; background: url('../images/icon-sub-maps.png') no-repeat; }
 
         &:nth-of-type(1) { color: $darkB; font-weight: 600; font-size: 18px; padding-bottom: 14px; }
-        &:nth-of-type(2)::before{ width: 13px; background-position: 0px 0px; margin-left: -155px; }
-        &:nth-of-type(3)::before{ width: 16px; background-position: -15px 0px; margin-left: -243px; }
-        &:nth-of-type(4)::before{ width: 16px; background-position: -15px 0px; margin-top: 1px; margin-left: -128px; }
-        &:nth-of-type(5)::before{ width: 17px; background-position: -32px 0px; margin-left: -96px; }
-        &:nth-of-type(6)::before{ width: 13px; background-position: -50px 0px; margin-left: -66px; }
+        &:nth-of-type(2)::before{ width: 17px; background-position: 0px 0px; margin-left: -160px; }
+        &:nth-of-type(3)::before{ width: 37px; background-position: -17px 0px; margin-left: -265px; }
+        &:nth-of-type(4)::before{ width: 37px; background-position: -17px 0px; margin-left: -148px; }
+        &:nth-of-type(5)::before{ width: 28px; background-position: -54px 0px; margin-left: -105px; }
+        &:nth-of-type(6)::before{ width: 23px; background-position: -82px 0px; margin-left: -72px; }
 
       }
     }

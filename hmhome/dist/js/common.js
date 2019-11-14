@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   // window load setting
-
   var sectionBannerH = $('.sub-banner').height();
   var sectionTitH = $('.sub-title').height();
   var sectionActiveH = $('.sub-content.on').height();
@@ -46,6 +45,8 @@ $(document).ready(function(){
 
       $('.sub-title > ul').slideToggle(500);
       $sectionTit.text($selectText);
+
+      $('section').css({height: sectionBannerH + sectionTitH + sectionH -130});
     }
   });
 
@@ -60,6 +61,15 @@ $(document).ready(function(){
     }
   });
 
+
+  // mobile version
+  var winW = $(window).width();
+
+  if(winW <= 600){
+
+    $('section').css({height: sectionBannerH + sectionTitH + sectionActiveH - 130});
+
+  }
 
 
 });
