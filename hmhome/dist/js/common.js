@@ -46,7 +46,7 @@ $(document).ready(function(){
       $('.sub-title > ul').slideToggle(500);
       $sectionTit.text($selectText);
 
-      $('section').css({height: sectionBannerH + sectionTitH + sectionH -130});
+      $('section').css({height: sectionBannerH + sectionTitH + sectionH + 50});
     }
   });
 
