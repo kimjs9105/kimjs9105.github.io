@@ -173,10 +173,8 @@
 }// .sub-title
 
 .sub-content{
-  width: 1200px; height: auto; padding-bottom: 95px;
-  position: absolute; z-index: -5; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);
+  width: 1200px; height: auto; padding-bottom: 95px; margin: 0 auto;
 
-  &.on{ z-index: 5; }
   p { font: 400 15px/22px "NanumBarunGothic"; letter-spacing: 0.5px; color: $fontB; }
   .intro-sents{ padding-bottom: 25px; padding-left: 10px; }
 }// .sub-content
@@ -185,6 +183,10 @@
 #sub-company{
   position: relative;
   .sub-title ul::after{ width: calc(100% - 321px); }
+
+  .sub-company-01, .sub-company-02{ display: none;
+    &.on{ display: block; }
+  }
 
   [class*="company-intro-"]{
     height: 630px;
@@ -247,6 +249,9 @@
   }
 
   .sub-company-03{
+    position: absolute; z-index: -5; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);
+
+    &.on{ z-index: 5; }
     .mapHM{ width: 100%; height: 360px; background: #aaa; }
     .map_info{
       width: 100%; height: auto; padding-top: 35px;
@@ -286,4 +291,8 @@
   }
 }//#sub-operating
 
+
+#sub-partner{
+
+}
 @import "respon";

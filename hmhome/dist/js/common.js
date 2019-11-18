@@ -1,18 +1,17 @@
 $(document).ready(function(){
 
-  // window load setting
-  var sectionBannerH = $('.sub-banner').height();
-  var sectionTitH = $('.sub-title').height();
-  var sectionActiveH = $('.sub-content.on').height();
-
-  $('section').css({height: sectionBannerH + sectionTitH + sectionActiveH + 95});
+  // // window load setting
+  // var sectionBannerH = $('.sub-banner').height();
+  // var sectionTitH = $('.sub-title').height();
+  // var sectionActiveH = $('.sub-content.on').height();
+  //
+  // $('section').css({height: sectionBannerH + sectionTitH + sectionActiveH + 95});
 
   // action
   var $menu_btn = $('#btn-menu');
   var $menu_close_btn = $('#btn-menu-close');
 
   $menu_btn.on('click', function(){
-    console.log('누름');
 
     $('.menu_bg').css({display: 'block'});
     $('nav').animate({marginRight: 0}, 500);
@@ -38,15 +37,28 @@ $(document).ready(function(){
     $('section .sub-con-tabs li').removeClass("on");
     $(this).parent().addClass("on");
 
-    $('section').css({height: sectionBannerH + sectionTitH + sectionH + 95});
 
     var winMob = $(window).width();
+    var sectionBannerH = $('.sub-banner').height();
+
+    if($selectTabs === "sub-company-03"){
+
+      if( winMob >= 600 ){
+
+        $('section').css({height: 770 + sectionBannerH});
+
+      }else {
+        $('section').css({height: 1000 });
+
+      }
+    }else {
+        $('section').css({ height: "auto"});
+    }
+
     if( winMob <= 600 ){
 
       $('.sub-title > ul').slideToggle(500);
       $sectionTit.text($selectText);
-
-      $('section').css({height: sectionBannerH + sectionTitH + sectionH + 50});
     }
   });
 
