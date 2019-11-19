@@ -45,7 +45,7 @@
       <div class="sub-content on">
         <p class="intro-sents">희망운수는 고객분들에게 보다 빠르고 경제적이며 투명한 운송서비스를 제공합니다.</p>
         <div>
-          <div>
+          <div class="img-con">
             <img src="./images/con-sub-oper-01.jpg" alt="">
           </div>
           <div class="text-con">
@@ -55,17 +55,21 @@
         </div>
 
         <div>
-          <div class="text-con">
+          <div class="text-con mo_dn">
             <h5>책임 배송제</h5>
             <p>화물의 배송 전 후 상태와 고객의 요구를 끝까지 책임지는 서비스를 제공합니다.</p>
           </div>
-          <div>
+          <div class="img-con">
             <img src="./images/con-sub-oper-02.jpg" alt="">
+          </div>
+          <div class="text-con pc_dn">
+            <h5>책임 배송제</h5>
+            <p>화물의 배송 전 후 상태와 고객의 요구를 끝까지 책임지는 서비스를 제공합니다.</p>
           </div>
         </div>
 
         <div>
-          <div>
+          <div class="img-con">
             <img src="./images/con-sub-oper-03.jpg" alt="">
           </div>
           <div class="text-con">
@@ -74,12 +78,16 @@
           </div>
         </div>
         <div>
-          <div class="text-con">
+          <div class="text-con mo_dn">
             <h5>합리적인 가격</h5>
             <p>물류·운송 업계의 투명하고 공정한 거래 관행과 문화를 정착하기 위해 노력합니다.</p>
           </div>
-          <div>
+          <div class="img-con">
             <img src="./images/con-sub-oper-04.jpg" alt="">
+          </div>
+          <div class="text-con pc_dn">
+            <h5>합리적인 가격</h5>
+            <p>물류·운송 업계의 투명하고 공정한 거래 관행과 문화를 정착하기 위해 노력합니다.</p>
           </div>
         </div>
 
@@ -110,37 +118,6 @@
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script src="./js/slick.min.js"></script>
   <script src="./js/common.js"></script>
-  <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9b30e87450b498d7871d53b92b94b906&libraries=clusterer"></script>
-  <script type="text/javascript">
 
-    $(document).ready(function(){
-    });
-
-    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-    var options = { //지도를 생성할 때 필요한 기본 옵션
-    	center: new kakao.maps.LatLng(37.255118, 127.241819), //지도의 중심좌표.
-    	level: 3 //지도의 레벨(확대, 축소 정도)
-    };
-
-    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-    var imageSrc = 'http://kimjs9105.github.io/hmhome/dist/images/map_picker.png', // 마커이미지의 주소입니다
-        imageSize = new kakao.maps.Size(60, 77), // 마커이미지의 크기입니다
-        imageOption = {offset: new kakao.maps.Point(30, 75)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-
-// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-        markerPosition  = new kakao.maps.LatLng(37.255118, 127.24181);
-
-    // 마커를 생성합니다
-    var marker = new kakao.maps.Marker({
-        position: markerPosition,
-        image: markerImage // 마커이미지 설정
-    });
-
-    // 마커가 지도 위에 표시되도록 설정합니다
-    marker.setMap(map);
-
-  </script> -->
 </body>
 </html>
