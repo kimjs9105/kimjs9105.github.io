@@ -50,6 +50,7 @@ footer{
       &.deco_none::after{ display: none; }
     }
     p{ width: 100%; display: block; padding-top: 2px; font: 400 13px/24px "notoSansKR"; }
+    p a{ display: inline-block; color: #42657d; font-size: 8px;}
   }
   .foot_logo{ width: 500px; padding-top: 50px; float: right;
     img{ display: block; float: right; }
@@ -208,6 +209,7 @@ footer{
     .foot_info li{ width: 100%; float: none; margin-right: 0; margin-bottom: 3px; font: 400 14px/22px "notoSansKR"; }
     .foot_info li::after{ display:none; }
     .foot_info p { padding-top: 25px; }
+    .foot_info p a{ display: block; }
   }
 }
 
@@ -217,5 +219,6 @@ footer{
   footer{
     .foot_logo img{ width: 270px; }
     .foot_info p { font-size: 12px; }
+    .foot_info p a{ display: block; }
   }
 }

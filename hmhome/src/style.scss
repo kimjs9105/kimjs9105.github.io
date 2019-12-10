@@ -53,8 +53,8 @@
       width: 1100px; height: auto; position: absolute; top: 50%; left: 50%; z-index: 5;
       transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); margin-top: -40px;
 
-      h6{ padding-bottom: 50px; color: $white; font: 600 56px/56px "NanumSquare"; text-align: center; }
-      p{ color: $white; font: 600 40px/64px "NanumSquare"; text-align: center; }
+      h6{ padding-bottom: 50px; color: $white; font: 600 52px/56px "NanumSquare"; text-align: center; }
+      p{ color: $white; font: 400 36px/64px "NanumSquare"; text-align: center; }
 
       &::after{
         display: block; content:""; width: 100vw; height: 750px; position: absolute; top: 50%; left: 50%;
@@ -181,12 +181,8 @@
 
 /* 서브 페이지 페이지 별 스타일 */
 #sub-company{
-  position: relative;
-  .sub-title ul::after{ width: calc(100% - 321px); }
 
-  .sub-company-01, .sub-company-02{ display: none;
-    &.on{ display: block; }
-  }
+  .sub-title ul::after{ width: calc(100% - 321px); }
 
   [class*="company-intro-"]{
     height: 630px;
@@ -249,7 +245,6 @@
   }
 
   .sub-company-03{
-    position: absolute; z-index: -5; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);
 
     &.on{ z-index: 5; }
     .mapHM{ width: 100%; height: 360px; background: #aaa; }
@@ -277,11 +272,62 @@
 }//#sub-logis
 
 #sub-network{
+  .sub-title ul::after{ width: calc(100% - 367px); }
 
-  .sub-content{ display: none;
-    &.on{ display: block; }
-  }
-}
+  .sub-net-01{
+    height: 600px;
+    div{ width: 50%; float: left; box-sizing: border-box; }
+    div:first-of-type{ padding-top: 130px; padding-left: 50px; }
+    h5{ font: 600 21px/26px "NanumBarunGothic"; color: $darkB; }
+    p{ width: 550px; padding-top: 30px; font: 400 15px/26px "NanumBarunGothic"; }
+  }//.sub-net-01
+
+  .sub-net-02{
+    .network-option{ height: 550px;
+      div{ width: calc(50% - 15px); height: 170px; float: left; margin-bottom: 30px; padding: 15px;
+        background: #eee; border-radius: 5px; box-sizing: border-box;
+        &:nth-of-type(2n){ margin-left: 30px; }
+
+        div.img-box{ width: auto; height: 140px; margin-right: 30px; padding: 0 10px;
+          float: left; box-sizing: border-box; background: $white; }
+        img{ width: auto; height: 100%; display: block; margin: 0 auto; }
+        dl{ display: block; width: 280px; height: 140px; float: left; }
+        dt{ padding: 20px 0 10px; font: 600 22px/26px "NanumBarunGothic"; color: $darkB; text-indent: 2px; }
+        dd{ font: 400 16px/26px "NanumBarunGothic"; letter-spacing: 0.2px; }
+      }
+    }
+  }//.sub-net-02
+
+  .sub-net-03{
+    .table-con{
+      width: 100%; height: auto; padding: 40px 0 70px;
+
+      h6{ width: 100%; height: 40px; padding-bottom: 5px; font: 400 15px/40px "NanumBarunGothic"; }
+      h6 > span { width: auto; padding: 0 10px; margin-right: 10px; display: inline-block;
+        background: #1e4e8a; font: 600 17px/40px "NanumBarunGothic"; color: #fff; }
+
+      img{ width: auto; height: 320px; margin: 40px auto 0; }
+
+      table{ width: 100%; height: auto; margin: 40px auto 20px; table-layout: fixed; }
+
+      tbody td{ border-right: 1px dotted #bdbdbd; border-bottom: 1px dotted #bdbdbd; box-sizing: border-box; }
+
+      thead th{ background: #d1f0ff; border-right: 1px solid #d1f0ff; }
+      tbody td:first-of-type { background: #edf9ff; border: 0; }
+      tbody tr:last-of-type td:first-of-type { border-bottom: 1px solid #edf9ff; }
+
+      th, td{ height: 50px; font: 400 16px/50px "NanumBarunGothic"; text-align: center; white-space: nowrap; }
+
+      p{ width: auto; height: auto; padding: 0 5px 0 20px; font: 400 14px/24px "NanumBarunGothic"; color: #888; position: relative; }
+      p:before{ content: ""; display: block; position: absolute; top: 10px; left: 11px; width: 2px; height: 2px; background: #888; }
+
+      .table_spec_basic th, .table_spec_basic td{ width: calc(100% / 9); }
+      .table_spec_special th, .table_spec_special td{ width: calc(100% / 6); }
+
+      .pc-table{ display: table; }
+    }
+  }//.sub-net-03
+}// #sub-network
 
 
 #sub-operating{
@@ -310,5 +356,53 @@
   .logo-img-con div img { width: auto; height: calc(100% - 30px); padding: 15px; margin: 0 auto; display: block; }
   // .logo-img-con div:nth-of-type(1) img { padding-top: 5px; }
   // .logo-img-con div:nth-of-type(4) img { padding: 20px 15px 10px; }
-}
+}//#sub-partner
+
+
+#sub-quote{
+  form{
+    width: 100%; height: auto; display: inline-block;
+
+    > div{ width: 50%; height: 520px; float: left; padding-bottom: 50px; }
+    .input-box{ width: calc(100% - 20px); height: auto; min-height: 50px; margin-bottom: 15px; }
+    label{ width: 120px; height: 50px; display: block; float: left; font: 600 16px/50px "NanumBarunGothic"; color: $darkB; }
+    input{ width: calc(100% - 120px); height: 50px; border: 1px solid #ddd; box-sizing: border-box;
+    font: 600 14px/50px "NanumBarunGothic"; color: #222; text-indent: 20px; }
+    input.phoneNum{ width: 137px; margin-right: 24px; position: relative; }
+    input.phoneNum::before{
+      content: ""; display: block; position:absolute; width: 8px; height: 2px;
+      background: #ddd; top: 50%; right: 0px;
+    }
+
+    input.phoneNum:last-of-type{ margin-right: 0; }
+    input.phoneNum:last-of-type::before{ display: none; }
+
+    textarea{
+      width: calc(100% - 120px); height: 300px; padding: 20px; border: 1px solid #ddd; box-sizing: border-box;
+      font: 400 14px/26px "NanumBarunGothic"; color: #222;
+    }
+
+    .low-box{
+      width: calc(100% - 20px); height: auto; padding-left: 20px;
+
+      h6{ font: 600 16px/50px "NanumBarunGothic"; color: $darkB; }
+    }
+    .checkbox{
+      padding-left: 20px;
+      input{ width: 30px; height: 30px; float: left; }
+      label{ width: calc( 100% - 45px); height: 30px; }
+    }
+
+    button.btn-submit::before,
+    button.btn-submit::after{ content: ""; display: block; clear: both; }
+    button.btn-submit{ width: 300px; height: 60px; margin: 0 auto ; display: block; cursor: pointer;
+      background: $mainB; border-radius: 4px; font: 600 20px/60px "notoSansKR"; color: $white;
+
+      &:hover{ background: $darkB; }
+    }
+  }
+}//#sub-quote
+
+
+
 @import "respon";
